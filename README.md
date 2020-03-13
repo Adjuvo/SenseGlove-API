@@ -20,3 +20,11 @@ Contains plugins to add Sense Glove into other engines, such as the Unity Engine
 
 ## Examples
 Contains example projects that make use of the Core API to show how integration would work. Also contains example executables to show certain Sense Glove features.
+
+# Getting Started
+Plug in one or more SenseGloves into your desktop computer as per the guidelines on page 6 of your SenseGlove user manual.
+
+
+Navigate to the SenseCom folder in the SenseGloveAPI package and run the version that matches your platform. For Linux users; the SenseCom program should have its 'allow to run as a program' property enabled. Upon startup, you will be met with a small UI:
+
+While the icon(s) are not filled, the program has not yet detected any Sense Gloves. When the icon is filled, the device has been detected. Use this UI to verify that all Sense Gloves you have plugged in are recognized. Note that it may take up to 10 seconds for your system to detect the Hardware and install the appropriate drivers before SenseCom is able to detect anything.
