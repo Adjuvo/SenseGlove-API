@@ -1,6 +1,6 @@
 # SenseGlove API
 
-This repository houses the Software APIs for SenseGlove Devices for C++ and C# development for Windows and MacOS.
+This repository houses the Software APIs for SenseGlove Devices for C++ and C# development for Windows and Linux.
 
 The Sense Glove Core API is the combination of a **Communications Program** named "SenseCom", and a **Core Library**, all running on the same computer. Any (VR) program using the Core Library can exchange data with any **SenseGlove Device** through the Communications Program. Without SenseCom, the Core API will not detect any devices. 
 
