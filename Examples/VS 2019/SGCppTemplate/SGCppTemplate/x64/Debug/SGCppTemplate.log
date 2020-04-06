@@ -1,0 +1,208 @@
+﻿  SGCppTemplate.cpp
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SGDevice.h(28,25): warning C4251:  'SGCore::SGDevice::ipcAddress': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'SGCore::SGDevice'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(4343): message :  see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37,50): warning C4251:  'SGCore::SG::SG_SensorData::sensorAngles': class 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::SG::SG_SensorData'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37,50): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37,50): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37,50): warning C4251:             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37,50): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(45,3): warning C4275:  non dll-interface class 'SGCore::DeviceModel' used as base for dll-interface class 'SGCore::SG::SG_Model'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\DeviceModel.h(15): message :  see declaration of 'SGCore::DeviceModel'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(44): message :  see declaration of 'SGCore::SG::SG_Model'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62,50): warning C4251:  'SGCore::SG::SG_Model::startPositions': class 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'SGCore::SG::SG_Model'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62,50): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62,50): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62,50): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62,50): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :  see declaration of 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65,48): warning C4251:  'SGCore::SG::SG_Model::startRotations': class 'std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'SGCore::SG::SG_Model'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65,48): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65,48): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65,48): warning C4251:             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65,48): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :  see declaration of 'std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68,61): warning C4251:  'SGCore::SG::SG_Model::gloveLengths': class 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'SGCore::SG::SG_Model'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68,61): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68,61): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68,61): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68,61): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(71,31): warning C4251:  'SGCore::SG::SG_Model::functions': class 'std::vector<bool,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'SGCore::SG::SG_Model'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(71,31): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(71,31): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(71,31): warning C4251:             _Ty=bool
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(71,31): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\DeviceModel.h(36): message :  see declaration of 'std::vector<bool,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\DeviceModel.h(36): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\DeviceModel.h(36): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\DeviceModel.h(36): message :             _Ty=bool
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\DeviceModel.h(36): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(30,66): warning C4251:  'SGCore::Kinematics::BasicHandModel::baseFingerLengths': class 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(30,66): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(30,66): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(30,66): warning C4251:             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(30,66): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(34,55): warning C4251:  'SGCore::Kinematics::BasicHandModel::baseJointPositions': class 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(34,55): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(34,55): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(34,55): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(34,55): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :  see declaration of 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(38,55): warning C4251:  'SGCore::Kinematics::BasicHandModel::baseJointRotations': class 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(38,55): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(38,55): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(38,55): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(38,55): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :  see declaration of 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(47,51): warning C4251:  'SGCore::Kinematics::BasicHandModel::fingerLengths': class 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(47,51): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(47,51): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(47,51): warning C4251:             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(47,51): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_SensorData.h(37): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(50,43): warning C4251:  'SGCore::Kinematics::BasicHandModel::startJointPositions': class 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(50,43): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(50,43): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(50,43): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(50,43): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :  see declaration of 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(53,41): warning C4251:  'SGCore::Kinematics::BasicHandModel::startJointRotations': class 'std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(53,41): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(53,41): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(53,41): warning C4251:             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\BasicHandModel.h(53,41): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :  see declaration of 'std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(65): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34,70): warning C4251:  'SGCore::Kinematics::HandInterpolator::jointInterpolations': class 'std::vector<std::vector<SGCore::Kinematics::InterpolationSet,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'SGCore::Kinematics::HandInterpolator'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34,70): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34,70): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34,70): warning C4251:             _Ty=SGCore::Kinematics::InterpolationSet
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34,70): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::InterpolationSet,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34): message :             _Ty=SGCore::Kinematics::InterpolationSet
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandInterpolator.h(34): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_HandProfile.h(42,55): warning C4251:  'SGCore::SG::SG_HandProfile::fingerThimbleOffset': class 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SGCore::SG::SG_HandProfile'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_HandProfile.h(42,55): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_HandProfile.h(42,55): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_HandProfile.h(42,55): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_HandProfile.h(42,55): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :  see declaration of 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(62): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(33,67): warning C4251:  'SGCore::SG::SG_GlovePose::jointPositions': class 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::SG::SG_GlovePose'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(33,67): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(33,67): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(33,67): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(33,67): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36,65): warning C4251:  'SGCore::SG::SG_GlovePose::jointRotations': class 'std::vector<std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::SG::SG_GlovePose'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36,65): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36,65): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36,65): warning C4251:             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36,65): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(40,64): warning C4251:  'SGCore::SG::SG_GlovePose::gloveAngles': class 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::SG::SG_GlovePose'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(40,64): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(40,64): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(40,64): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(40,64): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(30,64): warning C4251:  'SGCore::HandPose::jointPositions': class 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::HandPose'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(30,64): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(30,64): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(30,64): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(30,64): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(33,62): warning C4251:  'SGCore::HandPose::jointRotations': class 'std::vector<std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::HandPose'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(33,62): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(33,62): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(33,62): warning C4251:             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(33,62): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::Quat,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :             _Ty=SGCore::Kinematics::Quat
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_GlovePose.h(36): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(36,60): warning C4251:  'SGCore::HandPose::handAngles': class 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::HandPose'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(36,60): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(36,60): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(36,60): warning C4251:             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\HandPose.h(36,60): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :  see declaration of 'std::vector<std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :             _Ty=SGCore::Kinematics::Vect3D
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_Model.h(68): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28,27): warning C4251:  'SGCore::Haptics::SG_FingerCmd::levels': class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'SGCore::Haptics::SG_FingerCmd'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28,27): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28,27): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28,27): warning C4251:             _Ty=int
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28,27): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28): message :  see declaration of 'std::vector<int,std::allocator<_Ty>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28): message :             _Ty=int
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\SenseGloveCpp\incl\SG_FingerCmd.h(28): message :         ]
+  SGCppTemplate.vcxproj -> D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\SGCppTemplate\x64\Debug\SGCppTemplate.exe
+  0 File(s) copied
