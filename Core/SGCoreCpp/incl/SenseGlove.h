@@ -155,9 +155,15 @@ namespace SGCore
 			//--------------------------------------------------------------------------------------
 			// Kinematics
 
+			/// <summary> Calculates a GlovePose based on sensor angles and a glove model. </summary>
+			/// <remarks> Use this when you already have gloveAngles collected </remarks>
+			static SG_GlovePose CalculateGlovePose(SG_SensorData& sensorData, SG_Model& gloveModel);
+
+
 			/// <summary> Calculates a GlovePose based on gloveAngles and a glove model. </summary>
 			/// <remarks> Use this when you already have gloveAngles collected </remarks>
 			static SG_GlovePose CalculateGlovePose(std::vector< std::vector<Kinematics::Vect3D> > gloveAngles, SG_Model& gloveModel);
+
 
 			///<summary> </summary>
 			///<remarks> Use this when you already have a GlovePose </remarks>

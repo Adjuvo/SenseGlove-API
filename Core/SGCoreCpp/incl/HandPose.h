@@ -55,11 +55,24 @@ namespace SGCore
 		/// <returns></returns>
 		static HandPose DefaultIdle(bool right);
 
+		/// <summary> Returns true of these two handposes are roughly equal. </summary>
+		bool Equals(HandPose other);
+
+		//---------------------------------------------------------------------------------------------------------------------
+		// Serialization
+
+		///<summary> Serialize this HandProfile into a string representation </summary>
+		std::string Serialize();
+
+		///<summary> Deserialize a HandProfile back into useable values. </summary>
+		static HandPose Deserialize(std::string serializedString);
 
 		//---------------------------------------------------------------------------------------------------------------------
 		// Formats
 
 		//GetFormat (animator), GetFormat (MoCap), etc?
+
+
 
 	};
 }

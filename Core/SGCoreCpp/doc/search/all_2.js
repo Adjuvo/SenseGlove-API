@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['basefingerlengths_3',['baseFingerLengths',['../struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#adedb69543530bd922613dc9f3649ff19',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['basejointpositions_4',['baseJointPositions',['../struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#aa672bea54c218f3843c283bf8ab2aa19',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['basejointrotations_5',['baseJointRotations',['../struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a0bcbd7dc5e2274b0660d810373ffb215',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['basichandmodel_6',['BasicHandModel',['../struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html',1,'SGCore::Kinematics::BasicHandModel'],['../struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a5e942372e08e938a15eaf1094540e391',1,'SGCore::Kinematics::BasicHandModel::BasicHandModel()'],['../struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a13a67d0912f11b48bfd068efd85b218a',1,'SGCore::Kinematics::BasicHandModel::BasicHandModel(bool right, std::vector&lt; std::vector&lt; float &gt;&gt; lengths, std::vector&lt; Vect3D &gt; startPositions)'],['../struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#ab7682902c94fad62541fe983e8d58c86',1,'SGCore::Kinematics::BasicHandModel::BasicHandModel(bool right, std::vector&lt; std::vector&lt; float &gt;&gt; lengths, std::vector&lt; Vect3D &gt; startPositions, std::vector&lt; Quat &gt; startRotations)']]],
+  ['betadevice_7',['BetaDevice',['../class_s_g_core_1_1_beta_device.html',1,'SGCore::BetaDevice'],['../class_s_g_core_1_1_beta_device.html#a578d4e0b490b14a9a584d767c724445f',1,'SGCore::BetaDevice::BetaDevice()'],['../class_s_g_core_1_1_beta_device.html#ac9c295e97df928d72ea0f581d76f4a93',1,'SGCore::BetaDevice::BetaDevice(std::string constants, std::string id, std::string hwVer, int fwMain, int fwSub)']]],
+  ['buzzmax_8',['buzzMax',['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a384eec7e0db9637ae1aef20b4c559ee2',1,'SGCore::Haptics::SG_BuzzCmd']]],
+  ['buzzmin_9',['buzzMin',['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a50fbadd62971caab341dc25ac875afbf',1,'SGCore::Haptics::SG_BuzzCmd']]]
+];

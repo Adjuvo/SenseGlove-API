@@ -39,6 +39,8 @@ namespace SGCore
 			/// <remarks> Essentially sensor angles, though placed in their proper xyz notation </remarks>
 			std::vector< std::vector< Kinematics::Vect3D > > gloveAngles;
 
+			///<summary> Whether or not this Glove Pose was created for be a right- or left hand. </summary>
+			bool isRight;
 
 			//--------------------------------------------------------------------------------
 			// Construction
@@ -47,7 +49,7 @@ namespace SGCore
 			SG_GlovePose();
 
 			/// <summary> Creates a new instance of a SG_GlovePose </summary>
-			SG_GlovePose(std::vector< std::vector< Kinematics::Vect3D > > positions,
+			SG_GlovePose(bool right, std::vector< std::vector< Kinematics::Vect3D > > positions,
 				std::vector< std::vector< Kinematics::Quat > > rotations,
 				std::vector< std::vector< Kinematics::Vect3D > > jointAngles);
 
@@ -78,11 +80,17 @@ namespace SGCore
 			/// <summary> Calculate fingertip positions, knowing the offset between thimble and fingertips. </summary>
 			std::vector<Kinematics::Vect3D> CalculateFingerTips(std::vector<Kinematics::Vect3D> fingerOffsets);
 
+			/// <summary> Returns true if this glove pose equals another. </summary>
+			bool Equals(SG_GlovePose other);
 
-			//--------------------------------------------------------------------------------
+			//---------------------------------------------------------------------------------------------------------------------
 			// Serialization
 
-			//TODO: Serialization / Deserialization
+			///<summary> Serialize this HandProfile into a string representation </summary>
+			std::string Serialize();
+
+			///<summary> Deserialize a HandProfile back into useable values. </summary>
+			static SG_GlovePose Deserialize(std::string serializedString);
 
 
 		};
