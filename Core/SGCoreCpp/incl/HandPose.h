@@ -61,6 +61,8 @@ namespace SGCore
 		//---------------------------------------------------------------------------------------------------------------------
 		// Serialization
 
+		std::string ToString(bool shortFormat = false);
+
 		///<summary> Serialize this HandProfile into a string representation </summary>
 		std::string Serialize();
 

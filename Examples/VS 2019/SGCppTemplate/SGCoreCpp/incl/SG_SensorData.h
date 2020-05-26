@@ -27,9 +27,6 @@ namespace SGCore
 			/// <summary> The total amount of sensor values that were parsed in the string (used to check for validity / sensor placement). </summary>
 			int parsedValues;
 
-			/// <summary> If true, all data has been properly received. </summary>
-			bool dataComplete;
-
 
 		public:
 
@@ -46,7 +43,7 @@ namespace SGCore
 			SG_SensorData();
 
 			/// <summary> Create a new instance of a Sense Glove Sensor Data class. </summary>
-			SG_SensorData(std::vector<std::vector<float>>angles, Kinematics::Quat imu, int sNumber, bool complete = false);
+			SG_SensorData(std::vector<std::vector<float>>angles, Kinematics::Quat imu, int sNumber);
 
 			/// <summary> Basic Destructor. </summary>
 			~SG_SensorData() { }
@@ -68,9 +65,6 @@ namespace SGCore
 			///<summary> Check how many values have been parsed from the Sensor String. </summary>
 			int ParsedValues() { return parsedValues; }
 
-			///<summary> True if all expected values have been received. </summary>
-			bool IsComplete() { return dataComplete; }
-
 
 			//--------------------------------------------------------------------------------
 			// Class Methods
@@ -78,12 +72,20 @@ namespace SGCore
 			///<summary> Retrieve a simple representaton of this sensor data for debugging purposes. </summary>
 			std::string ToString();
 
+			///<summary> Returns true if the values of both data are equal </summary>
+			bool Equals(SG_SensorData other);
 
-			//--------------------------------------------------------------------------------
+			//---------------------------------------------------------------------------------------------------------------------
 			// Serialization
 
+			///<summary> Serialize this HandProfile into a string representation </summary>
+			std::string Serialize();
+
+			///<summary> Deserialize a HandProfile back into useable values. </summary>
+			static SG_SensorData Deserialize(std::string serializedString);
+
 			///<summary> Deserialize Sense Glove sensor data from a raw char[] recieved through IPC. </summary>
-			static SG_SensorData Parse(std::string rawData, float fwVer, Kinematics::Quat imuCorr = Kinematics::Quat::identity);
+			static SG_SensorData Parse(std::string rawData, int fwMainVer, int fwSubVer, Kinematics::Quat imuCorr = Kinematics::Quat::identity);
 
 		};
 	}

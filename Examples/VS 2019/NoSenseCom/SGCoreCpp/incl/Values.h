@@ -8,6 +8,8 @@
 #include "SGCore.h"
 
 #include "Vect3D.h"
+#include "Quat.h"
+#include <vector>
 
 namespace SGCore
 {
@@ -64,6 +66,22 @@ namespace SGCore
 			/// <summary> Map a value from one range [from1...from2] to another range [to1 .. to2],
 			/// while ensuring it stays within the [min...max] range. </summary>
 			static float Map(float value, float from1, float from2, float to1, float to2, float min, float max);
+
+			/// <summary> Check if two floating points are roughly equal, taking into account the minor differences. </summary>
+			static bool FloatEquals(float value1, float value2);
+
+
+			///<summary> Check if two arrays contain equal values. </summary>
+			static bool Equal(std::vector<Vect3D>& array1, std::vector<Vect3D>& array2);
+
+			///<summary> Check if two arrays contain equal values. </summary>
+			static bool Equal(std::vector<std::vector<Vect3D>>& array1, std::vector<std::vector<Vect3D>>& array2);
+
+			///<summary> Check if two arrays contain equal values. </summary>
+			static bool Equal(std::vector<Quat>& array1, std::vector<Quat>& array2);
+
+			///<summary> Check if two arrays contain equal values. </summary>
+			static bool Equal(std::vector<std::vector<Quat>>& array1, std::vector<std::vector<Quat>>& array2);
 
 		};
 	}

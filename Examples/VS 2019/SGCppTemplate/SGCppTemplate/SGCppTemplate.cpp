@@ -55,6 +55,38 @@ int main()
 
 				float dThumbIndex = tipPositions[0].DistTo(tipPositions[1]); //calculates the distance between thumb (0) and index finger (1), in mm.
 				std::cout << "The distance between thumb and index finger is " << std::to_string(dThumbIndex) << "mm." << std::endl;
+
+				//HandPose Example
+
+				SGCore::HandPose handPose;
+				if (testGlove.GetHandPose(handProfile, SGCore::SG::SG_Solver::Interpolation, handPose))
+				{
+					std::cout << std::endl;
+					std::cout << "Calculated Hand Pose: " << std::endl << handPose.ToString() << std::endl;
+				}
+				else
+				{
+					std::cout << "Could not retrieve a hand pose" << std::endl;
+				}
+			}
+
+			//Serialization example
+			std::cout << std::endl;
+			std::cout << "-------------------------------------------" << std::endl;
+			std::cout << std::endl;
+			std::cout << "Serialization Example: " << std::endl;
+
+			//we take a default hand pose.
+			bool isRight = true;
+			SGCore::HandPose testPose = SGCore::HandPose::DefaultIdle(isRight);
+			std::string serialized = testPose.Serialize();
+			std::cout << "Serializing & Deserializing default HandPose for the " << (isRight ? "right" : "left") << " hand:" << std::endl << testPose.ToString() << std::endl;
+
+			//std::cout << std::endl << serialized << std::endl; //prints a big string
+			SGCore::HandPose deserialPose = SGCore::HandPose::Deserialize(serialized);
+			if (!testPose.Equals(deserialPose))
+			{
+				std::cout << "The Deserialized pose does not match. There might be an error somewhere!" << std::endl;
 			}
 		}
 		else

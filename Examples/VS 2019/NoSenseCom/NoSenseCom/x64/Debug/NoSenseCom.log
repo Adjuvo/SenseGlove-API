@@ -1,16 +1,16 @@
 ﻿  NoSenseCom.cpp
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SGDevice.h(28,25): warning C4251:  'SGCore::SGDevice::ipcAddress': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'SGCore::SGDevice'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xstring(4343): message :  see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37,50): warning C4251:  'SGCore::SG::SG_SensorData::sensorAngles': class 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::SG::SG_SensorData'
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37,50): warning C4251:         with
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37,50): warning C4251:         [
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37,50): warning C4251:             _Ty=float
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37,50): warning C4251:         ]
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         with
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         [
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :             _Ty=float
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34,50): warning C4251:  'SGCore::SG::SG_SensorData::sensorAngles': class 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of struct 'SGCore::SG::SG_SensorData'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34,50): warning C4251:         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34,50): warning C4251:         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34,50): warning C4251:             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34,50): warning C4251:         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         ]
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_Model.h(45,3): warning C4275:  non dll-interface class 'SGCore::DeviceModel' used as base for dll-interface class 'SGCore::SG::SG_Model'
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\DeviceModel.h(15): message :  see declaration of 'SGCore::DeviceModel'
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_Model.h(44): message :  see declaration of 'SGCore::SG::SG_Model'
@@ -59,11 +59,11 @@ D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicH
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(30,66): warning C4251:         [
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(30,66): warning C4251:             _Ty=float
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(30,66): warning C4251:         ]
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         with
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         [
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :             _Ty=float
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         ]
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(34,55): warning C4251:  'SGCore::Kinematics::BasicHandModel::baseJointPositions': class 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(34,55): warning C4251:         with
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(34,55): warning C4251:         [
@@ -89,11 +89,11 @@ D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicH
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(47,51): warning C4251:         [
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(47,51): warning C4251:             _Ty=float
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(47,51): warning C4251:         ]
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         with
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         [
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :             _Ty=float
-D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(37): message :         ]
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :  see declaration of 'std::vector<std::vector<float,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         with
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         [
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :             _Ty=float
+D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_SensorData.h(34): message :         ]
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(50,43): warning C4251:  'SGCore::Kinematics::BasicHandModel::startJointPositions': class 'std::vector<SGCore::Kinematics::Vect3D,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SGCore::Kinematics::BasicHandModel'
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(50,43): warning C4251:         with
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\BasicHandModel.h(50,43): warning C4251:         [
@@ -206,4 +206,5 @@ D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_Fin
 D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\SGCoreCpp\incl\SG_FingerCmd.h(28): message :         ]
   NoSenseCom.vcxproj -> D:\Gitlab\SenseGloveAPI\Public\Examples\VS 2019\NoSenseCom\x64\Debug\NoSenseCom.exe
   0 File(s) copied
-  0 File(s) copied
+  ..\SGCoreCpp\lib\Win\x64\Debug\SGCore.dll
+  1 File(s) copied

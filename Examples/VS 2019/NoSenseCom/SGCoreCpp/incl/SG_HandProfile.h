@@ -66,6 +66,16 @@ namespace SGCore
 			/// <summary> Check whether this profile has been created for a right hand (true) or left hand (false). </summary>
 			bool IsRight() { return isRight; }
 
+			//---------------------------------------------------------------------------------------------------------------------
+			// Serialization
+
+			///<summary> Serialize this HandProfile into a string representation </summary>
+			std::string Serialize() { return ""; }
+
+			///<summary> Deserialize a HandProfile back into useable values. </summary>
+			static bool Deserialize(std::string serializedString, SG_HandProfile& output) { return false; }
+			
+
 		};
 	}
 }

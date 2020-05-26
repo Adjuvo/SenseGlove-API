@@ -77,6 +77,7 @@ namespace SGCore
 			static void ParseStartValues(std::string rawValues, std::vector<Kinematics::Vect3D>& startPos,
 				std::vector<Kinematics::Quat>& startRot);
 
+
 		public:
 
 			//--------------------------------------------------------------------------------------
@@ -139,12 +140,20 @@ namespace SGCore
 			/// <summary> Create a string representation for fast logging. </summary>
 			std::string ToString() { return ToString(true); };
 
+			/// <summary> Returns true if this SG_Model has the same values as another </summary>
+			bool Equals(SG_Model other, bool geometryOnly = false);
 
-			//--------------------------------------------------------------------------------------
+			//---------------------------------------------------------------------------------------------------------------------
 			// Serialization
 
+			///<summary> Serialize this HandProfile into a string representation </summary>
+			std::string Serialize();
+
+			///<summary> Deserialize a HandProfile back into useable values. </summary>
+			static SG_Model Deserialize(std::string serializedString);
+
 			///<summary> Create an instance of the SGModel from its string representation. </summary>
-			static bool Parse(std::string cString, SG_Model& model);
+			static bool Parse(std::string cString, SG_Model& model, bool updateOldModels = true);
 
 		};
 	}
