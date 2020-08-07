@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -64,23 +64,30 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>CalculateAngle()
 : <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a756b9b8df558794008b56cab6493cc76">SGCore::Kinematics::HandInterpolator</a>
 </li>
 <li>CalculateFingerTips()
-: <a class="el" href="struct_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a6b5fb8b83361d0719b2a10a185d54c6d">SGCore::SG::SG_GlovePose</a>
+: <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a6b5fb8b83361d0719b2a10a185d54c6d">SGCore::SG::SG_GlovePose</a>
 </li>
 <li>CalculateGlovePose()
-: <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#adeab84d7db5e7f5f8754db6733d676d1">SGCore::SG::SenseGlove</a>
+: <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a926a628f0a1a9f651420f68956575547">SGCore::SG::SenseGlove</a>
 </li>
-<li>CheckDevices()
-: <a class="el" href="class_s_g_core_1_1_device_list.html#a67c51807ddc8203092de6762da54a567">SGCore::DeviceList</a>
+<li>CalculateHandPose()
+: <a class="el" href="class_s_g_core_1_1_fino_1_1_fino.html#a12be5d55ec66f2e5047e66227903f4c7">SGCore::Fino::Fino</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#ad6393a32f9f3d98154d7d10390f74d90">SGCore::SG::SenseGlove</a>
+</li>
+<li>CalculateVariables()
+: <a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a11ad7e924d33e6d7782e9cd6410eae2a">SGCore::Kinematics::BasicHandModel</a>
 </li>
 <li>Clamp()
 : <a class="el" href="class_s_g_core_1_1_kinematics_1_1_values.html#a4109729fb34ed60a29b1eacf60bdcebb">SGCore::Kinematics::Values</a>
+</li>
+<li>closeChar
+: <a class="el" href="class_s_g_core_1_1_util_1_1_serializer.html#ab5f2318eb555e306b34a6ba90e87ee62">SGCore::Util::Serializer</a>
 </li>
 <li>cmcStartRot
 : <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a198291cf5ff89457b66bee3ba10e365c">SGCore::Kinematics::HandInterpolator</a>
@@ -94,8 +101,13 @@ $(function() {
 <li>colDelimiter
 : <a class="el" href="class_s_g_core_1_1_util_1_1_communications.html#ad4d577cb407014b5472fa879dfc0d80d">SGCore::Util::Communications</a>
 </li>
+<li>ConnectionType
+: <a class="el" href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637">SGCore::SGDevice</a>
+</li>
 <li>Copy()
 : <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a2e6df4479e692cdc4ff3cd21d5c12395">SGCore::Haptics::SG_BuzzCmd</a>
+, <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#a0984c88e09dd2d590fc33e5aab86b842">SGCore::Haptics::SG_FFBCmd</a>
+, <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html#aba2407c15a47b8faa9697a5ab4597f8e">SGCore::Haptics::ThumperCmd</a>
 </li>
 <li>cString
 : <a class="el" href="class_s_g_core_1_1_beta_device.html#aed6e6d18a5fe10e2d7bb4916f06e3d07">SGCore::BetaDevice</a>

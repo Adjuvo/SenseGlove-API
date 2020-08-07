@@ -6,17 +6,21 @@
 #pragma once
 
 #include "SGCore.h"
+
+#include "SG_GloveInfo.h"
+
 #include <string>
 #include <vector>
 #include "Quat.h"
 #include "Fingers.h"
+
 
 namespace SGCore
 {
 	namespace SG
 	{
 		/// <summary> Sense Glove Sensor Data, parsed from a sensor string. </summary>
-		struct SGCORE_API SG_SensorData
+		class SGCORE_API SG_SensorData
 		{
 
 		protected:
@@ -26,6 +30,9 @@ namespace SGCore
 
 			/// <summary> The total amount of sensor values that were parsed in the string (used to check for validity / sensor placement). </summary>
 			int parsedValues;
+
+			/// <summary> Whether or not the IMU was properly parsed. </summary>
+			bool imuParsed;
 
 
 		public:
@@ -43,7 +50,7 @@ namespace SGCore
 			SG_SensorData();
 
 			/// <summary> Create a new instance of a Sense Glove Sensor Data class. </summary>
-			SG_SensorData(std::vector<std::vector<float>>angles, Kinematics::Quat imu, int sNumber);
+			SG_SensorData(std::vector<std::vector<float>>angles, Kinematics::Quat imu, int sNumber, bool imuComplete);
 
 			/// <summary> Basic Destructor. </summary>
 			~SG_SensorData() { }
@@ -65,6 +72,8 @@ namespace SGCore
 			///<summary> Check how many values have been parsed from the Sensor String. </summary>
 			int ParsedValues() { return parsedValues; }
 
+			///<summary> Check if the IMU was properly parsed. </summary>
+			bool IMUParsed() { return imuParsed; }
 
 			//--------------------------------------------------------------------------------
 			// Class Methods
@@ -85,7 +94,7 @@ namespace SGCore
 			static SG_SensorData Deserialize(std::string serializedString);
 
 			///<summary> Deserialize Sense Glove sensor data from a raw char[] recieved through IPC. </summary>
-			static SG_SensorData Parse(std::string rawData, int fwMainVer, int fwSubVer, Kinematics::Quat imuCorr = Kinematics::Quat::identity);
+			static SG_SensorData Parse(std::string rawData, SG_GloveInfo& gloveInfo);
 
 		};
 	}

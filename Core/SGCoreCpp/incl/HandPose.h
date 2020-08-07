@@ -11,12 +11,19 @@
 #include <string>
 #include "Vect3D.h"
 #include "Quat.h"
+#include "Fingers.h"
 
 namespace SGCore
 {
 	/// <summary> Contains all variables required to draw or analyze a virtual hand. </summary>
-	struct SGCORE_API HandPose
+	class SGCORE_API HandPose
 	{
+	protected:
+
+		///<summary> Returns the total flexion of a specific finger as a value between 0 (fully extended) and 1 (fully flexed). </summary>
+		///<remarks> Separate function because we use it multiple times, protected because we don't want indexOutOfRange exceptions. </remarks>
+		float GetNormalizedFlexion(int finger, bool clamp01 = true);
+
 
 	public:
 
@@ -73,6 +80,15 @@ namespace SGCore
 		// Formats
 
 		//GetFormat (animator), GetFormat (MoCap), etc?
+
+		///<summary> Returns the total flexion of a specific finger as a value between 0 (fully extended) and 1 (fully flexed). </summary>
+		///<remarks> Useful for animation or for detecting gestures </remarks>
+		float GetNormalizedFlexion(Finger finger, bool clamp01 = true);
+
+		///<summary> Returns the total flexion the fingers as a value between 0 (fully extended) and 1 (fully flexed). </summary>
+		///<remarks> Useful for animation or for detecting gestures </remarks>
+		std::vector<float> GetNormalizedFlexion(bool clamp01 = true);
+
 
 
 

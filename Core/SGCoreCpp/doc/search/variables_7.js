@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['identity_403',['identity',['../struct_s_g_core_1_1_kinematics_1_1_quat.html#a1e54a95502b8db5087f544d151dd5cfe',1,'SGCore::Kinematics::Quat']]],
-  ['imuvalues_404',['imuValues',['../struct_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#aa8d26a6e58b8d9e086395fc79511d12b',1,'SGCore::SG::SG_SensorData']]],
-  ['incommands_405',['inCommands',['../class_s_g_core_1_1_shared_mem.html#abc81a50ee0778fad1440b463bb697547',1,'SGCore::SharedMem']]],
-  ['interpolationset_406',['interpolationSet',['../struct_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#adc401ae540abbd05d3f654a5afea7edc',1,'SGCore::SG::SG_HandProfile']]],
-  ['isright_407',['isRight',['../struct_s_g_core_1_1_hand_pose.html#ae841453a076dc48d4495618d46d9cca1',1,'SGCore::HandPose::isRight()'],['../struct_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a3d85e7089fdd8a455b84a372de9836a2',1,'SGCore::SG::SG_HandProfile::isRight()'],['../class_s_g_core_1_1_s_g_1_1_s_g___model.html#a7e5741e09623afed678b8409e85bb237',1,'SGCore::SG::SG_Model::isRight()']]]
+  ['handangles_784',['handAngles',['../class_s_g_core_1_1_hand_pose.html#a209248483dfc5e5d4c8e0e379c8eaaa9',1,'SGCore::HandPose']]],
+  ['haptics_785',['haptics',['../class_s_g_core_1_1_shared_mem.html#a9acbdf4ee9e15149df197cebe119383b',1,'SGCore::SharedMem']]],
+  ['hapticsbyte_786',['hapticsByte',['../class_s_g_core_1_1_fino_1_1_fino.html#a623420919f843e3c5f2a6c2f01e3c9d1',1,'SGCore::Fino::Fino::hapticsByte()'],['../class_s_g_core_1_1_s_g_1_1_sense_glove.html#a125ae2c65e6995c4b4fb3bc050a6bf82',1,'SGCore::SG::SenseGlove::hapticsByte()']]],
+  ['hardwarever_787',['hardwareVer',['../class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff',1,'SGCore::DeviceModel::hardwareVer()'],['../class_s_g_core_1_1_fino_1_1_fino___glove_info.html#a483d536133eba3550882c4bf48a3ce41',1,'SGCore::Fino::Fino_GloveInfo::hardwareVer()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#af9eaab54d2d2f6e6806b2c25422d95ab',1,'SGCore::SG::SG_GloveInfo::hardwareVer()']]],
+  ['hwversion_788',['hwVersion',['../class_s_g_core_1_1_beta_device.html#a9fe116ec2fa0110cc669b6882f737fc3',1,'SGCore::BetaDevice']]]
 ];

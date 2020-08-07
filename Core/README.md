@@ -1,6 +1,9 @@
 # Core API
 The SenseGlove Core API contains all kinematics and parsing algorithms needed to interface with SenseCom and to work with SenseGlove hardware. All versions share the same architecture, though their syntax will suit the programming language.
 
+## SGConnect
+A C++ library to setup and connect to SenseGlove devices in the background. Use this library if you don't want to have the SenseCom UI run in the background. 
+
 ## SGCoreCpp
 Contains the C++ version of the Core API. Inside the incl folder are the header files, while the lib folder contains the .lib and .dll files for different operating systems, platforms and configurations (Debug, Release).
 Further documentation is available in the folder.

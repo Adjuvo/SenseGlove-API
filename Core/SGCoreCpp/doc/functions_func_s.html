@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -70,52 +70,74 @@ $(function() {
 <li>Scale()
 : <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html#a476a46973503204c1255e8d8cb529420">SGCore::Kinematics::Vect3D</a>
 </li>
+<li>ScanningActive()
+: <a class="el" href="class_s_g_core_1_1_shared_mem.html#ad5a2184b5e6d4e3ce7c31fce05434013">SGCore::SharedMem</a>
+</li>
 <li>SendHaptics()
 : <a class="el" href="class_s_g_core_1_1_beta_device.html#ab5d5586c623fd0683b474ac8f0b148ec">SGCore::BetaDevice</a>
-, <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#aa01842fecd823982854aa38a3a899672">SGCore::SG::SenseGlove</a>
+, <a class="el" href="class_s_g_core_1_1_device_list.html#a4014fe84dc3d09092c26296d78507cf5">SGCore::DeviceList</a>
+, <a class="el" href="class_s_g_core_1_1_fino_1_1_fino.html#ac306f3d344a5b473cb6addb372a5c239">SGCore::Fino::Fino</a>
+, <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a9f46cb57eb3c158b2804647cabe95126">SGCore::HapticGlove</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#ae33144235a133f5bd331f074469e0d08">SGCore::SG::SenseGlove</a>
 </li>
 <li>SenseCommRunning()
 : <a class="el" href="class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb">SGCore::DeviceList</a>
 </li>
 <li>SenseGlove()
-: <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a30c54c8805b1473f83e8eff822bc6496">SGCore::SG::SenseGlove</a>
+: <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a08b0f1ecab37d7ceed2ff58e2cec7cef">SGCore::SG::SenseGlove</a>
 </li>
 <li>Serialize()
-: <a class="el" href="struct_s_g_core_1_1_hand_pose.html#a6f4fdc0551a18960d21c910c26ae9938">SGCore::HandPose</a>
-, <a class="el" href="struct_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#ac0709f94d841a4c3eec7bd2a39bfd20d">SGCore::SG::SG_GlovePose</a>
-, <a class="el" href="struct_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a6619a555a818acc74a9f40c20eea3c37">SGCore::SG::SG_HandProfile</a>
-, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ac20fcc002fe9fdfac57030d4e88dbc43">SGCore::SG::SG_Model</a>
-, <a class="el" href="struct_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#abaa0a15cbd79869d21a78862ac9372c6">SGCore::SG::SG_SensorData</a>
+: <a class="el" href="class_s_g_core_1_1_fino_1_1_fino___glove_info.html#af10fe557440a23d364453fbd132a511f">SGCore::Fino::Fino_GloveInfo</a>
+, <a class="el" href="class_s_g_core_1_1_fino_1_1_fino___profile.html#ad54f509ed89d772e64dd03d647985620">SGCore::Fino::Fino_Profile</a>
+, <a class="el" href="class_s_g_core_1_1_fino_1_1_fino___sensor_data.html#a9c18cb9b42fcb1beb2cbb96c50931426">SGCore::Fino::Fino_SensorData</a>
+, <a class="el" href="class_s_g_core_1_1_hand_pose.html#a6f4fdc0551a18960d21c910c26ae9938">SGCore::HandPose</a>
+, <a class="el" href="class_s_g_core_1_1_hand_profile.html#ad45cccf903283a0205dee1831f4e6bc9">SGCore::HandProfile</a>
+, <a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a29f2afc076b2f5e81b8b890a2e51a4f4">SGCore::Kinematics::BasicHandModel</a>
+, <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a34e48fa82b633eb161110d8cbd6953ec">SGCore::Kinematics::HandInterpolator</a>
+, <a class="el" href="class_s_g_core_1_1_kinematics_1_1_interpolation_set.html#ac266d7558bc8bbad7fcc3b7e01843ca3">SGCore::Kinematics::InterpolationSet</a>
+, <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html#a687c76e52bee821f3eb3bfa67a67ac93">SGCore::Kinematics::Quat</a>
+, <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html#ad884eae25fbcc76bd5b0d871010d8386">SGCore::Kinematics::Vect3D</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a06e76d5559f4d4859a4b573f67be0b44">SGCore::SG::SG_GloveInfo</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#ac0709f94d841a4c3eec7bd2a39bfd20d">SGCore::SG::SG_GlovePose</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a6619a555a818acc74a9f40c20eea3c37">SGCore::SG::SG_HandProfile</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#abaa0a15cbd79869d21a78862ac9372c6">SGCore::SG::SG_SensorData</a>
+, <a class="el" href="class_s_g_core_1_1_util_1_1_serializer.html#a3adb3e7facfb6402866549af87e0565c">SGCore::Util::Serializer</a>
 </li>
 <li>SetDeviceIndex()
 : <a class="el" href="class_s_g_core_1_1_s_g_device.html#ab0239d98990eafe37fcbd5ae984aed9b">SGCore::SGDevice</a>
 </li>
 <li>SetFingerLengths()
-: <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a19cb18de513086d07395a2eb1654cc51">SGCore::Kinematics::BasicHandModel</a>
+: <a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a19cb18de513086d07395a2eb1654cc51">SGCore::Kinematics::BasicHandModel</a>
 </li>
 <li>SetJointPosition()
-: <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a326f9253d2fc7e805c55d8f6dde1acb0">SGCore::Kinematics::BasicHandModel</a>
+: <a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a326f9253d2fc7e805c55d8f6dde1acb0">SGCore::Kinematics::BasicHandModel</a>
 </li>
 <li>SetJointRotation()
-: <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#af75e776d9a3f4cbb6c82f340d0e18619">SGCore::Kinematics::BasicHandModel</a>
+: <a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#af75e776d9a3f4cbb6c82f340d0e18619">SGCore::Kinematics::BasicHandModel</a>
+</li>
+<li>SetLevel()
+: <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#af7fa43332b4c1b973b8bb39547df7ee1">SGCore::Haptics::SG_FingerCmd</a>
 </li>
 <li>SG_BuzzCmd()
-: <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a23b4e4db5ba936f0ddaacd4d5dfef7a5">SGCore::Haptics::SG_BuzzCmd</a>
+: <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a0011fedcb1fbb3a78388a820153dd384">SGCore::Haptics::SG_BuzzCmd</a>
 </li>
 <li>SG_FFBCmd()
 : <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#a7495352304f4b2567ae7bca3ff614f41">SGCore::Haptics::SG_FFBCmd</a>
 </li>
+<li>SG_FingerCmd()
+: <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a270b8b93118e130a667ba360d14dcdf8">SGCore::Haptics::SG_FingerCmd</a>
+</li>
+<li>SG_GloveInfo()
+: <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a302c888dd8aa4dec57a794dd4ffe6615">SGCore::SG::SG_GloveInfo</a>
+</li>
 <li>SG_GlovePose()
-: <a class="el" href="struct_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a4ee4365c80daf8c44bee4656c6dc69a9">SGCore::SG::SG_GlovePose</a>
+: <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a4ee4365c80daf8c44bee4656c6dc69a9">SGCore::SG::SG_GlovePose</a>
 </li>
 <li>SG_HandProfile()
-: <a class="el" href="struct_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#acefe1032c714b3e2d9de5dcc509bcd09">SGCore::SG::SG_HandProfile</a>
-</li>
-<li>SG_Model()
-: <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ab12b0ac241b28238754a3031c722e42e">SGCore::SG::SG_Model</a>
+: <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aec9254125b4705eec3ddfc79d84c3ed4">SGCore::SG::SG_HandProfile</a>
 </li>
 <li>SG_SensorData()
-: <a class="el" href="struct_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#a7d692bdb3932afd6f188e8c011fb5d8b">SGCore::SG::SG_SensorData</a>
+: <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#a2dbbd92e9f464a639923d831dfb24a85">SGCore::SG::SG_SensorData</a>
 </li>
 <li>SGDevice()
 : <a class="el" href="class_s_g_core_1_1_s_g_device.html#a2f4e45fba7060f33a87301ea847a30f4">SGCore::SGDevice</a>
@@ -123,8 +145,11 @@ $(function() {
 <li>Split()
 : <a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#afc777bf85ade1be74950723d0c48e7a7">SGCore::Util::StrStuff</a>
 </li>
-<li>StopFeedback()
-: <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a513de286ee857471a5d64bfa78971ac6">SGCore::SG::SenseGlove</a>
+<li>SplitBlocks()
+: <a class="el" href="class_s_g_core_1_1_util_1_1_serializer.html#a68c159031a2e65f8a5d117fe1288f8cd">SGCore::Util::Serializer</a>
+</li>
+<li>StopHaptics()
+: <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a75d9f8fe16535a0397054a7813691ecf">SGCore::HapticGlove</a>
 </li>
 </ul>
 </div><!-- contents -->

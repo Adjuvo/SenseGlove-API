@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>SGCore</b></li><li class="navelem"><a class="el" href="class_s_g_core_1_1_beta_device.html">BetaDevice</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_s_g_core.html">SGCore</a></li><li class="navelem"><a class="el" href="class_s_g_core_1_1_beta_device.html">BetaDevice</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,6 +77,11 @@ $(function() {
 <div class="title">SGCore::BetaDevice Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A Device that adheres to the SenseGlove communications protocol, but which has no implementation in this API.  
+ <a href="class_s_g_core_1_1_beta_device.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_beta_device_8h_source.html">BetaDevice.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SGCore::BetaDevice:</div>
 <div class="dyncontent">
@@ -111,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a469e68ff595ba156748d20e019030c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retireve this device's firmware version.  <a href="class_s_g_core_1_1_beta_device.html#a469e68ff595ba156748d20e019030c92">More...</a><br /></td></tr>
 <tr class="separator:a469e68ff595ba156748d20e019030c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8618d8a2ace2aa9afabb4f66cde6f2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_beta_device.html#af8618d8a2ace2aa9afabb4f66cde6f2b">GetSubFirmwareVersion</a> () override</td></tr>
-<tr class="memdesc:af8618d8a2ace2aa9afabb4f66cde6f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve this device's sub firmware version. v4.12 returns 12.  <a href="class_s_g_core_1_1_beta_device.html#af8618d8a2ace2aa9afabb4f66cde6f2b">More...</a><br /></td></tr>
+<tr class="memdesc:af8618d8a2ace2aa9afabb4f66cde6f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retireve this device's sub-firmware version.  <a href="class_s_g_core_1_1_beta_device.html#af8618d8a2ace2aa9afabb4f66cde6f2b">More...</a><br /></td></tr>
 <tr class="separator:af8618d8a2ace2aa9afabb4f66cde6f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8c9a277a4c637a6345117d5a42ca086"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_beta_device.html#ac8c9a277a4c637a6345117d5a42ca086">GetConstantsString</a> ()</td></tr>
 <tr class="memdesc:ac8c9a277a4c637a6345117d5a42ca086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the Constants string for additional processing.  <a href="class_s_g_core_1_1_beta_device.html#ac8c9a277a4c637a6345117d5a42ca086">More...</a><br /></td></tr>
@@ -135,8 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a730624d061125f7ac12cd9f3a75b2ebe inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a730624d061125f7ac12cd9f3a75b2ebe">~SGDevice</a> ()</td></tr>
 <tr class="memdesc:a730624d061125f7ac12cd9f3a75b2ebe inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Destructor.  <a href="class_s_g_core_1_1_s_g_device.html#a730624d061125f7ac12cd9f3a75b2ebe">More...</a><br /></td></tr>
 <tr class="separator:a730624d061125f7ac12cd9f3a75b2ebe inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b8e7b325903fe9fdfb27a4e67bd7c03 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top"><a id="a8b8e7b325903fe9fdfb27a4e67bd7c03"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirmwareString</b> ()</td></tr>
+<tr class="memitem:a8b8e7b325903fe9fdfb27a4e67bd7c03 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a8b8e7b325903fe9fdfb27a4e67bd7c03">GetFirmwareString</a> ()</td></tr>
 <tr class="separator:a8b8e7b325903fe9fdfb27a4e67bd7c03 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a1be76ec2f001612a28dddfd8840383 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a2a1be76ec2f001612a28dddfd8840383">GetAddress</a> ()</td></tr>
 <tr class="memdesc:a2a1be76ec2f001612a28dddfd8840383 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve this Device's Serial/Bluetooth address.  <a href="class_s_g_core_1_1_s_g_device.html#a2a1be76ec2f001612a28dddfd8840383">More...</a><br /></td></tr>
@@ -144,7 +148,7 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetFir
 <tr class="memitem:a616e63bca65c72411b9d5ae51bf62ef0 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a616e63bca65c72411b9d5ae51bf62ef0">IsConnected</a> ()</td></tr>
 <tr class="memdesc:a616e63bca65c72411b9d5ae51bf62ef0 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this device is currently connected to the system.  <a href="class_s_g_core_1_1_s_g_device.html#a616e63bca65c72411b9d5ae51bf62ef0">More...</a><br /></td></tr>
 <tr class="separator:a616e63bca65c72411b9d5ae51bf62ef0 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe5f0d31258df6f0fd3044439673470e inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">ConnectionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#abe5f0d31258df6f0fd3044439673470e">GetConnectionType</a> ()</td></tr>
+<tr class="memitem:abe5f0d31258df6f0fd3044439673470e inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637">ConnectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#abe5f0d31258df6f0fd3044439673470e">GetConnectionType</a> ()</td></tr>
 <tr class="memdesc:abe5f0d31258df6f0fd3044439673470e inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the connection type of this Sense Glove.  <a href="class_s_g_core_1_1_s_g_device.html#abe5f0d31258df6f0fd3044439673470e">More...</a><br /></td></tr>
 <tr class="separator:abe5f0d31258df6f0fd3044439673470e inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a745aadbc9f21d136d7ec72b915813 inherit pub_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a83a745aadbc9f21d136d7ec72b915813">PacketsPerSecond</a> ()</td></tr>
@@ -159,9 +163,9 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetFir
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2091151d27f2183dc0592c7509a63619"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_beta_device.html#a2091151d27f2183dc0592c7509a63619">Deserialize</a> (std::string cstring)</td></tr>
-<tr class="memdesc:a2091151d27f2183dc0592c7509a63619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize a beta device from its basic cstring. Returns nullptr is unsuccesfull.  <a href="class_s_g_core_1_1_beta_device.html#a2091151d27f2183dc0592c7509a63619">More...</a><br /></td></tr>
-<tr class="separator:a2091151d27f2183dc0592c7509a63619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34063db11110d2abd27e39d13701a1c8"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_beta_device.html#a34063db11110d2abd27e39d13701a1c8">Parse</a> (std::string cstring)</td></tr>
+<tr class="memdesc:a34063db11110d2abd27e39d13701a1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize a beta device from its basic cstring. Returns nullptr is unsuccesfull.  <a href="class_s_g_core_1_1_beta_device.html#a34063db11110d2abd27e39d13701a1c8">More...</a><br /></td></tr>
+<tr class="separator:a34063db11110d2abd27e39d13701a1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_s_g_core_1_1_s_g_device"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_s_g_core_1_1_s_g_device')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGCore::SGDevice</a></td></tr>
 <tr class="memitem:a4e29caa208e695895ad26e920456d2b1 inherit pub_static_methods_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a4e29caa208e695895ad26e920456d2b1">ParseFirmware</a> (std::string rawFW, int &amp;mainVer, int &amp;subVer)</td></tr>
 <tr class="memdesc:a4e29caa208e695895ad26e920456d2b1 inherit pub_static_methods_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a main and sub firmware version from its raw (v4.12) notation  <a href="class_s_g_core_1_1_s_g_device.html#a4e29caa208e695895ad26e920456d2b1">More...</a><br /></td></tr>
@@ -181,27 +185,29 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a6a58d7d9fbb53638ccc8436f457c896d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_beta_device.html#a6a58d7d9fbb53638ccc8436f457c896d">fwVersionMain</a></td></tr>
 <tr class="memdesc:a6a58d7d9fbb53638ccc8436f457c896d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The firmware version of the Beta Device.  <a href="class_s_g_core_1_1_beta_device.html#a6a58d7d9fbb53638ccc8436f457c896d">More...</a><br /></td></tr>
 <tr class="separator:a6a58d7d9fbb53638ccc8436f457c896d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15228bb35d461c7a2ac85bfe4422cc6a"><td class="memItemLeft" align="right" valign="top"><a id="a15228bb35d461c7a2ac85bfe4422cc6a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>fwVersionSub</b></td></tr>
+<tr class="memitem:a15228bb35d461c7a2ac85bfe4422cc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_beta_device.html#a15228bb35d461c7a2ac85bfe4422cc6a">fwVersionSub</a></td></tr>
 <tr class="separator:a15228bb35d461c7a2ac85bfe4422cc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_s_g_core_1_1_s_g_device"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_s_g_core_1_1_s_g_device')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGCore::SGDevice</a></td></tr>
 <tr class="memitem:a0d10613b00492e244a680c99b64ce5b4 inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a0d10613b00492e244a680c99b64ce5b4">deviceIndex</a> = -1</td></tr>
 <tr class="memdesc:a0d10613b00492e244a680c99b64ce5b4 inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of this device inside the SenseComm program. Used to access shared memory.  <a href="class_s_g_core_1_1_s_g_device.html#a0d10613b00492e244a680c99b64ce5b4">More...</a><br /></td></tr>
 <tr class="separator:a0d10613b00492e244a680c99b64ce5b4 inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c81f43db343131992567c421d10ad7 inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top"><a id="a06c81f43db343131992567c421d10ad7"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ipcAddress</b></td></tr>
+<tr class="memitem:a06c81f43db343131992567c421d10ad7 inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a06c81f43db343131992567c421d10ad7">ipcAddress</a></td></tr>
+<tr class="memdesc:a06c81f43db343131992567c421d10ad7 inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address of this Device for inter-process communications.  <a href="class_s_g_core_1_1_s_g_device.html#a06c81f43db343131992567c421d10ad7">More...</a><br /></td></tr>
 <tr class="separator:a06c81f43db343131992567c421d10ad7 inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_s_g_core_1_1_s_g_device"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_s_g_core_1_1_s_g_device')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGCore::SGDevice</a></td></tr>
-<tr class="memitem:a34318d3acff4a03aa3bd79f5a3752637 inherit pub_types_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top"><a id="a34318d3acff4a03aa3bd79f5a3752637"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ConnectionType</b> { <b>Unknown</b> = -1, 
-<b>Serial</b>, 
-<b>BluetoothSerial</b>
+<tr class="memitem:a34318d3acff4a03aa3bd79f5a3752637 inherit pub_types_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637">ConnectionType</a> { <a class="el" href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637a0ad647c441041d8f626bf6f1c15eb9b0">Unknown</a> = -1, 
+<a class="el" href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637ae241cbeec8a4c65f2e5e66029a2490a1">Serial</a>, 
+<a class="el" href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637a10ab24a29b3f33fafbb6f9c0b11c7d0c">BluetoothSerial</a>
  }</td></tr>
+<tr class="memdesc:a34318d3acff4a03aa3bd79f5a3752637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection type of this device, as detected by the SGConnect library.  <a href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637">More...</a><br /></td></tr>
 <tr class="separator:a34318d3acff4a03aa3bd79f5a3752637 inherit pub_types_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Device that adheres to the SenseGlove communications protocol, but which has no implementation in this API. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a578d4e0b490b14a9a584d767c724445f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a578d4e0b490b14a9a584d767c724445f">&#9670;&nbsp;</a></span>BetaDevice() <span class="overload">[1/2]</span></h2>
 
@@ -297,34 +303,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2091151d27f2183dc0592c7509a63619"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2091151d27f2183dc0592c7509a63619">&#9670;&nbsp;</a></span>Deserialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGDevice</a> &gt; SGCore::BetaDevice::Deserialize </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>cstring</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deserialize a beta device from its basic cstring. Returns nullptr is unsuccesfull. </p>
-
-</div>
-</div>
 <a id="ac8c9a277a4c637a6345117d5a42ca086"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8c9a277a4c637a6345117d5a42ca086">&#9670;&nbsp;</a></span>GetConstantsString()</h2>
 
@@ -521,9 +499,37 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieve this device's sub firmware version. v4.12 returns 12. </p>
+<p>Retireve this device's sub-firmware version. </p>
 
 <p>Reimplemented from <a class="el" href="class_s_g_core_1_1_s_g_device.html#ab13a29fa8aa74ff2a1e44826594776da">SGCore::SGDevice</a>.</p>
+
+</div>
+</div>
+<a id="a34063db11110d2abd27e39d13701a1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34063db11110d2abd27e39d13701a1c8">&#9670;&nbsp;</a></span>Parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGDevice</a> &gt; SGCore::BetaDevice::Parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>cstring</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deserialize a beta device from its basic cstring. Returns nullptr is unsuccesfull. </p>
 
 </div>
 </div>
@@ -650,6 +656,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a15228bb35d461c7a2ac85bfe4422cc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15228bb35d461c7a2ac85bfe4422cc6a">&#9670;&nbsp;</a></span>fwVersionSub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SGCore::BetaDevice::fwVersionSub</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9fe116ec2fa0110cc669b6882f737fc3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fe116ec2fa0110cc669b6882f737fc3">&#9670;&nbsp;</a></span>hwVersion</h2>
 
@@ -676,7 +704,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/<a class="el" href="_beta_device_8h_source.html">BetaDevice.h</a></li>
-<li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/BetaDevice.cpp</li>
+<li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/<a class="el" href="_beta_device_8cpp.html">BetaDevice.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

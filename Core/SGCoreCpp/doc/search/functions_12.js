@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['writeto_353',['WriteTo',['../class_s_g_core_1_1_shared_mem.html#ae2499da3efc2e556a8669d4b96c4b7c1',1,'SGCore::SharedMem']]]
+  ['updatecalibration_718',['UpdateCalibration',['../class_s_g_core_1_1_haptic_glove.html#adfebd30c36c6caca990c83c644026691',1,'SGCore::HapticGlove']]],
+  ['updatecalibrationrange_719',['UpdateCalibrationRange',['../class_s_g_core_1_1_haptic_glove.html#a3eb1978bb5e516ab2a4608baf49e003f',1,'SGCore::HapticGlove::UpdateCalibrationRange()'],['../class_s_g_core_1_1_haptic_glove.html#aebc9da7f7318934c4114b79796c84f65',1,'SGCore::HapticGlove::UpdateCalibrationRange(std::vector&lt; Kinematics::Vect3D &gt; calibrationValues)']]]
 ];

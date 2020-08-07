@@ -25,6 +25,7 @@ namespace SGCore
 		/// <summary> The index of this device inside the SenseComm program. Used to access shared memory. </summary>
 		int deviceIndex = -1;
 
+		/// <summary> Address of this Device for inter-process communications. </summary>
 		std::string ipcAddress;
 
 	public:
@@ -32,10 +33,14 @@ namespace SGCore
 		//--------------------------------------------------------------------------------------
 		// Enum
 
+		/// <summary> Connection type of this device, as detected by the SGConnect library. </summary>
 		enum ConnectionType
 		{
+			/// <summary> Could not determine which connection type this SGDevice is using, most likely because it is disconnected. </summary>
 			Unknown = -1,
+			/// <summary> USB Serial communication. </summary>
 			Serial,
+			/// <summary> A bluetooth connection that creates up to two Serial Ports. </summary>
 			BluetoothSerial
 		};
 

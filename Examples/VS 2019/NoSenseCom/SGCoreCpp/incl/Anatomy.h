@@ -1,6 +1,6 @@
 // ----------------------------------------------------------------------------
-// Hard-Coded Database that is used in calibration and hand solving.
-// Values herein are used to limit user variables within 'natural' ranges.
+// Hard-Coded Database that is used in calibration and in solving.
+// Values herein are used to limit outputs within 'natural' ranges.
 // @author: Max Lammers
 // ----------------------------------------------------------------------------
 
@@ -29,7 +29,19 @@ namespace SGCore
 			/// <summary> Hard Coded finger limits, in radians </summary>
 			const static std::vector <  std::vector < std::vector<float> > > fingerLimits;
 
+
 		public:
+
+			/// <summary> Total sum of all finger flexion that would be considered "total flexion" </summary>
+			const static float totalFingerFlexion;
+			/// <summary> Total sum of all finger flexion that would be considered "total extension" </summary>
+			const static float totalFingerExtension;
+
+			/// <summary> Total sum of all thumb flexion that would be considered "total flexion" </summary>
+			const static float totalThumbFlexion;
+			/// <summary> Total sum of all thumb flexion that would be considered "total extension" </summary>
+			const static float totalThumbExtension;
+
 
 			/// <summary> Retrieve one of the limits of a finger joint's movement. </summary>
 			static float GetFingerJointLimit(bool right, int joint, int movement, bool max);

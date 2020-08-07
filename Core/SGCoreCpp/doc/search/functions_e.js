@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['radians_321',['Radians',['../class_s_g_core_1_1_kinematics_1_1_values.html#ad66efff9e33ac8bbadf90cf8ab10aa74',1,'SGCore::Kinematics::Values']]],
-  ['readfrom_322',['ReadFrom',['../class_s_g_core_1_1_shared_mem.html#a90202ab00dfed032e9ff9cd90bdbed2e',1,'SGCore::SharedMem']]],
-  ['rotate_323',['Rotate',['../struct_s_g_core_1_1_kinematics_1_1_quat.html#a691d6c83be03e33ccfd6d0767121f988',1,'SGCore::Kinematics::Quat']]]
+  ['quat_677',['Quat',['../class_s_g_core_1_1_kinematics_1_1_quat.html#ac3ef0ae0a0cd7bfa536c7eb2b69210c6',1,'SGCore::Kinematics::Quat::Quat()'],['../class_s_g_core_1_1_kinematics_1_1_quat.html#acd52fc8a797780e403b596a9aab004fb',1,'SGCore::Kinematics::Quat::Quat(float X, float Y, float Z, float W)']]],
+  ['quicksplit_678',['QuickSplit',['../class_s_g_core_1_1_util_1_1_str_stuff.html#a280d23a81db24be81e4e266490e7cfc1',1,'SGCore::Util::StrStuff']]]
 ];

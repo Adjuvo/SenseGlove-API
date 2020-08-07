@@ -57,7 +57,7 @@ int main()
 		testGlove.SendHaptics(SGCore::Haptics::SG_BuzzCmd::off); //turn off all Buzz Motors.
 		std::this_thread::sleep_for(std::chrono::milliseconds(10)); //wait for 10ms.
 
-		SGCore::SG::SG_Model model = testGlove.GetGloveModel(); //Retrieve device information
+		SGCore::SG::SG_GloveInfo model = testGlove.GetGloveModel(); //Retrieve device information
 		std::cout << std::endl;
 		std::cout << model.ToString(true) << std::endl; //Log some basic information to the user. (true indicates a short notation is desired)
 

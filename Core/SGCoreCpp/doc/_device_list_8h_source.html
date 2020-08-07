@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -72,22 +72,22 @@ $(function() {
 <div class="title">DeviceList.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// ----------------------------------------------------------------------------------</span></div>
+<a href="_device_list_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// ----------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Interface for SenseComm, allows the retrieval of Devices and Data, but only as</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// @author: Max Lammers</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// ----------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;SGCore.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_g_core_8h.html">SGCore.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;DeviceTypes.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;SGDevice.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_device_types_8h.html">DeviceTypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_g_device_8h.html">SGDevice.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">//for shared::ptrs</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>SGCore</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_g_core.html">SGCore</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_list.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_g_core_1_1_device_list.html">DeviceList</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
@@ -97,29 +97,29 @@ $(function() {
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// Properties</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_list.html#aa4ecc0e27bfd44fb8ee1e0b87a4ba36c">   28</a></span>&#160;        <span class="keyword">static</span> std::vector&lt; std::shared_ptr&lt;SGDevice&gt; &gt; <a class="code" href="class_s_g_core_1_1_device_list.html#aa4ecc0e27bfd44fb8ee1e0b87a4ba36c">devices</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">static</span> std::vector&lt; std::shared_ptr&lt;SGDevice&gt; &gt; devices;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// Internal Methods</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_list.html#a67c51807ddc8203092de6762da54a567">CheckDevices</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> CheckDevices();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_device_list.html#a2b11ee22bc140b268db8fc1f94956644">Deserialize</a>(std::string serialized, std::shared_ptr&lt;SGDevice&gt;&amp; output);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> Deserialize(std::string serialized, std::shared_ptr&lt;SGDevice&gt;&amp; output);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// Accessors</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">static</span> SGCORE_API <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_list.html#a284523195ff7334ab992a16a69b7e678">ActiveDevices</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">static</span> <a class="code" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_list.html#a284523195ff7334ab992a16a69b7e678">ActiveDevices</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">static</span> SGCORE_API <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb">SenseCommRunning</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">static</span> <a class="code" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb">SenseCommRunning</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// Device Access Methods</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">static</span> SGCORE_API std::vector&lt; std::shared_ptr&lt;SGDevice&gt; &gt; <a class="code" href="class_s_g_core_1_1_device_list.html#add072bd8986e6e5645ddac220a35db29">GetDevices</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">static</span> <a class="code" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> std::vector&lt; std::shared_ptr&lt;SGDevice&gt; &gt; <a class="code" href="class_s_g_core_1_1_device_list.html#add072bd8986e6e5645ddac220a35db29">GetDevices</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_list.html#af0681497a61487e0db24e0325605f6a0">   60</a></span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">static</span> std::vector&lt; std::shared_ptr&lt;T&gt; &gt; <a class="code" href="class_s_g_core_1_1_device_list.html#af0681497a61487e0db24e0325605f6a0">GetDevices</a>()</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
@@ -128,8 +128,8 @@ $(function() {
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            std::vector&lt; std::shared_ptr&lt;T&gt; &gt; res = { }; <span class="comment">//empty vector</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; currentDevices; i++)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*<a class="code" href="class_s_g_core_1_1_device_list.html#aa4ecc0e27bfd44fb8ee1e0b87a4ba36c">devices</a>[i]) == tType)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    res.push_back(std::dynamic_pointer_cast&lt;T&gt;(<a class="code" href="class_s_g_core_1_1_device_list.html#aa4ecc0e27bfd44fb8ee1e0b87a4ba36c">devices</a>[i]));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*devices[i]) == tType)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    res.push_back(std::dynamic_pointer_cast&lt;T&gt;(devices[i]));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> res;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
@@ -138,25 +138,29 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// Device Communication Methods</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">static</span> SGCORE_API <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_device_list.html#aa07d370ebe56f4fd34eaacf96d950ae8">GetSensorDataString</a>(std::string ipcAddress, std::string&amp; data);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">static</span> <a class="code" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_device_list.html#aa07d370ebe56f4fd34eaacf96d950ae8">GetSensorDataString</a>(std::string ipcAddress, std::string&amp; data);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">static</span> SGCORE_API <span class="keywordtype">bool</span> SendHaptics(std::string ipcAddress, std::string commands);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">static</span> <a class="code" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_device_list.html#a4014fe84dc3d09092c26296d78507cf5">SendHaptics</a>(std::string ipcAddress, std::string commands);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">static</span> std::string GetDeviceStringAt(std::string ipcAddress, <span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">static</span> std::string <a class="code" href="class_s_g_core_1_1_device_list.html#a035127f3f125f8c2e04bdc36d6123563">GetDeviceStringAt</a>(std::string ipcAddress, <span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    };</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_s_g_core_1_1_device_list_html_af0681497a61487e0db24e0325605f6a0"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#af0681497a61487e0db24e0325605f6a0">SGCore::DeviceList::GetDevices</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; T &gt; &gt; GetDevices()</div><div class="ttdoc">Retrieve a list of SGDevices of a specific class.</div><div class="ttdef"><b>Definition:</b> DeviceList.h:60</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_aa07d370ebe56f4fd34eaacf96d950ae8"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#aa07d370ebe56f4fd34eaacf96d950ae8">SGCore::DeviceList::GetSensorDataString</a></div><div class="ttdeci">static SGCORE_API bool GetSensorDataString(std::string ipcAddress, std::string &amp;data)</div><div class="ttdoc">Retrieve the latest (raw) sensor data from a specific device in our list.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:152</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_add072bd8986e6e5645ddac220a35db29"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#add072bd8986e6e5645ddac220a35db29">SGCore::DeviceList::GetDevices</a></div><div class="ttdeci">static SGCORE_API std::vector&lt; std::shared_ptr&lt; SGDevice &gt; &gt; GetDevices()</div><div class="ttdoc">Retrieve all Sense Glove Devices connected to this system.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:137</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a91defbd42a87ceb89c852cb85f6b25bb"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb">SGCore::DeviceList::SenseCommRunning</a></div><div class="ttdeci">static SGCORE_API bool SenseCommRunning()</div><div class="ttdoc">Returns true if the SenseComm program is running.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:121</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_aa4ecc0e27bfd44fb8ee1e0b87a4ba36c"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#aa4ecc0e27bfd44fb8ee1e0b87a4ba36c">SGCore::DeviceList::devices</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; SGDevice &gt; &gt; devices</div><div class="ttdoc">A list of all devices that have been detected via the SenseComm executable.</div><div class="ttdef"><b>Definition:</b> DeviceList.h:28</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a2b11ee22bc140b268db8fc1f94956644"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a2b11ee22bc140b268db8fc1f94956644">SGCore::DeviceList::Deserialize</a></div><div class="ttdeci">static bool Deserialize(std::string serialized, std::shared_ptr&lt; SGDevice &gt; &amp;output)</div><div class="ttdoc">Factory function to deserialize an SGDevice out of a DeviceList string.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:84</div></div>
+<div class="ttc" id="a_s_g_device_8h_html"><div class="ttname"><a href="_s_g_device_8h.html">SGDevice.h</a></div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a035127f3f125f8c2e04bdc36d6123563"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a035127f3f125f8c2e04bdc36d6123563">SGCore::DeviceList::GetDeviceStringAt</a></div><div class="ttdeci">static std::string GetDeviceStringAt(std::string ipcAddress, int index)</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:73</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_aa07d370ebe56f4fd34eaacf96d950ae8"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#aa07d370ebe56f4fd34eaacf96d950ae8">SGCore::DeviceList::GetSensorDataString</a></div><div class="ttdeci">static SGCORE_API bool GetSensorDataString(std::string ipcAddress, std::string &amp;data)</div><div class="ttdoc">Retrieve the latest (raw) sensor data from a specific device in our list.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:157</div></div>
+<div class="ttc" id="anamespace_s_g_core_html"><div class="ttname"><a href="namespace_s_g_core.html">SGCore</a></div><div class="ttdef"><b>Definition:</b> Anatomy.cpp:7</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_add072bd8986e6e5645ddac220a35db29"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#add072bd8986e6e5645ddac220a35db29">SGCore::DeviceList::GetDevices</a></div><div class="ttdeci">static SGCORE_API std::vector&lt; std::shared_ptr&lt; SGDevice &gt; &gt; GetDevices()</div><div class="ttdoc">Retrieve all Sense Glove Devices connected to this system.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:142</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a4014fe84dc3d09092c26296d78507cf5"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a4014fe84dc3d09092c26296d78507cf5">SGCore::DeviceList::SendHaptics</a></div><div class="ttdeci">static SGCORE_API bool SendHaptics(std::string ipcAddress, std::string commands)</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:168</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a91defbd42a87ceb89c852cb85f6b25bb"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb">SGCore::DeviceList::SenseCommRunning</a></div><div class="ttdeci">static SGCORE_API bool SenseCommRunning()</div><div class="ttdoc">Returns true if the SenseComm program is running.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:125</div></div>
+<div class="ttc" id="a_device_types_8h_html"><div class="ttname"><a href="_device_types_8h.html">DeviceTypes.h</a></div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_device_list_html"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html">SGCore::DeviceList</a></div><div class="ttdoc">Interface for SenseComm, allows the retrieval of Devices and Data.</div><div class="ttdef"><b>Definition:</b> DeviceList.h:20</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a284523195ff7334ab992a16a69b7e678"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a284523195ff7334ab992a16a69b7e678">SGCore::DeviceList::ActiveDevices</a></div><div class="ttdeci">static SGCORE_API int ActiveDevices()</div><div class="ttdoc">Retrieve the number of devices that have been detected by the SenseComm executable.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:127</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a67c51807ddc8203092de6762da54a567"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a67c51807ddc8203092de6762da54a567">SGCore::DeviceList::CheckDevices</a></div><div class="ttdeci">static int CheckDevices()</div><div class="ttdoc">Check the IPC for new data, and add any new devices to our list. Returns -1 if SenseComm is not runni...</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:29</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_list_html_a284523195ff7334ab992a16a69b7e678"><div class="ttname"><a href="class_s_g_core_1_1_device_list.html#a284523195ff7334ab992a16a69b7e678">SGCore::DeviceList::ActiveDevices</a></div><div class="ttdeci">static SGCORE_API int ActiveDevices()</div><div class="ttdoc">Retrieve the number of devices that have been detected by the SenseComm executable.</div><div class="ttdef"><b>Definition:</b> DeviceList.cpp:132</div></div>
+<div class="ttc" id="a_s_g_core_8h_html"><div class="ttname"><a href="_s_g_core_8h.html">SGCore.h</a></div></div>
+<div class="ttc" id="a_s_g_core_8h_html_ac1e278ec7c826471fd2b0f77b60b0165"><div class="ttname"><a href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a></div><div class="ttdeci">#define SGCORE_API</div><div class="ttdef"><b>Definition:</b> SGCore.h:30</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

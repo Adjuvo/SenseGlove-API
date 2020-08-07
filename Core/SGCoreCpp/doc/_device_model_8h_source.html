@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -72,7 +72,7 @@ $(function() {
 <div class="title">DeviceModel.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// ----------------------------------------------------------------------------------</span></div>
+<a href="_device_model_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// ----------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Base class for Device Models containing the minimum amount of data gathered </span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// through Communications Protocol. Used for shared functionality.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// @author: Max Lammers</span></div>
@@ -80,66 +80,72 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>SGCore</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_g_core_1_1_device_model.html">DeviceModel</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">// Properties</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">   24</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">deviceID</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">   27</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">hardwareVer</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">   30</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">firmwareVer</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">   33</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">subFirmwareVer</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">static</span> std::vector&lt;bool&gt; ParseFunctions(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_g_core_8h.html">SGCore.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_g_core.html">SGCore</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> <a class="code" href="class_s_g_core_1_1_device_model.html">DeviceModel</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">// Properties</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">   25</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">deviceID</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">   28</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">hardwareVer</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">   31</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">firmwareVer</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">   34</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">subFirmwareVer</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// Construction</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_s_g_core_1_1_device_model.html">DeviceModel</a>(); <span class="comment">//empty constructor to be used by child classes.</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_s_g_core_1_1_device_model.html">DeviceModel</a>(std::string <span class="keywordtype">id</span>, std::string hwVer, <span class="keywordtype">int</span> fwVer, <span class="keywordtype">int</span> subFWver);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Construction</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_s_g_core_1_1_device_model.html">DeviceModel</a>(); <span class="comment">//empty constructor to be used by child classes.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_s_g_core_1_1_device_model.html">DeviceModel</a>(std::string <span class="keywordtype">id</span>, std::string hwVer, <span class="keywordtype">int</span> fwVer, <span class="keywordtype">int</span> subFWver);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a1d55c1889291a0c41a2afa81088bde7d">   44</a></span>&#160;        <a class="code" href="class_s_g_core_1_1_device_model.html#a1d55c1889291a0c41a2afa81088bde7d">~DeviceModel</a>() { }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        ~<a class="code" href="class_s_g_core_1_1_device_model.html">DeviceModel</a>() { }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// Accessors</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">   52</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">GetDeviceID</a>() { <span class="keywordflow">return</span> <a class="code" href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">deviceID</a>; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">   55</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">GetHardwareVersion</a>() { <span class="keywordflow">return</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">hardwareVer</a>; }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">   58</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">GetFirmwareVersion</a>() { <span class="keywordflow">return</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">firmwareVer</a>; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//--------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// Accessors</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">   50</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">GetDeviceID</a>() { <span class="keywordflow">return</span> deviceID; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">   53</a></span>&#160;        std::string <a class="code" href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">GetHardwareVersion</a>() { <span class="keywordflow">return</span> hardwareVer; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">   56</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">GetFirmwareVersion</a>() { <span class="keywordflow">return</span> firmwareVer; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_device_model.html#ac3fb349337c9e0a5d22a46debbbeddfa">   58</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_s_g_core_1_1_device_model.html#ac3fb349337c9e0a5d22a46debbbeddfa">GetSubFirmwareVersion</a>() { <span class="keywordflow">return</span> subFirmwareVer; }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">int</span> GetSubFirmwareVersion() { <span class="keywordflow">return</span> <a class="code" href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">subFirmwareVer</a>; }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> ParseFirmware(std::string&amp; rawFW, <span class="keywordtype">int</span>&amp; mainVer, <span class="keywordtype">int</span>&amp; subVer);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> ParseFirmware(std::string&amp; rawFW, <span class="keywordtype">int</span>&amp; mainVer, <span class="keywordtype">int</span>&amp; subVer);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">static</span> std::vector&lt;bool&gt; ParseFunctions(<span class="keywordtype">int</span> value, <span class="keywordtype">int</span> size);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    };</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html">SGCore::DeviceModel</a></div><div class="ttdoc">Base class containing the minimum amount of data for device models.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:16</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a4f36af85af61b16a5a9e62659b91e959"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">SGCore::DeviceModel::subFirmwareVer</a></div><div class="ttdeci">int subFirmwareVer</div><div class="ttdoc">Sub-Firmware version running on the device's MicroController.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:33</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a33ca7aecd3c04ef7a75b4b3fc26089eb"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">SGCore::DeviceModel::firmwareVer</a></div><div class="ttdeci">int firmwareVer</div><div class="ttdoc">Firmware version running on the device's MicroController.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:30</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a8af46d3b3bcdfb207d9bf430bcce99ff"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">SGCore::DeviceModel::hardwareVer</a></div><div class="ttdeci">std::string hardwareVer</div><div class="ttdoc">Hardware (sub) version of this Sense Glove Device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:27</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a33665739ff9f1c90305827fc52650645"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">SGCore::DeviceModel::GetFirmwareVersion</a></div><div class="ttdeci">int GetFirmwareVersion()</div><div class="ttdoc">Retrieve the Firmware version running on the device's MicroController.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:58</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a89edc57a0896688bc2fb5fad4095fdb9"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">SGCore::DeviceModel::GetHardwareVersion</a></div><div class="ttdeci">std::string GetHardwareVersion()</div><div class="ttdoc">Retrieve the Hardware (sub) version of this Sense Glove Device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:55</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_aa962eb5b3badca3d3e92edfd92c313ce"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">SGCore::DeviceModel::deviceID</a></div><div class="ttdeci">std::string deviceID</div><div class="ttdoc">Unique identifier of this device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:24</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_aa3a13181a19a47d112c5d38f2aa4c650"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">SGCore::DeviceModel::GetDeviceID</a></div><div class="ttdeci">std::string GetDeviceID()</div><div class="ttdoc">Retrieve the Unique identifier of this device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:52</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html">SGCore::DeviceModel</a></div><div class="ttdoc">Base class containing the minimum amount of data for device models.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:17</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a1d55c1889291a0c41a2afa81088bde7d"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a1d55c1889291a0c41a2afa81088bde7d">SGCore::DeviceModel::~DeviceModel</a></div><div class="ttdeci">~DeviceModel()</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:44</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a4f36af85af61b16a5a9e62659b91e959"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">SGCore::DeviceModel::subFirmwareVer</a></div><div class="ttdeci">int subFirmwareVer</div><div class="ttdoc">Sub-Firmware version running on the device's MicroController.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:34</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_ac3fb349337c9e0a5d22a46debbbeddfa"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#ac3fb349337c9e0a5d22a46debbbeddfa">SGCore::DeviceModel::GetSubFirmwareVersion</a></div><div class="ttdeci">int GetSubFirmwareVersion()</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:58</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a33ca7aecd3c04ef7a75b4b3fc26089eb"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">SGCore::DeviceModel::firmwareVer</a></div><div class="ttdeci">int firmwareVer</div><div class="ttdoc">Firmware version running on the device's MicroController.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:31</div></div>
+<div class="ttc" id="anamespace_s_g_core_html"><div class="ttname"><a href="namespace_s_g_core.html">SGCore</a></div><div class="ttdef"><b>Definition:</b> Anatomy.cpp:7</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a8af46d3b3bcdfb207d9bf430bcce99ff"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">SGCore::DeviceModel::hardwareVer</a></div><div class="ttdeci">std::string hardwareVer</div><div class="ttdoc">Hardware (sub) version of this Sense Glove Device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:28</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a33665739ff9f1c90305827fc52650645"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">SGCore::DeviceModel::GetFirmwareVersion</a></div><div class="ttdeci">int GetFirmwareVersion()</div><div class="ttdoc">Retrieve the Firmware version running on the device's MicroController.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:56</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_a89edc57a0896688bc2fb5fad4095fdb9"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">SGCore::DeviceModel::GetHardwareVersion</a></div><div class="ttdeci">std::string GetHardwareVersion()</div><div class="ttdoc">Retrieve the Hardware (sub) version of this Sense Glove Device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:53</div></div>
+<div class="ttc" id="a_s_g_core_8h_html"><div class="ttname"><a href="_s_g_core_8h.html">SGCore.h</a></div></div>
+<div class="ttc" id="a_s_g_core_8h_html_ac1e278ec7c826471fd2b0f77b60b0165"><div class="ttname"><a href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a></div><div class="ttdeci">#define SGCORE_API</div><div class="ttdef"><b>Definition:</b> SGCore.h:30</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_aa962eb5b3badca3d3e92edfd92c313ce"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">SGCore::DeviceModel::deviceID</a></div><div class="ttdeci">std::string deviceID</div><div class="ttdoc">Unique identifier of this device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:25</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_device_model_html_aa3a13181a19a47d112c5d38f2aa4c650"><div class="ttname"><a href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">SGCore::DeviceModel::GetDeviceID</a></div><div class="ttdeci">std::string GetDeviceID()</div><div class="ttdoc">Retrieve the Unique identifier of this device.</div><div class="ttdef"><b>Definition:</b> DeviceModel.h:50</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

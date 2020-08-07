@@ -31,7 +31,7 @@ namespace CsCoreClient
                     testGlove.SendHaptics(SG_BuzzCmd.Off); //turn off all Buzz Motors.
                     System.Threading.Thread.Sleep(10);
 
-                    SG_Model model = testGlove.GetGloveModel(); //Retrieve device information
+                    SG_GloveInfo model = testGlove.GetGloveModel(); //Retrieve device information
                     Console.WriteLine("");
                     Console.WriteLine(model.ToString(true)); //Log some basic information to the user. (true indicates a short notation is desired)
 
@@ -56,7 +56,7 @@ namespace CsCoreClient
                         Console.WriteLine("");
                         Console.WriteLine("Fingertip positions relative to Wrist:");
                         for (int f = 0; f < tipPositions.Length; f++)
-                            Console.WriteLine( ((SGCore.Finger)f).ToString() + ": " + tipPositions[f].ToString()); //writes "thumb: ", "index: " etc.
+                            Console.WriteLine(((SGCore.Finger)f).ToString() + ": " + tipPositions[f].ToString()); //writes "thumb: ", "index: " etc.
 
                         float dThumbIndex = tipPositions[0].DistTo(tipPositions[1]); //calculates the distance between thumb (0) and index finger (1), in mm.
                         Console.WriteLine("The distance between thumb and index finger is " + dThumbIndex + "mm.");

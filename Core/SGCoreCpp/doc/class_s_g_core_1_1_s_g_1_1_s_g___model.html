@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -71,8 +71,9 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_s_g_core_1_1_s_g_1_1_s_g___model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SGCore::SG::SG_Model Class Reference</div>  </div>
@@ -83,22 +84,13 @@ $(function() {
  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_s_g___model_8h_source.html">SG_Model.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for SGCore::SG::SG_Model:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_s_g_core_1_1_s_g_1_1_s_g___model.png" usemap="#SGCore::SG::SG_5FModel_map" alt=""/>
-  <map id="SGCore::SG::SG_5FModel_map" name="SGCore::SG::SG_5FModel_map">
-<area href="class_s_g_core_1_1_device_model.html" title="Base class containing the minimum amount of data for device models." alt="SGCore::DeviceModel" shape="rect" coords="0,0,145,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab12b0ac241b28238754a3031c722e42e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ab12b0ac241b28238754a3031c722e42e">SG_Model</a> ()</td></tr>
 <tr class="memdesc:ab12b0ac241b28238754a3031c722e42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ab12b0ac241b28238754a3031c722e42e">More...</a><br /></td></tr>
 <tr class="separator:ab12b0ac241b28238754a3031c722e42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af44d60b4b71a84743caecc3eebd14925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#af44d60b4b71a84743caecc3eebd14925">SG_Model</a> (std::string ID, std::string hwVer, int fwVerMain, int fwVerSub, bool rightHand, int noSensors, <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> imuCorr, std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; startPos, std::vector&lt; <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; startRot, std::vector&lt; std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt;&gt; lengths, std::vector&lt; bool &gt; functionality)</td></tr>
+<tr class="memitem:af44d60b4b71a84743caecc3eebd14925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#af44d60b4b71a84743caecc3eebd14925">SG_Model</a> (std::string ID, std::string hwVer, int fwVerMain, int fwVerSub, bool rightHand, int noSensors, <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> imuCorr, std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; startPos, std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; startRot, std::vector&lt; std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt;&gt; lengths, std::vector&lt; bool &gt; functionality)</td></tr>
 <tr class="memdesc:af44d60b4b71a84743caecc3eebd14925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Sense Glove device model  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#af44d60b4b71a84743caecc3eebd14925">More...</a><br /></td></tr>
 <tr class="separator:af44d60b4b71a84743caecc3eebd14925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537e918f7c10ea2bca7e01c25759e703"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a537e918f7c10ea2bca7e01c25759e703">~SG_Model</a> ()</td></tr>
@@ -111,7 +103,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad77e8e8945505d79cd5d00b6d7f7589c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the number of Sensors in this <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html" title="Interface for the Sense Glove; and exoskeleton Force-Feedback glove.">SenseGlove</a>.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ad77e8e8945505d79cd5d00b6d7f7589c">More...</a><br /></td></tr>
 <tr class="separator:ad77e8e8945505d79cd5d00b6d7f7589c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67eb7ec8cfc2dcc6e5089849c39e5667"><td class="memItemLeft" align="right" valign="top"><a id="a67eb7ec8cfc2dcc6e5089849c39e5667"></a>
-<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetIMUCorrection</b> ()</td></tr>
+<a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetIMUCorrection</b> ()</td></tr>
 <tr class="separator:a67eb7ec8cfc2dcc6e5089849c39e5667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ced4d0d4b24725dc2c59f1104cd093"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a14ced4d0d4b24725dc2c59f1104cd093">GetStartPositions</a> ()</td></tr>
 <tr class="memdesc:a14ced4d0d4b24725dc2c59f1104cd093"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting positions of each Sense Glove finger, relative to the glove origin  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a14ced4d0d4b24725dc2c59f1104cd093">More...</a><br /></td></tr>
@@ -119,10 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adaf502b5039b0821b7d85f52574dc2ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#adaf502b5039b0821b7d85f52574dc2ed">GetStartPosition</a> (SGCore::Finger finger)</td></tr>
 <tr class="memdesc:adaf502b5039b0821b7d85f52574dc2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting position of one Sense Glove finger, relative to the glove origin  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#adaf502b5039b0821b7d85f52574dc2ed">More...</a><br /></td></tr>
 <tr class="separator:adaf502b5039b0821b7d85f52574dc2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a720353f5c65581a62fa5faf886d76fe6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a720353f5c65581a62fa5faf886d76fe6">GetStartRotations</a> ()</td></tr>
+<tr class="memitem:a720353f5c65581a62fa5faf886d76fe6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a720353f5c65581a62fa5faf886d76fe6">GetStartRotations</a> ()</td></tr>
 <tr class="memdesc:a720353f5c65581a62fa5faf886d76fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting rotations of each Sense Glove finger, relative to the glove origin  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a720353f5c65581a62fa5faf886d76fe6">More...</a><br /></td></tr>
 <tr class="separator:a720353f5c65581a62fa5faf886d76fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0de5b30b41b6cabb097de5f8847fd314"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a0de5b30b41b6cabb097de5f8847fd314">GetStartRotation</a> (SGCore::Finger finger)</td></tr>
+<tr class="memitem:a0de5b30b41b6cabb097de5f8847fd314"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a0de5b30b41b6cabb097de5f8847fd314">GetStartRotation</a> (SGCore::Finger finger)</td></tr>
 <tr class="memdesc:a0de5b30b41b6cabb097de5f8847fd314"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting rotation of one Sense Glove finger, relative to the glove origin  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a0de5b30b41b6cabb097de5f8847fd314">More...</a><br /></td></tr>
 <tr class="separator:a0de5b30b41b6cabb097de5f8847fd314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f511fe6e45c1df5e1b750ec1052037"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a20f511fe6e45c1df5e1b750ec1052037">GetGloveLengths</a> ()</td></tr>
@@ -147,24 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acf8720cea6757f93f8ccc6247b74e460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html" title="Contains device information about a Sense Glove.">SG_Model</a> has the same values as another  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#acf8720cea6757f93f8ccc6247b74e460">More...</a><br /></td></tr>
 <tr class="separator:acf8720cea6757f93f8ccc6247b74e460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac20fcc002fe9fdfac57030d4e88dbc43"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ac20fcc002fe9fdfac57030d4e88dbc43">Serialize</a> ()</td></tr>
-<tr class="memdesc:ac20fcc002fe9fdfac57030d4e88dbc43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this HandProfile into a string representation  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ac20fcc002fe9fdfac57030d4e88dbc43">More...</a><br /></td></tr>
+<tr class="memdesc:ac20fcc002fe9fdfac57030d4e88dbc43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this <a class="el" href="class_s_g_core_1_1_hand_profile.html" title="Interpolation profiles for a user&#39;s hand, compatible with all HapticGloves.">HandProfile</a> into a string representation  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ac20fcc002fe9fdfac57030d4e88dbc43">More...</a><br /></td></tr>
 <tr class="separator:ac20fcc002fe9fdfac57030d4e88dbc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_s_g_core_1_1_device_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_s_g_core_1_1_device_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_s_g_core_1_1_device_model.html">SGCore::DeviceModel</a></td></tr>
-<tr class="memitem:a442af0aa02cd45eacbdfc22cbcd01fe4 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top"><a id="a442af0aa02cd45eacbdfc22cbcd01fe4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceModel</b> (std::string id, std::string hwVer, int fwVer, int subFWver)</td></tr>
-<tr class="separator:a442af0aa02cd45eacbdfc22cbcd01fe4 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a13181a19a47d112c5d38f2aa4c650 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">GetDeviceID</a> ()</td></tr>
-<tr class="memdesc:aa3a13181a19a47d112c5d38f2aa4c650 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the Unique identifier of this device.  <a href="class_s_g_core_1_1_device_model.html#aa3a13181a19a47d112c5d38f2aa4c650">More...</a><br /></td></tr>
-<tr class="separator:aa3a13181a19a47d112c5d38f2aa4c650 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89edc57a0896688bc2fb5fad4095fdb9 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">GetHardwareVersion</a> ()</td></tr>
-<tr class="memdesc:a89edc57a0896688bc2fb5fad4095fdb9 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the Hardware (sub) version of this Sense Glove Device.  <a href="class_s_g_core_1_1_device_model.html#a89edc57a0896688bc2fb5fad4095fdb9">More...</a><br /></td></tr>
-<tr class="separator:a89edc57a0896688bc2fb5fad4095fdb9 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33665739ff9f1c90305827fc52650645 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">GetFirmwareVersion</a> ()</td></tr>
-<tr class="memdesc:a33665739ff9f1c90305827fc52650645 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the Firmware version running on the device's MicroController.  <a href="class_s_g_core_1_1_device_model.html#a33665739ff9f1c90305827fc52650645">More...</a><br /></td></tr>
-<tr class="separator:a33665739ff9f1c90305827fc52650645 inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3fb349337c9e0a5d22a46debbbeddfa inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top"><a id="ac3fb349337c9e0a5d22a46debbbeddfa"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubFirmwareVersion</b> ()</td></tr>
-<tr class="separator:ac3fb349337c9e0a5d22a46debbbeddfa inherit pub_methods_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -174,39 +150,34 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a170e1ca59d328456f44e0cde9bee0512"><td class="memItemLeft" align="right" valign="top"><a id="a170e1ca59d328456f44e0cde9bee0512"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (std::string cString, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html">SG_Model</a> &amp;model, bool updateOldModels=true)</td></tr>
 <tr class="separator:a170e1ca59d328456f44e0cde9bee0512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_class_s_g_core_1_1_device_model"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_s_g_core_1_1_device_model')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_s_g_core_1_1_device_model.html">SGCore::DeviceModel</a></td></tr>
-<tr class="memitem:a9d1262c470bfa5221d34491808cf4d72 inherit pub_static_methods_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top"><a id="a9d1262c470bfa5221d34491808cf4d72"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseFirmware</b> (std::string &amp;rawFW, int &amp;mainVer, int &amp;subVer)</td></tr>
-<tr class="separator:a9d1262c470bfa5221d34491808cf4d72 inherit pub_static_methods_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a268453306edd93f2ebb8dbe5b8e62995"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a268453306edd93f2ebb8dbe5b8e62995">ParseLengthString</a> (std::string rawLengths)</td></tr>
-<tr class="memdesc:a268453306edd93f2ebb8dbe5b8e62995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a section of constants into a set of glove lengths.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a268453306edd93f2ebb8dbe5b8e62995">More...</a><br /></td></tr>
-<tr class="separator:a268453306edd93f2ebb8dbe5b8e62995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed8d94a914a41b210b38f4493a7a5ca3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#aed8d94a914a41b210b38f4493a7a5ca3">ParseStartValues</a> (std::string rawValues, std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; &amp;startPos, std::vector&lt; <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; &amp;startRot)</td></tr>
-<tr class="memdesc:aed8d94a914a41b210b38f4493a7a5ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a section of constants into a set starting positions and -rotations.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#aed8d94a914a41b210b38f4493a7a5ca3">More...</a><br /></td></tr>
-<tr class="separator:aed8d94a914a41b210b38f4493a7a5ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_class_s_g_core_1_1_device_model"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_s_g_core_1_1_device_model')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_s_g_core_1_1_device_model.html">SGCore::DeviceModel</a></td></tr>
-<tr class="memitem:aaacece19bd7f6a4c33bbfd378cd47d99 inherit pro_static_methods_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top"><a id="aaacece19bd7f6a4c33bbfd378cd47d99"></a>
-static std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ParseFunctions</b> (int value, int size)</td></tr>
-<tr class="separator:aaacece19bd7f6a4c33bbfd378cd47d99 inherit pro_static_methods_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a7e5741e09623afed678b8409e85bb237"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a7e5741e09623afed678b8409e85bb237">isRight</a></td></tr>
-<tr class="memdesc:a7e5741e09623afed678b8409e85bb237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this Sense Glove belongs to a left or right hand.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a7e5741e09623afed678b8409e85bb237">More...</a><br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a806624c520c7ebcabb9a6fe6cdb47c9c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a806624c520c7ebcabb9a6fe6cdb47c9c">deviceID</a></td></tr>
+<tr class="memdesc:a806624c520c7ebcabb9a6fe6cdb47c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier of this device.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a806624c520c7ebcabb9a6fe6cdb47c9c">More...</a><br /></td></tr>
+<tr class="separator:a806624c520c7ebcabb9a6fe6cdb47c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c27646837472a9353f56523ba6141a6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a9c27646837472a9353f56523ba6141a6">hardwareVer</a></td></tr>
+<tr class="memdesc:a9c27646837472a9353f56523ba6141a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware (sub) version of this Sense Glove Device.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a9c27646837472a9353f56523ba6141a6">More...</a><br /></td></tr>
+<tr class="separator:a9c27646837472a9353f56523ba6141a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec0c1f8d892febfe95158ba11898ae1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a1ec0c1f8d892febfe95158ba11898ae1">firmwareVer</a></td></tr>
+<tr class="memdesc:a1ec0c1f8d892febfe95158ba11898ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Firmware version running on the device's MicroController.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a1ec0c1f8d892febfe95158ba11898ae1">More...</a><br /></td></tr>
+<tr class="separator:a1ec0c1f8d892febfe95158ba11898ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa176a14e9926f716a1ecf1b69a2c46ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#aa176a14e9926f716a1ecf1b69a2c46ba">subFirmwareVer</a></td></tr>
+<tr class="memdesc:aa176a14e9926f716a1ecf1b69a2c46ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sub-Firmware version running on the device's MicroController.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#aa176a14e9926f716a1ecf1b69a2c46ba">More...</a><br /></td></tr>
+<tr class="separator:aa176a14e9926f716a1ecf1b69a2c46ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5741e09623afed678b8409e85bb237"><td class="memItemLeft" align="right" valign="top"><a id="a7e5741e09623afed678b8409e85bb237"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRight</b></td></tr>
 <tr class="separator:a7e5741e09623afed678b8409e85bb237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7a19049d756d90e29e2cd7520ea639"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#adb7a19049d756d90e29e2cd7520ea639">numberOfSensors</a></td></tr>
 <tr class="memdesc:adb7a19049d756d90e29e2cd7520ea639"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of Sensors in this <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html" title="Interface for the Sense Glove; and exoskeleton Force-Feedback glove.">SenseGlove</a>.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#adb7a19049d756d90e29e2cd7520ea639">More...</a><br /></td></tr>
 <tr class="separator:adb7a19049d756d90e29e2cd7520ea639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af987262f2a06b3731b9de66b3f9a348b"><td class="memItemLeft" align="right" valign="top"><a id="af987262f2a06b3731b9de66b3f9a348b"></a>
-<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>imuCorrection</b></td></tr>
+<a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>imuCorrection</b></td></tr>
 <tr class="separator:af987262f2a06b3731b9de66b3f9a348b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49925e42b5740319087d599f91b74250"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a49925e42b5740319087d599f91b74250">startPositions</a></td></tr>
 <tr class="memdesc:a49925e42b5740319087d599f91b74250"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting positions of each Sense Glove finger, relative to the glove origin  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a49925e42b5740319087d599f91b74250">More...</a><br /></td></tr>
 <tr class="separator:a49925e42b5740319087d599f91b74250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85403380e7411e9ae9803b96d951f14"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#af85403380e7411e9ae9803b96d951f14">startRotations</a></td></tr>
+<tr class="memitem:af85403380e7411e9ae9803b96d951f14"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#af85403380e7411e9ae9803b96d951f14">startRotations</a></td></tr>
 <tr class="memdesc:af85403380e7411e9ae9803b96d951f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting rotations of each Sense Glove finger, relative to the glove origin  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#af85403380e7411e9ae9803b96d951f14">More...</a><br /></td></tr>
 <tr class="separator:af85403380e7411e9ae9803b96d951f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4ddd54ce6633c187c06aef01e6590b6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#ad4ddd54ce6633c187c06aef01e6590b6">gloveLengths</a></td></tr>
@@ -215,19 +186,51 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a914f0bb7ffd1d2015c005b83e2b15d8d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a914f0bb7ffd1d2015c005b83e2b15d8d">functions</a></td></tr>
 <tr class="memdesc:a914f0bb7ffd1d2015c005b83e2b15d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this device has a specific function (T/F).  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a914f0bb7ffd1d2015c005b83e2b15d8d">More...</a><br /></td></tr>
 <tr class="separator:a914f0bb7ffd1d2015c005b83e2b15d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_s_g_core_1_1_device_model"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_s_g_core_1_1_device_model')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_s_g_core_1_1_device_model.html">SGCore::DeviceModel</a></td></tr>
-<tr class="memitem:aa962eb5b3badca3d3e92edfd92c313ce inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">deviceID</a></td></tr>
-<tr class="memdesc:aa962eb5b3badca3d3e92edfd92c313ce inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier of this device.  <a href="class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce">More...</a><br /></td></tr>
-<tr class="separator:aa962eb5b3badca3d3e92edfd92c313ce inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af46d3b3bcdfb207d9bf430bcce99ff inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">hardwareVer</a></td></tr>
-<tr class="memdesc:a8af46d3b3bcdfb207d9bf430bcce99ff inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware (sub) version of this Sense Glove Device.  <a href="class_s_g_core_1_1_device_model.html#a8af46d3b3bcdfb207d9bf430bcce99ff">More...</a><br /></td></tr>
-<tr class="separator:a8af46d3b3bcdfb207d9bf430bcce99ff inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33ca7aecd3c04ef7a75b4b3fc26089eb inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">firmwareVer</a></td></tr>
-<tr class="memdesc:a33ca7aecd3c04ef7a75b4b3fc26089eb inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Firmware version running on the device's MicroController.  <a href="class_s_g_core_1_1_device_model.html#a33ca7aecd3c04ef7a75b4b3fc26089eb">More...</a><br /></td></tr>
-<tr class="separator:a33ca7aecd3c04ef7a75b4b3fc26089eb inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f36af85af61b16a5a9e62659b91e959 inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">subFirmwareVer</a></td></tr>
-<tr class="memdesc:a4f36af85af61b16a5a9e62659b91e959 inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sub-Firmware version running on the device's MicroController.  <a href="class_s_g_core_1_1_device_model.html#a4f36af85af61b16a5a9e62659b91e959">More...</a><br /></td></tr>
-<tr class="separator:a4f36af85af61b16a5a9e62659b91e959 inherit pro_attribs_class_s_g_core_1_1_device_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a268453306edd93f2ebb8dbe5b8e62995"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a268453306edd93f2ebb8dbe5b8e62995">ParseLengthString</a> (std::string rawLengths)</td></tr>
+<tr class="memdesc:a268453306edd93f2ebb8dbe5b8e62995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a section of constants into a set of glove lengths.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#a268453306edd93f2ebb8dbe5b8e62995">More...</a><br /></td></tr>
+<tr class="separator:a268453306edd93f2ebb8dbe5b8e62995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8d94a914a41b210b38f4493a7a5ca3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#aed8d94a914a41b210b38f4493a7a5ca3">ParseStartValues</a> (std::string rawValues, std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> &gt; &amp;startPos, std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; &amp;startRot)</td></tr>
+<tr class="memdesc:aed8d94a914a41b210b38f4493a7a5ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a section of constants into a set starting positions and -rotations.  <a href="class_s_g_core_1_1_s_g_1_1_s_g___model.html#aed8d94a914a41b210b38f4493a7a5ca3">More...</a><br /></td></tr>
+<tr class="separator:aed8d94a914a41b210b38f4493a7a5ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aad639f59c0d9fa711f307aea95ee057c"><td class="memItemLeft" align="right" valign="top"><a id="aad639f59c0d9fa711f307aea95ee057c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iID</b></td></tr>
+<tr class="separator:aad639f59c0d9fa711f307aea95ee057c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b16e078d52b903f898b4069b3feb023"><td class="memItemLeft" align="right" valign="top"><a id="a2b16e078d52b903f898b4069b3feb023"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iHW</b></td></tr>
+<tr class="separator:a2b16e078d52b903f898b4069b3feb023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5ba8686cfeb3c0bd2478053d1aa233"><td class="memItemLeft" align="right" valign="top"><a id="a0e5ba8686cfeb3c0bd2478053d1aa233"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iFW</b></td></tr>
+<tr class="separator:a0e5ba8686cfeb3c0bd2478053d1aa233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6908943ac9ed327dd457e4c89c9b28c"><td class="memItemLeft" align="right" valign="top"><a id="ac6908943ac9ed327dd457e4c89c9b28c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iFws</b></td></tr>
+<tr class="separator:ac6908943ac9ed327dd457e4c89c9b28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0f2927da828817f27ffb2bf5fea8f9"><td class="memItemLeft" align="right" valign="top"><a id="a9e0f2927da828817f27ffb2bf5fea8f9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iLR</b></td></tr>
+<tr class="separator:a9e0f2927da828817f27ffb2bf5fea8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39dd832e79501a6d2e09da1e0d74f3eb"><td class="memItemLeft" align="right" valign="top"><a id="a39dd832e79501a6d2e09da1e0d74f3eb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iNS</b></td></tr>
+<tr class="separator:a39dd832e79501a6d2e09da1e0d74f3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2cedaa1922906db081cec03f8daca65"><td class="memItemLeft" align="right" valign="top"><a id="ac2cedaa1922906db081cec03f8daca65"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iFN</b></td></tr>
+<tr class="separator:ac2cedaa1922906db081cec03f8daca65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061d21ded3e655d2262ecee722e28860"><td class="memItemLeft" align="right" valign="top"><a id="a061d21ded3e655d2262ecee722e28860"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iIM</b></td></tr>
+<tr class="separator:a061d21ded3e655d2262ecee722e28860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6a83ac4d66478b02425d9c0053ee51"><td class="memItemLeft" align="right" valign="top"><a id="a0b6a83ac4d66478b02425d9c0053ee51"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iSP</b></td></tr>
+<tr class="separator:a0b6a83ac4d66478b02425d9c0053ee51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba519cbbdf5bbf407a39bc9310d61d8"><td class="memItemLeft" align="right" valign="top"><a id="adba519cbbdf5bbf407a39bc9310d61d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iSR</b></td></tr>
+<tr class="separator:adba519cbbdf5bbf407a39bc9310d61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2edb2288f3bd5427044d505860e913"><td class="memItemLeft" align="right" valign="top"><a id="a8e2edb2288f3bd5427044d505860e913"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>iLn</b></td></tr>
+<tr class="separator:a8e2edb2288f3bd5427044d505860e913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains device information about a Sense Glove. </p>
@@ -296,7 +299,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&#160;</td>
           <td class="paramname"><em>imuCorr</em>, </td>
         </tr>
         <tr>
@@ -308,7 +311,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt;&#160;</td>
           <td class="paramname"><em>startRot</em>, </td>
         </tr>
         <tr>
@@ -498,7 +501,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> SGCore::SG::SG_Model::GetStartRotation </td>
+          <td class="memname"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> SGCore::SG::SG_Model::GetStartRotation </td>
           <td>(</td>
           <td class="paramtype">SGCore::Finger&#160;</td>
           <td class="paramname"><em>finger</em></td><td>)</td>
@@ -518,7 +521,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; SGCore::SG::SG_Model::GetStartRotations </td>
+          <td class="memname">std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; SGCore::SG::SG_Model::GetStartRotations </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -657,7 +660,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>startRot</em>&#160;</td>
         </tr>
         <tr>
@@ -692,8 +695,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Serialize this HandProfile into a string representation </p>
-<p>summary&gt; Deserialize a HandProfile back into useable values. </p>
+<p>Serialize this <a class="el" href="class_s_g_core_1_1_hand_profile.html" title="Interpolation profiles for a user&#39;s hand, compatible with all HapticGloves.">HandProfile</a> into a string representation </p>
+<p>summary&gt; Deserialize a <a class="el" href="class_s_g_core_1_1_hand_profile.html" title="Interpolation profiles for a user&#39;s hand, compatible with all HapticGloves.">HandProfile</a> back into useable values. </p>
 
 </div>
 </div>
@@ -765,24 +768,48 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a806624c520c7ebcabb9a6fe6cdb47c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806624c520c7ebcabb9a6fe6cdb47c9c">&#9670;&nbsp;</a></span>deviceID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SGCore::SG::SG_Model::deviceID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unique identifier of this device. </p>
+
+</div>
+</div>
+<a id="a1ec0c1f8d892febfe95158ba11898ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec0c1f8d892febfe95158ba11898ae1">&#9670;&nbsp;</a></span>firmwareVer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SGCore::SG::SG_Model::firmwareVer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Firmware version running on the device's MicroController. </p>
+
+</div>
+</div>
 <a id="a914f0bb7ffd1d2015c005b83e2b15d8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a914f0bb7ffd1d2015c005b83e2b15d8d">&#9670;&nbsp;</a></span>functions</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;bool&gt; SGCore::SG::SG_Model::functions</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Whether this device has a specific function (T/F). </p>
@@ -794,46 +821,30 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a>&gt; &gt; SGCore::SG::SG_Model::gloveLengths</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The lengths of each Sense Glove finger section, in mm. </p>
 
 </div>
 </div>
-<a id="a7e5741e09623afed678b8409e85bb237"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e5741e09623afed678b8409e85bb237">&#9670;&nbsp;</a></span>isRight</h2>
+<a id="a9c27646837472a9353f56523ba6141a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c27646837472a9353f56523ba6141a6">&#9670;&nbsp;</a></span>hardwareVer</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool SGCore::SG::SG_Model::isRight</td>
+          <td class="memname">std::string SGCore::SG::SG_Model::hardwareVer</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Check if this Sense Glove belongs to a left or right hand. </p>
+<p>Hardware (sub) version of this Sense Glove Device. </p>
 
 </div>
 </div>
@@ -842,19 +853,11 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int SGCore::SG::SG_Model::numberOfSensors</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The number of Sensors in this <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html" title="Interface for the Sense Glove; and exoskeleton Force-Feedback glove.">SenseGlove</a>. </p>
@@ -867,19 +870,11 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;<a class="el" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a>&gt; SGCore::SG::SG_Model::startPositions</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The starting positions of each Sense Glove finger, relative to the glove origin </p>
@@ -891,22 +886,31 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&gt; SGCore::SG::SG_Model::startRotations</td>
+          <td class="memname">std::vector&lt;<a class="el" href="class_s_g_core_1_1_kinematics_1_1_quat.html">Kinematics::Quat</a>&gt; SGCore::SG::SG_Model::startRotations</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>The starting rotations of each Sense Glove finger, relative to the glove origin </p>
+
+</div>
+</div>
+<a id="aa176a14e9926f716a1ecf1b69a2c46ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa176a14e9926f716a1ecf1b69a2c46ba">&#9670;&nbsp;</a></span>subFirmwareVer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SGCore::SG::SG_Model::subFirmwareVer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sub-Firmware version running on the device's MicroController. </p>
+<p>summary&gt; Check if this Sense Glove belongs to a left or right hand. </p>
 
 </div>
 </div>

@@ -35,6 +35,12 @@ namespace SGCore
 		///<summary> Address in devices where the number of devices is stored. </summary>
 		static const std::string numDevices;
 
+		///<summary> Address in devices where the scanner's processing id is stored. </summary>
+		static const std::string scanActive;
+
+		///<summary> Address in devices where the scanner's processing id is stored. </summary>
+		static const long maxTimeTick;
+
 		///<summary> Delimiter to split data in Shared Memory </summary>
 		static const char listDelim;
 
@@ -51,6 +57,10 @@ namespace SGCore
 
 		///<summary> Dispose of a shared memory block so it no longer takes up space on the PC. Returns true if succesful. </summary>
 		static bool Dispose(std::string block);
+
+		/// <summary> Access the time since the last update from SGConnect </summary>
+		static bool ScanningActive();
+
 
 	};
 }

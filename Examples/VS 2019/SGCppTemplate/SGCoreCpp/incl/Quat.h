@@ -14,7 +14,7 @@ namespace SGCore
 	namespace Kinematics
 	{
 		/// <summary> A rotation in 3D space that can be applied to a 3D vector or converted into Euler Angles. </summary>
-		struct SGCORE_API Quat
+		class SGCORE_API Quat
 		{
 
 		public:

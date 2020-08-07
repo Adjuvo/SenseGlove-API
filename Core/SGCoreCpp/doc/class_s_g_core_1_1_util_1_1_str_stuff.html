@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>SGCore</b></li><li class="navelem"><b>Util</b></li><li class="navelem"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html">StrStuff</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_s_g_core.html">SGCore</a></li><li class="navelem"><a class="el" href="namespace_s_g_core_1_1_util.html">Util</a></li><li class="navelem"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html">StrStuff</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -86,8 +86,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afc777bf85ade1be74950723d0c48e7a7"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#afc777bf85ade1be74950723d0c48e7a7">Split</a> (std::string s, const char delimiter)</td></tr>
 <tr class="memdesc:afc777bf85ade1be74950723d0c48e7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a std::string into a vector of std::strings by a delimiter  <a href="class_s_g_core_1_1_util_1_1_str_stuff.html#afc777bf85ade1be74950723d0c48e7a7">More...</a><br /></td></tr>
 <tr class="separator:afc777bf85ade1be74950723d0c48e7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a280d23a81db24be81e4e266490e7cfc1"><td class="memItemLeft" align="right" valign="top"><a id="a280d23a81db24be81e4e266490e7cfc1"></a>
-static SGCORE_API std::string&#160;</td><td class="memItemRight" valign="bottom"><b>QuickSplit</b> (std::string &amp;input, char delim, int getIndex)</td></tr>
+<tr class="memitem:a280d23a81db24be81e4e266490e7cfc1"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a280d23a81db24be81e4e266490e7cfc1">QuickSplit</a> (std::string &amp;input, char delim, int getIndex)</td></tr>
 <tr class="separator:a280d23a81db24be81e4e266490e7cfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9420a2c0946e08d543e71b04d0cd879"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#ab9420a2c0946e08d543e71b04d0cd879">ToInt</a> (std::string str, int fallback=0)</td></tr>
 <tr class="memdesc:ab9420a2c0946e08d543e71b04d0cd879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string into an integer value.  <a href="class_s_g_core_1_1_util_1_1_str_stuff.html#ab9420a2c0946e08d543e71b04d0cd879">More...</a><br /></td></tr>
@@ -98,10 +97,99 @@ static SGCORE_API std::string&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a1b7557d2ec23d105078efe2cb15ddb36"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a1b7557d2ec23d105078efe2cb15ddb36">ToString</a> (SGCore::Finger finger)</td></tr>
 <tr class="memdesc:a1b7557d2ec23d105078efe2cb15ddb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a finger into a string notation.  <a href="class_s_g_core_1_1_util_1_1_str_stuff.html#a1b7557d2ec23d105078efe2cb15ddb36">More...</a><br /></td></tr>
 <tr class="separator:a1b7557d2ec23d105078efe2cb15ddb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab965bec96470cea0a3ecdd9ecabb465c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#ab965bec96470cea0a3ecdd9ecabb465c">ReplaceChars</a> (std::string str, char from, char to)</td></tr>
+<tr class="memdesc:ab965bec96470cea0a3ecdd9ecabb465c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace all occurences of a character with another one.  <a href="class_s_g_core_1_1_util_1_1_str_stuff.html#ab965bec96470cea0a3ecdd9ecabb465c">More...</a><br /></td></tr>
+<tr class="separator:ab965bec96470cea0a3ecdd9ecabb465c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class to convert strings into useable values. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a280d23a81db24be81e4e266490e7cfc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280d23a81db24be81e4e266490e7cfc1">&#9670;&nbsp;</a></span>QuickSplit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SGCore::Util::StrStuff::QuickSplit </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>delim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>getIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab965bec96470cea0a3ecdd9ecabb465c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab965bec96470cea0a3ecdd9ecabb465c">&#9670;&nbsp;</a></span>ReplaceChars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SGCore::Util::StrStuff::ReplaceChars </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Replace all occurences of a character with another one. </p>
+
+</div>
+</div>
 <a id="afc777bf85ade1be74950723d0c48e7a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc777bf85ade1be74950723d0c48e7a7">&#9670;&nbsp;</a></span>Split()</h2>
 
@@ -246,7 +334,7 @@ static SGCORE_API std::string&#160;</td><td class="memItemRight" valign="bottom"
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/<a class="el" href="_str_stuff_8h_source.html">StrStuff.h</a></li>
-<li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/StrStuff.cpp</li>
+<li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/<a class="el" href="_str_stuff_8cpp.html">StrStuff.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

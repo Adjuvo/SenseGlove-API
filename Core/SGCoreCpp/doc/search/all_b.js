@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['lastbuzzcmd_112',['lastBuzzCmd',['../class_s_g_core_1_1_s_g_1_1_sense_glove.html#ab0e2b2886515aea3d7aa2a5b42a5e132',1,'SGCore::SG::SenseGlove']]],
-  ['lastffbcmd_113',['lastFFBCmd',['../class_s_g_core_1_1_s_g_1_1_sense_glove.html#a63dd551fd37ac3ee68d0e46a238834b7',1,'SGCore::SG::SenseGlove']]],
-  ['levels_114',['levels',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a25b5dc251f9658731f601e86e5eacac8',1,'SGCore::Haptics::SG_FingerCmd']]],
-  ['limit_5fmax_115',['LIMIT_MAX',['../class_s_g_core_1_1_kinematics_1_1_anatomy.html#aad5dae857bdb711ba0315ec237835076',1,'SGCore::Kinematics::Anatomy']]],
-  ['limit_5fmin_116',['LIMIT_MIN',['../class_s_g_core_1_1_kinematics_1_1_anatomy.html#a479a7d21856f9094d03aa29cddbdeb7d',1,'SGCore::Kinematics::Anatomy']]],
-  ['listdelim_117',['listDelim',['../class_s_g_core_1_1_shared_mem.html#afa20f9e0df9cc5fbeb5c51d770badb9d',1,'SGCore::SharedMem']]]
+  ['lastbuzzcmd_228',['lastBuzzCmd',['../class_s_g_core_1_1_haptic_glove.html#a7049b55f68ae9ced3e1c35b51815f910',1,'SGCore::HapticGlove']]],
+  ['lastffbcmd_229',['lastFFBCmd',['../class_s_g_core_1_1_haptic_glove.html#af48b026624ff97a59cb8fabf92d0be1c',1,'SGCore::HapticGlove']]],
+  ['lastthumper_230',['lastThumper',['../class_s_g_core_1_1_haptic_glove.html#a67ea28c11d0a5ec29838eeb10602d0d6',1,'SGCore::HapticGlove']]],
+  ['leftright_231',['LeftRight',['../namespace_s_g_core_1_1_fino_1_1_parsing.html#a721c68ae5e6955fd16afd3ffcd77b1d2a477e5d4a712e3643fc5f56110c84e3d7',1,'SGCore::Fino::Parsing::LeftRight()'],['../namespace_s_g_core_1_1_parsing.html#a61fa86f27439ac626c7c8c5314121c6bada9ea1ded933dcf8719cf97d686d3338',1,'SGCore::Parsing::LeftRight()']]],
+  ['levels_232',['levels',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a25b5dc251f9658731f601e86e5eacac8',1,'SGCore::Haptics::SG_FingerCmd']]],
+  ['lf_5faddress_233',['LF_Address',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295ab85b1f0fe259ccfb409e6cd15fa53a6d',1,'SGCore::Util']]],
+  ['lf_5fall_234',['LF_All',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295a3b000615431da2709136c486c629c231',1,'SGCore::Util']]],
+  ['lf_5fconnected_235',['LF_Connected',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295a23a5f0c2d4c9b20b8d560f844f63fb52',1,'SGCore::Util']]],
+  ['lf_5fconnecttype_236',['LF_ConnectType',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295a6c54c2a3f7503d038309059ab4780070',1,'SGCore::Util']]],
+  ['lf_5fcstring_237',['LF_cString',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295ae86e11eae6389ca17bec7fcd4c88d621',1,'SGCore::Util']]],
+  ['lf_5fdevicetype_238',['LF_DeviceType',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295a7722db32784684c0723a6bebfbacd6a2',1,'SGCore::Util']]],
+  ['lf_5fpps_239',['LF_PPS',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295a9dd8e14461912476806fbbd27b0a8d5b',1,'SGCore::Util']]],
+  ['listdelim_240',['listDelim',['../class_s_g_core_1_1_shared_mem.html#afa20f9e0df9cc5fbeb5c51d770badb9d',1,'SGCore::SharedMem']]],
+  ['listdelimiter_241',['listDelimiter',['../class_s_g_core_1_1_util_1_1_communications.html#a4f865a0c879050f2f8c08012b87179ce',1,'SGCore::Util::Communications']]],
+  ['listformat_242',['ListFormat',['../namespace_s_g_core_1_1_util.html#ad7e61c1dfc48fda0d8b53e6dbda58295',1,'SGCore::Util']]],
+  ['log_243',['Log',['../class_s_g_core_1_1_diagnostics_1_1_debugger.html#a60b8f90630b5f6e1abf53ac8fb3013a9',1,'SGCore::Diagnostics::Debugger']]]
 ];

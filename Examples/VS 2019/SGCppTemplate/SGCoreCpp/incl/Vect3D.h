@@ -81,8 +81,12 @@ namespace SGCore
 			//--------------------------------------------------------------------------------------
 			// Serialization
 
+			/// <summary> Serialize a Vect3D into a string representation </summary>
 			static bool Deserialize(std::string str, Vect3D& result, const char delim);
 
+			/// <summary> Convert a serialized Vect3D back into its class representation. </summary>
+			/// <param name="delim"></param>
+			/// <returns></returns>
 			std::string Serialize(const char delim);
 
 		};

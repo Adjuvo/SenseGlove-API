@@ -13,7 +13,7 @@
 #include "Fingers.h"
 #include "Vect3D.h"
 #include "Quat.h"
-#include "SG_Model.h"
+#include "SG_GloveInfo.h"
 #include "SG_HandProfile.h"
 
 namespace SGCore
@@ -21,7 +21,7 @@ namespace SGCore
 	namespace SG
 	{
 		/// <summary> Represents a pose of a Sense Glove exoskeleton. </summary>
-		struct SGCORE_API SG_GlovePose
+		class SGCORE_API SG_GlovePose
 		{
 
 		public:
@@ -57,7 +57,7 @@ namespace SGCore
 			~SG_GlovePose();
 
 			/// <summary> Returns an idle pose for the Sense Glove if no data can be found. </summary>
-			static SG_GlovePose IdlePose(SG_Model glove);
+			static SG_GlovePose IdlePose(SG_GloveInfo glove);
 
 
 			//--------------------------------------------------------------------------------
@@ -86,10 +86,10 @@ namespace SGCore
 			//---------------------------------------------------------------------------------------------------------------------
 			// Serialization
 
-			///<summary> Serialize this HandProfile into a string representation </summary>
+			///<summary> Serialize this GlovePose into a string representation </summary>
 			std::string Serialize();
 
-			///<summary> Deserialize a HandProfile back into useable values. </summary>
+			///<summary> Deserialize a GlovePose back into useable values. </summary>
 			static SG_GlovePose Deserialize(std::string serializedString);
 
 

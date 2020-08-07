@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['x_437',['x',['../struct_s_g_core_1_1_kinematics_1_1_quat.html#ab04f2dd89928373f8b1ecf102824a1b4',1,'SGCore::Kinematics::Quat::x()'],['../class_s_g_core_1_1_kinematics_1_1_vect3_d.html#ac12389cbf7bfddab7d27c79cd820de4d',1,'SGCore::Kinematics::Vect3D::x()']]],
-  ['x0_438',['x0',['../struct_s_g_core_1_1_kinematics_1_1_interpolation_set.html#ab30f833662b8e81a6d50c7dd1611e951',1,'SGCore::Kinematics::InterpolationSet']]],
-  ['x1_439',['x1',['../struct_s_g_core_1_1_kinematics_1_1_interpolation_set.html#ac55172b201d49ad7368a85b18bc7f8f8',1,'SGCore::Kinematics::InterpolationSet']]]
+  ['unknown_859',['UNKNOWN',['../_device_types_8h.html#ab6aedfcb4a10d1a01e272f492e2c2765',1,'DeviceTypes.h']]]
 ];

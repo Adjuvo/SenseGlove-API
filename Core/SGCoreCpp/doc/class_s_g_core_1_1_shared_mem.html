@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.1</span>
+   &#160;<span id="projectnumber">v1.2</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>SGCore</b></li><li class="navelem"><a class="el" href="class_s_g_core_1_1_shared_mem.html">SharedMem</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_s_g_core.html">SGCore</a></li><li class="navelem"><a class="el" href="class_s_g_core_1_1_shared_mem.html">SharedMem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,15 +84,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae2499da3efc2e556a8669d4b96c4b7c1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#ae2499da3efc2e556a8669d4b96c4b7c1">WriteTo</a> (std::string block, std::string address, std::string value, unsigned int size=stdSize)</td></tr>
+<tr class="memitem:ae2499da3efc2e556a8669d4b96c4b7c1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#ae2499da3efc2e556a8669d4b96c4b7c1">WriteTo</a> (std::string block, std::string address, std::string value, unsigned int size=<a class="el" href="class_s_g_core_1_1_shared_mem.html#ab86d48188de04cf6a8a8717c03c86656">stdSize</a>)</td></tr>
 <tr class="memdesc:ae2499da3efc2e556a8669d4b96c4b7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string to Shared Memory at block-addess. Returns true if succesful.  <a href="class_s_g_core_1_1_shared_mem.html#ae2499da3efc2e556a8669d4b96c4b7c1">More...</a><br /></td></tr>
 <tr class="separator:ae2499da3efc2e556a8669d4b96c4b7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90202ab00dfed032e9ff9cd90bdbed2e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#a90202ab00dfed032e9ff9cd90bdbed2e">ReadFrom</a> (std::string block, std::string address, std::string &amp;output)</td></tr>
 <tr class="memdesc:a90202ab00dfed032e9ff9cd90bdbed2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Dispose of a shared memory block so it no longer takes up space on the PC. Returns true if succesful.  <a href="class_s_g_core_1_1_shared_mem.html#a90202ab00dfed032e9ff9cd90bdbed2e">More...</a><br /></td></tr>
 <tr class="separator:a90202ab00dfed032e9ff9cd90bdbed2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaaaa3fca9fab28ee98e3008bf0bec90"><td class="memItemLeft" align="right" valign="top"><a id="aaaaaa3fca9fab28ee98e3008bf0bec90"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> (std::string block)</td></tr>
+<tr class="memitem:aaaaaa3fca9fab28ee98e3008bf0bec90"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#aaaaaa3fca9fab28ee98e3008bf0bec90">Dispose</a> (std::string block)</td></tr>
 <tr class="separator:aaaaaa3fca9fab28ee98e3008bf0bec90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a2184b5e6d4e3ce7c31fce05434013"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#ad5a2184b5e6d4e3ce7c31fce05434013">ScanningActive</a> ()</td></tr>
+<tr class="memdesc:ad5a2184b5e6d4e3ce7c31fce05434013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the time since the last update from SGConnect  <a href="class_s_g_core_1_1_shared_mem.html#ad5a2184b5e6d4e3ce7c31fce05434013">More...</a><br /></td></tr>
+<tr class="separator:ad5a2184b5e6d4e3ce7c31fce05434013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -112,18 +114,49 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a1644fd7cda6206073a04205f977794d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Address in devices where the number of devices is stored.  <a href="class_s_g_core_1_1_shared_mem.html#a1644fd7cda6206073a04205f977794d1">More...</a><br /></td></tr>
 <tr class="separator:a1644fd7cda6206073a04205f977794d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa52289cab3f89a0c872d4b3bbe6c86"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#a7aa52289cab3f89a0c872d4b3bbe6c86">numDevices</a> = &quot;nDevices&quot;</td></tr>
-<tr class="memdesc:a7aa52289cab3f89a0c872d4b3bbe6c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Delimiter to split data in Shared Memory  <a href="class_s_g_core_1_1_shared_mem.html#a7aa52289cab3f89a0c872d4b3bbe6c86">More...</a><br /></td></tr>
+<tr class="memdesc:a7aa52289cab3f89a0c872d4b3bbe6c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Address in devices where the scanner's processing id is stored.  <a href="class_s_g_core_1_1_shared_mem.html#a7aa52289cab3f89a0c872d4b3bbe6c86">More...</a><br /></td></tr>
 <tr class="separator:a7aa52289cab3f89a0c872d4b3bbe6c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c82c2605575de9c86518ee9c47312bf"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#a8c82c2605575de9c86518ee9c47312bf">scanActive</a> = &quot;scanActive&quot;</td></tr>
+<tr class="memdesc:a8c82c2605575de9c86518ee9c47312bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Address in devices where the scanner's processing id is stored.  <a href="class_s_g_core_1_1_shared_mem.html#a8c82c2605575de9c86518ee9c47312bf">More...</a><br /></td></tr>
+<tr class="separator:a8c82c2605575de9c86518ee9c47312bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a879b12ff151c882601abfdd11146e27f"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#a879b12ff151c882601abfdd11146e27f">maxTimeTick</a> = 10</td></tr>
+<tr class="memdesc:a879b12ff151c882601abfdd11146e27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Delimiter to split data in Shared Memory  <a href="class_s_g_core_1_1_shared_mem.html#a879b12ff151c882601abfdd11146e27f">More...</a><br /></td></tr>
+<tr class="separator:a879b12ff151c882601abfdd11146e27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa20f9e0df9cc5fbeb5c51d770badb9d"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#afa20f9e0df9cc5fbeb5c51d770badb9d">listDelim</a> = '@'</td></tr>
 <tr class="memdesc:afa20f9e0df9cc5fbeb5c51d770badb9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">summary&gt; Standard size of Shared Memory. It works with this but could probably use a lower value.  <a href="class_s_g_core_1_1_shared_mem.html#afa20f9e0df9cc5fbeb5c51d770badb9d">More...</a><br /></td></tr>
 <tr class="separator:afa20f9e0df9cc5fbeb5c51d770badb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab86d48188de04cf6a8a8717c03c86656"><td class="memItemLeft" align="right" valign="top"><a id="ab86d48188de04cf6a8a8717c03c86656"></a>
-static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>stdSize</b> = 4096</td></tr>
+<tr class="memitem:ab86d48188de04cf6a8a8717c03c86656"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_shared_mem.html#ab86d48188de04cf6a8a8717c03c86656">stdSize</a> = 4096</td></tr>
 <tr class="separator:ab86d48188de04cf6a8a8717c03c86656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility Class used to write and read to/from IPC </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaaaaa3fca9fab28ee98e3008bf0bec90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaaaa3fca9fab28ee98e3008bf0bec90">&#9670;&nbsp;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SGCore::SharedMem::Dispose </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a90202ab00dfed032e9ff9cd90bdbed2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90202ab00dfed032e9ff9cd90bdbed2e">&#9670;&nbsp;</a></span>ReadFrom()</h2>
 
@@ -168,6 +201,33 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="ad5a2184b5e6d4e3ce7c31fce05434013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a2184b5e6d4e3ce7c31fce05434013">&#9670;&nbsp;</a></span>ScanningActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SGCore::SharedMem::ScanningActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Access the time since the last update from SGConnect </p>
+
+</div>
+</div>
 <a id="ae2499da3efc2e556a8669d4b96c4b7c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2499da3efc2e556a8669d4b96c4b7c1">&#9670;&nbsp;</a></span>WriteTo()</h2>
 
@@ -199,7 +259,7 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>size</em> = <code>stdSize</code>&#160;</td>
+          <td class="paramname"><em>size</em> = <code><a class="el" href="class_s_g_core_1_1_shared_mem.html#ab86d48188de04cf6a8a8717c03c86656">stdSize</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -341,6 +401,30 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="a879b12ff151c882601abfdd11146e27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879b12ff151c882601abfdd11146e27f">&#9670;&nbsp;</a></span>maxTimeTick</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long SGCore::SharedMem::maxTimeTick = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>summary&gt; Delimiter to split data in Shared Memory </p>
+
+</div>
+</div>
 <a id="a7aa52289cab3f89a0c872d4b3bbe6c86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7aa52289cab3f89a0c872d4b3bbe6c86">&#9670;&nbsp;</a></span>numDevices</h2>
 
@@ -361,7 +445,7 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
 </table>
 </div><div class="memdoc">
 
-<p>summary&gt; Delimiter to split data in Shared Memory </p>
+<p>summary&gt; Address in devices where the scanner's processing id is stored. </p>
 
 </div>
 </div>
@@ -389,9 +473,55 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="a8c82c2605575de9c86518ee9c47312bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c82c2605575de9c86518ee9c47312bf">&#9670;&nbsp;</a></span>scanActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string SGCore::SharedMem::scanActive = &quot;scanActive&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>summary&gt; Address in devices where the scanner's processing id is stored. </p>
+
+</div>
+</div>
+<a id="ab86d48188de04cf6a8a8717c03c86656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86d48188de04cf6a8a8717c03c86656">&#9670;&nbsp;</a></span>stdSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int SGCore::SharedMem::stdSize = 4096</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/<a class="el" href="_shared_mem_8h_source.html">SharedMem.h</a></li>
-<li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/SharedMem.cpp</li>
+<li>D:/Gitlab/SenseGloveAPI/Core/SGConnect/SGCore/<a class="el" href="_shared_mem_8cpp.html">SharedMem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['lastbuzzcmd_410',['lastBuzzCmd',['../class_s_g_core_1_1_s_g_1_1_sense_glove.html#ab0e2b2886515aea3d7aa2a5b42a5e132',1,'SGCore::SG::SenseGlove']]],
-  ['lastffbcmd_411',['lastFFBCmd',['../class_s_g_core_1_1_s_g_1_1_sense_glove.html#a63dd551fd37ac3ee68d0e46a238834b7',1,'SGCore::SG::SenseGlove']]],
-  ['levels_412',['levels',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a25b5dc251f9658731f601e86e5eacac8',1,'SGCore::Haptics::SG_FingerCmd']]],
-  ['limit_5fmax_413',['LIMIT_MAX',['../class_s_g_core_1_1_kinematics_1_1_anatomy.html#aad5dae857bdb711ba0315ec237835076',1,'SGCore::Kinematics::Anatomy']]],
-  ['limit_5fmin_414',['LIMIT_MIN',['../class_s_g_core_1_1_kinematics_1_1_anatomy.html#a479a7d21856f9094d03aa29cddbdeb7d',1,'SGCore::Kinematics::Anatomy']]],
-  ['listdelim_415',['listDelim',['../class_s_g_core_1_1_shared_mem.html#afa20f9e0df9cc5fbeb5c51d770badb9d',1,'SGCore::SharedMem']]]
+  ['jointinterpolations_802',['jointInterpolations',['../class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a98402dd403e9871a3d9c07ed90f9fa03',1,'SGCore::Kinematics::HandInterpolator']]],
+  ['jointpositions_803',['jointPositions',['../class_s_g_core_1_1_hand_pose.html#a9900f710444aa6d27286e16e9bc143da',1,'SGCore::HandPose::jointPositions()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#af8000f4235c6d1ff4c096df9921a576d',1,'SGCore::SG::SG_GlovePose::jointPositions()']]],
+  ['jointrotations_804',['jointRotations',['../class_s_g_core_1_1_hand_pose.html#a23dd4b3ef59fed20e3b68cc117ab917f',1,'SGCore::HandPose::jointRotations()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#aa7b5ede5130494acb454a037f650e72a',1,'SGCore::SG::SG_GlovePose::jointRotations()']]]
 ];

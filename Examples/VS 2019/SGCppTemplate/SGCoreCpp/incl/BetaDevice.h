@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------------------
 // Represents a Sense Glove Device that has no specific class within the API.
-// Used to test different iterations of the same product before integrating it here.
-// Allows access to raw sensor values and commands.
+// Used to test different iterations of the same product before integrating it into the Core API.
+// Allows access to raw sensor values and commands of such a device.
 // @author: Max Lammers
 // ----------------------------------------------------------------------------------
 
@@ -14,6 +14,7 @@
 
 namespace SGCore
 {
+	/// <summary> A Device that adheres to the SenseGlove communications protocol, but which has no implementation in this API. </summary>
 	class SGCORE_API BetaDevice : public SGDevice
 	{
 
@@ -63,6 +64,7 @@ namespace SGCore
 		/// <summary> Retireve this device's firmware version. </summary>
 		int GetFirmwareVersion() override { return fwVersionMain; }
 
+		/// <summary> Retireve this device's sub-firmware version. </summary>
 		int GetSubFirmwareVersion() override { return fwVersionSub; }
 
 		//--------------------------------------------------------------------------------------
@@ -88,7 +90,7 @@ namespace SGCore
 		// Serialization
 
 		///<summary> Deserialize a beta device from its basic cstring. Returns nullptr is unsuccesfull. </summary>
-		static std::shared_ptr<SGDevice> Deserialize(std::string cstring);
+		static std::shared_ptr<SGDevice> Parse(std::string cstring);
 
 	};
 }

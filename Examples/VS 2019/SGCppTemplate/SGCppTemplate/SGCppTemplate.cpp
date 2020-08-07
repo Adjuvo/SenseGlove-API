@@ -27,7 +27,7 @@ int main()
 			testGlove.SendHaptics(SGCore::Haptics::SG_BuzzCmd::off); //turn off all Buzz Motors.
 			std::this_thread::sleep_for(std::chrono::milliseconds(10)); //wait for 10ms.
 
-			SGCore::SG::SG_Model model = testGlove.GetGloveModel(); //Retrieve device information
+			SGCore::SG::SG_GloveInfo model = testGlove.GetGloveModel(); //Retrieve device information
 			std::cout << std::endl;
 			std::cout << model.ToString(true) << std::endl; //Log some basic information to the user. (true indicates a short notation is desired)
 
@@ -47,6 +47,7 @@ int main()
 
 				//If we wish to calculate hand variables, we need a "hand profile" to tell the Sense Glove our hand lengths.
 				SGCore::SG::SG_HandProfile handProfile = SGCore::SG::SG_HandProfile::Default(testGlove.IsRight()); //create a default profile, either left or right.
+				SGCore::Kinematics::BasicHandModel handModel = SGCore::Kinematics::BasicHandModel::Default(testGlove.IsRight()); //create a default profile, either left or right.
 				std::vector<SGCore::Kinematics::Vect3D> tipPositions = glovePose.CalculateFingerTips(handProfile); //calculates fingertip position
 
 				std::cout << std::endl;
@@ -59,7 +60,7 @@ int main()
 				//HandPose Example
 
 				SGCore::HandPose handPose;
-				if (testGlove.GetHandPose(handProfile, SGCore::SG::SG_Solver::Interpolation, handPose))
+				if (testGlove.GetHandPose(handModel, handProfile, handPose))
 				{
 					std::cout << std::endl;
 					std::cout << "Calculated Hand Pose: " << std::endl << handPose.ToString() << std::endl;

@@ -6,13 +6,14 @@
 
 #pragma once
 
+#include "SGCore.h"
 #include <string>
 #include <vector>
 
 namespace SGCore
 {
 	/// <summary> Base class containing the minimum amount of data for device models. </summary>
-	class DeviceModel
+	class SGCORE_API DeviceModel
 	{
 
 	protected:
@@ -31,9 +32,6 @@ namespace SGCore
 
 		/// <summary> Sub-Firmware version running on the device's MicroController. </summary>
 		int subFirmwareVer;
-
-		///<summary> Parse a 32-bit integer value into a set of booleans (010010011) that indicate which (optional) functions this device has.  </summary>
-		static std::vector<bool> ParseFunctions(int value, int size);
 
 	public:
 
@@ -61,6 +59,9 @@ namespace SGCore
 
 
 		static void ParseFirmware(std::string& rawFW, int& mainVer, int& subVer);
+
+		///<summary> Parse a 32-bit integer value into a set of booleans (010010011) that indicate which (optional) functions this device has.  </summary>
+		static std::vector<bool> ParseFunctions(int value, int size);
 
 
 	};

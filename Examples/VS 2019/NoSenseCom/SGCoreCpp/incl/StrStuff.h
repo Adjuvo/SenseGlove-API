@@ -15,7 +15,7 @@ namespace SGCore
 	namespace Util
 	{
 		/// <summary> Utility class to convert strings into useable values. </summary>
-		class StrStuff
+		class SGCORE_API StrStuff
 		{
 
 		public:
@@ -23,7 +23,7 @@ namespace SGCore
 			///<summary> Split a std::string into a vector of std::strings by a delimiter </summary>
 			static std::vector<std::string> Split(std::string s, const char delimiter);
 
-			SGCORE_API static std::string QuickSplit(std::string& input, char delim, int getIndex);
+			static std::string QuickSplit(std::string& input, char delim, int getIndex);
 
 			/// <summary> Convert a string into an integer value. </summary>
 			static int ToInt(std::string str, int fallback = 0);
@@ -34,6 +34,8 @@ namespace SGCore
 			/// <summary> Convert a finger into a string notation. </summary>
 			static std::string ToString(SGCore::Finger finger);
 
+			/// <summary> Replace all occurences of a character with another one. </summary>
+			static std::string ReplaceChars(std::string str, char from, char to);
 		};
 	}
 }

@@ -7,7 +7,7 @@ This folder contains executable versions for different platforms. There is also 
 ## Advanced 
 
 ### Running without the SenseCom UI
-SenseCom is technically a UI around the SGConnect library, which handles the detection of- and communication with SenseGlove devices. It adds features such as calibration and firmware checks. Sense Glove recommends using SenseCom as the method of establishing communications. If, for any reason, you are unable or unwilling to run SenseCom in the background, it is possible to isolate the SGConnect library and import it into your own C++ project.
+SenseCom is technically a UI around the SGConnect library, which handles the detection of- and communication with SenseGlove devices. It adds features such as calibration and firmware checks. Sense Glove recommends using SenseCom as the method of establishing communications. If, for any reason, you are unable or unwilling to run SenseCom in the background, it is possible to isolate the SGConnect library and import it into your own C++ project. This library can be found in the "Core" folder.
 
 - The ScanningActive() method will return true if another process is already interfacing with SenseGlove devices. Use this function to avoid calling the Init() function to prevent communication issues if your end user chooses to run SenseCom.
 - By calling the Init() function of the SGConnect Library, you will start a background process which will begin scanning for devices. It is best to call this function as soon as you start your program, since it will take a few moments before all devices have been recognized. Use the ScanningActive() function described above to ensure proper interfacing.

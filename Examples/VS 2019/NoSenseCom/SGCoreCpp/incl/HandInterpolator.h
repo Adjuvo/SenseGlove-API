@@ -13,6 +13,7 @@
 #include "Quat.h"
 #include "Vect3D.h"
 #include "InterpolationSet.h"
+#include "Serializer.h"
 
 namespace SGCore
 {
@@ -66,6 +67,10 @@ namespace SGCore
 			float CalculateAngle(Finger finger, ThumbMovement movement, float value);
 
 
+			bool Equals(HandInterpolator other);
+
+
+
 			//--------------------------------------------------------------------------------------
 			// Hand Interpolation Methods
 
@@ -80,6 +85,20 @@ namespace SGCore
 			/// <summary> Calculate all hand angles based on an interpolator and total xyz angles. </summary>
 			static std::vector<std::vector<Vect3D>> InterpolateHandAngles(HandInterpolator& profile,
 				std::vector<Vect3D> totalAngles);
+
+
+			//--------------------------------------------------------------------------------------
+			// Serialization
+
+			/// <summary> Serialize this HandInterpolator into a string representation. </summary>
+			/// <returns></returns>
+			std::string Serialize();
+
+			/// <summary> Convert a serialized HandInterpolator back into a class representation. </summary>
+			/// <param name="serializedString"></param>
+			/// <returns></returns>
+			static HandInterpolator Deserialize(std::string serializedString);
+
 
 		};
 	}
