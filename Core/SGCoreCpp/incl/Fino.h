@@ -121,6 +121,11 @@ namespace SGCore
             /// <returns></returns>
             bool GetHandPose(Kinematics::BasicHandModel& handGeometry, HandProfile& handProfile, HandPose& handPose) override;
             
+
+            /// <summary> Calculate the HandPose of this Device, taking into account user values, but not hand geometry. </summary>
+            bool GetHandPose(HandProfile& handProfile, HandPose& handPose) override;
+
+
             /// <summary> Calculate a Hand Pose based on a HandMode; sensor data from a fino, and a UserProfile. </summary>
             /// <param name="handModel"></param>
             /// <param name="finoData"></param>

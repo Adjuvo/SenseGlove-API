@@ -127,8 +127,11 @@ namespace SGCore
 			/// <summary> Retrieve a new hand pose using this glove's data, based on (calibrated) user data. </summary>
 			bool GetHandPose(Kinematics::BasicHandModel& handGeometry, SG_HandProfile& profile, HandPose& handPose);
 
-
+			/// <summary> Calculate the Hand Pose of this device, provided it has Hand Tracking available  </summary>
 			bool GetHandPose(Kinematics::BasicHandModel& handGeometry, HandProfile& handProfile, HandPose& handPose) override;
+
+			/// <summary> Calculate the HandPose of this Device, taking into account user values, but not hand geometry. </summary>
+			bool GetHandPose(HandProfile& handProfile, HandPose& handPose) override;
 
 
 			//--------------------------------------------------------------------------------------

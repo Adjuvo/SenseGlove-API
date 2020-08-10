@@ -88,6 +88,16 @@ namespace SGCore
             return false;
         }
 
+        /// <summary> Calculate the HandPose of this Device, taking into account user values, but not hand geometry. </summary>
+        /// <param name="handProfile"></param>
+        /// <param name="handPose"></param>
+        /// <returns></returns>
+        virtual bool GetHandPose(HandProfile& handProfile, HandPose& handPose)
+        {
+            handPose = HandPose::DefaultIdle(handProfile.isRight);
+            return false;
+        }
+
 
         //--------------------------------------------------------------------------------------
         // Haptics Methods.
