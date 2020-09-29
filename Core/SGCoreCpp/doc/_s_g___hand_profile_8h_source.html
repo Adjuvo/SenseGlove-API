@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.2</span>
+   &#160;<span id="projectnumber">v1.2.1</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -117,49 +117,49 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a5e10fefbadc43b69e8b609b78b9decbe">   50</a></span>&#160;            std::vector&lt;Kinematics::Vect3D&gt; <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a5e10fefbadc43b69e8b609b78b9decbe">fingerThimbleOffset</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aeb34e84e7423e421779c0c7dfc1846c9">   52</a></span>&#160;            SG_Solver <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aeb34e84e7423e421779c0c7dfc1846c9">solver</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59">   55</a></span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59">dThimbleOffset</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="comment">//---------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="comment">// Construction</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a>(<span class="keywordtype">bool</span> right, <a class="code" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html">Kinematics::HandInterpolator</a> interpolator,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                SG_Solver solvr, std::vector&lt;Kinematics::Vect3D&gt; TfingerThimble);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab97ccff1d3e03e03c142450781575145">   68</a></span>&#160;            <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab97ccff1d3e03e03c142450781575145">~SG_HandProfile</a>() { }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">static</span> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a> Default(<span class="keywordtype">bool</span> right);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="comment">//---------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">// Accessors</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab13c1da9dde9619524070400587bed5f">   77</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab13c1da9dde9619524070400587bed5f">IsRight</a>() { <span class="keywordflow">return</span> isRight; }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">bool</span> Equals(<a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a> other);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="comment">//---------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="comment">// Serialization</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            std::string Serialize();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">static</span> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a> Deserialize(std::string serializedString);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        };</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aeb34e84e7423e421779c0c7dfc1846c9">   53</a></span>&#160;            SG_Solver <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aeb34e84e7423e421779c0c7dfc1846c9">solver</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59">   56</a></span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">Kinematics::Vect3D</a> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59">dThimbleOffset</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="comment">//---------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="comment">// Construction</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a>(<span class="keywordtype">bool</span> right, <a class="code" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html">Kinematics::HandInterpolator</a> interpolator,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                SG_Solver solvr, std::vector&lt;Kinematics::Vect3D&gt; TfingerThimble);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab97ccff1d3e03e03c142450781575145">   69</a></span>&#160;            <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab97ccff1d3e03e03c142450781575145">~SG_HandProfile</a>() { }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">static</span> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a> Default(<span class="keywordtype">bool</span> right);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">//---------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">// Accessors</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab13c1da9dde9619524070400587bed5f">   78</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab13c1da9dde9619524070400587bed5f">IsRight</a>() { <span class="keywordflow">return</span> isRight; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">bool</span> Equals(<a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a> other);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="comment">//---------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="comment">// Serialization</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            std::string Serialize();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">static</span> <a class="code" href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html">SG_HandProfile</a> Deserialize(std::string serializedString);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_aeb34e84e7423e421779c0c7dfc1846c9"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aeb34e84e7423e421779c0c7dfc1846c9">SGCore::SG::SG_HandProfile::solver</a></div><div class="ttdeci">SG_Solver solver</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:52</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_aeb34e84e7423e421779c0c7dfc1846c9"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aeb34e84e7423e421779c0c7dfc1846c9">SGCore::SG::SG_HandProfile::solver</a></div><div class="ttdeci">SG_Solver solver</div><div class="ttdoc">The method with which to solve the HandPose</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:53</div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_kinematics_1_1_vect3_d_html"><div class="ttname"><a href="class_s_g_core_1_1_kinematics_1_1_vect3_d.html">SGCore::Kinematics::Vect3D</a></div><div class="ttdoc">Represents a vector with x,y,z coordinates.</div><div class="ttdef"><b>Definition:</b> Vect3D.h:17</div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_a5e10fefbadc43b69e8b609b78b9decbe"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a5e10fefbadc43b69e8b609b78b9decbe">SGCore::SG::SG_HandProfile::fingerThimbleOffset</a></div><div class="ttdeci">std::vector&lt; Kinematics::Vect3D &gt; fingerThimbleOffset</div><div class="ttdoc">Offset from thimble to fingertip, used for Inverse Kinematics.</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:50</div></div>
 <div class="ttc" id="anamespace_s_g_core_html"><div class="ttname"><a href="namespace_s_g_core.html">SGCore</a></div><div class="ttdef"><b>Definition:</b> Anatomy.cpp:7</div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_adc401ae540abbd05d3f654a5afea7edc"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#adc401ae540abbd05d3f654a5afea7edc">SGCore::SG::SG_HandProfile::interpolationSet</a></div><div class="ttdeci">Kinematics::HandInterpolator interpolationSet</div><div class="ttdoc">Interpolation set to estimate joint angles.</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:47</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_a58fc76f7d4fd886b9f461ca99f2b6e59"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59">SGCore::SG::SG_HandProfile::dThimbleOffset</a></div><div class="ttdeci">static const Kinematics::Vect3D dThimbleOffset</div><div class="ttdoc">Default offset from thimble to fingertip.</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:55</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_ab13c1da9dde9619524070400587bed5f"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab13c1da9dde9619524070400587bed5f">SGCore::SG::SG_HandProfile::IsRight</a></div><div class="ttdeci">bool IsRight()</div><div class="ttdoc">Check whether this profile has been created for a right hand (true) or left hand (false).</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:77</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_ab97ccff1d3e03e03c142450781575145"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab97ccff1d3e03e03c142450781575145">SGCore::SG::SG_HandProfile::~SG_HandProfile</a></div><div class="ttdeci">~SG_HandProfile()</div><div class="ttdoc">summary&gt; Retrieve a 'new' profile, for either a left or right hand.</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:68</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_a58fc76f7d4fd886b9f461ca99f2b6e59"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59">SGCore::SG::SG_HandProfile::dThimbleOffset</a></div><div class="ttdeci">static const Kinematics::Vect3D dThimbleOffset</div><div class="ttdoc">Default offset from thimble to fingertip.</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:56</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_ab13c1da9dde9619524070400587bed5f"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab13c1da9dde9619524070400587bed5f">SGCore::SG::SG_HandProfile::IsRight</a></div><div class="ttdeci">bool IsRight()</div><div class="ttdoc">Check whether this profile has been created for a right hand (true) or left hand (false).</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:78</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_s_g_1_1_s_g___hand_profile_html_ab97ccff1d3e03e03c142450781575145"><div class="ttname"><a href="class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab97ccff1d3e03e03c142450781575145">SGCore::SG::SG_HandProfile::~SG_HandProfile</a></div><div class="ttdeci">~SG_HandProfile()</div><div class="ttdoc">summary&gt; Retrieve a 'new' profile, for either a left or right hand.</div><div class="ttdef"><b>Definition:</b> SG_HandProfile.h:69</div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_kinematics_1_1_hand_interpolator_html"><div class="ttname"><a href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html">SGCore::Kinematics::HandInterpolator</a></div><div class="ttdoc">Contains interpolation sets of all joint movements that can be caluclated into a handPose.</div><div class="ttdef"><b>Definition:</b> HandInterpolator.h:24</div></div>
 <div class="ttc" id="a_vect3_d_8h_html"><div class="ttname"><a href="_vect3_d_8h.html">Vect3D.h</a></div></div>
 <div class="ttc" id="a_s_g_core_8h_html"><div class="ttname"><a href="_s_g_core_8h.html">SGCore.h</a></div></div>

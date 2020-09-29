@@ -41,6 +41,9 @@ namespace SGCore
             /// <summary> Converts a buzz-motor command into bytes that the Fino can understand. </summary>
             static std::string ToBytes(Haptics::SG_BuzzCmd cmd);
 
+            /// <summary> Minumum calibration value distance until we apply the range. </summary>
+            static Kinematics::Vect3D minCalRange;
+
 		public:
 
             //---------------------------------------------------------------------------------------------------------------------

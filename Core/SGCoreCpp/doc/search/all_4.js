@@ -32,7 +32,7 @@ var searchData=
   ['devices_76',['devices',['../class_s_g_core_1_1_shared_mem.html#a2ab3a579fe89beeaa4a71fa9616f0f8a',1,'SGCore::SharedMem']]],
   ['devicetypes_2eh_77',['DeviceTypes.h',['../_device_types_8h.html',1,'']]],
   ['disabled_78',['DISABLED',['../_debugger_8h.html#ad72cf0c406d4bd46269f75ed9a21e6f9',1,'Debugger.h']]],
-  ['dispose_79',['Dispose',['../class_s_g_core_1_1_shared_mem.html#aaaaaa3fca9fab28ee98e3008bf0bec90',1,'SGCore::SharedMem']]],
+  ['dispose_79',['Dispose',['../class_s_g_core_1_1_device_list.html#a0430bd9a7ca6d581c91be63e9fbcb4f0',1,'SGCore::DeviceList::Dispose()'],['../class_s_g_core_1_1_shared_mem.html#aaaaaa3fca9fab28ee98e3008bf0bec90',1,'SGCore::SharedMem::Dispose()']]],
   ['distto_80',['DistTo',['../class_s_g_core_1_1_kinematics_1_1_vect3_d.html#aa3b22c8c5117d98edd0f4a771c12b742',1,'SGCore::Kinematics::Vect3D']]],
   ['dthimbleoffset_81',['dThimbleOffset',['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59',1,'SGCore::SG::SG_HandProfile']]]
 ];

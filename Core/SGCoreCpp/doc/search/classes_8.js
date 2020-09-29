@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quat_456',['Quat',['../class_s_g_core_1_1_kinematics_1_1_quat.html',1,'SGCore::Kinematics']]]
+  ['library_463',['Library',['../class_s_g_core_1_1_library.html',1,'SGCore']]]
 ];

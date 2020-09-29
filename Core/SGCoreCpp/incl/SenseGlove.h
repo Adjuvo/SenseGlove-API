@@ -203,6 +203,10 @@ namespace SGCore
 			/// <summary> Convert a SenseGlove GlovePose into calibrationValues. </summary>
 			static std::vector<SGCore::Kinematics::Vect3D> GetCalibrationValues(SG_GlovePose glovePose);
 
+		
+			/// <summary> Apply this glove's calibration range to a handProfile </summary>
+			void ResetCalibrationRange() override;
+
 
 			/// <summary> Apply this glove's calibration range to a handProfile </summary>
 			void ApplyCalibration(HandProfile& profile) override;

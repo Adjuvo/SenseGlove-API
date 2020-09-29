@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCpp
-   &#160;<span id="projectnumber">v1.2</span>
+   &#160;<span id="projectnumber">v1.2.1</span>
    </div>
    <div id="projectbrief">SenseGlove C++ API</div>
   </td>
@@ -89,6 +89,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a91defbd42a87ceb89c852cb85f6b25bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb">SenseCommRunning</a> ()</td></tr>
 <tr class="memdesc:a91defbd42a87ceb89c852cb85f6b25bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the SenseComm program is running.  <a href="class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb">More...</a><br /></td></tr>
 <tr class="separator:a91defbd42a87ceb89c852cb85f6b25bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0430bd9a7ca6d581c91be63e9fbcb4f0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_list.html#a0430bd9a7ca6d581c91be63e9fbcb4f0">Dispose</a> ()</td></tr>
+<tr class="memdesc:a0430bd9a7ca6d581c91be63e9fbcb4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the device list, and block any further attempt to add to it untill ReInitialize is called.  <a href="class_s_g_core_1_1_device_list.html#a0430bd9a7ca6d581c91be63e9fbcb4f0">More...</a><br /></td></tr>
+<tr class="separator:a0430bd9a7ca6d581c91be63e9fbcb4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a10febe44b0f2d941f6e765c917fc0f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_list.html#a7a10febe44b0f2d941f6e765c917fc0f">ReInitialize</a> ()</td></tr>
+<tr class="memdesc:a7a10febe44b0f2d941f6e765c917fc0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When you've accidentaly disposed of the list before you meant to.  <a href="class_s_g_core_1_1_device_list.html#a7a10febe44b0f2d941f6e765c917fc0f">More...</a><br /></td></tr>
+<tr class="separator:a7a10febe44b0f2d941f6e765c917fc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add072bd8986e6e5645ddac220a35db29"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_s_g_core_1_1_s_g_device.html">SGDevice</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_device_list.html#add072bd8986e6e5645ddac220a35db29">GetDevices</a> ()</td></tr>
 <tr class="memdesc:add072bd8986e6e5645ddac220a35db29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all Sense Glove Devices connected to this system.  <a href="class_s_g_core_1_1_device_list.html#add072bd8986e6e5645ddac220a35db29">More...</a><br /></td></tr>
 <tr class="separator:add072bd8986e6e5645ddac220a35db29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +137,35 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the number of devices that have been detected by the SenseComm executable. </p>
+
+</div>
+</div>
+<a id="a0430bd9a7ca6d581c91be63e9fbcb4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0430bd9a7ca6d581c91be63e9fbcb4f0">&#9670;&nbsp;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> void SGCore::DeviceList::Dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear the device list, and block any further attempt to add to it untill ReInitialize is called. </p>
+<p>Useful if your IDE has troubles unloading dlls (cough, Unity, Cough). </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -262,6 +297,34 @@ template&lt;class T &gt; </div>
 
 <p>Retrieve the latest (raw) sensor data from a specific device in our list. </p>
 <p>summary&gt; Send a (raw) command to a specific device in the list. </p>
+
+</div>
+</div>
+<a id="a7a10febe44b0f2d941f6e765c917fc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a10febe44b0f2d941f6e765c917fc0f">&#9670;&nbsp;</a></span>ReInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a> void SGCore::DeviceList::ReInitialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When you've accidentaly disposed of the list before you meant to. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>

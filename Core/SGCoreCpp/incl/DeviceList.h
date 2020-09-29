@@ -27,6 +27,9 @@ namespace SGCore
 		///<summary> A list of all devices that have been detected via the SenseComm executable. </summary>
 		static std::vector< std::shared_ptr<SGDevice> > devices;
 
+
+		static bool disposed;
+
 		//--------------------------------------------------------------------------------------
 		// Internal Methods
 
@@ -49,6 +52,14 @@ namespace SGCore
 		/// <summary> Returns true if the SenseComm program is running. </summary>
 		static SGCORE_API bool SenseCommRunning();
 
+		/// <summary> Clear the device list, and block any further attempt to add to it untill ReInitialize is called. </summary>
+		/// <remarks> Useful if your IDE has troubles unloading dlls (cough, Unity, Cough). </remarks>
+		/// <returns></returns>
+		static SGCORE_API void Dispose();
+
+		/// <summary> When you've accidentaly disposed of the list before you meant to. </summary>
+		/// <returns></returns>
+		static SGCORE_API void ReInitialize();
 
 		//--------------------------------------------------------------------------------------
 		// Device Access Methods

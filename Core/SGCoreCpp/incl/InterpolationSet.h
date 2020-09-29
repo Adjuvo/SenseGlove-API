@@ -65,7 +65,9 @@ namespace SGCore
             /// <returns></returns>
             bool Equals(InterpolationSet other);
 
+			std::string ToString();
 
+			std::string ToString(bool limits);
 
             //--------------------------------------------------------------------------------------
             // Serialization
