@@ -1,0 +1,27 @@
+var class_s_g_core_1_1_haptic_glove =
+[
+    [ "ApplyCalibration", "class_s_g_core_1_1_haptic_glove.html#a8c2ffdbad2eeb8175328c55a21be8876", null ],
+    [ "GetCalibrationRange", "class_s_g_core_1_1_haptic_glove.html#ae8de61a587b1814e6a63d174e86eb7d9", null ],
+    [ "GetCalibrationValues", "class_s_g_core_1_1_haptic_glove.html#a2be3a82461c60789844feaaab3a76082", null ],
+    [ "GetDeviceID", "class_s_g_core_1_1_haptic_glove.html#a38f0ccadf945ca63b5cfbe305c15eebc", null ],
+    [ "GetFirmwareVersion", "class_s_g_core_1_1_haptic_glove.html#a10a26931c0429e6aaa1cacc87394dc33", null ],
+    [ "GetHandPose", "class_s_g_core_1_1_haptic_glove.html#a20d3a2da0c289180290b85da4b7f4bd6", null ],
+    [ "GetHardwareVersion", "class_s_g_core_1_1_haptic_glove.html#a4aaf09692d3775df502aed94779b8706", null ],
+    [ "GetIMURotation", "class_s_g_core_1_1_haptic_glove.html#aace44e261d71beaca82b8ee5b15da907", null ],
+    [ "IsRight", "class_s_g_core_1_1_haptic_glove.html#af416603f0d1e6345e317c0c5f34b6466", null ],
+    [ "ResetCalibrationRange", "class_s_g_core_1_1_haptic_glove.html#aaf7b0e0d3a7b04e0117c43a0c91760d7", null ],
+    [ "SendHaptics", "class_s_g_core_1_1_haptic_glove.html#a31a136fd5a4b50532659cdb1c44ec6bf", null ],
+    [ "SendHaptics", "class_s_g_core_1_1_haptic_glove.html#afd9f7db8c3d50b64072b60d6cb73e10c", null ],
+    [ "SendHaptics", "class_s_g_core_1_1_haptic_glove.html#adf62f756f54708dec45a670c3bb4e073", null ],
+    [ "SendHaptics", "class_s_g_core_1_1_haptic_glove.html#a5d1faa43d64e07b753001437fb9b525a", null ],
+    [ "SendHaptics", "class_s_g_core_1_1_haptic_glove.html#a102ec9f7b1ed66533e6f1a5315674a34", null ],
+    [ "StopHaptics", "class_s_g_core_1_1_haptic_glove.html#a5b93a3745b41de1312c86e39cf763b02", null ],
+    [ "UpdateCalibration", "class_s_g_core_1_1_haptic_glove.html#af5a599432889afdc837c2a0eaff64a0e", null ],
+    [ "UpdateCalibrationRange", "class_s_g_core_1_1_haptic_glove.html#a179ec1714a1e5026f2c508ba9e52f054", null ],
+    [ "UpdateCalibrationRange", "class_s_g_core_1_1_haptic_glove.html#a2f7e78959c6fb825e13555ad306f60ec", null ],
+    [ "lastBuzzCmd", "class_s_g_core_1_1_haptic_glove.html#a0e74ece60ded6319a9e2391beaafecdf", null ],
+    [ "lastFFBCmd", "class_s_g_core_1_1_haptic_glove.html#ad1af0214220ee0a2689a3670e2cd5481", null ],
+    [ "lastThumper", "class_s_g_core_1_1_haptic_glove.html#a6d04146e68efb5a9fafd3ad887650e48", null ],
+    [ "maxValues", "class_s_g_core_1_1_haptic_glove.html#ac77d7fa63ef19e350234c85425325410", null ],
+    [ "minValues", "class_s_g_core_1_1_haptic_glove.html#aad6c631b51643aa0343538c697216736", null ]
+];

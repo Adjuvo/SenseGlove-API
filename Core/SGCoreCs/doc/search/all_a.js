@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['jointkinematics_139',['JointKinematics',['../class_s_g_core_1_1_kinematics_1_1_joint_kinematics.html',1,'SGCore::Kinematics']]],
-  ['jointpositions_140',['jointPositions',['../class_s_g_core_1_1_hand_pose.html#a02fe71bb8bd1e440878311f7fb7ca625',1,'SGCore.HandPose.jointPositions()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a06eec541d721ed45412cf20c44b30d28',1,'SGCore.SG.SG_GlovePose.JointPositions()']]],
-  ['jointrotations_141',['JointRotations',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a4bf185843933856ddd785db0c7608f90',1,'SGCore.SG.SG_GlovePose.JointRotations()'],['../class_s_g_core_1_1_hand_pose.html#a591fe7ee38c451dec82ecfdf53b5418c',1,'SGCore.HandPose.jointRotations()']]]
+  ['lastbuzzcmd_179',['lastBuzzCmd',['../class_s_g_core_1_1_haptic_glove.html#a0e74ece60ded6319a9e2391beaafecdf',1,'SGCore::HapticGlove']]],
+  ['lastcmdid_180',['lastCmdID',['../class_s_g_core_1_1_s_g_device.html#ab08286c343753e3f8ed38bd0bc7e7d0e',1,'SGCore::SGDevice']]],
+  ['lastffbcmd_181',['lastFFBCmd',['../class_s_g_core_1_1_haptic_glove.html#ad1af0214220ee0a2689a3670e2cd5481',1,'SGCore::HapticGlove']]],
+  ['lastthumper_182',['lastThumper',['../class_s_g_core_1_1_haptic_glove.html#a6d04146e68efb5a9fafd3ad887650e48',1,'SGCore::HapticGlove']]],
+  ['levels_183',['levels',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a59df585d3111174fef770145b7ce1593',1,'SGCore.Haptics.SG_FingerCmd.levels()'],['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a2455f6860cb32f92e4c10459584d05a5',1,'SGCore.Haptics.SG_FingerCmd.Levels()']]],
+  ['log_184',['Log',['../class_s_g_core_1_1_diagnostics_1_1_debugger.html#a308995c67b6a0b57ef3dfdacc794ec9b',1,'SGCore::Diagnostics::Debugger']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thumpercmd_298',['ThumperCmd',['../class_s_g_core_1_1_haptics_1_1_thumper_cmd.html',1,'SGCore::Haptics']]]
+  ['vect3d_379',['Vect3D',['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html',1,'SGCore::Kinematics']]]
 ];

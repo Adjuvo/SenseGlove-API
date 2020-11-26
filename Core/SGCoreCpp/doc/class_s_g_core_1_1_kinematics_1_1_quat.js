@@ -1,0 +1,25 @@
+var class_s_g_core_1_1_kinematics_1_1_quat =
+[
+    [ "Quat", "class_s_g_core_1_1_kinematics_1_1_quat.html#ac3ef0ae0a0cd7bfa536c7eb2b69210c6", null ],
+    [ "Quat", "class_s_g_core_1_1_kinematics_1_1_quat.html#acd52fc8a797780e403b596a9aab004fb", null ],
+    [ "~Quat", "class_s_g_core_1_1_kinematics_1_1_quat.html#a6c9de6993611e0bb7ca824996697e356", null ],
+    [ "Deserialize", "class_s_g_core_1_1_kinematics_1_1_quat.html#a5516e348d35977d7142f91e79324bd0f", null ],
+    [ "Equals", "class_s_g_core_1_1_kinematics_1_1_quat.html#a39d454199124dc26a66ab55b20af77ad", null ],
+    [ "FromAngleAxis", "class_s_g_core_1_1_kinematics_1_1_quat.html#a09346349453dd24635fe870e02b318db", null ],
+    [ "FromAngleAxis", "class_s_g_core_1_1_kinematics_1_1_quat.html#aa21fc8d9d953691e1b0de2949b97e975", null ],
+    [ "FromEuler", "class_s_g_core_1_1_kinematics_1_1_quat.html#acfa16809205a144267c2b0102f3071a1", null ],
+    [ "FromEuler", "class_s_g_core_1_1_kinematics_1_1_quat.html#a2a9133928c92cd64ae4005ce662ba972", null ],
+    [ "Invert", "class_s_g_core_1_1_kinematics_1_1_quat.html#a7d994097d5b964e6b866fc0a3edec9ee", null ],
+    [ "IsIdentity", "class_s_g_core_1_1_kinematics_1_1_quat.html#ab74f799918b08bb21ab5674507acd916", null ],
+    [ "operator*", "class_s_g_core_1_1_kinematics_1_1_quat.html#ae396e431cc8c26312bf1426a6d9d50b0", null ],
+    [ "operator*", "class_s_g_core_1_1_kinematics_1_1_quat.html#a06ce70b8452f610ba825f64713ac0340", null ],
+    [ "Rotate", "class_s_g_core_1_1_kinematics_1_1_quat.html#a691d6c83be03e33ccfd6d0767121f988", null ],
+    [ "Serialize", "class_s_g_core_1_1_kinematics_1_1_quat.html#a687c76e52bee821f3eb3bfa67a67ac93", null ],
+    [ "ToEuler", "class_s_g_core_1_1_kinematics_1_1_quat.html#af246ee4d26fee15875684ba8b8eef91b", null ],
+    [ "ToString", "class_s_g_core_1_1_kinematics_1_1_quat.html#a75edaa5fa97ed0d877ee9bc54757d912", null ],
+    [ "identity", "class_s_g_core_1_1_kinematics_1_1_quat.html#a1e54a95502b8db5087f544d151dd5cfe", null ],
+    [ "w", "class_s_g_core_1_1_kinematics_1_1_quat.html#aa96bd73537e30048239a386169f30f23", null ],
+    [ "x", "class_s_g_core_1_1_kinematics_1_1_quat.html#ab04f2dd89928373f8b1ecf102824a1b4", null ],
+    [ "y", "class_s_g_core_1_1_kinematics_1_1_quat.html#ad145237defba787a37eb8a0299c90b0a", null ],
+    [ "z", "class_s_g_core_1_1_kinematics_1_1_quat.html#ab04ff77d0a209945c3c6ba8b44504d51", null ]
+];

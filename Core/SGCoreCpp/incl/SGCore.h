@@ -17,7 +17,7 @@ Perhaps global variables, like PI or 2PI, can be stored here..
 	//#include <windows.h> //removed since it may cause issues down the line.
 
 	//also has guards against redeclaring SENSEGLOVE_API
-	#ifdef SGCORE_EXPORTS  
+	#ifdef SGCORECPP_EXPORTS  
 		#ifndef SGCORE_API
 			#define SGCORE_API __declspec(dllexport)   
 		#endif

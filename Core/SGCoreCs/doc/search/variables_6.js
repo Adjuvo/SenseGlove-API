@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['glovemodel_456',['gloveModel',['../class_s_g_core_1_1_s_g_1_1_sense_glove.html#adfc54e5510e6798d7617300d9f055ac1',1,'SGCore::SG::SenseGlove']]]
+  ['handangles_596',['handAngles',['../class_s_g_core_1_1_hand_pose.html#a24cacdd607834ee1c592fca3e7505abe',1,'SGCore::HandPose']]],
+  ['hwversion_597',['hwVersion',['../class_s_g_core_1_1_beta_device.html#a4719ebb7bd26aedd89b311c5a19f9a0f',1,'SGCore::BetaDevice']]]
 ];

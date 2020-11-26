@@ -8,7 +8,7 @@ var searchData=
   ['charallocator_30',['CharAllocator',['../namespace_s_g_core.html#a3460bbd510896864756f9264008a9206',1,'SGCore']]],
   ['clamp_31',['Clamp',['../class_s_g_core_1_1_kinematics_1_1_values.html#a4109729fb34ed60a29b1eacf60bdcebb',1,'SGCore::Kinematics::Values::Clamp(float value, float min, float max)'],['../class_s_g_core_1_1_kinematics_1_1_values.html#aa1c07330beb33b81b97886be6e394b1f',1,'SGCore::Kinematics::Values::Clamp(int value, int min, int max)']]],
   ['closechar_32',['closeChar',['../class_s_g_core_1_1_util_1_1_serializer.html#ab5f2318eb555e306b34a6ba90e87ee62',1,'SGCore::Util::Serializer']]],
-  ['cmake_5fminimum_5frequired_33',['cmake_minimum_required',['../_c_make_lists_8txt.html#a6d6ae984cee9a977d8ec65ace76b0715',1,'CMakeLists.txt']]],
+  ['cmake_5fminimum_5frequired_33',['cmake_minimum_required',['../_c_make_lists_8txt.html#a7cb60a2ecde1abfda49f9ed6ecda8927',1,'CMakeLists.txt']]],
   ['cmakelists_2etxt_34',['CMakeLists.txt',['../_c_make_lists_8txt.html',1,'']]],
   ['cmcstartrot_35',['cmcStartRot',['../class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a198291cf5ff89457b66bee3ba10e365c',1,'SGCore::Kinematics::HandInterpolator']]],
   ['cmdclose_36',['cmdClose',['../class_s_g_core_1_1_util_1_1_communications.html#a964ced6f1bc449229a30540e64389cf3',1,'SGCore::Util::Communications']]],

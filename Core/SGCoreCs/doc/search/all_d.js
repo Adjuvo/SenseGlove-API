@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['none_157',['None',['../namespace_s_g_core_1_1_haptics.html#acdd890e7d15ed5c63596b293f75dacb2a6adf97f83acf6453d4a6a4b1070f3754',1,'SGCore::Haptics']]],
-  ['normalizeangle_158',['NormalizeAngle',['../class_s_g_core_1_1_kinematics_1_1_values.html#a91cedeb873538e152895e646f48871e9',1,'SGCore.Kinematics.Values.NormalizeAngle(float angle)'],['../class_s_g_core_1_1_kinematics_1_1_values.html#a2af8ee4ef833bb873eec17a1180956b4',1,'SGCore.Kinematics.Values.NormalizeAngle(float angle, float minAngle, float maxAngle)']]],
-  ['normalizeangles_159',['NormalizeAngles',['../class_s_g_core_1_1_kinematics_1_1_values.html#ac4864cf510d4fbc7ba4fc959869ee4a0',1,'SGCore::Kinematics::Values']]],
-  ['normalized_160',['Normalized',['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#af298a33e1a1331e42d67817bc2521518',1,'SGCore::Kinematics::Vect3D']]],
-  ['normalizefingerflex_161',['NormalizeFingerFlex',['../class_s_g_core_1_1_kinematics_1_1_anatomy.html#a82b6de3709dd1f4083671e8034753321',1,'SGCore::Kinematics::Anatomy']]],
-  ['normalizethumbflex_162',['NormalizeThumbFlex',['../class_s_g_core_1_1_kinematics_1_1_anatomy.html#affa7b081e5a9275a884965ecdb88ebb0',1,'SGCore::Kinematics::Anatomy']]],
-  ['numberofsensors_163',['NumberOfSensors',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a0487ca31ee32c2da242cfc78401d1afc',1,'SGCore::SG::SG_GloveInfo']]]
+  ['object_5fgrasp_5f100_202',['Object_Grasp_100',['../namespace_s_g_core_1_1_haptics.html#acdd890e7d15ed5c63596b293f75dacb2a657014b625cd6a6192c5858c07a5f9e3',1,'SGCore::Haptics']]],
+  ['object_5fgrasp_5f30_203',['Object_Grasp_30',['../namespace_s_g_core_1_1_haptics.html#acdd890e7d15ed5c63596b293f75dacb2a992acf74be8bcdb5f0a7d9f04c55c06b',1,'SGCore::Haptics']]],
+  ['object_5fgrasp_5f60_204',['Object_Grasp_60',['../namespace_s_g_core_1_1_haptics.html#acdd890e7d15ed5c63596b293f75dacb2aec2b5d4427e17036a05a009058db58a2',1,'SGCore::Haptics']]],
+  ['oculustouch_205',['OculusTouch',['../namespace_s_g_core_1_1_util.html#a4289f77b631cb0b154e4374a7d76bdcfaa6f9d7e261e91931b1344aec444dffd5',1,'SGCore::Util']]],
+  ['off_206',['Off',['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a0e19f3b67c1e38c23d7ebc77492b7527',1,'SGCore.Haptics.SG_BuzzCmd.Off()'],['../class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#afd172422ff36fff93793a133cba912c8',1,'SGCore.Haptics.SG_FFBCmd.Off()'],['../class_s_g_core_1_1_haptics_1_1_thumper_cmd.html#a56512d011c8322397d2cdc8640e7beaf',1,'SGCore.Haptics.ThumperCmd.Off()'],['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a98e18c9d69071b1f7d42a93132017810',1,'SGCore.Haptics.SG_BuzzCmd.off()'],['../class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#a9b0abf3cf19cebf444e77c5861912cef',1,'SGCore.Haptics.SG_FFBCmd.off()']]],
+  ['openchar_207',['openChar',['../class_s_g_core_1_1_util_1_1_serializer.html#ab32cac28c8956cf0cf7cc34b7064f238',1,'SGCore::Util::Serializer']]],
+  ['operator_2a_208',['operator*',['../struct_s_g_core_1_1_kinematics_1_1_quat.html#a0950211918ae68e777b3ba00cc64dc91',1,'SGCore.Kinematics.Quat.operator*(Quat q1, Quat q2)'],['../struct_s_g_core_1_1_kinematics_1_1_quat.html#a6b7c31ee27367f3a1a03e469589d7f97',1,'SGCore.Kinematics.Quat.operator*(Vect3D that, Quat q1)'],['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#aba0595775e9f6333b601913619753ec7',1,'SGCore.Kinematics.Vect3D.operator*(float S, Vect3D v)'],['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a174d525eb3da6d3917280ad7d0929163',1,'SGCore.Kinematics.Vect3D.operator*(Quat q, Vect3D v)']]],
+  ['operator_2b_209',['operator+',['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a0b4650cc520658713a6acfaade7a9c1b',1,'SGCore::Kinematics::Vect3D']]],
+  ['operator_2d_210',['operator-',['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a379c382fb8ad97705204d5bf46a82070',1,'SGCore::Kinematics::Vect3D']]]
 ];

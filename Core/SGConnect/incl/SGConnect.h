@@ -49,11 +49,19 @@ extern "C"
 		///<summary> Dispose of unmanaged resources and finalize Sense Glove devices. </summary>
 		SGCONNECT_API int Dispose();
 
+
+		// ---------------------------------------------------------------------------------------------
+		// Util
+
 		///<summary> Clears ScanningActive for debug purposes. </summary>
 		SGCONNECT_API void ClearSharedMem();
 
+	    ///<summary> Check which version of SGConnect you are using. </summary>
+		SGCONNECT_API int GetLibraryVersion_I(char* output);
 
-		
+		///<summary> Check which version of SGConnect you are using. </summary>
+		SGCONNECT_API std::string GetLibraryVersion();
+
 		// ---------------------------------------------------------------------------------------------
 		// C# / IPC interface
 

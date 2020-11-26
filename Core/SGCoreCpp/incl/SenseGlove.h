@@ -186,7 +186,7 @@ namespace SGCore
 
 
 			/// <summary> Retrieve all Sense Gloves connected to this system. </summary>
-			static std::vector<SenseGlove> GetSenseGloves();
+			static std::vector<SenseGlove> GetSenseGloves(bool onlyConnected = true);
 
 			/// <summary> Retrieve the first connected Sense Glove there is. </summary>
 			static bool GetSenseGlove(SenseGlove& glove);

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['debuglevel_474',['DebugLevel',['../namespace_s_g_core_1_1_diagnostics.html#a6a2af441a9c4b0c28fd42cc29ae47148',1,'SGCore::Diagnostics']]],
-  ['devicetype_475',['DeviceType',['../namespace_s_g_core.html#a2edb79e25cc919b7d63cf0cf33b039e2',1,'SGCore']]]
+  ['connectiontype_631',['ConnectionType',['../class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637',1,'SGCore::SGDevice']]]
 ];
