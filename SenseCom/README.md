@@ -3,6 +3,12 @@ SenseCom is a program (or process) that is responsible for detecting and communi
 
 This folder contains executable versions for different platforms. There is also a folder called SGConnect, which contains the tools to integrate a dynamic library of the same name into any 3rd party C++ program, should a standalone version of said project be desired.
 
+## Running on Windows
+Until a proper SenseCom installer is ready, note that you will need a Visual C++ package to be able to use the library, which you can download via https://aka.ms/vs/16/release/vc_redist.x64.exe or find in the Win folder
+
+## Running on Linux
+You can run the SenseCom.x86_64 as an executable by going to properties and checking "allow running as executable" in the permissions tab.
+Also, ensure that you have set the permissions for SenseCOm to use your serial ports via the "sudo adduser $USER dialout" command.
 
 ## Advanced 
 
