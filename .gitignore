@@ -5,3 +5,8 @@ Core/SGConnect/doc*
 
 #ignore any session legs created by SenseCom during testing
 *sessionLog.txt
+
+#Builds from example projects
+Examples/*/.vs
+Examples/CsProject/SenseGloveCs/bin
+Examples/CsProject/SenseGloveCs/obj
