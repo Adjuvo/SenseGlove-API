@@ -1,5 +1,6 @@
 /*
 A console application demonstrating the intended use of a SenseGlove interface.
+Used to compile the programs in the SGCoreCpp/test folder.
 */
 
 #include <iostream> //Output to console

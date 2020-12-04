@@ -21,13 +21,13 @@ namespace CsCoreClient
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Testing Sense Glove C++ Core Library");
+			Console.WriteLine("Testing " + SGCore.Library.Version);
 			Console.WriteLine("=======================================");
 
 			if (!SGCore.DeviceList.SenseCommRunning())
 			{
 				SGCore.SenseCom.StartupSenseCom(); //relatively new C# function only; starts up SenseCom if it was launched at least once.
-				System.Threading.Thread.Sleep(2000);
+				System.Threading.Thread.Sleep(3000);
 			}
 
 			if (SGCore.DeviceList.SenseCommRunning()) //check if the Sense Comm is running. If not, warn the end user.
