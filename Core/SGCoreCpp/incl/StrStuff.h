@@ -9,6 +9,8 @@
 #include <string>
 #include <vector>
 #include "Fingers.h"
+#include "Vect3D.h"
+#include "Quat.h"
 
 namespace SGCore
 {
@@ -36,6 +38,28 @@ namespace SGCore
 
 			/// <summary> Replace all occurences of a character with another one. </summary>
 			static std::string ReplaceChars(std::string str, char from, char to);
+
+			/// <summary> Convert a value in radians into a rounded integer, as a string. e.g. 4.999999999999999 -> 5. </summary>
+			static std::string RoundedDegrees(float valInRad);
+
+
+			/// <summary> Print the different sizes within a 2D array </summary>
+			/// <typeparam name="T"></typeparam>
+			/// <param name="vect"></param>
+			/// <returns></returns>
+			template <class T> static std::string PrintSize(std::vector<std::vector<T>>& vect)
+			{
+				int size = vect.size();
+				std::string res = "(" + std::to_string(size) + ")[";
+				for (int i = 0; i < size; i++)
+				{
+					res += std::to_string(vect[i].size());
+					if (i < size - 1) { res += ", "; }
+				}
+				return res + "]";
+			}
+
+
 		};
 	}
 }

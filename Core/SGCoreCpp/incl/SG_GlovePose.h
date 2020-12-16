@@ -83,6 +83,9 @@ namespace SGCore
 			/// <summary> Returns true if this glove pose equals another. </summary>
 			bool Equals(SG_GlovePose other);
 
+			/// <summary> Returns a user-friendly string representation of this GlovePose for reporting. </summary>
+			std::string ToString(bool shortFormat = true);
+
 			//---------------------------------------------------------------------------------------------------------------------
 			// Serialization
 

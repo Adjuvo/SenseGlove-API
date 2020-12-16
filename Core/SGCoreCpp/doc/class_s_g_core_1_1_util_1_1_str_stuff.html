@@ -116,10 +116,60 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab965bec96470cea0a3ecdd9ecabb465c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#ab965bec96470cea0a3ecdd9ecabb465c">ReplaceChars</a> (std::string str, char from, char to)</td></tr>
 <tr class="memdesc:ab965bec96470cea0a3ecdd9ecabb465c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace all occurences of a character with another one.  <a href="class_s_g_core_1_1_util_1_1_str_stuff.html#ab965bec96470cea0a3ecdd9ecabb465c">More...</a><br /></td></tr>
 <tr class="separator:ab965bec96470cea0a3ecdd9ecabb465c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f14d9a0594b22ef6355204154a79d3"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a96f14d9a0594b22ef6355204154a79d3">RoundedDegrees</a> (float valInRad)</td></tr>
+<tr class="memdesc:a96f14d9a0594b22ef6355204154a79d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a value in radians into a rounded integer, as a string. e.g. 4.999999999999999 -&gt; 5.  <a href="class_s_g_core_1_1_util_1_1_str_stuff.html#a96f14d9a0594b22ef6355204154a79d3">More...</a><br /></td></tr>
+<tr class="separator:a96f14d9a0594b22ef6355204154a79d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850103debce8666fea2174c0b5c822a6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a850103debce8666fea2174c0b5c822a6"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">PrintSize</a> (std::vector&lt; std::vector&lt; T &gt;&gt; &amp;vect)</td></tr>
+<tr class="memdesc:a850103debce8666fea2174c0b5c822a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the different sizes within a 2D array  <a href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">More...</a><br /></td></tr>
+<tr class="separator:a850103debce8666fea2174c0b5c822a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class to convert strings into useable values. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a850103debce8666fea2174c0b5c822a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850103debce8666fea2174c0b5c822a6">&#9670;&nbsp;</a></span>PrintSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string SGCore::Util::StrStuff::PrintSize </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>vect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print the different sizes within a 2D array </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vect</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a280d23a81db24be81e4e266490e7cfc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a280d23a81db24be81e4e266490e7cfc1">&#9670;&nbsp;</a></span>QuickSplit()</h2>
 
@@ -203,6 +253,34 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Replace all occurences of a character with another one. </p>
+
+</div>
+</div>
+<a id="a96f14d9a0594b22ef6355204154a79d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96f14d9a0594b22ef6355204154a79d3">&#9670;&nbsp;</a></span>RoundedDegrees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SGCore::Util::StrStuff::RoundedDegrees </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>valInRad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a value in radians into a rounded integer, as a string. e.g. 4.999999999999999 -&gt; 5. </p>
 
 </div>
 </div>
