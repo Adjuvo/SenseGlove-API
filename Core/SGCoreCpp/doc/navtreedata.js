@@ -64,7 +64,7 @@ var NAVTREEINDEX =
 "_anatomy_8cpp.html",
 "class_s_g_core_1_1_fino_1_1_fino.html#a5ae757cd5c2ecdb91fb60ec3e758f8c4",
 "class_s_g_core_1_1_kinematics_1_1_quat.html#a7d994097d5b964e6b866fc0a3edec9ee",
-"class_s_g_core_1_1_util_1_1_str_stuff.html#ab9420a2c0946e08d543e71b04d0cd879"
+"class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

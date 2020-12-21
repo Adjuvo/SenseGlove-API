@@ -62,14 +62,10 @@ extern "C"
 		///<summary> Check which version of SGConnect you are using. </summary>
 		SGCONNECT_API std::string GetLibraryVersion();
 
-		// ---------------------------------------------------------------------------------------------
-		// C# / IPC interface
-
-		///<summary> Count the active devices within the SenseComm shared memory. </summary>
-		SGCONNECT_API int ActiveDevices();
-
 		///<summary> Returns true if a Device Scanning instance is already running. </summary>
 		SGCONNECT_API bool ScanningActive();
 
+		///<summary> Returns the scanningState of the SGConnect library. Used by ScanningActive. </summary>
+		SGCONNECT_API int ScanningState();
 	}
 }

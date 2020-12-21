@@ -11,6 +11,7 @@ var class_s_g_core_1_1_s_g_1_1_s_g___glove_pose =
     [ "Serialize", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#ac0709f94d841a4c3eec7bd2a39bfd20d", null ],
     [ "ThimblePositions", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#af0a8eabc3e27019a54c399532fc27065", null ],
     [ "ThimbleRotations", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#ad4052ca3af59abdd57d99c859b60ff54", null ],
+    [ "ToString", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a6e855209981b53384bc98eec86241ccf", null ],
     [ "TotalGloveAngles", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a72a49cf12589bef12bb7132468829455", null ],
     [ "gloveAngles", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a753df91a0ab19533d131975aaac3f311", null ],
     [ "isRight", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#ac0b10345ebbbd98635ad37cc404318c8", null ],

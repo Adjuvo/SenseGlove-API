@@ -5,12 +5,12 @@ The SenseGlove Core API contains all kinematics and parsing algorithms needed to
 A C++ library to setup and connect to SenseGlove devices in the background. Use this library if you don't want to have the SenseCom UI run in the background. 
 
 ## SGCoreCpp
-Contains the C++ version of the Core API. Inside the incl folder are the header files, while the lib folder contains the .lib and .dll files for different operating systems, platforms and configurations (Debug, Release).
+Contains the C++ version of the Core API. Inside the incl folder are the header files, while the lib folder contains the .lib and .dll files for different operating systems.
 Further documentation is available in the folder.
 
 ## SGCoreCs
 Contains the C# version of the Core API. The C# API makes use of the SGConnect.dll to interface with SenseCom. When building a C# application using SGCore for C#, ensure that the SGConnect.dll is inside your build folder as well.
-The lib folder contains the .lib and .dll files for different operating systems, platforms and configurations (Debug, Release).
+The lib folder contains the .lib and .dll files for different operating systems.
 Further documentation is available in the folder.
 
 # Working with the Core API
