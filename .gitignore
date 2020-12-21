@@ -10,3 +10,9 @@ Core/SGConnect/doc*
 Examples/*/.vs
 Examples/CsProject/SenseGloveCs/bin
 Examples/CsProject/SenseGloveCs/obj
+
+Examples/CppProject/x64
+Examples/CppProject/SenseGloveCpp/x64
+
+Examples/CppStandaloneProject/x64
+Examples/CppStandaloneProject/SenseGloveCpp/x64
