@@ -52,7 +52,7 @@ int main()
 		std::cout << std::endl;
 		std::cout << "We can call SGConnect::Dispose() safely, but this will not stop the original process." << std::endl;
 		int disposeVal = SGConnect::Dispose();
-		std::cout << "The SGConnect::Dispose() will return 0, to let us know nothing was Disposed of: " << std::to_string(initCode) << std::endl;
+		std::cout << "The SGConnect::Dispose() will return 0, to let us know nothing was Disposed of: " << std::to_string(disposeVal) << std::endl;
 		std::cout << "If you wish to dispose of the already running process, you should call SGConnect::Dispose() from the program that originally called SGConnect::Init()" << std::endl;
 	}
 
