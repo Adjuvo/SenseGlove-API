@@ -83,6 +83,30 @@ namespace SGCore
 			///<summary> Check if two arrays contain equal values. </summary>
 			static bool Equal(std::vector<std::vector<Quat>>& array1, std::vector<std::vector<Quat>>& array2);
 
+
+			/// <summary> Returns an array of Vect3D's, all at 0, 0, 0. Used for quick generation and to avoid NullRefs </summary>
+			/// <param name="length"></param>
+			/// <returns></returns>
+			static std::vector<Vect3D> FillZero(int length)
+			{
+				std::vector<Vect3D> res = { };
+				for (int i = 0; i < length; i++) { res.push_back(Vect3D::zero); }
+				return res;
+			}
+
+
+			/// <summary> Returns a 2D of Vect3D's [Length, Width] all at 0, 0, 0. Used for quick generation and to avoid NullRefs </summary>
+			/// <param name="length"></param>
+			/// <param name="width"></param>
+			/// <returns></returns>
+			static std::vector<std::vector<Vect3D>> FillZero(int length, int width)
+			{
+				std::vector<std::vector<Vect3D>> res = {};
+				for (int i = 0; i < length; i++) { res.push_back( FillZero(width) ); }
+				return res;
+			}
+
+
 		};
 	}
 }

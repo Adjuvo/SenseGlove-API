@@ -25,7 +25,7 @@ namespace SGCore
 		// Properties
 
 		///<summary> A list of all devices that have been detected via the SenseComm executable. </summary>
-		static std::vector< std::shared_ptr<SGDevice> > devices;
+		static std::vector< std::shared_ptr<SGDevice> > devices; //TODO: Make this a singleton?
 
 
 		static bool disposed;
@@ -39,7 +39,11 @@ namespace SGCore
 
 		/// <summary> Factory function to deserialize an SGDevice out of a DeviceList string. </summary>
 		/// <remarks> Intended use: Returns true if serialization is succesfull, false if errors occured. In that case output = null. </remarks>
-		static bool Deserialize(std::string serialized, std::shared_ptr<SGDevice>& output);
+		static bool Deserialize(std::string& serialized, std::shared_ptr<SGDevice>& output);
+
+
+
+
 
 	public:
 
@@ -86,12 +90,36 @@ namespace SGCore
 		// Device Communication Methods
 
 		///<summary> Retrieve the latest (raw) sensor data from a specific device in our list. </summary>
-		static SGCORE_API bool GetSensorDataString(std::string ipcAddress, std::string& data);
+		static SGCORE_API bool GetSensorDataString(int ipcIndex, std::string& ipcAddress, std::string& output);
 
 		///<summary> Send a (raw) command to a specific device in the list. </summary>
-		static SGCORE_API bool SendHaptics(std::string ipcAddress, std::string commands);
+		static SGCORE_API bool SendHaptics(int ipcIndex, std::string& ipcAddress, std::string& commands);
 
-		static std::string GetDeviceStringAt(std::string ipcAddress, int index);
+		static std::string GetDeviceStringAt(int ipcIndex, std::string& ipcAddress, int index);
+
+
+
+
+        /// <summary> Retrieve Device Address </summary>
+		static std::string GetAddress(int ipcIndex, std::string& ipcAddress);
+
+
+        /// <summary> Retieve this device's connectionType. </summary>
+		static SGDevice::ConnectionType GetConnectionType(int ipcIndex, std::string& ipcAddress);
+
+
+        /// <summary> Returns true if the device at  this connection side is properly connected. </summary>
+		static bool IsConnected(int ipcIndex, std::string& ipcAddress);
+
+
+        /// <summary> Retrieve the device's Packets per Second Variable </summary>
+        /// <returns></returns>
+		static int PacketsPerSecondReceived(int ipcIndex, std::string& ipcAddress);
+
+
+        /// <summary> Retrieve the device's Packets per Second sent Variable </summary>
+        /// <returns></returns>
+		static int PacketsPerSecondSent(int ipcIndex, std::string& ipcAddress);
 
 	};
 

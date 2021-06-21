@@ -36,6 +36,14 @@ namespace SGCore
 			/// <returns></returns>
 			ThumperCmd Copy();
 
+
+			/// <summary> Merge two ThumperCommands into one. </summary>
+			/// <param name="other"></param>
+			/// <returns></returns>
+			ThumperCmd Merge(ThumperCmd other);
+
+			virtual bool Equals(ThumperCmd other);
+
 			/// <summary> A command that turns off all force feedback on the Sense Glove. </summary>
 			static const ThumperCmd off;
 

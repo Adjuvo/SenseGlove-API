@@ -214,6 +214,90 @@ namespace SGCore
 			/// <summary> Apply this glove's calibration range to a SG_HandProfile </summary>
 			void ApplyCalibration(SG_HandProfile& profile);
 
+			/// <summary> Apply interpolation values to the correct fields in the SenseGlove Profile, based on min/max sensor values. </summary>
+			/// <param name="minValues"></param>
+			/// <param name="maxValues"></param>
+			/// <param name="rightHand"></param>
+			/// <param name="profile"></param>
+			static void CalibrateInterpolation(std::vector<Kinematics::Vect3D>& minValues, std::vector<Kinematics::Vect3D>& maxValues, bool rightHand, SG_HandProfile& profile);
+
+
+
+			//--------------------------------------------------------------------------------------
+			// 6DoF Position Tracking
+
+
+
+			/// <summary> Retrieve the location of the glove origin, based on a reference location without requiring an object reference.. </summary>
+			/// <param name="refPosition">Position of the tracked object, in mm, relative to your origin</param>
+			/// <param name="refRotation">Rotation of the tracked object relative to your origin</param>
+			/// <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
+			/// <param name="rightHand">Whether or not this is a left or right handed glove.</param>
+			/// <param name="mountedOn">Which finger module the hardware is mounted on. Default is Middle finger.</param>
+			/// <param name="glovePos">The 3D Position of the glove, in mm, relative to your origin</param>
+			/// <param name="gloveRot">The 3D Rotation of the glove, relative to your origin</param>
+			static void CalculateGloveLocation(Kinematics::Vect3D& refPosition, Kinematics::Quat& refRotation, PosTrackingHardware trackingHardware, bool rightHand,
+				Finger mountedOn, Kinematics::Vect3D& glovePos, Kinematics::Quat& gloveRot);
+
+
+			/// <summary> Calculates the full wrist location. </summary>
+			/// <param name="refPosition"></param>
+			/// <param name="refRotation"></param>
+			/// <param name="trackingHardware"></param>
+			/// <param name="rightHand"></param>
+			/// <param name="mountedOn"></param>
+			/// <param name="gloveWristOffPos"></param>
+			/// <param name="gloveWristOffRot"></param>
+			/// <param name="wristPos"></param>
+			/// <param name="wristRot"></param>
+			static void CalculateWristLocation(Kinematics::Vect3D& refPosition, Kinematics::Quat& refRotation, PosTrackingHardware trackingHardware, bool rightHand,
+				Finger mountedOn, Kinematics::Vect3D& gloveWristOffPos, Kinematics::Quat& gloveWristOffRot, Kinematics::Vect3D& wristPos, Kinematics::Quat& wristRot);
+
+
+			/// <summary> Retrieve the location of the glove origin, based on a reference location. </summary>
+			/// <param name="refPosition">Position of the tracked object, in mm, relative to your origin</param>
+			/// <param name="refRotation">Rotation of the tracked object relative to your origin</param>
+			/// <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
+			/// <param name="glovePos">The 3D Position of the glove, in mm, relative to your origin</param>
+			/// <param name="gloveRot">The 3D Rotation of the glove, relative to your origin</param>
+			void GetGloveLocation(Kinematics::Vect3D& refPosition, Kinematics::Quat& refRotation, PosTrackingHardware trackingHardware,
+				Kinematics::Vect3D& glovePos, Kinematics::Quat& gloveRot) override;
+
+
+			/// <summary> Retrieve the location of the glove origin, based on a reference location. </summary>
+			/// <param name="refPosition">Position of the tracked object, in mm, relative to your origin</param>
+			/// <param name="refRotation">Rotation of the tracked object relative to your origin</param>
+			/// <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
+			/// <param name="mountedOn">Which finger module the hardware is mounted on.</param>
+			/// <param name="glovePos">The 3D Position of the glove, in mm, relative to your origin</param>
+			/// <param name="gloveRot">The 3D Rotation of the glove, relative to your origin</param>
+			void GetGloveLocation(Kinematics::Vect3D& refPosition, Kinematics::Quat& refRotation, PosTrackingHardware trackingHardware, Finger mountedOn,
+				Kinematics::Vect3D& glovePos, Kinematics::Quat& gloveRot);
+
+
+			/// <summary> Retrieve the location of the wrist, based on a reference location and default glove-hand offsets. </summary>
+			/// <remarks> The simplest interface, using default offsets </remarks>
+			/// <param name="refPosition">Position of the tracked object, in mm, relative to your origin</param>
+			/// <param name="refRotation">Rotation of the tracked object relative to your origin</param>
+			/// <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
+			/// <param name="wristPos">The 3D Position of the wrist, in mm, relative to your origin</param>
+			/// <param name="wristRot">The 3D Rotation of the wrist, relative to your origin</param>
+			void GetWristLocation(Kinematics::Vect3D& refPosition, Kinematics::Quat& refRotation, PosTrackingHardware trackingHardware,
+				Kinematics::Vect3D& wristPos, Kinematics::Quat& wristRot) override;
+
+
+			/// <summary> Retrieve the location of the wrist, based on a reference location and default glove-hand offsets. </summary>
+			/// <param name="refPosition"></param>
+			/// <param name="refRotation"></param>
+			/// <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
+			/// <param name="gloveWristOffPos">Position offset, in mm, from the glove origin to wrist (default = 0,0,-30 mm)</param>
+			/// <param name="gloveWristOffRot">Rotation offset from the glove origin to wrist (default = 0,-5,0 degrees)</param>
+			/// <param name="wristPos">The 3D Position of the wrist, in mm, relative to your origin</param>
+			/// <param name="wristRot">The 3D Rotation of the wrist, relative to your origin</param>
+			void GetWristLocation(Kinematics::Vect3D& refPosition, Kinematics::Quat& refRotation, PosTrackingHardware trackingHardware,
+				Kinematics::Vect3D& gloveWristOffPos, Kinematics::Quat& gloveWristOffRot, Kinematics::Vect3D& wristPos, Kinematics::Quat& wristRot);
+
+
 		};
 	}
 }

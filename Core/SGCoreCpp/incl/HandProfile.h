@@ -8,7 +8,7 @@
 #include "SGCore.h"
 
 #include "SG_HandProfile.h"
-#include "Fino_Profile.h"
+#include "Nova_Profile.h"
 
 namespace SGCore
 {
@@ -28,21 +28,25 @@ namespace SGCore
 		SG::SG_HandProfile senseGloveProfile;
 
 		/// <summary> User profile for Fino </summary>
-		Fino::Fino_Profile finoProfile;
+		Nova::Nova_Profile novaProfile;
 	
 		//--------------------------------------------------------------------------------------
 		// Construction
+
+		/// <summary> Default Constructor </summary>
+		/// <returns></returns>
+		HandProfile() { isRight = true; }
 
 		/// <summary> Creates a new instance of a HandProfile. </summary>
 		/// <param name="rightHand"></param>
 		/// <param name="sgProfile"></param>
 		/// <param name="fnProfile"></param>
 		/// <returns></returns>
-		HandProfile(bool rightHand, SG::SG_HandProfile sgProfile, Fino::Fino_Profile fnProfile)
+		HandProfile(bool rightHand, SG::SG_HandProfile sgProfile, Nova::Nova_Profile nvProfile)
 		{
 			isRight = rightHand;
 			senseGloveProfile = sgProfile;
-			finoProfile = fnProfile;
+			novaProfile = nvProfile;
 		}
 
 		/// <summary> Generate a new handProfile for either a left or right hand. </summary>
@@ -56,6 +60,8 @@ namespace SGCore
 
 		bool Equals(HandProfile other);
 
+		/// <summary> Reset this profile back to it's default values. </summary>
+		void Reset();
 
 		//--------------------------------------------------------------------------------------
 		// Serialization

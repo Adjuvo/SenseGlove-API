@@ -45,45 +45,45 @@ namespace SGCore
 			static std::string Enclose(std::string str);
 
 			/// <summary> Serialize a floating point array/vector </summary>
-			static std::string Serialize(std::vector<float> floatArray, bool enclosed = true);
+			static std::string Serialize(std::vector<float>& floatArray, bool enclosed = true);
 			/// <summary> Serialize a 2D floating point array/vector </summary>
-			static std::string Serialize(std::vector<std::vector<float>> floatArray, bool enclosed = true);
+			static std::string Serialize(std::vector<std::vector<float>>& floatArray, bool enclosed = true);
 			/// <summary> Serialize a Quaternion </summary>
-			static std::string Serialize(Kinematics::Quat quat, bool enclosed = true);
+			static std::string Serialize(Kinematics::Quat& quat, bool enclosed = true);
 			/// <summary> Serialize a Quaternion array/vector </summary>
-			static std::string Serialize(std::vector<Kinematics::Quat> quatArray, bool enclosed = true);
+			static std::string Serialize(std::vector<Kinematics::Quat>& quatArray, bool enclosed = true);
 			/// <summary> Serialize a 2D Quaternion array/vector </summary>
-			static std::string Serialize(std::vector<std::vector<Kinematics::Quat>> quatArray, bool enclosed = true);
+			static std::string Serialize(std::vector<std::vector<Kinematics::Quat>>& quatArray, bool enclosed = true);
 			/// <summary> Serialize a Vector </summary>
-			static std::string Serialize(Kinematics::Vect3D vect, bool enclosed = true);
+			static std::string Serialize(Kinematics::Vect3D& vect, bool enclosed = true);
 			/// <summary> Serialize a Vector array/vector </summary>
-			static std::string Serialize(std::vector<Kinematics::Vect3D> vectArray, bool enclosed = true);
+			static std::string Serialize(std::vector<Kinematics::Vect3D>& vectArray, bool enclosed = true);
 			/// <summary> Serialize a 2d Vector array/vector </summary>
-			static std::string Serialize(std::vector<std::vector<Kinematics::Vect3D>> vectArray, bool enclosed = true);
+			static std::string Serialize(std::vector<std::vector<Kinematics::Vect3D>>& vectArray, bool enclosed = true);
 			/// <summary> Serialize a boolean array/vector </summary>
-			static std::string Serialize(std::vector<bool> boolArray, bool enclosed = true);
+			static std::string Serialize(std::vector<bool>& boolArray, bool enclosed = true);
 
 			/// <summary> Convert a serialized string back into an array of floating points  </summary>
-			static std::vector<float> DeserializeFloats(std::string serialized);
+			static std::vector<float> DeserializeFloats(std::string& serialized);
 			/// <summary> Convert a serialized string back into a 2D array of floating points  </summary>
-			static std::vector<std::vector<float>> DeserializeFloats2D(std::string serialized);
+			static std::vector<std::vector<float>> DeserializeFloats2D(std::string& serialized);
 			
 			/// <summary> Convert a serialized string back into a Quaternion  </summary>
-			static Kinematics::Quat DeserializeQuat(std::string serialized);
+			static Kinematics::Quat DeserializeQuat(std::string& serialized);
 			/// <summary> Convert a serialized string back into an array of Quaternions  </summary>
-			static std::vector<Kinematics::Quat> DeserializeQuats(std::string serialized);
+			static std::vector<Kinematics::Quat> DeserializeQuats(std::string& serialized);
 			/// <summary> Convert a serialized string back into a 2D array of Quaternions </summary>
-			static std::vector<std::vector<Kinematics::Quat>> DeserializeQuats2D(std::string serialized);
+			static std::vector<std::vector<Kinematics::Quat>> DeserializeQuats2D(std::string& serialized);
 
 			/// <summary> Convert a serialized string back into a Vector  </summary>
-			static Kinematics::Vect3D DeserializeVect(std::string serialized);			
+			static Kinematics::Vect3D DeserializeVect(std::string& serialized);
 			/// <summary> Convert a serialized string back into an array of Vectors </summary>
-			static std::vector<Kinematics::Vect3D> DeserializeVects(std::string serialized);
+			static std::vector<Kinematics::Vect3D> DeserializeVects(std::string& serialized);
 			/// <summary> Convert a serialized string back into a 2D array of Vectors </summary>
-			static std::vector<std::vector<Kinematics::Vect3D>> DeserializeVects2D(std::string serialized);
+			static std::vector<std::vector<Kinematics::Vect3D>> DeserializeVects2D(std::string& serialized);
 
 			/// <summary> Convert a serialized string back into an array of booleans </summary>
-			static std::vector<bool> DeserializeBools(std::string serialized);
+			static std::vector<bool> DeserializeBools(std::string& serialized);
 		};
 
 	}

@@ -12,6 +12,10 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
     [ "BetaDevice.h", "_beta_device_8h.html", [
       [ "BetaDevice", "class_s_g_core_1_1_beta_device.html", "class_s_g_core_1_1_beta_device" ]
     ] ],
+    [ "CalDataPoint.cpp", "_cal_data_point_8cpp.html", null ],
+    [ "CalDataPoint.h", "_cal_data_point_8h.html", [
+      [ "CalDataPoint", "class_s_g_core_1_1_calibration_1_1_cal_data_point.html", "class_s_g_core_1_1_calibration_1_1_cal_data_point" ]
+    ] ],
     [ "Communications.cpp", "_communications_8cpp.html", null ],
     [ "Communications.h", "_communications_8h.html", "_communications_8h" ],
     [ "Debugger.cpp", "_debugger_8cpp.html", null ],
@@ -26,23 +30,6 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
     ] ],
     [ "DeviceTypes.h", "_device_types_8h.html", "_device_types_8h" ],
     [ "Fingers.h", "_fingers_8h.html", "_fingers_8h" ],
-    [ "Fino.cpp", "_fino_8cpp.html", null ],
-    [ "Fino.h", "_fino_8h.html", [
-      [ "Fino", "class_s_g_core_1_1_fino_1_1_fino.html", "class_s_g_core_1_1_fino_1_1_fino" ]
-    ] ],
-    [ "Fino_GloveInfo.cpp", "_fino___glove_info_8cpp.html", null ],
-    [ "Fino_GloveInfo.h", "_fino___glove_info_8h.html", [
-      [ "Fino_GloveInfo", "class_s_g_core_1_1_fino_1_1_fino___glove_info.html", "class_s_g_core_1_1_fino_1_1_fino___glove_info" ]
-    ] ],
-    [ "Fino_Profile.cpp", "_fino___profile_8cpp.html", null ],
-    [ "Fino_Profile.h", "_fino___profile_8h.html", [
-      [ "Fino_Profile", "class_s_g_core_1_1_fino_1_1_fino___profile.html", "class_s_g_core_1_1_fino_1_1_fino___profile" ]
-    ] ],
-    [ "Fino_SensorData.cpp", "_fino___sensor_data_8cpp.html", null ],
-    [ "Fino_SensorData.h", "_fino___sensor_data_8h.html", [
-      [ "Fino_SensorData", "class_s_g_core_1_1_fino_1_1_fino___sensor_data.html", "class_s_g_core_1_1_fino_1_1_fino___sensor_data" ]
-    ] ],
-    [ "FinoVars.h", "_fino_vars_8h.html", "_fino_vars_8h" ],
     [ "HandInterpolator.cpp", "_hand_interpolator_8cpp.html", null ],
     [ "HandInterpolator.h", "_hand_interpolator_8h.html", [
       [ "HandInterpolator", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator" ]
@@ -59,6 +46,20 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
     [ "HapticGlove.h", "_haptic_glove_8h.html", [
       [ "HapticGlove", "class_s_g_core_1_1_haptic_glove.html", "class_s_g_core_1_1_haptic_glove" ]
     ] ],
+    [ "HG_CalCheck.cpp", "_h_g___cal_check_8cpp.html", null ],
+    [ "HG_CalCheck.h", "_h_g___cal_check_8h.html", "_h_g___cal_check_8h" ],
+    [ "HG_CalibrationSequence.cpp", "_h_g___calibration_sequence_8cpp.html", null ],
+    [ "HG_CalibrationSequence.h", "_h_g___calibration_sequence_8h.html", [
+      [ "HG_CalibrationSequence", "class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html", "class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence" ]
+    ] ],
+    [ "HG_HapticStream.cpp", "_h_g___haptic_stream_8cpp.html", null ],
+    [ "HG_HapticStream.h", "_h_g___haptic_stream_8h.html", [
+      [ "HG_HapticStream", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream" ]
+    ] ],
+    [ "HG_QuickCalibration.cpp", "_h_g___quick_calibration_8cpp.html", null ],
+    [ "HG_QuickCalibration.h", "_h_g___quick_calibration_8h.html", [
+      [ "HG_QuickCalibration", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration" ]
+    ] ],
     [ "InterpolationSet.cpp", "_interpolation_set_8cpp.html", null ],
     [ "InterpolationSet.h", "_interpolation_set_8h.html", [
       [ "InterpolationSet", "class_s_g_core_1_1_kinematics_1_1_interpolation_set.html", "class_s_g_core_1_1_kinematics_1_1_interpolation_set" ]
@@ -72,9 +73,32 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
       [ "Library", "class_s_g_core_1_1_library.html", "class_s_g_core_1_1_library" ]
     ] ],
     [ "MathDefines.h", "_math_defines_8h.html", "_math_defines_8h" ],
+    [ "Nova_Calibration.cpp", "_nova___calibration_8cpp.html", null ],
+    [ "Nova_Calibration.h", "_nova___calibration_8h.html", [
+      [ "Nova_Calibration", "class_s_g_core_1_1_calibration_1_1_nova___calibration.html", "class_s_g_core_1_1_calibration_1_1_nova___calibration" ]
+    ] ],
+    [ "Nova_GloveInfo.cpp", "_nova___glove_info_8cpp.html", null ],
+    [ "Nova_GloveInfo.h", "_nova___glove_info_8h.html", [
+      [ "Nova_GloveInfo", "class_s_g_core_1_1_nova_1_1_nova___glove_info.html", "class_s_g_core_1_1_nova_1_1_nova___glove_info" ]
+    ] ],
+    [ "Nova_Profile.cpp", "_nova___profile_8cpp.html", null ],
+    [ "Nova_Profile.h", "_nova___profile_8h.html", [
+      [ "Nova_Profile", "class_s_g_core_1_1_nova_1_1_nova___profile.html", "class_s_g_core_1_1_nova_1_1_nova___profile" ]
+    ] ],
+    [ "Nova_SensorData.cpp", "_nova___sensor_data_8cpp.html", null ],
+    [ "Nova_SensorData.h", "_nova___sensor_data_8h.html", "_nova___sensor_data_8h" ],
+    [ "NovaGlove.cpp", "_nova_glove_8cpp.html", null ],
+    [ "NovaGlove.h", "_nova_glove_8h.html", [
+      [ "NovaGlove", "class_s_g_core_1_1_nova_1_1_nova_glove.html", "class_s_g_core_1_1_nova_1_1_nova_glove" ]
+    ] ],
+    [ "NovaVars.h", "_nova_vars_8h.html", "_nova_vars_8h" ],
     [ "Quat.cpp", "_quat_8cpp.html", null ],
     [ "Quat.h", "_quat_8h.html", [
       [ "Quat", "class_s_g_core_1_1_kinematics_1_1_quat.html", "class_s_g_core_1_1_kinematics_1_1_quat" ]
+    ] ],
+    [ "SenseCom.cpp", "_sense_com_8cpp.html", null ],
+    [ "SenseCom.h", "_sense_com_8h.html", [
+      [ "SenseCom", "class_s_g_core_1_1_sense_com.html", "class_s_g_core_1_1_sense_com" ]
     ] ],
     [ "SenseGlove.cpp", "_sense_glove_8cpp.html", null ],
     [ "SenseGlove.h", "_sense_glove_8h.html", [
@@ -82,6 +106,10 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
     ] ],
     [ "SenseGloveVars.cpp", "_sense_glove_vars_8cpp.html", null ],
     [ "SenseGloveVars.h", "_sense_glove_vars_8h.html", "_sense_glove_vars_8h" ],
+    [ "SensorRange.cpp", "_sensor_range_8cpp.html", null ],
+    [ "SensorRange.h", "_sensor_range_8h.html", [
+      [ "SensorRange", "class_s_g_core_1_1_calibration_1_1_sensor_range.html", "class_s_g_core_1_1_calibration_1_1_sensor_range" ]
+    ] ],
     [ "Serializer.cpp", "_serializer_8cpp.html", null ],
     [ "Serializer.h", "_serializer_8h.html", [
       [ "Serializer", "class_s_g_core_1_1_util_1_1_serializer.html", "class_s_g_core_1_1_util_1_1_serializer" ]
@@ -107,14 +135,16 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
       [ "SG_GlovePose", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose" ]
     ] ],
     [ "SG_HandProfile.cpp", "_s_g___hand_profile_8cpp.html", null ],
-    [ "SG_HandProfile.h", "_s_g___hand_profile_8h.html", [
-      [ "SG_HandProfile", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile" ]
-    ] ],
+    [ "SG_HandProfile.h", "_s_g___hand_profile_8h.html", "_s_g___hand_profile_8h" ],
     [ "SG_SensorData.cpp", "_s_g___sensor_data_8cpp.html", null ],
     [ "SG_SensorData.h", "_s_g___sensor_data_8h.html", [
       [ "SG_SensorData", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data" ]
     ] ],
     [ "SG_ThumperCmd.h", "_s_g___thumper_cmd_8h.html", "_s_g___thumper_cmd_8h" ],
+    [ "SG_TimedBuzzCmd.cpp", "_s_g___timed_buzz_cmd_8cpp.html", null ],
+    [ "SG_TimedBuzzCmd.h", "_s_g___timed_buzz_cmd_8h.html", [
+      [ "SG_TimedBuzzCmd", "class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd" ]
+    ] ],
     [ "SGCore.cpp", "_s_g_core_8cpp.html", null ],
     [ "SGCore.h", "_s_g_core_8h.html", "_s_g_core_8h" ],
     [ "SGDevice.cpp", "_s_g_device_8cpp.html", null ],
@@ -133,6 +163,12 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
     [ "ThumperCmd.h", "_thumper_cmd_8h.html", [
       [ "ThumperCmd", "class_s_g_core_1_1_haptics_1_1_thumper_cmd.html", "class_s_g_core_1_1_haptics_1_1_thumper_cmd" ]
     ] ],
+    [ "TimedThumpCmd.cpp", "_timed_thump_cmd_8cpp.html", null ],
+    [ "TimedThumpCmd.h", "_timed_thump_cmd_8h.html", [
+      [ "TimedThumpCmd", "class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html", "class_s_g_core_1_1_haptics_1_1_timed_thump_cmd" ]
+    ] ],
+    [ "Tracking.cpp", "_tracking_8cpp.html", null ],
+    [ "Tracking.h", "_tracking_8h.html", "_tracking_8h" ],
     [ "Values.cpp", "_values_8cpp.html", null ],
     [ "Values.h", "_values_8h.html", [
       [ "Values", "class_s_g_core_1_1_kinematics_1_1_values.html", "class_s_g_core_1_1_kinematics_1_1_values" ]

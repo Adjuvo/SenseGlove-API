@@ -10,10 +10,14 @@ var class_s_g_core_1_1_kinematics_1_1_hand_interpolator =
     [ "Default", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a94c2b9871fce7c01d89f9058585c5a1a", null ],
     [ "Deserialize", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a92488309bdc2736ddd82886b5d40ff0d", null ],
     [ "Equals", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#ac6521ddc272a62575ab5c05ecb679dc5", null ],
+    [ "GetInterpolation", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a917eaff3fd0d93292cffe8310f8f50a1", null ],
     [ "InterpolateFingerAngles", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#aa298ce1036485eac543a4f660020abba", null ],
     [ "InterpolateHandAngles", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a89312ca141784c227cec392aa19a686e", null ],
     [ "InterpolateThumbAngles", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#ad6181ef2b67406bfef6476927fbdf4f6", null ],
     [ "Serialize", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a34e48fa82b633eb161110d8cbd6953ec", null ],
+    [ "SetInterpolation", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#af611dcc9ca1a4873df65376a6fe3d95f", null ],
+    [ "SetInterpolation", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a02cb7b437ae938f1ff43e8e03e978916", null ],
+    [ "SetInterpolation", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#ab0f56870fe1a7eada33fc0b219abdd13", null ],
     [ "cmcStartRot", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a198291cf5ff89457b66bee3ba10e365c", null ],
     [ "jointInterpolations", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a98402dd403e9871a3d9c07ed90f9fa03", null ]
 ];

@@ -1,6 +1,20 @@
 var searchData=
 [
-  ['jointinterpolations_815',['jointInterpolations',['../class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a98402dd403e9871a3d9c07ed90f9fa03',1,'SGCore::Kinematics::HandInterpolator']]],
-  ['jointpositions_816',['jointPositions',['../class_s_g_core_1_1_hand_pose.html#a9900f710444aa6d27286e16e9bc143da',1,'SGCore::HandPose::jointPositions()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#af8000f4235c6d1ff4c096df9921a576d',1,'SGCore::SG::SG_GlovePose::jointPositions()']]],
-  ['jointrotations_817',['jointRotations',['../class_s_g_core_1_1_hand_pose.html#a23dd4b3ef59fed20e3b68cc117ab917f',1,'SGCore::HandPose::jointRotations()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#aa7b5ede5130494acb454a037f650e72a',1,'SGCore::SG::SG_GlovePose::jointRotations()']]]
+  ['identity_1176',['identity',['../class_s_g_core_1_1_kinematics_1_1_quat.html#a1e54a95502b8db5087f544d151dd5cfe',1,'SGCore::Kinematics::Quat']]],
+  ['iglove_1177',['iGlove',['../class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a55a66f79818a2c4e07426a15a22cf45d',1,'SGCore::Calibration::HG_CalibrationSequence']]],
+  ['impact_5fthump_5f10_1178',['Impact_Thump_10',['../_s_g___thumper_cmd_8h.html#ad87dd7d85df80522f99d30c0afe9718a',1,'SG_ThumperCmd.h']]],
+  ['impact_5fthump_5f100_1179',['Impact_Thump_100',['../_s_g___thumper_cmd_8h.html#a8099531d1cf50c15cdc2c3440dcc1e88',1,'SG_ThumperCmd.h']]],
+  ['impact_5fthump_5f30_1180',['Impact_Thump_30',['../_s_g___thumper_cmd_8h.html#a59bdac629881d07c1a46ee43761ce3b5',1,'SG_ThumperCmd.h']]],
+  ['imucorrection_1181',['imuCorrection',['../class_s_g_core_1_1_nova_1_1_nova___glove_info.html#a9cf81a4d16d60e7230a591020447887e',1,'SGCore::Nova::Nova_GloveInfo::imuCorrection()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#ade669778c714cb47ba543d4f0c91456e',1,'SGCore::SG::SG_GloveInfo::imuCorrection()']]],
+  ['imuparsed_1182',['imuParsed',['../class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a269e6c6e748a8e371123d3b6f15c9039',1,'SGCore::Nova::Nova_SensorData::imuParsed()'],['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#ab23f5490561d3efeaa651483a7826cca',1,'SGCore::SG::SG_SensorData::imuParsed()']]],
+  ['imuparsed_1183',['IMUParsed',['../class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#af361d14768053565a87b65cea967c6a8',1,'SGCore::Nova::Nova_SensorData']]],
+  ['imurotation_1184',['IMURotation',['../class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a8579fb97a3e84255d278ef29273dc685',1,'SGCore::Nova::Nova_SensorData']]],
+  ['imuvalues_1185',['imuValues',['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#aa8d26a6e58b8d9e086395fc79511d12b',1,'SGCore::SG::SG_SensorData']]],
+  ['incommands_1186',['inCommands',['../class_s_g_core_1_1_shared_mem.html#abc81a50ee0778fad1440b463bb697547',1,'SGCore::SharedMem']]],
+  ['index_1187',['Index',['../_fingers_8h.html#a94753052e481fcc532efd78d0dc92250',1,'Fingers.h']]],
+  ['interpolation_1188',['Interpolation',['../_s_g___hand_profile_8h.html#a817402314dfc91b23b3642e5b6bb4549',1,'SG_HandProfile.h']]],
+  ['interpolationset_1189',['interpolationSet',['../class_s_g_core_1_1_nova_1_1_nova___profile.html#af4879a1d6035317ff96fde41b83bcccb',1,'SGCore::Nova::Nova_Profile::interpolationSet()'],['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#adc401ae540abbd05d3f654a5afea7edc',1,'SGCore::SG::SG_HandProfile::interpolationSet()']]],
+  ['ipcaddress_1190',['ipcAddress',['../class_s_g_core_1_1_s_g_device.html#a06c81f43db343131992567c421d10ad7',1,'SGCore::SGDevice']]],
+  ['ischarging_1191',['isCharging',['../class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a9b722d8c841d55d5899a8c879b929f8f',1,'SGCore::Nova::Nova_SensorData']]],
+  ['isright_1192',['isRight',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a32517aabfead98b6b73a66708286ddba',1,'SGCore::Kinematics::BasicHandModel::isRight()'],['../class_s_g_core_1_1_hand_pose.html#ae841453a076dc48d4495618d46d9cca1',1,'SGCore::HandPose::isRight()'],['../class_s_g_core_1_1_hand_profile.html#ac91247cbe21cdde91f99374897023334',1,'SGCore::HandProfile::isRight()'],['../class_s_g_core_1_1_nova_1_1_nova___glove_info.html#abd107bf84e75cbe87c73d3f5d039ac81',1,'SGCore::Nova::Nova_GloveInfo::isRight()'],['../class_s_g_core_1_1_nova_1_1_nova___profile.html#abad31240ba2d1bef4bc06b9dbcef812a',1,'SGCore::Nova::Nova_Profile::isRight()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a3be15ff2c3b902bf234e7da86edfd4c5',1,'SGCore::SG::SG_GloveInfo::isRight()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#ac0b10345ebbbd98635ad37cc404318c8',1,'SGCore::SG::SG_GlovePose::isRight()'],['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a3d85e7089fdd8a455b84a372de9836a2',1,'SGCore::SG::SG_HandProfile::isRight()']]]
 ];

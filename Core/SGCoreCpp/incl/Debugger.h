@@ -23,8 +23,12 @@ namespace SGCore
 			DISABLED = 0,
 			/// <summary> Send only messages if errors are caught. </summary>
 			ERRORSONLY,
+			/// <summary> Send messages from calibration algorithms </summary>
+			CALIBRATIONMESSAGES,
 			/// <summary> Send messages from device Parsing. </summary>
 			DEVICEPARSING,
+			/// <summary> Send messages related to backed communications. Mostly relevant when using Ports / Android Strings. </summary>
+			BACKEND_COMMUNICATION,
 			/// <summary> For those we have no place for yet. </summary>
 			ALL
 		};

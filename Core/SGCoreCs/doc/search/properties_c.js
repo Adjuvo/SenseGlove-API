@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ringlvl_715',['RingLvl',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a7e1dc62e0df96df342e95876e21f4d80',1,'SGCore::Haptics::SG_FingerCmd']]]
+  ['numberofsensors_1255',['NumberOfSensors',['../class_s_g_core_1_1_nova_1_1_nova___glove_info.html#af206fa73b9758b70f2c23ab291a9675f',1,'SGCore.Nova.Nova_GloveInfo.NumberOfSensors()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a0487ca31ee32c2da242cfc78401d1afc',1,'SGCore.SG.SG_GloveInfo.NumberOfSensors()']]]
 ];

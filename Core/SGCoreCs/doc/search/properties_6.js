@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['jointpositions_705',['JointPositions',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a06eec541d721ed45412cf20c44b30d28',1,'SGCore::SG::SG_GlovePose']]],
-  ['jointrotations_706',['JointRotations',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a4bf185843933856ddd785db0c7608f90',1,'SGCore::SG::SG_GlovePose']]]
+  ['gloveangles_1223',['GloveAngles',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a9c6f6b587234befafb1b7e70679d4ff8',1,'SGCore::SG::SG_GlovePose']]],
+  ['glovelengths_1224',['GloveLengths',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a71abf89ac33d6cb763439d42ab2c6041',1,'SGCore::SG::SG_GloveInfo']]]
 ];

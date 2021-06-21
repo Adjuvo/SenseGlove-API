@@ -12,6 +12,8 @@
 #include "Vect3D.h"
 #include "Quat.h"
 
+#include "SG_GloveInfo.h"
+
 namespace SGCore
 {
 	namespace Parsing
@@ -76,6 +78,44 @@ namespace SGCore
 
 			/// <summary> Retrieve the glove finger lengths of a particular Sense Glove. </summary>
 			static std::vector< std::vector< Kinematics::Vect3D > > GetGloveLengths(std::string hwVersion);
+
+
+
+			/// <summary> Get the number of sensors of a SenseGlove </summary>
+			/// <param name="hwVersion"></param>
+			/// <returns></returns>
+			static int GetSensors(std::string hwVersion);
+
+			/// <summary> Get the default IMUCorrection for the SenseGlove </summary>
+			/// <param name="hwVersion"></param>
+			/// <param name="fwVersionMain"></param>
+			/// <param name="fwVersionSub"></param>
+			/// <returns></returns>
+			static Kinematics::Quat GetIMUCorrection(std::string hwVersion, int fwVersionMain, int fwVersionSub);
+
+			/// <summary> Check all functionality of a SenseGlove </summary>
+			/// <param name="hwVersion"></param>
+			/// <param name="fwVersionMain"></param>
+			/// <param name="fwVersionSub"></param>
+			/// <returns></returns>
+			static std::vector<bool> GetFunctions(std::string hwVersion, int fwVersionMain, int fwVersionSub);
+
+			/// <summary> Generate a custom glove info. </summary>
+			/// <param name="hwVersion"></param>
+			/// <param name="fwVersionMain"></param>
+			/// <param name="fwVersionSub"></param>
+			/// <param name="rightHand"></param>
+			/// <returns></returns>
+			static SG_GloveInfo GenerateGloveModel(std::string hwVersion, int fwVersionMain, int fwVersionSub, bool rightHand);
+
+			/// <summary> Generate a custom glove info. </summary>
+			/// <param name="hwVersion"></param>
+			/// <param name="fwVersionMain"></param>
+			/// <param name="fwVersionSub"></param>
+			/// <param name="rightHand"></param>
+			/// <param name="customID"></param>
+			/// <returns></returns>
+			static SG_GloveInfo GenerateGloveModel(std::string hwVersion, int fwVersionMain, int fwVersionSub, bool rightHand, std::string customID);
 
 		};
 	}

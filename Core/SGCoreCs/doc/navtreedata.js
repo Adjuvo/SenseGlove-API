@@ -58,8 +58,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_anatomy_8cs.html",
-"class_s_g_core_1_1_haptic_glove.html#adf62f756f54708dec45a670c3bb4e073",
-"functions_prop.html"
+"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#acc6dad3b45199af07b6a134825302bd6",
+"class_s_g_core_1_1_kinematics_1_1_interpolation_set.html#a06626175a5ee7d5afde8b73254454f33",
+"functions_func_n.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

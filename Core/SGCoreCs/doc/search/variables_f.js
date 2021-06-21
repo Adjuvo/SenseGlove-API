@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_627',['x',['../struct_s_g_core_1_1_kinematics_1_1_quat.html#a1affc4eb64f6018d7647088cea8c2236',1,'SGCore.Kinematics.Quat.x()'],['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a5a761ff03c053ee73b70611518f2dbfd',1,'SGCore.Kinematics.Vect3D.x()']]]
+  ['receivethread_1075',['receiveThread',['../class_s_g_core_1_1_util_1_1_u_d_p_receiver.html#aeb422c965c73c14b1814ee920cc5ea25',1,'SGCore::Util::UDPReceiver']]],
+  ['remoteendpoint_1076',['remoteEndPoint',['../class_s_g_core_1_1_util_1_1_u_d_p_socket.html#aa91c4d16bbaceb11fbae7a124a35282d',1,'SGCore::Util::UDPSocket']]]
 ];

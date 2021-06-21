@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['w_875',['w',['../class_s_g_core_1_1_kinematics_1_1_quat.html#aa96bd73537e30048239a386169f30f23',1,'SGCore::Kinematics::Quat']]]
+  ['unknown_1304',['UNKNOWN',['../_device_types_8h.html#ab6aedfcb4a10d1a01e272f492e2c2765',1,'DeviceTypes.h']]]
 ];

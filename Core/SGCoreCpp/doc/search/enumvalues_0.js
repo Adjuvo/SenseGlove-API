@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['all_893',['All',['../namespace_s_g_core_1_1_fino_1_1_parsing.html#a36320c4ebbaebdad5b69d777a8e6361da5b65f1bc6840bab8a971519e3b8483f8',1,'SGCore::Fino::Parsing']]],
-  ['allc_894',['AllC',['../namespace_s_g_core_1_1_fino_1_1_parsing.html#a721c68ae5e6955fd16afd3ffcd77b1d2a56fd80bd5becbb05d89e28250eacdfec',1,'SGCore::Fino::Parsing::AllC()'],['../namespace_s_g_core_1_1_parsing.html#a61fa86f27439ac626c7c8c5314121c6ba47ff269b7713604430e2711c6c4a5230',1,'SGCore::Parsing::AllC()']]],
-  ['alls_895',['AllS',['../namespace_s_g_core_1_1_parsing.html#a993827909bace190bb376d7ee330f8bca7ae0e00cdd6940f5568567d4ec12e239',1,'SGCore::Parsing']]]
+  ['all_1325',['All',['../namespace_s_g_core_1_1_nova.html#a0ff7ae8bd5942226c7198ce959e46654a19c612964964c213932b15fdcdc890ce',1,'SGCore::Nova::All()'],['../namespace_s_g_core_1_1_nova_1_1_parsing.html#a31b7202ebb9141fd1a0c02430ae37253a064ff497360332bbb2c63473c132e26d',1,'SGCore::Nova::Parsing::All()']]],
+  ['allc_1326',['AllC',['../namespace_s_g_core_1_1_nova_1_1_parsing.html#a1b50041ca98a2314fe5278ba29c7f321a79b572bd858c305c1bcabd01094bc1c1',1,'SGCore::Nova::Parsing::AllC()'],['../namespace_s_g_core_1_1_parsing.html#a61fa86f27439ac626c7c8c5314121c6ba47ff269b7713604430e2711c6c4a5230',1,'SGCore::Parsing::AllC()']]],
+  ['alls_1327',['AllS',['../namespace_s_g_core_1_1_parsing.html#a993827909bace190bb376d7ee330f8bca7ae0e00cdd6940f5568567d4ec12e239',1,'SGCore::Parsing']]]
 ];

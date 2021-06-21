@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['vect3d_379',['Vect3D',['../struct_s_g_core_1_1_kinematics_1_1_vect3_d.html',1,'SGCore::Kinematics']]]
+  ['sensecom_651',['SenseCom',['../class_s_g_core_1_1_sense_com.html',1,'SGCore']]],
+  ['senseglove_652',['SenseGlove',['../class_s_g_core_1_1_s_g_1_1_sense_glove.html',1,'SGCore::SG']]],
+  ['sensorrange_653',['SensorRange',['../class_s_g_core_1_1_calibration_1_1_sensor_range.html',1,'SGCore::Calibration']]],
+  ['serializer_654',['Serializer',['../class_s_g_core_1_1_util_1_1_serializer.html',1,'SGCore::Util']]],
+  ['serverdata_655',['ServerData',['../class_s_g_core_1_1_util_1_1_server_data.html',1,'SGCore::Util']]],
+  ['sg_5fbuzzcmd_656',['SG_BuzzCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html',1,'SGCore::Haptics']]],
+  ['sg_5fffbcmd_657',['SG_FFBCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html',1,'SGCore::Haptics']]],
+  ['sg_5ffingercmd_658',['SG_FingerCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html',1,'SGCore::Haptics']]],
+  ['sg_5fgloveinfo_659',['SG_GloveInfo',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html',1,'SGCore::SG']]],
+  ['sg_5fglovepose_660',['SG_GlovePose',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html',1,'SGCore::SG']]],
+  ['sg_5fhandprofile_661',['SG_HandProfile',['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html',1,'SGCore::SG']]],
+  ['sg_5fhapticencoder_662',['SG_HapticEncoder',['../class_s_g_core_1_1_s_g_1_1_s_g___haptic_encoder.html',1,'SGCore::SG']]],
+  ['sg_5fsensordata_663',['SG_SensorData',['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html',1,'SGCore::SG']]],
+  ['sg_5ftimedbuzzcmd_664',['SG_TimedBuzzCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html',1,'SGCore::Haptics']]],
+  ['sgconnect_5fandroid_665',['SGConnect_Android',['../class_s_g_core_1_1_util_1_1_s_g_connect___android.html',1,'SGCore::Util']]],
+  ['sgdevice_666',['SGDevice',['../class_s_g_core_1_1_s_g_device.html',1,'SGCore']]]
 ];

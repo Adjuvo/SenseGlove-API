@@ -73,10 +73,16 @@ namespace SGCore
 			///<summary> Check if this Quaternion is the identity quaternion (meaning it does not rotate anything.) </summary>
 			bool IsIdentity();
 
+			/// <summary> Returns the magnitude of this Quaternion. Used in normalization. </summary>
+			/// <returns></returns>
+			float Magnitude();
 
 			/// <summary> Returns the inverse if q (a.k.a. a rotation in the other direction) </summary>
 			static Quat Invert(Quat q); //-x-y-z w
 
+			/// <summary> Normalizes a quaternion to have a lenght of 1. </summary>
+			/// <returns></returns>
+			static Quat Normalize(Quat q);
 
 			//--------------------------------------------------------------------------------------
 			// Serialization

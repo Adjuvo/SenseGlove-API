@@ -33,6 +33,11 @@ namespace SGCore
 		/// <summary> Sub-Firmware version running on the device's MicroController. </summary>
 		int subFirmwareVer;
 
+
+		///<summary> Parse a 32-bit integer value into a set of booleans (010010011) that indicate which (optional) functions this device has.  </summary>
+		static std::vector<bool> ParseFunctions(int value, int size);
+
+
 	public:
 
 		//--------------------------------------------------------------------------------------
@@ -52,17 +57,18 @@ namespace SGCore
 		/// <summary> Retrieve the Hardware (sub) version of this Sense Glove Device. </summary>
 		std::string GetHardwareVersion() { return hardwareVer; }
 
-		/// <summary> Retrieve the Firmware version running on the device's MicroController. </summary>
+		/// <summary> Firmware version running on the device's MicroController. (as v4.12, this is the 4) </summary>
 		int GetFirmwareVersion() { return firmwareVer; }
 
+		/// <summary> Sub firmware version runnning on the device's microcontroller (as v4.12, this is the .12) </summary>
+		/// <returns></returns>
 		int GetSubFirmwareVersion() { return subFirmwareVer; }
 
-
+		/// <summary>  </summary>
+		/// <param name="rawFW"></param>
+		/// <param name="mainVer"></param>
+		/// <param name="subVer"></param>
 		static void ParseFirmware(std::string& rawFW, int& mainVer, int& subVer);
-
-		///<summary> Parse a 32-bit integer value into a set of booleans (010010011) that indicate which (optional) functions this device has.  </summary>
-		static std::vector<bool> ParseFunctions(int value, int size);
-
 
 	};
 

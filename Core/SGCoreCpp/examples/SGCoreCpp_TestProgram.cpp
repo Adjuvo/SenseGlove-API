@@ -13,8 +13,8 @@ Used to compile the programs in the SGCoreCpp/test folder.
 #include "SenseGlove.h" // SenseGlove interface through which we access data.
 
 /// <summary> Replace "static void BasicTest()" with int main() to compile as a console application. </summary>
-//static void BasicTest()
-int main()
+static void BasicTest()
+//int main()
 {
 	std::cout << "Testing " << SGCore::Library::Version() << std::endl;
 	std::cout << "=======================================" << std::endl;

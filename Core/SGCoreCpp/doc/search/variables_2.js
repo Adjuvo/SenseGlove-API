@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['closechar_762',['closeChar',['../class_s_g_core_1_1_util_1_1_serializer.html#ab5f2318eb555e306b34a6ba90e87ee62',1,'SGCore::Util::Serializer']]],
-  ['cmcstartrot_763',['cmcStartRot',['../class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a198291cf5ff89457b66bee3ba10e365c',1,'SGCore::Kinematics::HandInterpolator']]],
-  ['cmdclose_764',['cmdClose',['../class_s_g_core_1_1_util_1_1_communications.html#a964ced6f1bc449229a30540e64389cf3',1,'SGCore::Util::Communications']]],
-  ['cmdopen_765',['cmdOpen',['../class_s_g_core_1_1_util_1_1_communications.html#ac91bf91e2e5376657035e5b4a2da6ff3',1,'SGCore::Util::Communications']]],
-  ['coldelimiter_766',['colDelimiter',['../class_s_g_core_1_1_util_1_1_communications.html#ad4d577cb407014b5472fa879dfc0d80d',1,'SGCore::Util::Communications']]],
-  ['cstring_767',['cString',['../class_s_g_core_1_1_beta_device.html#aed6e6d18a5fe10e2d7bb4916f06e3d07',1,'SGCore::BetaDevice']]],
-  ['cue_5fgame_5fover_768',['Cue_Game_Over',['../_s_g___thumper_cmd_8h.html#a34a795c5d136d929f890363c3b1823ac',1,'SG_ThumperCmd.h']]]
+  ['backend_5fcommunication_1109',['BACKEND_COMMUNICATION',['../_debugger_8h.html#a1d2f47272030696bb4e7914de8181d62',1,'Debugger.h']]],
+  ['basecmd_1110',['baseCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html#ada70929c297d7561470c8882f77addc5',1,'SGCore::Haptics::SG_TimedBuzzCmd']]],
+  ['basefingerlengths_1111',['baseFingerLengths',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#adedb69543530bd922613dc9f3649ff19',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['basejointpositions_1112',['baseJointPositions',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#aa672bea54c218f3843c283bf8ab2aa19',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['basejointrotations_1113',['baseJointRotations',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a0bcbd7dc5e2274b0660d810373ffb215',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['batterylevel_1114',['batteryLevel',['../class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a46f0e246950654167338cfdbe1dbb136',1,'SGCore::Nova::Nova_SensorData']]],
+  ['betadevice_1115',['BETADEVICE',['../_device_types_8h.html#ab659a341773a6e85e4e7ed10e87cd538',1,'DeviceTypes.h']]],
+  ['brokenrange_1116',['brokenRange',['../class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#af5bac50743eccbb912a6f9d19212f16a',1,'SGCore::Calibration::HG_CalCheck']]],
+  ['button_5fdouble_5f100_1117',['Button_Double_100',['../_s_g___thumper_cmd_8h.html#ad8ada4b75ca50675bc08d8dd2406d3a8',1,'SG_ThumperCmd.h']]],
+  ['button_5fdouble_5f60_1118',['Button_Double_60',['../_s_g___thumper_cmd_8h.html#a0f691f4380a15ec16103ed890d202c55',1,'SG_ThumperCmd.h']]],
+  ['buzzmax_1119',['buzzMax',['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a384eec7e0db9637ae1aef20b4c559ee2',1,'SGCore::Haptics::SG_BuzzCmd']]],
+  ['buzzmin_1120',['buzzMin',['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a50fbadd62971caab341dc25ac875afbf',1,'SGCore::Haptics::SG_BuzzCmd']]],
+  ['buzzqueue_1121',['buzzQueue',['../class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a68304a0b2704e8fa26e0bcb9cec7b293',1,'SGCore::Haptics::HG_HapticStream']]]
 ];

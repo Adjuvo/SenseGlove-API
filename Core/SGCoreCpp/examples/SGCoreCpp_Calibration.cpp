@@ -9,18 +9,18 @@ Calibration Example using the SenseGlove.
 #include "SenseGlove.h" // SenseGlove interface through which we access data.
 
 /// <summary> Replace "static void CalibrationExample()" with int main() to compile as a console application. </summary>
-static void CalibrationExample()
-//int main()
+//static void CalibrationExample()
+int main()
 {
 	std::cout << "Calibration example using " << SGCore::Library::Version() << std::endl;
 	std::cout << "=======================================" << std::endl;
 
 	if (SGCore::DeviceList::SenseCommRunning()) //check if the Sense Comm is running. If not, warn the end user.
 	{
-		SGCore::SG::SenseGlove testGlove;
-		if (SGCore::SG::SenseGlove::GetSenseGlove(testGlove)) //retrieves the first Sense Glove it can find. Returns true if one can be found
+		std::shared_ptr<SGCore::HapticGlove> testGlove;
+		if (SGCore::HapticGlove::GetGlove(testGlove)) //retrieves the first Sense Glove it can find. Returns true if one can be found
 		{
-			std::cout << "Connected to a " << (testGlove.IsRight() ? "right" : "left") << "-handed SenseGlove. Staring calibration" << std::endl;
+			std::cout << "Connected to a " << (testGlove->IsRight() ? "right" : "left") << "-handed SenseGlove. Staring calibration" << std::endl;
 
 			/*
 			Our goal is to find the min / max sensor values, which correspond to the user opening their hand and making a fist.
@@ -37,7 +37,7 @@ static void CalibrationExample()
 			system("pause");
 
 			// This function updates the calibration range of testGlove.
-			testGlove.UpdateCalibrationRange(); // Instead of this method, you can also use the GetSensorData(), GetGlovePose() or GetHandPose function instead.
+			testGlove->UpdateCalibrationRange(); // Instead of this method, you can also use the GetSensorData(), GetGlovePose() or GetHandPose function instead.
 
 
 			// Step 2: Fist - Calibrates flexion
@@ -47,14 +47,14 @@ static void CalibrationExample()
 			system("pause");
 
 			// This function updates the calibration range of testGlove. 
-			testGlove.UpdateCalibrationRange();
+			testGlove->UpdateCalibrationRange();
 
 
 			// At this point, we've collected data while the hand was open, and when it was closed. 
 			// The calibration range should now have the two extremes to interpolate between.
 			// Let's check & ouput the ranges:
 			std::vector<SGCore::Kinematics::Vect3D> minRanges, maxRanges;
-			testGlove.GetCalibrationRange(minRanges, maxRanges);
+			testGlove->GetCalibrationRange(minRanges, maxRanges);
 
 			// The calibration ranges contain the x, y, z values, which represent the pronation/supination, flexion/extension, and abduction/adduction movements respectively, in radians. 
 			// For readability's sake, we'll print out the flexion/extension values in degrees.
@@ -75,12 +75,19 @@ static void CalibrationExample()
 			std::cout << std::endl;
 
 			// Now we apply the calibration to a default profile
-			SGCore::HandProfile cachedProfile = SGCore::HandProfile::Default(testGlove.IsRight()); //a default profile for the right-sided glove.
-			testGlove.ApplyCalibration(cachedProfile);
+			SGCore::HandProfile cachedProfile = SGCore::HandProfile::Default(testGlove->IsRight()); //a default profile for the right-sided glove.
+			testGlove->ApplyCalibration(cachedProfile);
+
+
+			std::cout << std::endl;
+			std::cout << "Step 3: Make any pose with your hand." << std::endl;
+			std::cout << "Once your hand is in the right position, press any key to calculate it." << std::endl;
+			system("pause");
+
 
 			// And can now use it to calculate handPoses
 			SGCore::HandPose handPose;
-			if (testGlove.GetHandPose(cachedProfile, handPose))
+			if (testGlove->GetHandPose(cachedProfile, handPose))
 			{
 				std::cout << std::endl << "With these ranges, we've calculated the following hand angles:" << std::endl;
 				std::cout << handPose.ToString() << std::endl;

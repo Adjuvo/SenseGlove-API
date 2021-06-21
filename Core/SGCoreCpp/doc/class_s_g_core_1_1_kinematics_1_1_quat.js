@@ -11,6 +11,8 @@ var class_s_g_core_1_1_kinematics_1_1_quat =
     [ "FromEuler", "class_s_g_core_1_1_kinematics_1_1_quat.html#a2a9133928c92cd64ae4005ce662ba972", null ],
     [ "Invert", "class_s_g_core_1_1_kinematics_1_1_quat.html#a7d994097d5b964e6b866fc0a3edec9ee", null ],
     [ "IsIdentity", "class_s_g_core_1_1_kinematics_1_1_quat.html#ab74f799918b08bb21ab5674507acd916", null ],
+    [ "Magnitude", "class_s_g_core_1_1_kinematics_1_1_quat.html#a84314aa1fabd6e6f43da8794a88d366b", null ],
+    [ "Normalize", "class_s_g_core_1_1_kinematics_1_1_quat.html#ae47213d5c03dd7b4261fbcd7626c3a3a", null ],
     [ "operator*", "class_s_g_core_1_1_kinematics_1_1_quat.html#ae396e431cc8c26312bf1426a6d9d50b0", null ],
     [ "operator*", "class_s_g_core_1_1_kinematics_1_1_quat.html#a06ce70b8452f610ba825f64713ac0340", null ],
     [ "Rotate", "class_s_g_core_1_1_kinematics_1_1_quat.html#a691d6c83be03e33ccfd6d0767121f988", null ],

@@ -66,7 +66,9 @@ namespace SGCore
 			/// <summary> Calculate a thumb movement's rotation, using an input value. </summary>
 			float CalculateAngle(Finger finger, ThumbMovement movement, float value);
 
-
+			/// <summary> Check if this handInterpolator matches another. </summary>
+			/// <param name="other"></param>
+			/// <returns></returns>
 			bool Equals(HandInterpolator other);
 
 
@@ -85,6 +87,42 @@ namespace SGCore
 			/// <summary> Calculate all hand angles based on an interpolator and total xyz angles. </summary>
 			static std::vector<std::vector<Vect3D>> InterpolateHandAngles(HandInterpolator& profile,
 				std::vector<Vect3D> totalAngles);
+
+			//--------------------------------------------------------------------------------------
+			// Updating / Applying Calibration
+
+			/// <summary> Updates a particular joint movement interpolation, without changing its limits. </summary>
+			/// <param name="finger"></param>
+			/// <param name="movement"></param>
+			/// <param name="inputAt0"></param>
+			/// <param name="inputAt1"></param>
+			/// <param name="angleAt0"></param>
+			/// <param name="angleAt1"></param>
+			void SetInterpolation(int finger, int movement, float inputAt0, float inputAt1, float angleAt0, float angleAt1);
+
+			/// <summary> Updates a particular joint movement interpolation, without changing its limits </summary>
+			/// <param name="finger"></param>
+			/// <param name="movement"></param>
+			/// <param name="inputAt0"></param>
+			/// <param name="inputAt1"></param>
+			/// <param name="angleAt0"></param>
+			/// <param name="angleAt1"></param>
+			void SetInterpolation(Finger finger, FingerMovement movement, float inputAt0, float inputAt1, float angleAt0, float angleAt1);
+
+			/// <summary> Updates a particular joint movement interpolation, without changing its limits </summary>
+			/// <param name="movement"></param>
+			/// <param name="inputAt0"></param>
+			/// <param name="inputAt1"></param>
+			/// <param name="angleAt0"></param>
+			/// <param name="angleAt1"></param>
+			void SetInterpolation(ThumbMovement movement, float inputAt0, float inputAt1, float angleAt0, float angleAt1);
+
+
+			/// <summary> Returns an interpolationSet </summary>
+			/// <param name="finger"></param>
+			/// <param name="movement"></param>
+			/// <returns></returns>
+			InterpolationSet GetInterpolation(int finger, int movement);
 
 
 			//--------------------------------------------------------------------------------------

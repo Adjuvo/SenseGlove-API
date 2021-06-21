@@ -69,8 +69,38 @@ extern "C"
 		// ---------------------------------------------------------------------------------------------
 		// Util
 
+		///<summary> Copies a string placed in Shared Memory into a char* </summary>
+		int CopyIPCStr(std::string block, std::string address, char* output);
+
+		///<summary> Copies a string contained in a char* to a block of shared memory </summary>
+		int WriteIPCStr(std::string block, std::string address, const char* value);
+
+
+		///<summary> Retrieve all ports that might be Sense Gloves, that can be safely connected to. </summary>
+		SGCONNECT_API int GetPorts(bool withBT, char* output);
+
+		///<summary> Retrieve all Serial Ports, their PID/VIDs and Description. Used to debug ports.  </summary>
+		SGCONNECT_API int GetPortInfo(bool withBT, char* output);
+
 		///<summary> Clears ScanningActive for debug purposes. </summary>
 		SGCONNECT_API void ClearSharedMem();
+
+		///<summary> Copy debug messages from the queue and clears it. </summary>
+		SGCONNECT_API int GetDebugMessages(char* output);
+
+		///<summary> Copy debug messages from the queue and clears it. </summary>
+		int GetDebugMessages_S(std::string& output);
+
+		///<summary> Turn debug queue on / off. If turned on, we will begin buffering connection messages. </summary>
+		SGCONNECT_API void SetDebugQueue(bool active);
+		
+
+		///<summary> Sets the Debug Level of the SGConnect Debugger. Best to leave it alone unless you know what you're doing! </summary>
+		SGCONNECT_API void SetDebugLevel(int level);
+		///<summary> Gets the Debug Level of the SGConnect Debugger. </summary>
+		SGCONNECT_API int GetDebugLevel();
+
+
 
 	    ///<summary> Check which version of SGConnect you are using. </summary>
 		SGCONNECT_API int GetLibraryVersion_I(char* output);
@@ -98,5 +128,22 @@ extern "C"
 		///  2 : SharedMemory exists, and it's still up to date -> true
 		///</returns>
 		SGCONNECT_API int ScanningState();
+
+		///<summary> Get the raw (unprocessed) device data of the SGDevice at index, as discovered by SenseCom </summary>
+		SGCONNECT_API int GetDeviceString(const char* deviceAddress, char* output);
+
+
+		///<summary> Get the raw (unprocessed) sensor data of the SGDevice at index, as discovered by SenseCom  </summary>
+		SGCONNECT_API int GetSensorString(const char* deviceAddress, char* output);
+
+		///<summary> Write a haptics string to the shared memory of a particular device. </summary>
+		SGCONNECT_API int WriteHaptics(const char* deviceAddress, const char* haptics);
+
+
+		///<summary> Write a command string to the shared memory of a particular device. </summary>
+		SGCONNECT_API int WriteCmdString(const char* deviceAddress, const char* commands);
+
+		///<summary> Retrieve the last received command from the device </summary>
+		SGCONNECT_API int GetCmdResponse(const char* deviceAddress, char* output);
 	}
 }

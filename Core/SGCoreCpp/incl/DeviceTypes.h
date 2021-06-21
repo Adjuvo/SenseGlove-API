@@ -24,7 +24,7 @@ namespace SGCore
 		SENSEGLOVE = 0,
 
 		/// <summary> A soft glove with basic tracking, as well as force- and Haptic Feedback. </summary>
-		FINO = 2
+		NOVA = 2
 
 	};
 }

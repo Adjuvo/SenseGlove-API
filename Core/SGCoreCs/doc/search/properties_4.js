@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['hardwarever_696',['HardwareVer',['../class_s_g_core_1_1_device_model.html#a96b5b5fcb81124b92b521d7711303581',1,'SGCore::DeviceModel']]]
+  ['effecttime_1206',['EffectTime',['../class_s_g_core_1_1_haptics_1_1_waveform.html#a775cc12611141f86e46f2ce2f3bf8d52',1,'SGCore::Haptics::Waveform']]],
+  ['elapsed_1207',['Elapsed',['../class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#aef7e29ed89ad54ab70fd28c1394fcf10',1,'SGCore::Haptics::TimedThumpCmd']]],
+  ['elapsedtime_1208',['ElapsedTime',['../class_s_g_core_1_1_haptics_1_1_buzz_cmd.html#af059e4e3beadb251e616e244346b044e',1,'SGCore::Haptics::BuzzCmd']]]
 ];

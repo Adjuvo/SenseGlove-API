@@ -1,9 +1,18 @@
 var searchData=
 [
-  ['lastbuzzcmd_179',['lastBuzzCmd',['../class_s_g_core_1_1_haptic_glove.html#a0e74ece60ded6319a9e2391beaafecdf',1,'SGCore::HapticGlove']]],
-  ['lastcmdid_180',['lastCmdID',['../class_s_g_core_1_1_s_g_device.html#ab08286c343753e3f8ed38bd0bc7e7d0e',1,'SGCore::SGDevice']]],
-  ['lastffbcmd_181',['lastFFBCmd',['../class_s_g_core_1_1_haptic_glove.html#ad1af0214220ee0a2689a3670e2cd5481',1,'SGCore::HapticGlove']]],
-  ['lastthumper_182',['lastThumper',['../class_s_g_core_1_1_haptic_glove.html#a6d04146e68efb5a9fafd3ad887650e48',1,'SGCore::HapticGlove']]],
-  ['levels_183',['levels',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a59df585d3111174fef770145b7ce1593',1,'SGCore.Haptics.SG_FingerCmd.levels()'],['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a2455f6860cb32f92e4c10459584d05a5',1,'SGCore.Haptics.SG_FingerCmd.Levels()']]],
-  ['log_184',['Log',['../class_s_g_core_1_1_diagnostics_1_1_debugger.html#a308995c67b6a0b57ef3dfdacc794ec9b',1,'SGCore::Diagnostics::Debugger']]]
+  ['lastbuzzcmd_306',['lastBuzzCmd',['../class_s_g_core_1_1_haptic_glove.html#a0e74ece60ded6319a9e2391beaafecdf',1,'SGCore::HapticGlove']]],
+  ['lastcmdid_307',['lastCmdID',['../class_s_g_core_1_1_s_g_device.html#ab08286c343753e3f8ed38bd0bc7e7d0e',1,'SGCore::SGDevice']]],
+  ['lastcmdsent_308',['LastCmdSent',['../class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html#a386ccdcf9579fe0992d353e9481c6242',1,'SGCore::Haptics::FFBStream']]],
+  ['lastdata_309',['LastData',['../class_s_g_core_1_1_util_1_1_u_d_p_receiver.html#ae2c3e8d3fc2226bd2a44b324c114da88',1,'SGCore::Util::UDPReceiver']]],
+  ['lastffbcmd_310',['lastFFBCmd',['../class_s_g_core_1_1_haptic_glove.html#ad1af0214220ee0a2689a3670e2cd5481',1,'SGCore::HapticGlove']]],
+  ['lastrange_311',['lastRange',['../class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a3ed56a6dc49f066f9c080cadcf94124e',1,'SGCore::Calibration::HG_CalCheck']]],
+  ['lastreceivedudppacket_312',['lastReceivedUDPPacket',['../class_s_g_core_1_1_util_1_1_u_d_p_receiver.html#a93201b51265568cc6230bd7733b988b5',1,'SGCore::Util::UDPReceiver']]],
+  ['lastthumper_313',['lastThumper',['../class_s_g_core_1_1_haptic_glove.html#a6d04146e68efb5a9fafd3ad887650e48',1,'SGCore::HapticGlove']]],
+  ['latestdata_314',['LatestData',['../class_s_g_core_1_1_util_1_1_server_data.html#abf8807012a43d9d885b34d66bf29e93b',1,'SGCore::Util::ServerData']]],
+  ['levels_315',['levels',['../class_s_g_core_1_1_haptics_1_1_finger_forces.html#a983a040146402bda8b52e62d2a5b41dc',1,'SGCore.Haptics.FingerForces.levels()'],['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a59df585d3111174fef770145b7ce1593',1,'SGCore.Haptics.SG_FingerCmd.levels()']]],
+  ['levels_316',['Levels',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a2455f6860cb32f92e4c10459584d05a5',1,'SGCore::Haptics::SG_FingerCmd']]],
+  ['library_2ecs_317',['Library.cs',['../_library_8cs.html',1,'']]],
+  ['linkedglove_318',['LinkedGlove',['../class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a5323776aa6e441e56e7c953ddb1785b7',1,'SGCore::Calibration::HG_CalibrationSequence']]],
+  ['location_319',['Location',['../class_s_g_core_1_1_haptics_1_1_buzz_cmd.html#a80f78e1e759503f646b31d801b04b5f0',1,'SGCore::Haptics::BuzzCmd']]],
+  ['log_320',['Log',['../class_s_g_core_1_1_diagnostics_1_1_debugger.html#a308995c67b6a0b57ef3dfdacc794ec9b',1,'SGCore::Diagnostics::Debugger']]]
 ];

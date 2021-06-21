@@ -1,11 +1,17 @@
 var searchData=
 [
-  ['imucorrection_697',['ImuCorrection',['../class_s_g_core_1_1_fino_1_1_fino___glove_info.html#a4c387b34958c85fe0ffd93e899e41280',1,'SGCore.Fino.Fino_GloveInfo.ImuCorrection()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#ab64f83b97a27e3f6a2736964c0d5c546',1,'SGCore.SG.SG_GloveInfo.ImuCorrection()']]],
-  ['imuparsed_698',['ImuParsed',['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#aff6a66628807d60694c6e5a25cb0bde5',1,'SGCore::SG::SG_SensorData']]],
-  ['imurotation_699',['IMURotation',['../class_s_g_core_1_1_fino_1_1_fino___sensor_data.html#aa6ac012e67d345bc980d58d893b8f9ef',1,'SGCore::Fino::Fino_SensorData']]],
-  ['imuvalues_700',['ImuValues',['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#a42d158244bdbdcc45ce1bd68afdcb76c',1,'SGCore::SG::SG_SensorData']]],
-  ['indexlvl_701',['IndexLvl',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a31d132da725c15e150dff5024970f963',1,'SGCore::Haptics::SG_FingerCmd']]],
-  ['instance_702',['Instance',['../class_s_g_core_1_1_diagnostics_1_1_debugger.html#a67aa1c98065725e6fc265d0df962b2f9',1,'SGCore::Diagnostics::Debugger']]],
-  ['interpolationset_703',['InterpolationSet',['../class_s_g_core_1_1_fino_1_1_fino___profile.html#ab464b094477e57e5b870f8ee88165cc4',1,'SGCore.Fino.Fino_Profile.InterpolationSet()'],['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a351cc8cdadc953a0e4095be48427176e',1,'SGCore.SG.SG_HandProfile.InterpolationSet()']]],
-  ['isright_704',['IsRight',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a0ff9de818d628b5ae88da3c2503d6da8',1,'SGCore.Kinematics.BasicHandModel.IsRight()'],['../class_s_g_core_1_1_fino_1_1_fino___glove_info.html#a8dec366d3ba7c7a9a83bf7fee4a4d41e',1,'SGCore.Fino.Fino_GloveInfo.IsRight()'],['../class_s_g_core_1_1_fino_1_1_fino___profile.html#aa22422d34938302c2bd6f46ccb88ee72',1,'SGCore.Fino.Fino_Profile.IsRight()'],['../class_s_g_core_1_1_hand_profile.html#a2865e80eec4d5ce2c519a6963e86cd89',1,'SGCore.HandProfile.IsRight()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#af6194257c4ef5522062bbc83b5cacb0f',1,'SGCore.SG.SG_GloveInfo.IsRight()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#aa566e35063405fa597b8635300583e73',1,'SGCore.SG.SG_GlovePose.IsRight()'],['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ae22483d9178ba22d3b423b7f17670a55',1,'SGCore.SG.SG_HandProfile.IsRight()']]]
+  ['fingerlengths_1209',['FingerLengths',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a24627f270ece9d95904cab4c28bb6930',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['fingerratios_1210',['FingerRatios',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#ade8f7ab184e5baa1fdb61c54175e7eee',1,'SGCore::Kinematics::BasicHandModel']]],
+  ['fingersolver_1211',['FingerSolver',['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a4ccf58389736b74577bc873332b31f24',1,'SGCore::SG::SG_HandProfile']]],
+  ['fingerthimbleoffset_1212',['FingerThimbleOffset',['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a6a17a983a7ec735c8ed5b61403fe1ff2',1,'SGCore::SG::SG_HandProfile']]],
+  ['finished_1213',['Finished',['../class_s_g_core_1_1_haptics_1_1_buzz_cmd.html#aafa4662883ae6c5621c84d5231de1dc7',1,'SGCore::Haptics::BuzzCmd']]],
+  ['firmwaremainver_1214',['FirmwareMainVer',['../class_s_g_core_1_1_util_1_1_server_data.html#ac0ee774adeb9827ff7e42023875dbe7b',1,'SGCore::Util::ServerData']]],
+  ['firmwaresubver_1215',['FirmwareSubVer',['../class_s_g_core_1_1_util_1_1_server_data.html#a9c88fa7bd22fba391f14fdaed1da3d9e',1,'SGCore::Util::ServerData']]],
+  ['firmwarever_1216',['FirmwareVer',['../class_s_g_core_1_1_device_model.html#a4b34046df2fdd9f3fcc8e08036042e35',1,'SGCore::DeviceModel']]],
+  ['forces_1217',['Forces',['../class_s_g_core_1_1_haptics_1_1_finger_forces.html#a5723462c549178290f87057dd4964393',1,'SGCore::Haptics::FingerForces']]],
+  ['forcestosend_1218',['ForcesToSend',['../class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html#ae0d40574a4ba6fae81f9deb3934bfbbb',1,'SGCore::Haptics::FFBStream']]],
+  ['frequencyend_1219',['FrequencyEnd',['../class_s_g_core_1_1_haptics_1_1_waveform.html#a257877c975d91fb54c472e1f55fa03d0',1,'SGCore::Haptics::Waveform']]],
+  ['frequencystart_1220',['FrequencyStart',['../class_s_g_core_1_1_haptics_1_1_waveform.html#a2e5a1e7c8d803f6c7e6fc938c3920525',1,'SGCore::Haptics::Waveform']]],
+  ['frequencyswitch_1221',['FrequencySwitch',['../class_s_g_core_1_1_haptics_1_1_waveform.html#aefb77bc3d8d633e118f02e5a5c833f89',1,'SGCore::Haptics::Waveform']]],
+  ['frequencyswitchtime_1222',['FrequencySwitchTime',['../class_s_g_core_1_1_haptics_1_1_waveform.html#a17a2ceab85ad4ac11f6317a20a2c9236',1,'SGCore::Haptics::Waveform']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['z_882',['z',['../class_s_g_core_1_1_kinematics_1_1_quat.html#ab04ff77d0a209945c3c6ba8b44504d51',1,'SGCore::Kinematics::Quat::z()'],['../class_s_g_core_1_1_kinematics_1_1_vect3_d.html#a17800e42b152cb49618988e59e28f5d2',1,'SGCore::Kinematics::Vect3D::z()']]],
-  ['zero_883',['zero',['../class_s_g_core_1_1_kinematics_1_1_vect3_d.html#a6bc57fea74b421f8a7efafdc97849cfc',1,'SGCore::Kinematics::Vect3D']]]
+  ['x_1308',['x',['../class_s_g_core_1_1_kinematics_1_1_quat.html#ab04f2dd89928373f8b1ecf102824a1b4',1,'SGCore::Kinematics::Quat::x()'],['../class_s_g_core_1_1_kinematics_1_1_vect3_d.html#ac12389cbf7bfddab7d27c79cd820de4d',1,'SGCore::Kinematics::Vect3D::x()']]],
+  ['x0_1309',['x0',['../class_s_g_core_1_1_kinematics_1_1_interpolation_set.html#ab30f833662b8e81a6d50c7dd1611e951',1,'SGCore::Kinematics::InterpolationSet']]],
+  ['x1_1310',['x1',['../class_s_g_core_1_1_kinematics_1_1_interpolation_set.html#ac55172b201d49ad7368a85b18bc7f8f8',1,'SGCore::Kinematics::InterpolationSet']]]
 ];

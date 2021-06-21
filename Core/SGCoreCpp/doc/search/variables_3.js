@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['data_769',['data',['../class_s_g_core_1_1_shared_mem.html#ab99a59852e8b7f78becffc8112d56d7f',1,'SGCore::SharedMem']]],
-  ['debuglevel_770',['debugLevel',['../class_s_g_core_1_1_diagnostics_1_1_debugger.html#a69b173bb80281dd8d9d5331103c01531',1,'SGCore::Diagnostics::Debugger']]],
-  ['defaultlevel_771',['defaultLevel',['../class_s_g_core_1_1_diagnostics_1_1_debugger.html#a1fa1b637706a020d8ac8f1b244acb68d',1,'SGCore::Diagnostics::Debugger']]],
-  ['deg2rad_772',['Deg2Rad',['../class_s_g_core_1_1_kinematics_1_1_values.html#a62ed5b3d809fa78371c70bbf8f4ffef8',1,'SGCore::Kinematics::Values']]],
-  ['deviceid_773',['deviceID',['../class_s_g_core_1_1_beta_device.html#acdca727e0aff722de39c7a94f2e10ced',1,'SGCore::BetaDevice::deviceID()'],['../class_s_g_core_1_1_device_model.html#aa962eb5b3badca3d3e92edfd92c313ce',1,'SGCore::DeviceModel::deviceID()'],['../class_s_g_core_1_1_fino_1_1_fino___glove_info.html#aae779eaca164d5e833f49866700160cc',1,'SGCore::Fino::Fino_GloveInfo::deviceID()'],['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a3d9572e4a47f56b0c49227f2929f2a14',1,'SGCore::SG::SG_GloveInfo::deviceID()']]],
-  ['deviceindex_774',['deviceIndex',['../class_s_g_core_1_1_s_g_device.html#a0d10613b00492e244a680c99b64ce5b4',1,'SGCore::SGDevice']]],
-  ['deviceparsing_775',['DEVICEPARSING',['../_debugger_8h.html#aa1c4765ce9841e9adf8279afbaafaf6e',1,'Debugger.h']]],
-  ['devices_776',['devices',['../class_s_g_core_1_1_shared_mem.html#a2ab3a579fe89beeaa4a71fa9616f0f8a',1,'SGCore::SharedMem']]],
-  ['disabled_777',['DISABLED',['../_debugger_8h.html#ad72cf0c406d4bd46269f75ed9a21e6f9',1,'Debugger.h']]],
-  ['dthimbleoffset_778',['dThimbleOffset',['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a58fc76f7d4fd886b9f461ca99f2b6e59',1,'SGCore::SG::SG_HandProfile']]]
+  ['calibrating_1122',['Calibrating',['../_h_g___cal_check_8h.html#a081b1a42bcf3e65ec10359feca2b05a8',1,'HG_CalCheck.h']]],
+  ['calibrationmessages_1123',['CALIBRATIONMESSAGES',['../_debugger_8h.html#a866740d3bbbb675bbcc697466029e8f9',1,'Debugger.h']]],
+  ['calibrationneeded_1124',['CalibrationNeeded',['../_h_g___cal_check_8h.html#a6ade5c2cd93dc206a320c5ca83e00e41',1,'HG_CalCheck.h']]],
+  ['calibrationpoints_1125',['calibrationPoints',['../class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a59ef264ab31150e8ae1de3d20248f4b0',1,'SGCore::Calibration::HG_CalibrationSequence']]],
+  ['calibrationstage_1126',['calibrationStage',['../class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#af865e24fea329599fabb4556287f38c9',1,'SGCore::Calibration::HG_CalCheck']]],
+  ['calibrationvalues_1127',['calibrationValues',['../class_s_g_core_1_1_calibration_1_1_cal_data_point.html#a61e6832310aa07e53b30661551263847',1,'SGCore::Calibration::CalDataPoint']]],
+  ['cananimate_1128',['canAnimate',['../class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a222f9b949c14cbbf78153bdb0d961608',1,'SGCore::Calibration::HG_QuickCalibration']]],
+  ['closechar_1129',['closeChar',['../class_s_g_core_1_1_util_1_1_serializer.html#ab5f2318eb555e306b34a6ba90e87ee62',1,'SGCore::Util::Serializer']]],
+  ['cmcstartrot_1130',['cmcStartRot',['../class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a198291cf5ff89457b66bee3ba10e365c',1,'SGCore::Kinematics::HandInterpolator']]],
+  ['cmdclose_1131',['cmdClose',['../class_s_g_core_1_1_util_1_1_communications.html#a964ced6f1bc449229a30540e64389cf3',1,'SGCore::Util::Communications']]],
+  ['cmdopen_1132',['cmdOpen',['../class_s_g_core_1_1_util_1_1_communications.html#ac91bf91e2e5376657035e5b4a2da6ff3',1,'SGCore::Util::Communications']]],
+  ['coldelimiter_1133',['colDelimiter',['../class_s_g_core_1_1_util_1_1_communications.html#ad4d577cb407014b5472fa879dfc0d80d',1,'SGCore::Util::Communications']]],
+  ['cstring_1134',['cString',['../class_s_g_core_1_1_beta_device.html#aed6e6d18a5fe10e2d7bb4916f06e3d07',1,'SGCore::BetaDevice']]],
+  ['cue_5fgame_5fover_1135',['Cue_Game_Over',['../_s_g___thumper_cmd_8h.html#a34a795c5d136d929f890363c3b1823ac',1,'SG_ThumperCmd.h']]],
+  ['currentrange_1136',['currentRange',['../class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a4024aca393d034f18248bde2c8ad18d1',1,'SGCore::Calibration::HG_CalCheck']]],
+  ['custom_1137',['Custom',['../_tracking_8h.html#ab48692ba199256552aa6a06b02c7fde2',1,'Tracking.h']]]
 ];

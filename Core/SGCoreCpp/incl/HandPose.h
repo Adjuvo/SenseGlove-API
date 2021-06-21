@@ -12,6 +12,7 @@
 #include "Vect3D.h"
 #include "Quat.h"
 #include "Fingers.h"
+#include "BasicHandModel.h"
 
 namespace SGCore
 {
@@ -57,11 +58,6 @@ namespace SGCore
 			std::vector< std::vector<Kinematics::Quat> > jointRot,
 			std::vector< std::vector<Kinematics::Vect3D> > hAngles);
 
-		/// <summary> Create a new instance of a left or right handed Pose that is "idle"; in a neutral position. </summary>
-		/// <param name="right"></param>
-		/// <returns></returns>
-		static HandPose DefaultIdle(bool right);
-
 		/// <summary> Returns true of these two handposes are roughly equal. </summary>
 		bool Equals(HandPose other);
 
@@ -90,6 +86,67 @@ namespace SGCore
 		std::vector<float> GetNormalizedFlexion(bool clamp01 = true);
 
 
+        //---------------------------------------------------------------------------------------------------------------------
+        // Generating Poses
+
+        /// <summary> Generate a HandPose based on articulation angles (handAngles). </summary>
+        /// <param name="handAngles"></param>
+        /// <param name="rightHanded"></param>
+        /// <param name="handDimensions"></param>
+        /// <returns></returns>
+		static HandPose FromHandAngles(std::vector<std::vector<Kinematics::Vect3D>>& handAngles, bool rightHanded, Kinematics::BasicHandModel& handDimensions);
+
+		/// <summary> Generate a HandPose based on articulation angles (handAngles), with a default HandModel. </summary>
+		/// <param name="handAngles"></param>
+		/// <param name="rightHanded"></param>
+		/// <returns></returns>
+		static HandPose FromHandAngles(std::vector<std::vector<Kinematics::Vect3D>>& handAngles, bool rightHanded);
+
+
+
+        /// <summary> Create a new instance of a left or right handed Pose that is "idle"; in a neutral position. </summary>
+        /// <param name="rightHand"></param>
+        /// <param name="handDimensions"></param>
+        /// <returns></returns>
+		static HandPose DefaultIdle(bool rightHand, Kinematics::BasicHandModel& handDimensions);
+
+		/// <summary> Create a new instance of a left or right handed Pose that is "idle"; in a neutral position. </summary>
+		/// <param name="rightHand"></param>
+		/// <returns></returns>
+		static HandPose DefaultIdle(bool rightHand);
+
+        /// <summary> Generates a HandPose representing an 'open hand', used in calibration to determine finger extension. </summary>
+        /// <param name="rightHand"></param>
+        /// <param name="handDimensions"></param>
+        /// <returns></returns>
+		static HandPose FlatHand(bool rightHand, Kinematics::BasicHandModel& handDimensions);
+
+		/// <summary> Generates a HandPose representing an 'open hand', used in calibration to determine finger extension. </summary>
+		/// <param name="rightHand"></param>
+		/// <returns></returns>
+		static HandPose FlatHand(bool rightHand);
+
+        /// <summary> Generates a HandPose representing a 'thumbs up', used in calibration to determine finger flexion, thumb extension and adduction. </summary>
+        /// <param name="rightHand"></param>
+        /// <param name="handDimensions"></param>
+        /// <returns></returns>
+		static HandPose ThumbsUp(bool rightHand, Kinematics::BasicHandModel& handDimensions);
+
+		/// <summary> Generates a HandPose representing a 'thumbs up', used in calibration to determine finger flexion, thumb extension and adduction. </summary>
+		/// <param name="rightHand"></param>
+		/// <returns></returns>
+		static HandPose ThumbsUp(bool rightHand);
+
+        /// <summary> Generates a HandPose representing a 'fist', used in calibration to determine, thumb flexion and abduction. </summary>
+        /// <param name="rightHand"></param>
+        /// <param name="handDimensions"></param>
+        /// <returns></returns>
+		static HandPose Fist(bool rightHand, Kinematics::BasicHandModel& handDimensions);
+
+		/// <summary> Generates a HandPose representing a 'fist', used in calibration to determine, thumb flexion and abduction. </summary>
+		/// <param name="rightHand"></param>
+		/// <returns></returns>
+		static HandPose Fist(bool rightHand);
 
 
 	};

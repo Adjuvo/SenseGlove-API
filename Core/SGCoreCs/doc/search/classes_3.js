@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['handinterpolator_358',['HandInterpolator',['../class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html',1,'SGCore::Kinematics']]],
-  ['handpose_359',['HandPose',['../class_s_g_core_1_1_hand_pose.html',1,'SGCore']]],
-  ['handprofile_360',['HandProfile',['../class_s_g_core_1_1_hand_profile.html',1,'SGCore']]],
-  ['hapticglove_361',['HapticGlove',['../class_s_g_core_1_1_haptic_glove.html',1,'SGCore']]]
+  ['ffbstream_632',['FFBStream',['../class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html',1,'SGCore::Haptics']]],
+  ['fingerforces_633',['FingerForces',['../class_s_g_core_1_1_haptics_1_1_finger_forces.html',1,'SGCore::Haptics']]]
 ];

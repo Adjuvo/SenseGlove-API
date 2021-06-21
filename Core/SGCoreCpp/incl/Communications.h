@@ -19,11 +19,12 @@ namespace SGCore
 		enum ListFormat
 		{
 			LF_Connected = 0,
-			LF_PPS,
+			LF_PPS_Got,
 			LF_DeviceType,
 			LF_cString,
 			LF_Address,
 			LF_ConnectType,
+			LF_PPS_Sent,
 			LF_All
 		};
 
