@@ -75,10 +75,10 @@ namespace SGCore
 
 
 			/// <summary> Calculate fingertip positions based on a user profile. </summary>
-			std::vector<Kinematics::Vect3D> CalculateFingerTips(SG_HandProfile profile);
+			std::vector<Kinematics::Vect3D> CalculateFingerTips(SG_HandProfile& profile);
 
 			/// <summary> Calculate fingertip positions, knowing the offset between thimble and fingertips. </summary>
-			std::vector<Kinematics::Vect3D> CalculateFingerTips(std::vector<Kinematics::Vect3D> fingerOffsets);
+			std::vector<Kinematics::Vect3D> CalculateFingerTips(std::vector<Kinematics::Vect3D>& fingerOffsets);
 
 			/// <summary> Returns true if this glove pose equals another. </summary>
 			bool Equals(SG_GlovePose other);

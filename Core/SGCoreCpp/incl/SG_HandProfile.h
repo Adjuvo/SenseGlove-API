@@ -73,7 +73,7 @@ namespace SGCore
 
 			/// <summary> Create a new Hand Profile for the Sense Glove. </summary>
 			SG_HandProfile(bool right, Kinematics::HandInterpolator interpolator,
-				SG_ThumbSolver thumbSolvr, SG_FingerSolver fingerSolvr, std::vector<Kinematics::Vect3D> fingerThimbleOffset);
+				SG_ThumbSolver thumbSolvr, SG_FingerSolver fingerSolvr, std::vector<Kinematics::Vect3D> finger_thimble_offset);
 
 			///<summary> Basic Destructor </summary>
 			~SG_HandProfile() { }

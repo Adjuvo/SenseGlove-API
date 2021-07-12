@@ -1,7 +1,7 @@
 var class_s_g_core_1_1_s_g_1_1_s_g___hand_profile =
 [
     [ "SG_HandProfile", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#aec9254125b4705eec3ddfc79d84c3ed4", null ],
-    [ "SG_HandProfile", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a5b5976134ec565e3d28a57185553dd00", null ],
+    [ "SG_HandProfile", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a69aa2c7208a40733b8993330089339fd", null ],
     [ "~SG_HandProfile", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#ab97ccff1d3e03e03c142450781575145", null ],
     [ "Default", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a741d00542995e5439c572ce5e3ab86b5", null ],
     [ "Deserialize", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a8624b3d5008f96665d4d5aebe76437e0", null ],
