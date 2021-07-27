@@ -5,6 +5,7 @@ var class_s_g_core_1_1_kinematics_1_1_hand_interpolator =
     [ "CalculateAngle", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#ae82cc73d23df068da9d83e7155f69f92", null ],
     [ "CalculateAngle", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a41df35d5fcdc80ff9f727bc00d4d9412", null ],
     [ "CalculateAngle", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#aa9be69cf912603cdc8c9f36f5187b79f", null ],
+    [ "CalculateAngle", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#abb1900c8c5855bb98850827eb39e7f07", null ],
     [ "Equals", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#af770560f64f9bdcf5c015d6709019c02", null ],
     [ "Serialize", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a03954d4b7a5969973e2bbd0a87a68229", null ],
     [ "SetInterpolation", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a58c331d5161fe723118d50087f0262ee", null ],

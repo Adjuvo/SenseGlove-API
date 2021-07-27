@@ -21,6 +21,7 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
     [ "FFBStream.cs", "_f_f_b_stream_8cs.html", [
       [ "FFBStream", "class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html", "class_s_g_core_1_1_haptics_1_1_f_f_b_stream" ]
     ] ],
+    [ "FileIO.cs", "_file_i_o_8cs.html", null ],
     [ "FingerForces.cs", "_finger_forces_8cs.html", [
       [ "FingerForces", "class_s_g_core_1_1_haptics_1_1_finger_forces.html", "class_s_g_core_1_1_haptics_1_1_finger_forces" ]
     ] ],
@@ -41,6 +42,9 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
     [ "HG_CalibrationSequence.cs", "_h_g___calibration_sequence_8cs.html", [
       [ "CalDataPoint", "class_s_g_core_1_1_calibration_1_1_cal_data_point.html", "class_s_g_core_1_1_calibration_1_1_cal_data_point" ],
       [ "HG_CalibrationSequence", "class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html", "class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence" ]
+    ] ],
+    [ "HG_HandProfiles.cs", "_h_g___hand_profiles_8cs.html", [
+      [ "HG_HandProfiles", "class_s_g_core_1_1_h_g___hand_profiles.html", null ]
     ] ],
     [ "HG_HapticStream.cs", "_h_g___haptic_stream_8cs.html", [
       [ "HG_HapticStream", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream" ]

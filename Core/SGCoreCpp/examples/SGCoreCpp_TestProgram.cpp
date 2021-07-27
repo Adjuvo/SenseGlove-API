@@ -53,9 +53,11 @@ static void BasicTest()
 				//As an example, lets calculate fingertip positions.
 
 				//If we wish to calculate hand variables, we need a "hand profile" to tell the Sense Glove our hand lengths.
-				SGCore::SG::SG_HandProfile handProfile = SGCore::SG::SG_HandProfile::Default(testGlove.IsRight()); //create a default profile, either left or right.
+				SGCore::HandProfile handProfile; 
+				SGCore::HandProfile::GetLatestProfile(testGlove.IsRight(), handProfile); //Let's grab the latest profile from disk. If none exists, we'll get a default one.
+
 				SGCore::Kinematics::BasicHandModel handModel = SGCore::Kinematics::BasicHandModel::Default(testGlove.IsRight()); //create a default profile, either left or right.
-				std::vector<SGCore::Kinematics::Vect3D> tipPositions = glovePose.CalculateFingerTips(handProfile); //calculates fingertip position
+				std::vector<SGCore::Kinematics::Vect3D> tipPositions = glovePose.CalculateFingerTips(handProfile.senseGloveProfile); //calculates fingertip position
 
 				std::cout << std::endl;
 				for (int f = 0; f < tipPositions.size(); f++)

@@ -115,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9be69cf912603cdc8c9f36f5187b79f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#aa9be69cf912603cdc8c9f36f5187b79f">CalculateAngle</a> (<a class="el" href="namespace_s_g_core.html#a95e2adaecf48d22f17af133c5352a897">Finger</a> finger, <a class="el" href="namespace_s_g_core_1_1_kinematics.html#ab53192db681a4ddf782f0f3d6f0d99b6">ThumbMovement</a> movement, float value)</td></tr>
 <tr class="memdesc:aa9be69cf912603cdc8c9f36f5187b79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a thumb movement's rotation, using an input value.  <a href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#aa9be69cf912603cdc8c9f36f5187b79f">More...</a><br /></td></tr>
 <tr class="separator:aa9be69cf912603cdc8c9f36f5187b79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1900c8c5855bb98850827eb39e7f07"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#abb1900c8c5855bb98850827eb39e7f07">CalculateAngle</a> (<a class="el" href="namespace_s_g_core_1_1_kinematics.html#ab53192db681a4ddf782f0f3d6f0d99b6">ThumbMovement</a> movement, float value)</td></tr>
+<tr class="memdesc:abb1900c8c5855bb98850827eb39e7f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a thumb movement's rotation, using an input value  <a href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#abb1900c8c5855bb98850827eb39e7f07">More...</a><br /></td></tr>
+<tr class="separator:abb1900c8c5855bb98850827eb39e7f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af770560f64f9bdcf5c015d6709019c02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#af770560f64f9bdcf5c015d6709019c02">Equals</a> (<a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html">HandInterpolator</a> other)</td></tr>
 <tr class="memdesc:af770560f64f9bdcf5c015d6709019c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this handInterpolator matches another.  <a href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#af770560f64f9bdcf5c015d6709019c02">More...</a><br /></td></tr>
 <tr class="separator:af770560f64f9bdcf5c015d6709019c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +148,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a293d753b23952cd89b6f990d347b303e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html">HandInterpolator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a293d753b23952cd89b6f990d347b303e">Deserialize</a> (string serializedString)</td></tr>
 <tr class="memdesc:a293d753b23952cd89b6f990d347b303e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a serialized <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html" title="Contains interpolation sets of all joint movements that can be caluclated into a handPose.">HandInterpolator</a> back into a class representation.  <a href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a293d753b23952cd89b6f990d347b303e">More...</a><br /></td></tr>
 <tr class="separator:a293d753b23952cd89b6f990d347b303e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f1fe3992ada7b5df8bcaf10ba982ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html">HandInterpolator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a91f1fe3992ada7b5df8bcaf10ba982ef">BetweenPoses</a> (<a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a> poseAt0, <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a> poseAt1)</td></tr>
+<tr class="memdesc:a91f1fe3992ada7b5df8bcaf10ba982ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html" title="Contains interpolation sets of all joint movements that can be caluclated into a handPose.">HandInterpolator</a> that returns PoseAt0's handAngles at input 0, and PoseAt1's handAngles at input 1.  <a href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a91f1fe3992ada7b5df8bcaf10ba982ef">More...</a><br /></td></tr>
+<tr class="separator:a91f1fe3992ada7b5df8bcaf10ba982ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -218,8 +224,54 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a91f1fe3992ada7b5df8bcaf10ba982ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f1fe3992ada7b5df8bcaf10ba982ef">&#9670;&nbsp;</a></span>BetweenPoses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html">HandInterpolator</a> SGCore.Kinematics.HandInterpolator.BetweenPoses </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a>&#160;</td>
+          <td class="paramname"><em>poseAt0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a>&#160;</td>
+          <td class="paramname"><em>poseAt1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates a <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html" title="Contains interpolation sets of all joint movements that can be caluclated into a handPose.">HandInterpolator</a> that returns PoseAt0's handAngles at input 0, and PoseAt1's handAngles at input 1. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poseAt0</td><td></td></tr>
+    <tr><td class="paramname">poseAt1</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="ae82cc73d23df068da9d83e7155f69f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae82cc73d23df068da9d83e7155f69f92">&#9670;&nbsp;</a></span>CalculateAngle() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82cc73d23df068da9d83e7155f69f92">&#9670;&nbsp;</a></span>CalculateAngle() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +316,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="a41df35d5fcdc80ff9f727bc00d4d9412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41df35d5fcdc80ff9f727bc00d4d9412">&#9670;&nbsp;</a></span>CalculateAngle() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a41df35d5fcdc80ff9f727bc00d4d9412">&#9670;&nbsp;</a></span>CalculateAngle() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +361,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="aa9be69cf912603cdc8c9f36f5187b79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9be69cf912603cdc8c9f36f5187b79f">&#9670;&nbsp;</a></span>CalculateAngle() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9be69cf912603cdc8c9f36f5187b79f">&#9670;&nbsp;</a></span>CalculateAngle() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,6 +396,44 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">finger</td><td></td></tr>
+    <tr><td class="paramname">movement</td><td></td></tr>
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="abb1900c8c5855bb98850827eb39e7f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1900c8c5855bb98850827eb39e7f07">&#9670;&nbsp;</a></span>CalculateAngle() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SGCore.Kinematics.HandInterpolator.CalculateAngle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core_1_1_kinematics.html#ab53192db681a4ddf782f0f3d6f0d99b6">ThumbMovement</a>&#160;</td>
+          <td class="paramname"><em>movement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate a thumb movement's rotation, using an input value </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">movement</td><td></td></tr>
     <tr><td class="paramname">value</td><td></td></tr>
   </table>

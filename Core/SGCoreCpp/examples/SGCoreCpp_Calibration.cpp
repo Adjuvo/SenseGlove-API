@@ -9,8 +9,8 @@ Calibration Example using the SenseGlove.
 #include "SenseGlove.h" // SenseGlove interface through which we access data.
 
 /// <summary> Replace "static void CalibrationExample()" with int main() to compile as a console application. </summary>
-//static void CalibrationExample()
-int main()
+static void CalibrationExample()
+//int main()
 {
 	std::cout << "Calibration example using " << SGCore::Library::Version() << std::endl;
 	std::cout << "=======================================" << std::endl;

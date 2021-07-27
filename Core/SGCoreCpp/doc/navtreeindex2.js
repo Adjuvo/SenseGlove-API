@@ -1,5 +1,16 @@
 var NAVTREEINDEX2 =
 {
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a23b4e4db5ba936f0ddaacd4d5dfef7a5":[1,0,0,2,1,0],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a2a0fd3ac50469d89b1261b4731d7a0c2":[1,0,0,2,1,7],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a2e6df4479e692cdc4ff3cd21d5c12395":[1,0,0,2,1,5],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a384eec7e0db9637ae1aef20b4c559ee2":[1,0,0,2,1,8],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a50fbadd62971caab341dc25ac875afbf":[1,0,0,2,1,9],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#ab5f4eb1fc56fb46d688420b8bab8f8f3":[1,0,0,2,1,6],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#adf9e6dcf0c3f7dfead388c86854ed7d3":[1,0,0,2,1,3],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#ae3950e6de04ca3ab77efe391ecf98d45":[1,0,0,2,1,4],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#ae84de473afdea163b075666293b0844d":[1,0,0,2,1,2],
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#af1a12029c09f1fa3bf4ba25d95dec903":[1,0,0,2,1,10],
+"class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html":[1,0,0,2,2],
 "class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#a0984c88e09dd2d590fc33e5aab86b842":[1,0,0,2,2,5],
 "class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#a607a347f40a4ceb4f98d09b7f743abe0":[1,0,0,2,2,10],
 "class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#a62be58d65f1ec9e4cc4741fea7a983c9":[1,0,0,2,2,8],
@@ -238,16 +249,5 @@ var NAVTREEINDEX2 =
 "class_s_g_core_1_1_nova_1_1_nova___profile.html#a85a6bb4cfcf901b9d488b1b1ca7b35bd":[1,0,0,4,1,5],
 "class_s_g_core_1_1_nova_1_1_nova___profile.html#a8f7a18b4ee0175ccab88cc2d027718ac":[1,0,0,4,1,1],
 "class_s_g_core_1_1_nova_1_1_nova___profile.html#abad31240ba2d1bef4bc06b9dbcef812a":[1,0,0,4,1,8],
-"class_s_g_core_1_1_nova_1_1_nova___profile.html#af4879a1d6035317ff96fde41b83bcccb":[1,0,0,4,1,7],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html":[1,0,0,4,2],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a269e6c6e748a8e371123d3b6f15c9039":[1,0,0,4,2,9],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a2a5d36e76f4f998e314cb8b5a6f831c6":[1,0,0,4,2,13],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a41eb59e19c9b472a44f7266b55f89968":[1,0,0,4,2,4],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a46f0e246950654167338cfdbe1dbb136":[1,0,0,4,2,8],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a53e9994c17ad439eb8c2087074a36ce9":[1,0,0,4,2,6],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a6d8fc164e7ee2f1ab3ce2eb192dfad14":[1,0,0,4,2,2],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a8579fb97a3e84255d278ef29273dc685":[1,0,0,4,2,11],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a9b722d8c841d55d5899a8c879b929f8f":[1,0,0,4,2,12],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#aa39f9a33bc8efe97d2659499a749135d":[1,0,0,4,2,5],
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#aaf486dc69e234f776fe3031f36a148c2":[1,0,0,4,2,0]
+"class_s_g_core_1_1_nova_1_1_nova___profile.html#af4879a1d6035317ff96fde41b83bcccb":[1,0,0,4,1,7]
 };

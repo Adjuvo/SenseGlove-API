@@ -1,6 +1,7 @@
 var class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration =
 [
-    [ "HG_QuickCalibration", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#acc6dad3b45199af07b6a134825302bd6", null ],
+    [ "HG_QuickCalibration", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ab1b8e054e9e4b598d981cde4f2776719", null ],
+    [ "HG_QuickCalibration", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#afac34c4091cbd35e514d1d71238b6a45", null ],
     [ "AddDataPoint", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a142f1b6b69c16d7c5ffd3b2a2819bc6e", null ],
     [ "CompileRange", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#aa1c99b0b4b704ba418269d2b8859a673", null ],
     [ "ConfirmCurrentStep", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a4150009b9bdcc30e35bd7fac7190985e", null ],

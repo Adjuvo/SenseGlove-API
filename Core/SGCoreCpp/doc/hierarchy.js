@@ -7,6 +7,7 @@ var hierarchy =
     [ "SGCore::Diagnostics::Debugger", "class_s_g_core_1_1_diagnostics_1_1_debugger.html", null ],
     [ "SGCore::DeviceList", "class_s_g_core_1_1_device_list.html", null ],
     [ "SGCore::DeviceModel", "class_s_g_core_1_1_device_model.html", null ],
+    [ "SGCore::Util::FileIO", "class_s_g_core_1_1_util_1_1_file_i_o.html", null ],
     [ "SGCore::Kinematics::HandInterpolator", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html", null ],
     [ "SGCore::HandPose", "class_s_g_core_1_1_hand_pose.html", null ],
     [ "SGCore::HandProfile", "class_s_g_core_1_1_hand_profile.html", null ],

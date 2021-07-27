@@ -62,10 +62,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_anatomy_8cpp.html",
-"class_s_g_core_1_1_beta_device.html#a6a58d7d9fbb53638ccc8436f457c896d",
-"class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#a0984c88e09dd2d590fc33e5aab86b842",
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#ab129e53a3f57cbce9a22653c7f3d3a04",
-"class_s_g_core_1_1_tracking.html#aa4a62dce19bc0d38105f8237d92e11b2"
+"class_s_g_core_1_1_beta_device.html#a34063db11110d2abd27e39d13701a1c8",
+"class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a23b4e4db5ba936f0ddaacd4d5dfef7a5",
+"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html",
+"class_s_g_core_1_1_tracking.html#a45e3417ae27f6c755591c3b400174bc1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

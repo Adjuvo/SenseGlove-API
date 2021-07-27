@@ -47,6 +47,7 @@ var annotated_dup =
       ] ],
       [ "Util", "namespace_s_g_core_1_1_util.html", [
         [ "Communications", "class_s_g_core_1_1_util_1_1_communications.html", "class_s_g_core_1_1_util_1_1_communications" ],
+        [ "FileIO", "class_s_g_core_1_1_util_1_1_file_i_o.html", "class_s_g_core_1_1_util_1_1_file_i_o" ],
         [ "Serializer", "class_s_g_core_1_1_util_1_1_serializer.html", "class_s_g_core_1_1_util_1_1_serializer" ],
         [ "StrStuff", "class_s_g_core_1_1_util_1_1_str_stuff.html", "class_s_g_core_1_1_util_1_1_str_stuff" ]
       ] ],

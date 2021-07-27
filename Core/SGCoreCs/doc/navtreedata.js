@@ -58,9 +58,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_anatomy_8cs.html",
-"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#acc6dad3b45199af07b6a134825302bd6",
-"class_s_g_core_1_1_kinematics_1_1_interpolation_set.html#a06626175a5ee7d5afde8b73254454f33",
-"functions_func_n.html"
+"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ab23bcc82d47ba26a4fdcf3a2f0d3d1cd",
+"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#aa9be69cf912603cdc8c9f36f5187b79f",
+"functions_func_g.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

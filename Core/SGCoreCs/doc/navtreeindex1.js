@@ -1,7 +1,10 @@
 var NAVTREEINDEX1 =
 {
-"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#acc6dad3b45199af07b6a134825302bd6":[1,0,0,0,3,0],
-"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ad5b92eab9bb8cb34a61a06827006d04a":[1,0,0,0,3,13],
+"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ab23bcc82d47ba26a4fdcf3a2f0d3d1cd":[1,0,0,0,3,10],
+"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ab6d3221b0c9f373b19fe2c5df9be964a":[1,0,0,0,3,8],
+"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ab8b409fd78ba14822c2e79cfbf1c2142":[1,0,0,0,3,5],
+"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ad5b92eab9bb8cb34a61a06827006d04a":[1,0,0,0,3,14],
+"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#afac34c4091cbd35e514d1d71238b6a45":[1,0,0,0,3,1],
 "class_s_g_core_1_1_calibration_1_1_sensor_range.html":[1,0,0,0,4],
 "class_s_g_core_1_1_calibration_1_1_sensor_range.html#a03d44178b860666e38c66bbb7a530674":[1,0,0,0,4,2],
 "class_s_g_core_1_1_calibration_1_1_sensor_range.html#a3f2c37a08b2e1d94f7f66a68fc19914d":[1,0,0,0,4,1],
@@ -26,6 +29,7 @@ var NAVTREEINDEX1 =
 "class_s_g_core_1_1_diagnostics_1_1_debugger.html":[1,0,0,1,1],
 "class_s_g_core_1_1_diagnostics_1_1_debugger.html#aaec965aad91e458b9c89780c636f3ecd":[1,0,0,1,1,1],
 "class_s_g_core_1_1_diagnostics_1_1_debugger.html#aee80620b278104e290c938680e718675":[1,0,0,1,1,0],
+"class_s_g_core_1_1_h_g___hand_profiles.html":[1,0,0,12],
 "class_s_g_core_1_1_hand_pose.html":[1,0,0,9],
 "class_s_g_core_1_1_hand_pose.html#a02fe71bb8bd1e440878311f7fb7ca625":[1,0,0,9,9],
 "class_s_g_core_1_1_hand_pose.html#a1fbf83606fa30946c66934eda3f0681a":[1,0,0,9,8],
@@ -238,16 +242,12 @@ var NAVTREEINDEX1 =
 "class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#ae9f892b36396a46b89d8dc29a158d096":[1,0,0,3,0,10],
 "class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#af788a36c48501c2b339c553841fbb91d":[1,0,0,3,0,14],
 "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html":[1,0,0,3,1],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a03954d4b7a5969973e2bbd0a87a68229":[1,0,0,3,1,6],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a05d97f4fcc7fd6ad6d026cbd3d15e0fa":[1,0,0,3,1,10],
+"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a03954d4b7a5969973e2bbd0a87a68229":[1,0,0,3,1,7],
+"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a05d97f4fcc7fd6ad6d026cbd3d15e0fa":[1,0,0,3,1,11],
 "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a1d728124a63c24810c07d0661aecf22e":[1,0,0,3,1,0],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a3b76940ff67673b576e9f647958a36eb":[1,0,0,3,1,8],
+"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a3b76940ff67673b576e9f647958a36eb":[1,0,0,3,1,9],
 "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a41df35d5fcdc80ff9f727bc00d4d9412":[1,0,0,3,1,3],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a4b0e5cef2bc6b98b53af38930871b40b":[1,0,0,3,1,9],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a58c331d5161fe723118d50087f0262ee":[1,0,0,3,1,7],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a63aa06fcae9fd282987f195a45f92b23":[1,0,0,3,1,1],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#aa9be69cf912603cdc8c9f36f5187b79f":[1,0,0,3,1,4],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#ae82cc73d23df068da9d83e7155f69f92":[1,0,0,3,1,2],
-"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#af770560f64f9bdcf5c015d6709019c02":[1,0,0,3,1,5],
-"class_s_g_core_1_1_kinematics_1_1_interpolation_set.html":[1,0,0,3,2]
+"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a4b0e5cef2bc6b98b53af38930871b40b":[1,0,0,3,1,10],
+"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a58c331d5161fe723118d50087f0262ee":[1,0,0,3,1,8],
+"class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a63aa06fcae9fd282987f195a45f92b23":[1,0,0,3,1,1]
 };

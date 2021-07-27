@@ -30,6 +30,12 @@ namespace SGCore
 		/// <summary> User profile for Fino </summary>
 		Nova::Nova_Profile novaProfile;
 	
+		/// <summary> Filename for right hand profile. </summary>
+		static std::string rhFileName;
+		/// <summary> Filename for left hand profile. </summary>
+		static std::string lhFileName;
+
+
 		//--------------------------------------------------------------------------------------
 		// Construction
 
@@ -76,6 +82,44 @@ namespace SGCore
 		static HandProfile Deserialize(std::string serializedString);
 
 
+		//--------------------------------------------------------------------------------------
+		// Global Accessing and Saving
+
+		/// <summary> Returns the directory where HandProfiles are being stored. Does not include a '\\' at teh end. </summary>
+		/// <returns></returns>
+		static std::string GetProfileDir();
+
+		/// <summary> Returns the fileName of the left or right hand profiles. </summary>
+		/// <param name="isRight"></param>
+		/// <returns></returns>
+		static std::string GetProfileFileName(bool isRight);
+
+		/// <summary> Retireves the latest HandProfile from disk. If this function returns false, latestProfils is equal to SGCOre::HandProfile::Default(rightHand). </summary>
+		/// <param name="rightHand"></param>
+		/// <returns></returns>
+		static bool GetLatestProfile(bool rightHand, HandProfile& latestProfile);
+
+
+		/// <summary> Stores a HandProfile on disk for other programs to access. Call this function only if your software handles calibration functions. </summary>
+		/// <param name="profileToStore"></param>
+		/// <returns></returns>
+		static bool StoreProfile(HandProfile& profileToStore);
+
+
+		/// <summary> Resets the Calibration of a specific back to default values. </summary>
+		/// <param name="onDisk"></param>
+		/// <param name="rightHand">  </param>
+		/// <returns></returns>
+		static bool ResetCalibration(bool rightHand, bool onDisk = true);
+
+		/// <summary> Resets the Calibration of both hands back to default values. </summary>
+		/// <param name="onDisk"></param>
+		/// <returns></returns>
+		static void ResetCalibration(bool onDisk = true)
+		{
+			ResetCalibration(true,  onDisk);
+			ResetCalibration(false, onDisk);
+		}
 
 	};
 

@@ -64,6 +64,7 @@ var annotated_dup =
       [ "HandPose", "class_s_g_core_1_1_hand_pose.html", "class_s_g_core_1_1_hand_pose" ],
       [ "HandProfile", "class_s_g_core_1_1_hand_profile.html", "class_s_g_core_1_1_hand_profile" ],
       [ "HapticGlove", "class_s_g_core_1_1_haptic_glove.html", "class_s_g_core_1_1_haptic_glove" ],
+      [ "HG_HandProfiles", "class_s_g_core_1_1_h_g___hand_profiles.html", null ],
       [ "SenseCom", "class_s_g_core_1_1_sense_com.html", null ],
       [ "SGDevice", "class_s_g_core_1_1_s_g_device.html", "class_s_g_core_1_1_s_g_device" ],
       [ "Tracking", "class_s_g_core_1_1_tracking.html", null ]
