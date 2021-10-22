@@ -52,6 +52,7 @@ var annotated_dup =
         [ "SG_SensorData", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data" ]
       ] ],
       [ "Util", "namespace_s_g_core_1_1_util.html", [
+        [ "ConnectionStatus", "class_s_g_core_1_1_util_1_1_connection_status.html", "class_s_g_core_1_1_util_1_1_connection_status" ],
         [ "Serializer", "class_s_g_core_1_1_util_1_1_serializer.html", null ],
         [ "ServerData", "class_s_g_core_1_1_util_1_1_server_data.html", "class_s_g_core_1_1_util_1_1_server_data" ],
         [ "SGConnect_Android", "class_s_g_core_1_1_util_1_1_s_g_connect___android.html", null ],

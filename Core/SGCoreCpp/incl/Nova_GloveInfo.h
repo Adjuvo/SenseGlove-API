@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------------
-// Contains information on Fino's hardware, extracted from the device.
+// Contains information on Nova's hardware, extracted from the device.
 // @author: Max Lammers
 // ----------------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ namespace SGCore
 {
     namespace Nova
     {
-        /// <summary> Device information extracted from a Fino glove. </summary>
+        /// <summary> Device information extracted from a Nova glove. </summary>
         class SGCORE_API Nova_GloveInfo
         {
 
@@ -35,10 +35,10 @@ namespace SGCore
             /// <summary> Sub firmware version runnning on the device's microcontroller (as v4.12, this is the .12) </summary>
             int subFirmwareVer;
 
-            /// <summary> Determines if this is a right-handed Fino. </summary>
+            /// <summary> Determines if this is a right-handed Nova. </summary>
             bool isRight;
 
-            ///<summary> The IMU correction of this Fino. </summary>
+            ///<summary> The IMU correction of this Nova. </summary>
             Kinematics::Quat imuCorrection;
 
             ///<summary> The number of sensors in this device. </summary>

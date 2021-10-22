@@ -4,6 +4,7 @@ var hierarchy =
     [ "SGCore.Haptics.BuzzCmd", "class_s_g_core_1_1_haptics_1_1_buzz_cmd.html", null ],
     [ "SGCore.Haptics.BuzzStream", "class_s_g_core_1_1_haptics_1_1_buzz_stream.html", null ],
     [ "SGCore.Calibration.CalDataPoint", "class_s_g_core_1_1_calibration_1_1_cal_data_point.html", null ],
+    [ "SGCore.Util.ConnectionStatus", "class_s_g_core_1_1_util_1_1_connection_status.html", null ],
     [ "SGCore.Diagnostics.Debugger", "class_s_g_core_1_1_diagnostics_1_1_debugger.html", null ],
     [ "SGCore.DeviceModel", "class_s_g_core_1_1_device_model.html", [
       [ "SGCore.Nova.Nova_GloveInfo", "class_s_g_core_1_1_nova_1_1_nova___glove_info.html", null ],

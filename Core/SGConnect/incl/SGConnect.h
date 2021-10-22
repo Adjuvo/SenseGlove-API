@@ -82,6 +82,12 @@ extern "C"
 		///<summary> Retrieve all Serial Ports, their PID/VIDs and Description. Used to debug ports.  </summary>
 		SGCONNECT_API int GetPortInfo(bool withBT, char* output);
 
+
+		///<summary> Retrieve all available connections, their PID/VIDs and Description.  </summary>
+		SGCONNECT_API int GetSGConnectionInfo(bool withBT, char* output);
+
+
+
 		///<summary> Clears ScanningActive for debug purposes. </summary>
 		SGCONNECT_API void ClearSharedMem();
 
@@ -107,6 +113,15 @@ extern "C"
 
 		///<summary> Check which version of SGConnect you are using. </summary>
 		SGCONNECT_API std::string GetLibraryVersion();
+
+		/// <summary> Get the connectionStates from C# </summary>
+		/// <param name="output"></param>
+		/// <returns></returns>
+		SGCONNECT_API int GetConnectionStates_I(char* output);
+
+		/// <summary> Retrieve connection state messages </summary>
+		/// <returns></returns>
+		SGCONNECT_API std::string GetConnectionStates();
 
 		// ---------------------------------------------------------------------------------------------
 		// C# / IPC interface
@@ -139,6 +154,8 @@ extern "C"
 		///<summary> Write a haptics string to the shared memory of a particular device. </summary>
 		SGCONNECT_API int WriteHaptics(const char* deviceAddress, const char* haptics);
 
+		///<summary> Get the raw (unprocessed) haptic command of the SGDevice at index, as discovered by SenseCom </summary>
+		SGCONNECT_API int GetHapticString(const char* deviceAddress, char* output);
 
 		///<summary> Write a command string to the shared memory of a particular device. </summary>
 		SGCONNECT_API int WriteCmdString(const char* deviceAddress, const char* commands);

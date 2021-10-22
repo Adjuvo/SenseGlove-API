@@ -12,6 +12,9 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
       [ "BuzzStream", "class_s_g_core_1_1_haptics_1_1_buzz_stream.html", "class_s_g_core_1_1_haptics_1_1_buzz_stream" ]
     ] ],
     [ "Communications.cs", "_communications_8cs.html", "_communications_8cs" ],
+    [ "ConnectionStatus.cs", "_connection_status_8cs.html", [
+      [ "ConnectionStatus", "class_s_g_core_1_1_util_1_1_connection_status.html", "class_s_g_core_1_1_util_1_1_connection_status" ]
+    ] ],
     [ "Debugger.cs", "_debugger_8cs.html", "_debugger_8cs" ],
     [ "DeviceList.cs", "_device_list_8cs.html", null ],
     [ "DeviceModel.cs", "_device_model_8cs.html", [

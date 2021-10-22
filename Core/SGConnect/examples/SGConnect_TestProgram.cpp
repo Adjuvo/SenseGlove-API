@@ -23,6 +23,10 @@ int main()
 			while (std::cin.get() != '\n') {} //Wait for the user to confirm before exiting.
 			std::cout << "" << std::endl;
 
+
+			std::cout << "Showing the list at the end:" << std::endl;
+			std::cout << SGConnect::GetConnectionStates() << std::endl << std::endl;
+
 			//If you have access to SGCoreCpp or SGCoreCs, you can interface with SenseGlove devices
 
 			int disposeCode = SGConnect::Dispose();

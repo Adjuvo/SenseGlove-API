@@ -27,7 +27,7 @@ namespace SGCore
 		/// <summary> Profile for SenseGlove's </summary>
 		SG::SG_HandProfile senseGloveProfile;
 
-		/// <summary> User profile for Fino </summary>
+		/// <summary> User profile for Nova </summary>
 		Nova::Nova_Profile novaProfile;
 	
 		/// <summary> Filename for right hand profile. </summary>
@@ -72,11 +72,11 @@ namespace SGCore
 		//--------------------------------------------------------------------------------------
 		// Serialization
 
-		/// <summary> Convert this Fino_Profile into a string notation so it can be stored on disk. </summary>
+		/// <summary> Convert this Nova_Profile into a string notation so it can be stored on disk. </summary>
 		/// <returns></returns>
 		std::string Serialize();
 
-		/// <summary> Convert a string notation of a Fino_Profile into a new instance. </summary>
+		/// <summary> Convert a string notation of a Nova_Profile into a new instance. </summary>
 		/// <param name="serializedString"></param>
 		/// <returns></returns>
 		static HandProfile Deserialize(std::string serializedString);

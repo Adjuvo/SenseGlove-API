@@ -103,7 +103,7 @@ Inheritance diagram for SGCore.HapticGlove:</div>
   <img src="class_s_g_core_1_1_haptic_glove.png" usemap="#SGCore.HapticGlove_map" alt=""/>
   <map id="SGCore.HapticGlove_map" name="SGCore.HapticGlove_map">
 <area href="class_s_g_core_1_1_s_g_device.html" title="A Sense Glove device that can send / recieve data via the SenseComm program." alt="SGCore.SGDevice" shape="rect" coords="84,0,242,24"/>
-<area href="class_s_g_core_1_1_nova_1_1_nova_glove.html" alt="SGCore.Nova.NovaGlove" shape="rect" coords="0,112,158,136"/>
+<area href="class_s_g_core_1_1_nova_1_1_nova_glove.html" title="A soft glove with detachable force-feedback and sensor module." alt="SGCore.Nova.NovaGlove" shape="rect" coords="0,112,158,136"/>
 <area href="class_s_g_core_1_1_s_g_1_1_sense_glove.html" title="Interface for the Sense Glove; and exoskeleton Force-Feedback glove." alt="SGCore.SG.SenseGlove" shape="rect" coords="168,112,326,136"/>
   </map>
 </div></div>
@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b93a3745b41de1312c86e39cf763b02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a5b93a3745b41de1312c86e39cf763b02">StopHaptics</a> ()</td></tr>
 <tr class="memdesc:a5b93a3745b41de1312c86e39cf763b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all Haptic effects if any are currently playing. Useful at the end of simulations or when resetting.  <a href="class_s_g_core_1_1_haptic_glove.html#a5b93a3745b41de1312c86e39cf763b02">More...</a><br /></td></tr>
 <tr class="separator:a5b93a3745b41de1312c86e39cf763b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e5087e5d6619139c243571d335bf09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a29e5087e5d6619139c243571d335bf09">StopVibrations</a> ()</td></tr>
+<tr class="memdesc:a29e5087e5d6619139c243571d335bf09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all vibrations, but does not affect the force-feedback  <a href="class_s_g_core_1_1_haptic_glove.html#a29e5087e5d6619139c243571d335bf09">More...</a><br /></td></tr>
+<tr class="separator:a29e5087e5d6619139c243571d335bf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9f7db8c3d50b64072b60d6cb73e10c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#afd9f7db8c3d50b64072b60d6cb73e10c">SendHaptics</a> (<a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> ffb)</td></tr>
 <tr class="memdesc:afd9f7db8c3d50b64072b60d6cb73e10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Haptic Commands to this Glove.  <a href="class_s_g_core_1_1_haptic_glove.html#afd9f7db8c3d50b64072b60d6cb73e10c">More...</a><br /></td></tr>
 <tr class="separator:afd9f7db8c3d50b64072b60d6cb73e10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1218,6 +1221,33 @@ Additional Inherited Members</h2></td></tr>
 <p>Stops all Haptic effects if any are currently playing. Useful at the end of simulations or when resetting. </p>
 
 <p>Reimplemented in <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#ac0048ee391bc50792906afe96ef59878">SGCore.SG.SenseGlove</a>.</p>
+
+</div>
+</div>
+<a id="a29e5087e5d6619139c243571d335bf09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e5087e5d6619139c243571d335bf09">&#9670;&nbsp;</a></span>StopVibrations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SGCore.HapticGlove.StopVibrations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stops all vibrations, but does not affect the force-feedback </p>
 
 </div>
 </div>

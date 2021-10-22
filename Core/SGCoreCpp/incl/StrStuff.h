@@ -42,6 +42,7 @@ namespace SGCore
 			/// <summary> Convert a value in radians into a rounded integer, as a string. e.g. 4.999999999999999 -> 5. </summary>
 			static std::string RoundedDegrees(float valInRad);
 
+			static bool Contains(std::string haystack, std::string needle);
 
 			/// <summary> Print the different sizes within a 2D array </summary>
 			/// <typeparam name="T"></typeparam>

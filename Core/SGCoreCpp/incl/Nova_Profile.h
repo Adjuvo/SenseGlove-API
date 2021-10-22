@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------------
-// Input for Fino kinematics to calculate a HandPose.
+// Input for Nova kinematics to calculate a HandPose.
 // Output of calibration algorithms.
 // @author: Max Lammers
 // ----------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ namespace SGCore
 {
 	namespace Nova
 	{
-		/// <summary> Contains user-specific data for the Fino to convert sensor data into a hand pose. </summary>
+		/// <summary> Contains user-specific data for the Nova to convert sensor data into a hand pose. </summary>
 		class SGCORE_API Nova_Profile
 		{
 			
@@ -39,13 +39,13 @@ namespace SGCore
 			/// <returns></returns>
 			Nova_Profile();
 
-			/// <summary> Create a new instance of a Fino-Profile. </summary>
+			/// <summary> Create a new instance of a Nova-Profile. </summary>
 			/// <param name="right"></param>
 			/// <param name="interpolator"></param>
 			/// <returns></returns>
 			Nova_Profile(bool right, SGCore::Kinematics::HandInterpolator interpolator);
 			
-			/// <summary> Creates a default Fino Profile for a left or right hand. </summary>
+			/// <summary> Creates a default Nova Profile for a left or right hand. </summary>
 			/// <param name="right"></param>
 			/// <returns></returns>
 			static Nova_Profile Default(bool right);

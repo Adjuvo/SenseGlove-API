@@ -1372,6 +1372,52 @@
         <member name="F:SGCore.Haptics.WaveformStream.maxActiveWavefroms">
             <summary> The maximum amount of Waveforms that can be active at one time. </summary>
         </member>
+        <member name="T:SGCore.Util.ConnectionStatus">
+            <summary> Indictaes the status of a connection within the SGConnect library. </summary>
+        </member>
+        <member name="P:SGCore.Util.ConnectionStatus.Address">
+            <summary> The Connection's COM or MAC address. </summary>
+        </member>
+        <member name="P:SGCore.Util.ConnectionStatus.ConnectionType">
+            <summary> The type of connection this address is using. </summary>
+        </member>
+        <member name="P:SGCore.Util.ConnectionStatus.IsConnected">
+            <summary> Whether or not this connection is active. </summary>
+        </member>
+        <member name="P:SGCore.Util.ConnectionStatus.LastConnectionCode">
+            <summary> The latest Connection code. </summary>
+        </member>
+        <member name="P:SGCore.Util.ConnectionStatus.LastExitCode">
+            <summary> The last exit code </summary>
+        </member>
+        <member name="P:SGCore.Util.ConnectionStatus.LastTestState">
+            <summary> The latest testing stage, in case this isn't a SenseGlove Device </summary>
+        </member>
+        <member name="P:SGCore.Util.ConnectionStatus.DeviceType">
+            <summary> The DeviceType connected to this port. </summary>
+        </member>
+        <member name="F:SGCore.Util.ConnectionStatus.connDelimm">
+            <summary> Used in parsing. </summary>
+        </member>
+        <member name="M:SGCore.Util.ConnectionStatus.#ctor(System.String,SGCore.SGDevice.ConnectionType,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> Create a new ConnectionStstus </summary>
+            <param name="address"></param>
+            <param name="connType"></param>
+            <param name="connected"></param>
+            <param name="connCode"></param>
+            <param name="exitCode"></param>
+            <param name="testStage"></param>
+            <param name="devType"></param>
+        </member>
+        <member name="M:SGCore.Util.ConnectionStatus.ToString">
+            <summary> A reportable string. </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Util.ConnectionStatus.Parse(System.String)">
+            <summary> Parse a ConnectionStatus into a proper data class. </summary>
+            <param name="single"></param>
+            <returns></returns>
+        </member>
         <member name="T:SGCore.Util.FileIO">
             <summary> Ensures that .txt files are properly handled by Unity. </summary>
         </member>
@@ -1513,6 +1559,10 @@
             <param name="haptics"></param>
             <returns></returns>
         </member>
+        <member name="M:SGCore.Util.SGConnect_Android.CS_GetConnectionStates(System.String@)">
+            <summary> Retrieve states of each connection on this system.  </summary>
+            <returns></returns>
+        </member>
         <member name="M:SGCore.Util.SGConnect_Android.An_PostDeviceString(System.Int32,System.String)">
             <summary> Android-Only: Post a deviceString </summary>
             <param name="deviceIndex"></param>
@@ -1536,6 +1586,9 @@
         </member>
         <member name="M:SGCore.Util.SGConnect_Android.An_Dispose">
             <summary> (Android Only) Once done with the devices, clear them from memory </summary>
+        </member>
+        <member name="M:SGCore.Util.SGConnect_Android.An_PostDeviceStates(System.String)">
+            <summary> Android-Only: Post a Device State String if needed.  </summary>
         </member>
         <member name="T:SGCore.Util.StrStuff">
             <summary> Utility class to convert strings into useable values. </summary>
@@ -2205,6 +2258,9 @@
             <param name="encodedVal"></param>
             <returns></returns>
         </member>
+        <member name="T:SGCore.Nova.NovaGlove">
+            <summary> A soft glove with detachable force-feedback and sensor module. </summary>
+        </member>
         <member name="F:SGCore.Nova.NovaGlove.hapticsByte">
             <summary> Byte indicating a new Sense Glove haptic command. </summary>
         </member>
@@ -2296,12 +2352,22 @@
             <param name="glovePos">The 3D Position of the glove, in mm, relative to your origin</param>
             <param name="gloveRot">The 3D Rotation of the glove, relative to your origin</param>
         </member>
-        <member name="M:SGCore.Nova.NovaGlove.CalculateGloveLocation(SGCore.Kinematics.Vect3D,SGCore.Kinematics.Quat,SGCore.PosTrackingHardware,System.Boolean,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
+        <member name="M:SGCore.Nova.NovaGlove.CalculateGloveLocation(SGCore.Kinematics.Vect3D,SGCore.Kinematics.Quat,SGCore.PosTrackingHardware,System.Boolean,System.String,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
             <summary> Retrieve the location of the glove origin, based on a reference location without requiring an object reference.. </summary>
             <param name="refPosition">Position of the tracked object, in mm, relative to your origin</param>
             <param name="refRotation">Rotation of the tracked object relative to your origin</param>
             <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
             <param name="rightHand">Whether or not this is a left or right handed glove.</param>
+            <param name="hardwareVersion">Can be left blank for DK 1 offsets</param>
+            <param name="glovePos">The 3D Position of the glove, in mm, relative to your origin</param>
+            <param name="gloveRot">The 3D Rotation of the glove, relative to your origin</param>
+        </member>
+        <member name="M:SGCore.Nova.NovaGlove.CalculateGloveLocation(SGCore.Kinematics.Vect3D,SGCore.Kinematics.Quat,SGCore.PosTrackingHardware,SGCore.Nova.Nova_GloveInfo,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
+            <summary> Retrieve the location of the glove origin, based on a reference location without requiring an object reference.. </summary>
+            <param name="refPosition">Position of the tracked object, in mm, relative to your origin</param>
+            <param name="refRotation">Rotation of the tracked object relative to your origin</param>
+            <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
+            <param name="gloveInfo">Glove information.</param>
             <param name="glovePos">The 3D Position of the glove, in mm, relative to your origin</param>
             <param name="gloveRot">The 3D Rotation of the glove, relative to your origin</param>
         </member>
@@ -2314,15 +2380,26 @@
             <param name="wristPos">The 3D Position of the wrist, in mm, relative to your origin</param>
             <param name="wristRot">The 3D Rotation of the wrist, relative to your origin</param>
         </member>
-        <member name="M:SGCore.Nova.NovaGlove.CalculateWristLocation(SGCore.Kinematics.Vect3D,SGCore.Kinematics.Quat,SGCore.PosTrackingHardware,System.Boolean,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
+        <member name="M:SGCore.Nova.NovaGlove.CalculateWristLocation(SGCore.Kinematics.Vect3D,SGCore.Kinematics.Quat,SGCore.PosTrackingHardware,SGCore.Nova.Nova_GloveInfo,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
             <summary> Retrieve the location of the wrist, based on a reference location and default glove-hand offsets, without needing an object reference. </summary>
             <remarks> The simplest interface, using default offsets </remarks>
             <param name="refPosition">Position of the tracked object, in mm, relative to your origin</param>
             <param name="refRotation">Rotation of the tracked object relative to your origin</param>
             <param name="trackingHardware">The hardware mounted on the SenseGlove.</param>
-            <param name="rightHand">Whether this is right or left hand</param>
+            <param name="gloveInfo">Whether this is right or left hand</param>
             <param name="wristPos">The 3D Position of the wrist, in mm, relative to your origin</param>
             <param name="wristRot">The 3D Rotation of the wrist, relative to your origin</param>
+        </member>
+        <member name="M:SGCore.Nova.NovaGlove.GetNovaGlove(System.Boolean,SGCore.Nova.NovaGlove@)">
+            <summary> Retrieve the first connected Nova Glove, for a specific hand. </summary>
+            <param name="rightHand"></param>
+            <param name="glove"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Nova.NovaGlove.GetNovaGlove(SGCore.Nova.NovaGlove@)">
+            <summary> Retrieve the first connected Nova Glove</summary>
+            <param name="glove"></param>
+            <returns></returns>
         </member>
         <member name="P:SGCore.Nova.Nova_GloveInfo.IsRight">
             <summary> Determines if this is a right-handed Nova. </summary>
@@ -2488,11 +2565,14 @@
         <member name="F:SGCore.DeviceList.devices">
             <summary> A list of all devices that have been detected via the SenseComm executable. </summary>
         </member>
+        <member name="F:SGCore.DeviceList.connStateDelim">
+            <summary> Delimiter for the connection state </summary>
+        </member>
         <member name="M:SGCore.DeviceList.ActiveDevices">
             <summary> Retrieve the number of devices that have been detected by the SenseComm executable. </summary>
         </member>
         <member name="M:SGCore.DeviceList.GetDevices">
-            <summary> Retrieve all Sense Glove Devices connected to this system. </summary>
+            <summary> Retrieve all Sense Glove Devices that were once connected to this system. </summary>
         </member>
         <member name="M:SGCore.DeviceList.GetDevices``1">
             <summary> Retrieve a list of SGDevices of a specific class. </summary>
@@ -2533,6 +2613,10 @@
             <summary> Retrieve the latest sensor data string from the device at ipcAddress. </summary>
             <param name="ipcAddress"></param>
             <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.DeviceList.GetConnectionStates">
+            <summary> Retrieve the Connection States inside the SGConnect Library. </summary>
             <returns></returns>
         </member>
         <member name="M:SGCore.DeviceList.SendHaptics(System.Int32,System.String,System.String)">
@@ -2792,6 +2876,9 @@
         </member>
         <member name="M:SGCore.HapticGlove.StopHaptics">
             <summary> Stops all Haptic effects if any are currently playing. Useful at the end of simulations or when resetting. </summary>
+        </member>
+        <member name="M:SGCore.HapticGlove.StopVibrations">
+            <summary> Stops all vibrations, but does not affect the force-feedback </summary>
         </member>
         <member name="M:SGCore.HapticGlove.SendHaptics(SGCore.Haptics.SG_FFBCmd)">
             <summary> Send Haptic Commands to this Glove. </summary>
@@ -3503,6 +3590,10 @@
             <summary> The only class within the DLL to allow access to the SGComm C++ library. </summary>
             <remarks> Should therefore only contain static methods. </remarks>
         </member>
+        <member name="M:SGCore.SGConnect.I_GetSGConnectionInfo(System.Boolean,System.Text.StringBuilder)">
+            <summary> Retrieve the devices detected by the SenseComm. </summary>
+            <returns></returns>
+        </member>
         <member name="M:SGCore.SGConnect.I_ActiveDevices">
             <summary> Retrieve the devices detected by the SenseComm. </summary>
             <returns></returns>
@@ -3530,6 +3621,10 @@
             <returns></returns>
         </member>
         <member name="M:SGCore.SGConnect.I_GetLibraryVersion(System.Text.StringBuilder)">
+            <summary> Check if the SenseCom scanning is running. </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.SGConnect.I_GetConnectionStates(System.Text.StringBuilder)">
             <summary> Check if the SenseCom scanning is running. </summary>
             <returns></returns>
         </member>
@@ -3569,6 +3664,21 @@
         </member>
         <member name="M:SGCore.SGConnect.GetDebugLevel">
             <summary> Get the debug level of the current Library </summary>
+        </member>
+        <member name="M:SGCore.SGConnect.GetConnectionStates(System.String@)">
+            <summary> Retrieve the connection states in a list </summary>
+            <param name="connectionsList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.SGConnect.GetSGConnectionInfo(System.Boolean,System.String[]@)">
+            <summary> Retrieve the connection states in a list </summary>
+            <param name="withBT"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.SGConnect.Validate_DLLs">
+            <summary> Returns true if SenseCom and it's relevant C++ Redistibutables have been succesfully connected. </summary>
+            <returns></returns>
         </member>
         <member name="T:SGCore.Library">
             <summary> Contains info about this DLL </summary>
@@ -3726,6 +3836,18 @@
         <member name="T:SGCore.Tracking">
             <summary> Utility class containing tracking offset information </summary>
         </member>
+        <member name="F:SGCore.Tracking.zeroOffset_trackerPos">
+            <summary> If true, we set glove-tracker position offsets to zero - used for debugging </summary>
+        </member>
+        <member name="F:SGCore.Tracking.zeroOffset_trackerRot">
+            <summary> If true, we set glove-tracker rotation offsets to zero - used for debugging </summary>
+        </member>
+        <member name="F:SGCore.Tracking.zeroOffset_handPos">
+            <summary> If true, we set glove-hand position offsets to zero - used for debugging </summary>
+        </member>
+        <member name="F:SGCore.Tracking.zeroOffset_handRot">
+            <summary> If true, we set glove-hand position offsets to zero - used for debugging </summary>
+        </member>
         <!-- Badly formed XML comment ignored for member "M:SGCore.Tracking.CalculateLocation(SGCore.Kinematics.Vect3D,SGCore.Kinematics.Quat,SGCore.Kinematics.Vect3D,SGCore.Kinematics.Quat,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)" -->
         <member name="F:SGCore.Tracking.sg_fingerToGloveOrigin_Pos">
             <summary> Positional offset from each finger to the glove origin </summary>
@@ -3766,16 +3888,31 @@
         <member name="F:SGCore.Tracking.sg_ocTouchToAttach_Rot">
             <summary> Oculus Touch origin to Finger rotational offset </summary>
         </member>
-        <member name="M:SGCore.Tracking.GetNovaOffset_Glove_Wrist(System.Boolean,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
-            <summary> Returns the Offsets that will bring us from the Nova origin to the wrist position </summary>
+        <member name="M:SGCore.Tracking.GetNovaOffset_Glove_Wrist(System.Boolean,System.String,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
+            <summary> Returns the Offsets that will bring us from the Nova origin to the wrist position. </summary>
             <param name="rightHand"></param>
+            <param name="hardwareVersion"></param>
             <param name="posOffset"></param>
             <param name="rotOffset"></param>
         </member>
-        <member name="M:SGCore.Tracking.GetNovaOffset_Tracker_Glove(SGCore.PosTrackingHardware,System.Boolean,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
+        <member name="M:SGCore.Tracking.GetNovaOffset_Glove_Wrist(SGCore.Nova.Nova_GloveInfo,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
+            <summary> Returns the Offsets that will bring us from the Nova origin to the wrist position. </summary>
+            <param name="gloveInfo"></param>
+            <param name="posOffset"></param>
+            <param name="rotOffset"></param>
+        </member>
+        <member name="M:SGCore.Tracking.GetNovaOffset_Tracker_Glove(SGCore.PosTrackingHardware,System.Boolean,System.String,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
             <summary> Retrieves Offsets for a particular device. </summary>
             <param name="hardware"></param>
             <param name="rightHand"></param>
+            <param name="hardwareVersion"></param>
+            <param name="posOffset"></param>
+            <param name="rotOffset"></param>
+        </member>
+        <member name="M:SGCore.Tracking.GetNovaOffset_Tracker_Glove(SGCore.PosTrackingHardware,SGCore.Nova.Nova_GloveInfo,SGCore.Kinematics.Vect3D@,SGCore.Kinematics.Quat@)">
+            <summary>  Retrieves Offsets for a particular device. </summary>
+            <param name="hardware"></param>
+            <param name="gloveInfo"></param>
             <param name="posOffset"></param>
             <param name="rotOffset"></param>
         </member>

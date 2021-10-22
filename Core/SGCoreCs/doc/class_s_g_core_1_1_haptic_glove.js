@@ -21,6 +21,7 @@ var class_s_g_core_1_1_haptic_glove =
     [ "SendHaptics", "class_s_g_core_1_1_haptic_glove.html#a5d1faa43d64e07b753001437fb9b525a", null ],
     [ "SendHaptics", "class_s_g_core_1_1_haptic_glove.html#a102ec9f7b1ed66533e6f1a5315674a34", null ],
     [ "StopHaptics", "class_s_g_core_1_1_haptic_glove.html#a5b93a3745b41de1312c86e39cf763b02", null ],
+    [ "StopVibrations", "class_s_g_core_1_1_haptic_glove.html#a29e5087e5d6619139c243571d335bf09", null ],
     [ "UpdateCalibration", "class_s_g_core_1_1_haptic_glove.html#af5a599432889afdc837c2a0eaff64a0e", null ],
     [ "UpdateCalibrationRange", "class_s_g_core_1_1_haptic_glove.html#a179ec1714a1e5026f2c508ba9e52f054", null ],
     [ "UpdateCalibrationRange", "class_s_g_core_1_1_haptic_glove.html#a2f7e78959c6fb825e13555ad306f60ec", null ],

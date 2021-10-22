@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------------
-// Contains enumerators and classes to aid in Fino Deserialization.
+// Contains enumerators and classes to aid in Nova Deserialization.
 // @author: Max Lammers
 // ----------------------------------------------------------------------------------
 
@@ -15,7 +15,7 @@ namespace SGCore
 		namespace Parsing
 		{
 
-			/// <summary> Order of values as they come in from the Fino. </summary>
+			/// <summary> Order of values as they come in from the Nova. </summary>
 			enum Nova_CVar
 			{
 				ConstOpen = 0,

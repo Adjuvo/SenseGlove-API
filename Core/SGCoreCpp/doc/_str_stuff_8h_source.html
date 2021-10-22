@@ -125,31 +125,32 @@ $(document).ready(function(){initNavTree('_str_stuff_8h_source.html',''); initRe
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">static</span> std::string RoundedDegrees(<span class="keywordtype">float</span> valInRad);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">   50</a></span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">static</span> std::string <a class="code" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">PrintSize</a>(std::vector&lt;std::vector&lt;T&gt;&gt;&amp; vect)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordtype">int</span> size = vect.size();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                std::string res = <span class="stringliteral">&quot;(&quot;</span> + std::to_string(size) + <span class="stringliteral">&quot;)[&quot;</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    res += std::to_string(vect[i].size());</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <span class="keywordflow">if</span> (i &lt; size - 1) { res += <span class="stringliteral">&quot;, &quot;</span>; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">return</span> res + <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">bool</span> Contains(std::string haystack, std::string needle);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">   51</a></span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">static</span> std::string <a class="code" href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">PrintSize</a>(std::vector&lt;std::vector&lt;T&gt;&gt;&amp; vect)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordtype">int</span> size = vect.size();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                std::string res = <span class="stringliteral">&quot;(&quot;</span> + std::to_string(size) + <span class="stringliteral">&quot;)[&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; i++)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    res += std::to_string(vect[i].size());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordflow">if</span> (i &lt; size - 1) { res += <span class="stringliteral">&quot;, &quot;</span>; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">return</span> res + <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        };</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="ttc" id="a_fingers_8h_html"><div class="ttname"><a href="_fingers_8h.html">Fingers.h</a></div></div>
 <div class="ttc" id="a_quat_8h_html"><div class="ttname"><a href="_quat_8h.html">Quat.h</a></div></div>
 <div class="ttc" id="a_s_g_core_8h_html"><div class="ttname"><a href="_s_g_core_8h.html">SGCore.h</a></div></div>
 <div class="ttc" id="a_s_g_core_8h_html_ac1e278ec7c826471fd2b0f77b60b0165"><div class="ttname"><a href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a></div><div class="ttdeci">#define SGCORE_API</div><div class="ttdef"><b>Definition:</b> SGCore.h:30</div></div>
 <div class="ttc" id="a_vect3_d_8h_html"><div class="ttname"><a href="_vect3_d_8h.html">Vect3D.h</a></div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_util_1_1_str_stuff_html"><div class="ttname"><a href="class_s_g_core_1_1_util_1_1_str_stuff.html">SGCore::Util::StrStuff</a></div><div class="ttdoc">Utility class to convert strings into useable values.</div><div class="ttdef"><b>Definition:</b> StrStuff.h:21</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_util_1_1_str_stuff_html_a850103debce8666fea2174c0b5c822a6"><div class="ttname"><a href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">SGCore::Util::StrStuff::PrintSize</a></div><div class="ttdeci">static std::string PrintSize(std::vector&lt; std::vector&lt; T &gt;&gt; &amp;vect)</div><div class="ttdoc">Print the different sizes within a 2D array</div><div class="ttdef"><b>Definition:</b> StrStuff.h:50</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_util_1_1_str_stuff_html_a850103debce8666fea2174c0b5c822a6"><div class="ttname"><a href="class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6">SGCore::Util::StrStuff::PrintSize</a></div><div class="ttdeci">static std::string PrintSize(std::vector&lt; std::vector&lt; T &gt;&gt; &amp;vect)</div><div class="ttdoc">Print the different sizes within a 2D array</div><div class="ttdef"><b>Definition:</b> StrStuff.h:51</div></div>
 <div class="ttc" id="anamespace_s_g_core_html"><div class="ttname"><a href="namespace_s_g_core.html">SGCore</a></div><div class="ttdef"><b>Definition:</b> Anatomy.cpp:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

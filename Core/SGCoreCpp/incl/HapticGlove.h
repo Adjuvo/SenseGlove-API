@@ -50,7 +50,7 @@ namespace SGCore
         //--------------------------------------------------------------------------------------
         // SGDevice Methods
 
-		///<summary> Get the DeviceType enumerator of this device; used to check if its a SenseGlove/Fino/etc. </summary>
+		///<summary> Get the DeviceType enumerator of this device; used to check if its a SenseGlove/Nova/etc. </summary>
 		DeviceType GetDeviceType() override { return DeviceType::UNKNOWN; }
 
 		/// <summary> Retrieve this glove's unique identifier. </summary>

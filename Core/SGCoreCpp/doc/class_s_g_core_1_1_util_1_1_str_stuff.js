@@ -1,5 +1,6 @@
 var class_s_g_core_1_1_util_1_1_str_stuff =
 [
+    [ "Contains", "class_s_g_core_1_1_util_1_1_str_stuff.html#adaff70bb6363b89dd516d66dea9d61aa", null ],
     [ "PrintSize", "class_s_g_core_1_1_util_1_1_str_stuff.html#a850103debce8666fea2174c0b5c822a6", null ],
     [ "QuickSplit", "class_s_g_core_1_1_util_1_1_str_stuff.html#a280d23a81db24be81e4e266490e7cfc1", null ],
     [ "ReplaceChars", "class_s_g_core_1_1_util_1_1_str_stuff.html#ab965bec96470cea0a3ecdd9ecabb465c", null ],

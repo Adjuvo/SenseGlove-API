@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------------
-// Fino SensorData, parsed from rae string representations
+// Nova SensorData, parsed from rae string representations
 // @author: Max Lammers
 // ----------------------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ namespace SGCore
         };
 
 
-        /// <summary> Sensor Data coming from a Fino, converted into useful values. </summary>
+        /// <summary> Sensor Data coming from a Nova, converted into useful values. </summary>
         class SGCORE_API Nova_SensorData
         {
 
