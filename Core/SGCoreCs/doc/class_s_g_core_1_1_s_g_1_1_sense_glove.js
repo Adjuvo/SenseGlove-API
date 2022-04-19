@@ -16,6 +16,7 @@ var class_s_g_core_1_1_s_g_1_1_sense_glove =
     [ "GetHandPose", "class_s_g_core_1_1_s_g_1_1_sense_glove.html#a65809a97ee76218b03f13ce20f50fa6c", null ],
     [ "GetHardwareVersion", "class_s_g_core_1_1_s_g_1_1_sense_glove.html#a4c27b3d423782d901c39fdda0ba46eca", null ],
     [ "GetIMURotation", "class_s_g_core_1_1_s_g_1_1_sense_glove.html#a69eed5b5c0cbf0443fcf281d046f06b2", null ],
+    [ "GetLastSentCmds", "class_s_g_core_1_1_s_g_1_1_sense_glove.html#af75c76d375762131021578fcddcce09d", null ],
     [ "GetSensorData", "class_s_g_core_1_1_s_g_1_1_sense_glove.html#afb9b72f0d204b3d202dfc6193850d520", null ],
     [ "GetSubFirmwareVersion", "class_s_g_core_1_1_s_g_1_1_sense_glove.html#a926947b717fdf7eb989caefd08fd3d91", null ],
     [ "GetWristLocation", "class_s_g_core_1_1_s_g_1_1_sense_glove.html#a2c6ad4bed978e0cd33216c3218b6042e", null ],

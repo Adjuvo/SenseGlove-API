@@ -1,6 +1,5 @@
 var _waveform_8cs =
 [
-    [ "Waveform", "class_s_g_core_1_1_haptics_1_1_waveform.html", "class_s_g_core_1_1_haptics_1_1_waveform" ],
     [ "WaveformType", "_waveform_8cs.html#a4fb3792abaaba425652e66c9864c3ac2", [
       [ "Sine", "_waveform_8cs.html#a4fb3792abaaba425652e66c9864c3ac2a6ca9e2d793f678aba7c1b19526592a46", null ],
       [ "Square", "_waveform_8cs.html#a4fb3792abaaba425652e66c9864c3ac2aceb46ca115d05c51aa5a16a8867c3304", null ],

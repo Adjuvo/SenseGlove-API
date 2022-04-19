@@ -60,7 +60,6 @@ namespace SGCore
 				return res + "]";
 			}
 
-
 		};
 	}
 }

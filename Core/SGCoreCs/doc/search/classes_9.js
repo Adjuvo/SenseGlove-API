@@ -1,19 +1,6 @@
 var searchData=
 [
-  ['sensecom_675',['SenseCom',['../class_s_g_core_1_1_sense_com.html',1,'SGCore']]],
-  ['senseglove_676',['SenseGlove',['../class_s_g_core_1_1_s_g_1_1_sense_glove.html',1,'SGCore::SG']]],
-  ['sensorrange_677',['SensorRange',['../class_s_g_core_1_1_calibration_1_1_sensor_range.html',1,'SGCore::Calibration']]],
-  ['serializer_678',['Serializer',['../class_s_g_core_1_1_util_1_1_serializer.html',1,'SGCore::Util']]],
-  ['serverdata_679',['ServerData',['../class_s_g_core_1_1_util_1_1_server_data.html',1,'SGCore::Util']]],
-  ['sg_5fbuzzcmd_680',['SG_BuzzCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html',1,'SGCore::Haptics']]],
-  ['sg_5fffbcmd_681',['SG_FFBCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html',1,'SGCore::Haptics']]],
-  ['sg_5ffingercmd_682',['SG_FingerCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html',1,'SGCore::Haptics']]],
-  ['sg_5fgloveinfo_683',['SG_GloveInfo',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html',1,'SGCore::SG']]],
-  ['sg_5fglovepose_684',['SG_GlovePose',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html',1,'SGCore::SG']]],
-  ['sg_5fhandprofile_685',['SG_HandProfile',['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html',1,'SGCore::SG']]],
-  ['sg_5fhapticencoder_686',['SG_HapticEncoder',['../class_s_g_core_1_1_s_g_1_1_s_g___haptic_encoder.html',1,'SGCore::SG']]],
-  ['sg_5fsensordata_687',['SG_SensorData',['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html',1,'SGCore::SG']]],
-  ['sg_5ftimedbuzzcmd_688',['SG_TimedBuzzCmd',['../class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html',1,'SGCore::Haptics']]],
-  ['sgconnect_5fandroid_689',['SGConnect_Android',['../class_s_g_core_1_1_util_1_1_s_g_connect___android.html',1,'SGCore::Util']]],
-  ['sgdevice_690',['SGDevice',['../class_s_g_core_1_1_s_g_device.html',1,'SGCore']]]
+  ['udpreceiver_626',['UDPReceiver',['../class_s_g_core_1_1_util_1_1_u_d_p_receiver.html',1,'SGCore::Util']]],
+  ['udpsender_627',['UDPSender',['../class_s_g_core_1_1_util_1_1_u_d_p_sender.html',1,'SGCore::Util']]],
+  ['udpsocket_628',['UDPSocket',['../class_s_g_core_1_1_util_1_1_u_d_p_socket.html',1,'SGCore::Util']]]
 ];

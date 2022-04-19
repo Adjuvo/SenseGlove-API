@@ -3,6 +3,7 @@ var class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd =
     [ "SG_FingerCmd", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a5fab9359a919f4f4d9cb42f142c4e915", null ],
     [ "Equals", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#ab9a19c38d0faa0b072a392bdd92fc917", null ],
     [ "GetLevel", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#aef3addb2983033a0d1ba43a87c6db64b", null ],
+    [ "SameLevels", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#aab9899f7a3185dc854755d3d32fc6cd2", null ],
     [ "SetLevel", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a10bd00cccbc0168f3dfa4d4d63fa63bb", null ],
     [ "ToString", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a816c17a3b6e9978d48d251f3a6e3d65c", null ],
     [ "Validate", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#aa691cc4fbfb1b426276fa6e87237d1ca", null ],

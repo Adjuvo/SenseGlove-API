@@ -14,7 +14,6 @@ var namespace_s_g_core_1_1_nova =
     ] ],
     [ "Nova_Calibration", "class_s_g_core_1_1_nova_1_1_nova___calibration.html", null ],
     [ "Nova_GloveInfo", "class_s_g_core_1_1_nova_1_1_nova___glove_info.html", "class_s_g_core_1_1_nova_1_1_nova___glove_info" ],
-    [ "Nova_HapticEncoder", "class_s_g_core_1_1_nova_1_1_nova___haptic_encoder.html", null ],
     [ "Nova_Profile", "class_s_g_core_1_1_nova_1_1_nova___profile.html", "class_s_g_core_1_1_nova_1_1_nova___profile" ],
     [ "Nova_SensorData", "class_s_g_core_1_1_nova_1_1_nova___sensor_data.html", "class_s_g_core_1_1_nova_1_1_nova___sensor_data" ],
     [ "NovaGlove", "class_s_g_core_1_1_nova_1_1_nova_glove.html", "class_s_g_core_1_1_nova_1_1_nova_glove" ]

@@ -2,7 +2,7 @@ var struct_s_g_core_1_1_kinematics_1_1_quat =
 [
     [ "Quat", "struct_s_g_core_1_1_kinematics_1_1_quat.html#a694d501345083a36924dbeb5c4c86e45", null ],
     [ "Quat", "struct_s_g_core_1_1_kinematics_1_1_quat.html#ae3b0e4ffdeadb85132085f03a4e19d0a", null ],
-    [ "Equals", "struct_s_g_core_1_1_kinematics_1_1_quat.html#a9c8633e2dbd8f6c243216edc0da53e3e", null ],
+    [ "Equals", "struct_s_g_core_1_1_kinematics_1_1_quat.html#ac2f84f1217d7475dce9bc79383e1041d", null ],
     [ "GetHashCode", "struct_s_g_core_1_1_kinematics_1_1_quat.html#afe427b489314870957476dcd077b7b7e", null ],
     [ "IsIdentity", "struct_s_g_core_1_1_kinematics_1_1_quat.html#a289718989d3558f8dbd12b521dd2b1be", null ],
     [ "Magnitude", "struct_s_g_core_1_1_kinematics_1_1_quat.html#a2d706fceb7b6b577fd6ccb26bb0c9e53", null ],

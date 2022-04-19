@@ -19,17 +19,41 @@
         <member name="F:SGCore.Kinematics.Anatomy.fingerLimits">
             <summary> Hard Coded finger limits, in radians </summary>
         </member>
-        <member name="F:SGCore.Kinematics.Anatomy.totalFingerFlexion">
-            <summary> Total finger flexion that is associated with '1' for normalized flexion </summary>
+        <member name="F:SGCore.Kinematics.Anatomy.iPronation">
+            <summary> Movement indices with which to access specific motions. Usage: movement == Anatomy.iFlexion </summary>
         </member>
-        <member name="F:SGCore.Kinematics.Anatomy.totalFingerExtension">
-            <summary> Total finger flexion that is associated with '0' for normalized flexion </summary>
+        <member name="F:SGCore.Kinematics.Anatomy.iSupination">
+            <summary> Movement indices with which to access specific motions. Usage: movement == Anatomy.iFlexion </summary>
         </member>
-        <member name="F:SGCore.Kinematics.Anatomy.totalThumbFlexion">
-            <summary> Total thumb flexion that is associated with '1' for normalized flexion </summary>
+        <member name="F:SGCore.Kinematics.Anatomy.iFlexion">
+            <summary> Movement indices with which to access specific motions. Usage: movement == Anatomy.iFlexion </summary>
         </member>
-        <member name="F:SGCore.Kinematics.Anatomy.totalThumbExtension">
-            <summary> Total thumb flexion that is associated with '0' for normalized flexion </summary>
+        <member name="F:SGCore.Kinematics.Anatomy.iExtension">
+            <summary> Movement indices with which to access specific motions. Usage: movement == Anatomy.iFlexion </summary>
+        </member>
+        <member name="F:SGCore.Kinematics.Anatomy.iAbduction">
+            <summary> Movement indices with which to access specific motions. Usage: movement == Anatomy.iFlexion </summary>
+        </member>
+        <member name="F:SGCore.Kinematics.Anatomy.iAdduction">
+            <summary> Movement indices with which to access specific motions. Usage: movement == Anatomy.iFlexion </summary>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.ClampJointAngle(System.Single,SGCore.Finger,System.Boolean,System.Int32,System.Int32)">
+            <summary> Limit a value between specific joint angles. </summary>
+            <param name="value"></param>
+            <param name="finger"></param>
+            <param name="rightHand"></param>
+            <param name="joint"></param>
+            <param name="movement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.ClampJointAngle(System.Single,System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary> Limit a value between specific joint angles. </summary>
+            <param name="value"></param>
+            <param name="finger"></param>
+            <param name="rightHand"></param>
+            <param name="joint"></param>
+            <param name="movement"></param>
+            <returns></returns>
         </member>
         <member name="M:SGCore.Kinematics.Anatomy.GetFingerJointLimit(System.Boolean,System.Int32,System.Int32,System.Boolean)">
             <summary> Retrieve one of the limits of a finger joint's movement. </summary>
@@ -47,14 +71,82 @@
             <param name="max"></param>
             <returns></returns>
         </member>
+        <member name="F:SGCore.Kinematics.Anatomy.thumbFlexions01">
+            <summary> Used for Normalization. Sorted per joint, indices by 0 (normalized =0) and 1 (normalized =1). </summary>
+        </member>
+        <member name="F:SGCore.Kinematics.Anatomy.fingerFlexions01">
+            <summary> Used for normalization. Sorted per joint, indices by 0 (normalized =0) and 1 (normalized =1). </summary>
+        </member>
+        <member name="F:SGCore.Kinematics.Anatomy.fingerAbductions01_R">
+            <summary> used for normalization. Sorted per joint, indices by 0 (normalized =0) and 1 (normalized =1). </summary>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.GetFlexNormalizers(SGCore.Finger,System.Single@,System.Single@)">
+            <summary> Generic Entry point.</summary>
+            <param name="finger"></param>
+            <param name="flex0"></param>
+            <param name="flex1"></param>
+        </member>
         <member name="M:SGCore.Kinematics.Anatomy.NormalizeFingerFlex(System.Single)">
             <summary> Convert a total finger flexion in radians into a 0..1 representation. </summary>
-            <param name="flexionInRad"></param>
+            <param name="totalFlex_Rad"></param>
             <returns></returns>
         </member>
         <member name="M:SGCore.Kinematics.Anatomy.NormalizeThumbFlex(System.Single)">
             <summary> Convert a total finger flexion in radians into a 0..1 representation. </summary>
-            <param name="flexionInRad"></param>
+            <param name="totalFlex_Rad"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.NormalizeFlexion(SGCore.Finger,System.Single)">
+            <summary> A generic entry point for fingers. </summary>
+            <param name="finger"></param>
+            <param name="totalFlex_Rad"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.NormalizeAbduction(SGCore.Finger,System.Single,System.Boolean)">
+            <summary> Normalize finger abuction of a single finger </summary>
+            <param name="finger"></param>
+            <param name="totalAbd_Rad"></param>
+            <param name="rightHand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.FingerFlexion_FromNormalized(System.Single,System.Int32)">
+            <summary> Based on a normalized flexion, return a proper flexion angle for a specific finger joint. </summary>
+            <param name="normalizedFlexion"> Accepteable values are 0, 1, 2. </param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.ThumbFlexion_FromNormalized(System.Single,System.Int32)">
+            <summary> Based on a normalized flexion, return a proper flexion angle for a specific thumb joint. </summary>
+            <param name="normalizedFlexion"></param>
+            <param name="joint"> Accepteable values are 0, 1, 2. </param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.Abduction_FromNormalized(SGCore.Finger,System.Single,System.Boolean)">
+            <summary> Convert a normalized abduction back into a radian angle for a specific finger. </summary>
+            <param name="finger"></param>
+            <param name="normalizedAbduction"></param>
+            <param name="rightHand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.Flexions_FromNormalized(SGCore.Finger,System.Single)">
+            <summary> Calculates the three flexion angles from a normalized angle (value between 0 .. 1. </summary>
+            <param name="finger"></param>
+            <param name="normalizedFlexion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.FingerAngles_FromNormalized(SGCore.Finger,System.Single,System.Single,System.Boolean)">
+            <summary> Returns joint angles for a finger, with a normalized flexion and abduction. </summary>
+            <param name="finger"></param>
+            <param name="normalizedFlexion"></param>
+            <param name="normalizedAbd"></param>
+            <param name="rightHand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.HandAngles_FromNormalized(System.Boolean,System.Single[],System.Single,System.Single)">
+            <summary> Generates a set of HandAngles from normalized finger flexions, thumb abduction and a global finger spread. </summary>
+            <param name="isRight"></param>
+            <param name="flexions01"></param>
+            <param name="thumbAbd01"></param>
+            <param name="fingerSpread01"></param>
             <returns></returns>
         </member>
         <member name="M:SGCore.Kinematics.Anatomy.HandAngles_Default(System.Boolean)">
@@ -75,6 +167,19 @@
         <member name="M:SGCore.Kinematics.Anatomy.HandAngles_Fist(System.Boolean)">
             <summary> Get Hand Angles that would make a fist </summary>
             <param name="rightHand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Anatomy.GetThumbJointName(System.Int32)">
+            <summary> Get the name of a thumb joint by the index. </summary>
+            <param name="joint"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SGCore.Kinematics.Anatomy.GetFingerJointName(System.Int32)" -->
+        <member name="M:SGCore.Kinematics.Anatomy.GetJointName(SGCore.Finger,System.Int32,System.String)">
+            <summary> Get the name of a specific joint_finger combination. </summary>
+            <param name="finger"></param>
+            <param name="joint"></param>
+            <param name="delim">Optional joint delimiter.</param>
             <returns></returns>
         </member>
         <member name="T:SGCore.Kinematics.BasicHandModel">
@@ -486,9 +591,10 @@
             <param name="myVect"></param>
             <returns></returns>
         </member>
-        <member name="M:SGCore.Kinematics.Quat.Equals(System.Object)">
+        <member name="M:SGCore.Kinematics.Quat.Equals(SGCore.Kinematics.Quat,System.Single)">
             <summary> Check if two quaternions have equal values. </summary>
-            <param name="obj"></param>
+            <param name="that"></param>
+            <param name="acceptableOffset"></param>
             <returns></returns>
         </member>
         <member name="M:SGCore.Kinematics.Quat.GetHashCode">
@@ -600,6 +706,16 @@
             <param name="to2"></param>
             <returns></returns>
         </member>
+        <member name="M:SGCore.Kinematics.Values.Map(System.Single,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+            <summary> Clamp the values beween the input and output values. </summary>
+            <param name="value"></param>
+            <param name="from1"></param>
+            <param name="from2"></param>
+            <param name="to1"></param>
+            <param name="to2"></param>
+            <param name="clampOutput"></param>
+            <returns></returns>
+        </member>
         <member name="M:SGCore.Kinematics.Values.Map(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
             <summary> Map a value from one range [from1...from2] to another range [to1 .. to2],
             while ensuring it stays within the [min...max] range. </summary>
@@ -610,6 +726,57 @@
             <param name="to2"></param>
             <param name="min"></param>
             <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Values.InterpolateVectors(System.Single,System.Single,System.Single,SGCore.Kinematics.Vect3D[][],SGCore.Kinematics.Vect3D[][],System.Boolean)">
+            <summary> Interpolate a 2D array of Vectors </summary>
+            <param name="t"></param>
+            <param name="t0"></param>
+            <param name="t1"></param>
+            <param name="v0"></param>
+            <param name="v1"></param>
+            <param name="clamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Values.InterpolateVectors(System.Single,System.Single,System.Single,SGCore.Kinematics.Vect3D[],SGCore.Kinematics.Vect3D[],System.Boolean)">
+            <summary> Interpolate an array of Vectors </summary>
+            <param name="t"></param>
+            <param name="t0"></param>
+            <param name="t1"></param>
+            <param name="v0"></param>
+            <param name="v1"></param>
+            <param name="clamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Values.InterpolateVector(System.Single,System.Single,System.Single,SGCore.Kinematics.Vect3D,SGCore.Kinematics.Vect3D,System.Boolean)">
+            <summary> Interpolate a single Vector </summary>
+            <param name="t"></param>
+            <param name="t0"></param>
+            <param name="t1"></param>
+            <param name="v0"></param>
+            <param name="v1"></param>
+            <param name="clamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Values.InterpolateQuaternion(System.Single,System.Single,System.Single,SGCore.Kinematics.Quat,SGCore.Kinematics.Quat,System.Boolean)">
+            <summary> Interpolate a Quaternion Rotaion </summary>
+            <param name="t"></param>
+            <param name="t0"></param>
+            <param name="t1"></param>
+            <param name="q0"></param>
+            <param name="q1"></param>
+            <param name="clamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Kinematics.Values.InterpolateHandAngles_WithJointAngles(System.Single,System.Single,System.Single,SGCore.Kinematics.Vect3D[][],SGCore.Kinematics.Vect3D[][],System.Boolean,System.Boolean)">
+            <summary> Allows up to pass clamping, but still takes into account the joint angle limits. </summary>
+            <param name="t"></param>
+            <param name="t0"></param>
+            <param name="t1"></param>
+            <param name="v0"></param>
+            <param name="v1"></param>
+            <param name="rightHand"></param>
+            <param name="clamp"></param>
             <returns></returns>
         </member>
         <member name="M:SGCore.Kinematics.Values.FillZero(System.Int32)">
@@ -664,9 +831,10 @@
             <param name="other"></param>
             <returns></returns>
         </member>
-        <member name="M:SGCore.Kinematics.Vect3D.Equals(SGCore.Kinematics.Vect3D)">
+        <member name="M:SGCore.Kinematics.Vect3D.Equals(SGCore.Kinematics.Vect3D,System.Single)">
             <summary> Check if this Vector is roughly equal to another. </summary>
             <param name="that"></param>
+            <param name="acceptableOffset"></param>
             <returns></returns>
         </member>
         <member name="M:SGCore.Kinematics.Vect3D.ToString">
@@ -859,7 +1027,7 @@
         <member name="M:SGCore.Haptics.HG_HapticStream.ClearVibrations">
             <summary> Clears all vibrations in the queue(s) </summary>
         </member>
-        <member name="M:SGCore.Haptics.HG_HapticStream.Clear">
+        <member name="M:SGCore.Haptics.HG_HapticStream.ClearAll">
             <summary> Clear all ongaoing effects to this stream. </summary>
         </member>
         <member name="M:SGCore.Haptics.HG_HapticStream.AddCmd(SGCore.Haptics.SG_FFBCmd)">
@@ -903,6 +1071,17 @@
             <returns></returns>
         </member>
         <!-- Badly formed XML comment ignored for member "M:SGCore.Haptics.HG_HapticStream.FlushHaptics(System.Single,SGCore.Haptics.SG_FFBCmd,SGCore.Haptics.SG_FFBCmd@,SGCore.Haptics.SG_BuzzCmd@,SGCore.Haptics.ThumperCmd@)" -->
+        <member name="M:SGCore.Haptics.HG_HapticStream.FlushHaptics(SGCore.Haptics.SG_FFBCmd,SGCore.Haptics.SG_BuzzCmd,SGCore.Haptics.ThumperCmd,SGCore.Haptics.SG_FFBCmd@,SGCore.Haptics.SG_BuzzCmd@,SGCore.Haptics.ThumperCmd@)">
+            <summary> Flushes the Hapitcs, but only returns true if the new cmds are different from the last ones - meaning we should send new Cmds.  Only clears the FFB queue</summary>
+            <param name="lastBrakeLvl"></param>
+            <param name="lastBuzzCmd"></param>
+            <param name="lastThumper"></param>
+            <param name="ffbCmd"></param>
+            <param name="buzzCmd"></param>
+            <param name="thumperCmd"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SGCore.Haptics.HG_HapticStream.FlushHaptics(System.Single,SGCore.Haptics.SG_FFBCmd,SGCore.Haptics.SG_BuzzCmd,SGCore.Haptics.ThumperCmd,SGCore.Haptics.SG_FFBCmd@,SGCore.Haptics.SG_BuzzCmd@,SGCore.Haptics.ThumperCmd@)" -->
         <member name="T:SGCore.Haptics.TimedThumpCmd">
             <summary> A vibration command for the thumper. A pulse for a specific time in seconds.  </summary>
         </member>
@@ -915,7 +1094,7 @@
         <member name="F:SGCore.Haptics.TimedThumpCmd.elapsedTime">
             <summary> The elapsed time so far. </summary>
         </member>
-        <member name="P:SGCore.Haptics.TimedThumpCmd.Elapsed">
+        <member name="M:SGCore.Haptics.TimedThumpCmd.TimeElapsed">
             <summary> Returns true if the timed command has elapsed. </summary>
         </member>
         <member name="M:SGCore.Haptics.TimedThumpCmd.#ctor">
@@ -1231,6 +1410,11 @@
         </member>
         <member name="M:SGCore.Haptics.SG_FingerCmd.Equals(SGCore.Haptics.SG_FingerCmd)">
             <summary> Check if this command contains the same values as another. </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Haptics.SG_FingerCmd.SameLevels(SGCore.Haptics.SG_FingerCmd)">
+            <summary> Non-overridebale function that checks specifically for FFB levels. </summary>
             <param name="item"></param>
             <returns></returns>
         </member>
@@ -1821,6 +2005,12 @@
             <param name="type"></param>
             <returns></returns>
         </member>
+        <member name="M:SGCore.Calibration.HG_CalCheck.GetDebugString(SGCore.Kinematics.Vect3D[],SGCore.DeviceType)">
+            <summary> Returns a string value informing me which fingers still need to move. Move Thumb, Index, Middle, Ring, Pinky etc. </summary>
+            <param name="currentRange"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
         <member name="T:SGCore.Calibration.CalDataPoint">
             <summary> A data point for Calibration, stored in a separate class so we can add / tweak it wihtout affecting the function calls. </summary>
         </member>
@@ -1930,8 +2120,18 @@
             <param name="currentPose"></param>
             <returns></returns>
         </member>
+        <member name="M:SGCore.Calibration.HG_CalibrationSequence.GetHandPose(SGCore.Kinematics.BasicHandModel,SGCore.HandPose@)">
+            <summary> Retrieve a handPose based on set hand dimensions. </summary>
+            <param name="handDimensions"></param>
+            <param name="currentPose"></param>
+            <returns></returns>
+        </member>
         <member name="M:SGCore.Calibration.HG_CalibrationSequence.GetCurrentInstuction(System.String)">
             <summary> Retrieve instructions on what to do during the current step. </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Calibration.HG_CalibrationSequence.GetDebugInfo">
+            <summary> Retrieve debug information from the sequence </summary>
             <returns></returns>
         </member>
         <member name="T:SGCore.Calibration.HG_QuickCalibration">
@@ -1998,6 +2198,16 @@
             <summary> Returns a 'preview' of what a HandPose with this sequence's current settings would look like.  </summary>
             <param name="rightHand"></param>
             <param name="currentPose"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Calibration.HG_QuickCalibration.GetHandPose(SGCore.Kinematics.BasicHandModel,SGCore.HandPose@)">
+            <summary> Returns a 'preview' of what a HandPose with this sequence's current settings would look like. </summary>
+            <param name="handDimensions"></param>
+            <param name="currentPose"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.Calibration.HG_QuickCalibration.GetDebugInfo">
+            <summary> Returns the Debug info. </summary>
             <returns></returns>
         </member>
         <member name="T:SGCore.Calibration.SensorRange">
@@ -2407,6 +2617,11 @@
         <member name="P:SGCore.Nova.Nova_GloveInfo.ImuCorrection">
             <summary> The IMU correction of this Nova. </summary>
         </member>
+        <member name="M:SGCore.Nova.Nova_GloveInfo.Equals(SGCore.Nova.Nova_GloveInfo)">
+            <summary> Returns true if one Nova has the same properties as another. </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
         <member name="F:SGCore.Nova.Parsing.Nova_CVar.AllC">
             <summary> Utility value used in iteration / checking lengths </summary>
         </member>
@@ -2651,6 +2866,13 @@
             <param name="index"></param>
             <returns></returns>
         </member>
+        <member name="M:SGCore.DeviceList.GetHapticString(System.Int32,System.String,System.String@)">
+            <summary> Retrieve the string that SenseCom wants to send to the device. </summary>
+            <param name="ipcIndex"></param>
+            <param name="ipcAddress"></param>
+            <param name="hapticStr"></param>
+            <returns></returns>
+        </member>
         <member name="T:SGCore.DeviceModel">
             <summary> Base class containing the minimum amount of data for device models. </summary>
         </member>
@@ -2745,6 +2967,39 @@
             <summary> Returns the total flexion the fingers as a value between 0 (fully extended) and 1 (fully flexed). </summary>
             <remarks> Useful for animation or for detecting gestures </remarks>
         </member>
+        <member name="M:SGCore.HandPose.ToJointIndex(SGCore.Kinematics.FingerMovement)">
+            <summary> Check which joint index a particlar finger movement is linked to. </summary>
+            <param name="movement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HandPose.ToJointIndex(SGCore.Kinematics.ThumbMovement)">
+            <summary> Check which joint index a particlar thumb movement is linked to. </summary>
+            <param name="movement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HandPose.GetJointAngle(SGCore.Kinematics.FingerMovement,SGCore.Finger)">
+            <summary> Returns a specific Joint Angle of a finger, in radians. </summary>
+            <param name="movement"></param>
+            <param name="finger"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HandPose.GetJointAngle(SGCore.Kinematics.FingerMovement,System.Int32)">
+            <summary> Returns a specific Joint Angle of a finger, in radians. This version is useful for iteration. </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HandPose.GetThumbAngle(SGCore.Kinematics.ThumbMovement)">
+            <summary> Returns a specific Joint Angle of the thumb, in radians </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HandPose.Serialize">
+            <summary> Create a string representation of this HandPose to store on disk. It can later be deserialized. </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HandPose.Deserialize(System.String)">
+            <summary> Unpack a HandPose back into its Class representation. </summary>
+            <param name="serializedString"></param>
+            <returns></returns>
+        </member>
         <member name="M:SGCore.HandPose.ToString">
             <summary> Returns a string representation of this HandPose. </summary>
             <returns></returns>
@@ -2818,13 +3073,13 @@
         <member name="T:SGCore.HapticGlove">
             <summary> A type of glove that includes finger tracking and/or force-feedback methods. </summary>
         </member>
-        <member name="F:SGCore.HapticGlove.lastFFBCmd">
+        <member name="P:SGCore.HapticGlove.LastFFBCmd">
             <summary> The last Force-Feedback command sent by this Sense Glove. </summary>
         </member>
-        <member name="F:SGCore.HapticGlove.lastBuzzCmd">
+        <member name="P:SGCore.HapticGlove.LastBuzzCmd">
             <summary> The last Force-Feedback command sent by this Sense Glove. </summary>
         </member>
-        <member name="F:SGCore.HapticGlove.lastThumper">
+        <member name="P:SGCore.HapticGlove.LastThumperCmd">
             <summary>  </summary>
         </member>
         <member name="F:SGCore.HapticGlove.minValues">
@@ -2868,10 +3123,29 @@
             <param name="handPose"></param>
             <returns></returns>
         </member>
+        <member name="M:SGCore.HapticGlove.GetHandPose(SGCore.Kinematics.BasicHandModel,SGCore.HandPose@)">
+            <summary> Returns the latest hand pose for a specific hand ggeometry, using the latest profile on disk. </summary>
+            <param name="handGeometry"></param>
+            <param name="handPose"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HapticGlove.GetHandPose(SGCore.HandPose@)">
+            <summary> Retruns the latest handPose using a default HandGeometry and the latest profile stored on disk. </summary>
+            <param name="handPose"></param>
+            <returns></returns>
+        </member>
         <member name="M:SGCore.HapticGlove.GetHandPose(SGCore.HandProfile,SGCore.HandPose@)">
             <summary> Calculate the Hand Pose of this device, provided it has Hand Tracking available, using a default hand geometry. </summary>
             <param name="handProfile"></param>
             <param name="handPose"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.HapticGlove.GetLastSentCmds(SGCore.Haptics.SG_FFBCmd@,SGCore.Haptics.SG_BuzzCmd@,SGCore.Haptics.ThumperCmd@,System.Boolean)">
+            <summary> Retrieve the last commands sent to this glove.  </summary>
+            <param name="ffbLvls"></param>
+            <param name="buzzLvls"></param>
+            <param name="thumperLvls"></param>
+            <param name="fromIPC">If true, we decode from IPC instead of what was sent to this glove.</param>
             <returns></returns>
         </member>
         <member name="M:SGCore.HapticGlove.StopHaptics">
@@ -2897,11 +3171,12 @@
             <param name="ffb"></param>
         </member>
         <member name="M:SGCore.HapticGlove.SendHaptics(SGCore.Haptics.SG_FFBCmd,SGCore.Haptics.SG_BuzzCmd,SGCore.Haptics.ThumperCmd)">
-            <summary> Send Haptic Commands to this Glove. </summary>
+            <summary> Send Haptic Commands to this Glove. Updates Last Commands. </summary>
             <param name="ffb"></param>
         </member>
-        <member name="M:SGCore.HapticGlove.GetHapticGloves">
+        <member name="M:SGCore.HapticGlove.GetHapticGloves(System.Boolean)">
             <summary> Get all Haptic Gloves connected to this system. They may or may not be connected </summary>
+            <param name="connectedOnly">If false, we'll return all haptic gloves ever detected during this session</param>
             <returns></returns>
         </member>
         <member name="M:SGCore.HapticGlove.GetGlove(SGCore.HapticGlove@)">
@@ -3616,6 +3891,12 @@
             <param name="commands"></param>
             <returns></returns>
         </member>
+        <member name="M:SGCore.SGConnect.I_GetHapticString(System.String,System.Text.StringBuilder)">
+            <summary> Retrives a Haptic String </summary>
+            <param name="deviceAddress"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
         <member name="M:SGCore.SGConnect.I_ScanningActive">
             <summary> Scheck if the SenseCom scanning is running. </summary>
             <returns></returns>
@@ -3678,6 +3959,12 @@
         </member>
         <member name="M:SGCore.SGConnect.Validate_DLLs">
             <summary> Returns true if SenseCom and it's relevant C++ Redistibutables have been succesfully connected. </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCore.SGConnect.GetHapticString(System.String,System.String@)">
+            <summary> Wrapper for the extenal method. </summary>
+            <param name="deviceAddress"></param>
+            <param name="output"></param>
             <returns></returns>
         </member>
         <member name="T:SGCore.Library">
@@ -3832,6 +4119,9 @@
         </member>
         <member name="F:SGCore.PosTrackingHardware.PicoNeo2">
             <summary> Pico Neo 2 Controller(s) </summary>
+        </member>
+        <member name="F:SGCore.PosTrackingHardware.PicoNeo3">
+            <summary> Pcio Neo 3 Controllers(s) </summary>
         </member>
         <member name="T:SGCore.Tracking">
             <summary> Utility class containing tracking offset information </summary>

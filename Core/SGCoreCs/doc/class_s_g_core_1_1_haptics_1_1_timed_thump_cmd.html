@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -88,7 +88,6 @@ $(document).ready(function(){initNavTree('class_s_g_core_1_1_haptics_1_1_timed_t
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#properties">Properties</a> &#124;
 <a href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SGCore.Haptics.TimedThumpCmd Class Reference</div>  </div>
@@ -100,6 +99,9 @@ $(document).ready(function(){initNavTree('class_s_g_core_1_1_haptics_1_1_timed_t
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab1cf85b30aee8a39d256371c3e54bdca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#ab1cf85b30aee8a39d256371c3e54bdca">TimeElapsed</a> ()</td></tr>
+<tr class="memdesc:ab1cf85b30aee8a39d256371c3e54bdca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the timed command has elapsed.  <a href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#ab1cf85b30aee8a39d256371c3e54bdca">More...</a><br /></td></tr>
+<tr class="separator:ab1cf85b30aee8a39d256371c3e54bdca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7946c769d77b487a459ff15927db9cd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#a7946c769d77b487a459ff15927db9cd9">TimedThumpCmd</a> (int amplitude, float duration_seconds, float startTime_seconds=0)</td></tr>
 <tr class="memdesc:a7946c769d77b487a459ff15927db9cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Timed Thumper Command.  <a href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#a7946c769d77b487a459ff15927db9cd9">More...</a><br /></td></tr>
 <tr class="separator:a7946c769d77b487a459ff15927db9cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,12 +136,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af8a0b2b6db635e1169a7c43583e57689"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#af8a0b2b6db635e1169a7c43583e57689">TimedThumpCmd</a> ()</td></tr>
 <tr class="memdesc:af8a0b2b6db635e1169a7c43583e57689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal, empty, for extended classes.  <a href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#af8a0b2b6db635e1169a7c43583e57689">More...</a><br /></td></tr>
 <tr class="separator:af8a0b2b6db635e1169a7c43583e57689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:aef7e29ed89ad54ab70fd28c1394fcf10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#aef7e29ed89ad54ab70fd28c1394fcf10">Elapsed</a><code> [get]</code></td></tr>
-<tr class="memdesc:aef7e29ed89ad54ab70fd28c1394fcf10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the timed command has elapsed.  <a href="class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html#aef7e29ed89ad54ab70fd28c1394fcf10">More...</a><br /></td></tr>
-<tr class="separator:aef7e29ed89ad54ab70fd28c1394fcf10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A vibration command for the thumper. A pulse for a specific time in seconds. </p>
@@ -315,6 +311,33 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="ab1cf85b30aee8a39d256371c3e54bdca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1cf85b30aee8a39d256371c3e54bdca">&#9670;&nbsp;</a></span>TimeElapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SGCore.Haptics.TimedThumpCmd.TimeElapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the timed command has elapsed. </p>
+
+</div>
+</div>
 <a id="a8ed39a6f2d20b50d4fd02a5a9780f0ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ed39a6f2d20b50d4fd02a5a9780f0ac">&#9670;&nbsp;</a></span>ToString()</h2>
 
@@ -415,33 +438,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
-<a id="aef7e29ed89ad54ab70fd28c1394fcf10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef7e29ed89ad54ab70fd28c1394fcf10">&#9670;&nbsp;</a></span>Elapsed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SGCore.Haptics.TimedThumpCmd.Elapsed</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the timed command has elapsed. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_timed_thump_cmd_8cs.html">TimedThumpCmd.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_timed_thump_cmd_8cs.html">TimedThumpCmd.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

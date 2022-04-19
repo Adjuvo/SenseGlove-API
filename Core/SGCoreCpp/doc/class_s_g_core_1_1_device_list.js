@@ -13,5 +13,5 @@ var class_s_g_core_1_1_device_list =
     [ "PacketsPerSecondSent", "class_s_g_core_1_1_device_list.html#a995c11cc27b0dce7d94e610eef2dca7d", null ],
     [ "ReInitialize", "class_s_g_core_1_1_device_list.html#a7a10febe44b0f2d941f6e765c917fc0f", null ],
     [ "SendHaptics", "class_s_g_core_1_1_device_list.html#a8013119e947299e1d20093e334bbb02b", null ],
-    [ "SenseCommRunning", "class_s_g_core_1_1_device_list.html#a91defbd42a87ceb89c852cb85f6b25bb", null ]
+    [ "SenseComRunning", "class_s_g_core_1_1_device_list.html#a79b44063874fada2eca7d7898cb16eb3", null ]
 ];

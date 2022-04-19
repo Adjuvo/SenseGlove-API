@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -115,9 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43cb41200b6c3043a307ab994e0ab96b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html#a43cb41200b6c3043a307ab994e0ab96b">Rotate</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a> myVect)</td></tr>
 <tr class="memdesc:a43cb41200b6c3043a307ab994e0ab96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate myVect by this quaternion rotation.  <a href="struct_s_g_core_1_1_kinematics_1_1_quat.html#a43cb41200b6c3043a307ab994e0ab96b">More...</a><br /></td></tr>
 <tr class="separator:a43cb41200b6c3043a307ab994e0ab96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c8633e2dbd8f6c243216edc0da53e3e"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html#a9c8633e2dbd8f6c243216edc0da53e3e">Equals</a> (object obj)</td></tr>
-<tr class="memdesc:a9c8633e2dbd8f6c243216edc0da53e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two quaternions have equal values.  <a href="struct_s_g_core_1_1_kinematics_1_1_quat.html#a9c8633e2dbd8f6c243216edc0da53e3e">More...</a><br /></td></tr>
-<tr class="separator:a9c8633e2dbd8f6c243216edc0da53e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f84f1217d7475dce9bc79383e1041d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html#ac2f84f1217d7475dce9bc79383e1041d">Equals</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Quat</a> that, float acceptableOffset=0.001f)</td></tr>
+<tr class="memdesc:ac2f84f1217d7475dce9bc79383e1041d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if two quaternions have equal values.  <a href="struct_s_g_core_1_1_kinematics_1_1_quat.html#ac2f84f1217d7475dce9bc79383e1041d">More...</a><br /></td></tr>
+<tr class="separator:ac2f84f1217d7475dce9bc79383e1041d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe427b489314870957476dcd077b7b7e"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html#afe427b489314870957476dcd077b7b7e">GetHashCode</a> ()</td></tr>
 <tr class="memdesc:afe427b489314870957476dcd077b7b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash code for this instance.  <a href="struct_s_g_core_1_1_kinematics_1_1_quat.html#afe427b489314870957476dcd077b7b7e">More...</a><br /></td></tr>
 <tr class="separator:afe427b489314870957476dcd077b7b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,18 +312,28 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9c8633e2dbd8f6c243216edc0da53e3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c8633e2dbd8f6c243216edc0da53e3e">&#9670;&nbsp;</a></span>Equals()</h2>
+<a id="ac2f84f1217d7475dce9bc79383e1041d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f84f1217d7475dce9bc79383e1041d">&#9670;&nbsp;</a></span>Equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">override bool SGCore.Kinematics.Quat.Equals </td>
+          <td class="memname">bool SGCore.Kinematics.Quat.Equals </td>
           <td>(</td>
-          <td class="paramtype">object&#160;</td>
-          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html">Quat</a>&#160;</td>
+          <td class="paramname"><em>that</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>acceptableOffset</em> = <code>0.001f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -331,7 +341,8 @@ Static Public Attributes</h2></td></tr>
 <p>Check if two quaternions have equal values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td></td></tr>
+    <tr><td class="paramname">that</td><td></td></tr>
+    <tr><td class="paramname">acceptableOffset</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -925,7 +936,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_quat_8cs.html">Quat.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_quat_8cs.html">Quat.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

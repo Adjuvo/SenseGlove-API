@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['packet_1150',['Packet',['../class_s_g_core_1_1_util_1_1_server_data.html#a1acd03176c940a56235cd30a77219663',1,'SGCore::Util::ServerData']]],
-  ['postrackinghardware_1151',['PosTrackingHardware',['../namespace_s_g_core.html#a3c66f3772480b3c9629873b94adff671',1,'SGCore']]]
+  ['sg_5ffingersolver_1055',['SG_FingerSolver',['../namespace_s_g_core_1_1_s_g.html#a4fc22833482c17d34cb4694234481828',1,'SGCore::SG']]],
+  ['sg_5ffunctions_1056',['SG_Functions',['../namespace_s_g_core_1_1_s_g.html#a79f58dec0e3016b9fdd2b3ef771a2760',1,'SGCore::SG']]],
+  ['sg_5fthumbsolver_1057',['SG_ThumbSolver',['../namespace_s_g_core_1_1_s_g.html#a113e38c2a2613b3ecd67ad0fc472bbae',1,'SGCore::SG']]],
+  ['sg_5fthumpercmd_1058',['SG_ThumperCmd',['../namespace_s_g_core_1_1_haptics.html#acdd890e7d15ed5c63596b293f75dacb2',1,'SGCore::Haptics']]]
 ];

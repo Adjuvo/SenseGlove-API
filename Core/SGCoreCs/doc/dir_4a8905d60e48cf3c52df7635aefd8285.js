@@ -8,9 +8,7 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
       [ "BetaDevice", "class_s_g_core_1_1_beta_device.html", "class_s_g_core_1_1_beta_device" ]
     ] ],
     [ "BuzzCmd.cs", "_buzz_cmd_8cs.html", "_buzz_cmd_8cs" ],
-    [ "BuzzStream.cs", "_buzz_stream_8cs.html", [
-      [ "BuzzStream", "class_s_g_core_1_1_haptics_1_1_buzz_stream.html", "class_s_g_core_1_1_haptics_1_1_buzz_stream" ]
-    ] ],
+    [ "BuzzStream.cs", "_buzz_stream_8cs.html", null ],
     [ "Communications.cs", "_communications_8cs.html", "_communications_8cs" ],
     [ "ConnectionStatus.cs", "_connection_status_8cs.html", [
       [ "ConnectionStatus", "class_s_g_core_1_1_util_1_1_connection_status.html", "class_s_g_core_1_1_util_1_1_connection_status" ]
@@ -21,13 +19,9 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
       [ "DeviceModel", "class_s_g_core_1_1_device_model.html", "class_s_g_core_1_1_device_model" ]
     ] ],
     [ "DeviceTypes.cs", "_device_types_8cs.html", "_device_types_8cs" ],
-    [ "FFBStream.cs", "_f_f_b_stream_8cs.html", [
-      [ "FFBStream", "class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html", "class_s_g_core_1_1_haptics_1_1_f_f_b_stream" ]
-    ] ],
+    [ "FFBStream.cs", "_f_f_b_stream_8cs.html", null ],
     [ "FileIO.cs", "_file_i_o_8cs.html", null ],
-    [ "FingerForces.cs", "_finger_forces_8cs.html", [
-      [ "FingerForces", "class_s_g_core_1_1_haptics_1_1_finger_forces.html", "class_s_g_core_1_1_haptics_1_1_finger_forces" ]
-    ] ],
+    [ "FingerForces.cs", "_finger_forces_8cs.html", null ],
     [ "Fingers.cs", "_fingers_8cs.html", "_fingers_8cs" ],
     [ "HandInterpolator.cs", "_hand_interpolator_8cs.html", [
       [ "HandInterpolator", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html", "class_s_g_core_1_1_kinematics_1_1_hand_interpolator" ]
@@ -64,21 +58,20 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
       [ "Nova_Calibration", "class_s_g_core_1_1_nova_1_1_nova___calibration.html", null ]
     ] ],
     [ "Nova_GloveInfo.cs", "_nova___glove_info_8cs.html", "_nova___glove_info_8cs" ],
-    [ "Nova_HapticEncoder.cs", "_nova___haptic_encoder_8cs.html", [
-      [ "Nova_HapticEncoder", "class_s_g_core_1_1_nova_1_1_nova___haptic_encoder.html", null ]
-    ] ],
+    [ "Nova_HapticEncoder.cs", "_nova___haptic_encoder_8cs.html", null ],
     [ "Nova_Profile.cs", "_nova___profile_8cs.html", [
       [ "Nova_Profile", "class_s_g_core_1_1_nova_1_1_nova___profile.html", "class_s_g_core_1_1_nova_1_1_nova___profile" ]
     ] ],
     [ "Nova_SensorData.cs", "_nova___sensor_data_8cs.html", [
       [ "Nova_SensorData", "class_s_g_core_1_1_nova_1_1_nova___sensor_data.html", "class_s_g_core_1_1_nova_1_1_nova___sensor_data" ]
     ] ],
+    [ "Nova_Thresholds.cs", "_nova___thresholds_8cs.html", [
+      [ "Nova_Thresholds", "class_s_g_core_1_1_haptics_1_1_nova___thresholds.html", null ]
+    ] ],
     [ "NovaGlove.cs", "_nova_glove_8cs.html", [
       [ "NovaGlove", "class_s_g_core_1_1_nova_1_1_nova_glove.html", "class_s_g_core_1_1_nova_1_1_nova_glove" ]
     ] ],
-    [ "PatternBuzzCmd.cs", "_pattern_buzz_cmd_8cs.html", [
-      [ "PatternBuzzCmd", "class_s_g_core_1_1_haptics_1_1_pattern_buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_pattern_buzz_cmd" ]
-    ] ],
+    [ "PatternBuzzCmd.cs", "_pattern_buzz_cmd_8cs.html", null ],
     [ "Quat.cs", "_quat_8cs.html", [
       [ "Quat", "struct_s_g_core_1_1_kinematics_1_1_quat.html", "struct_s_g_core_1_1_kinematics_1_1_quat" ]
     ] ],
@@ -112,9 +105,7 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
       [ "SG_GlovePose", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose" ]
     ] ],
     [ "SG_HandProfile.cs", "_s_g___hand_profile_8cs.html", "_s_g___hand_profile_8cs" ],
-    [ "SG_HapticEncoder.cs", "_s_g___haptic_encoder_8cs.html", [
-      [ "SG_HapticEncoder", "class_s_g_core_1_1_s_g_1_1_s_g___haptic_encoder.html", null ]
-    ] ],
+    [ "SG_HapticEncoder.cs", "_s_g___haptic_encoder_8cs.html", null ],
     [ "SG_SensorData.cs", "_s_g___sensor_data_8cs.html", [
       [ "SG_SensorData", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data" ]
     ] ],
@@ -147,7 +138,5 @@ var dir_4a8905d60e48cf3c52df7635aefd8285 =
       [ "Vect3D", "struct_s_g_core_1_1_kinematics_1_1_vect3_d.html", "struct_s_g_core_1_1_kinematics_1_1_vect3_d" ]
     ] ],
     [ "Waveform.cs", "_waveform_8cs.html", "_waveform_8cs" ],
-    [ "WaveformStream.cs", "_waveform_stream_8cs.html", [
-      [ "WaveformStream", "class_s_g_core_1_1_haptics_1_1_waveform_stream.html", null ]
-    ] ]
+    [ "WaveformStream.cs", "_waveform_stream_8cs.html", null ]
 ];

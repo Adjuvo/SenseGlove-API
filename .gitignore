@@ -1,18 +1,10 @@
 #Gitignore for SenseGlove_API
 
-#don't need 200+ files just to show how SGConnect::Init() and SGConnect::Dispose() work
+#Don't need 200+ files just to show how SGConnect::Init() and SGConnect::Dispose() work
 Core/SGConnect/doc* 
 
-#ignore any session legs created by SenseCom during testing
+#ignore any session logs created by SenseCom during testing
 *sessionLog.txt
 
-#Builds from example projects
-Examples/*/.vs
-Examples/CsProject/SenseGloveCs/bin
-Examples/CsProject/SenseGloveCs/obj
-
-Examples/CppProject/x64
-Examples/CppProject/SenseGloveCpp/x64
-
-Examples/CppStandaloneProject/x64
-Examples/CppStandaloneProject/SenseGloveCpp/x64
+#bak files made using programs like Notepad++.
+*.bak

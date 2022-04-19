@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -118,9 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9439252707f5c4368495e6c24a14f26"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#ae9439252707f5c4368495e6c24a14f26">DistTo</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a> other)</td></tr>
 <tr class="memdesc:ae9439252707f5c4368495e6c24a14f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the distance between this Vector and another one.  <a href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#ae9439252707f5c4368495e6c24a14f26">More...</a><br /></td></tr>
 <tr class="separator:ae9439252707f5c4368495e6c24a14f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad22071c85dd31c7d6f77a910897e58aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#ad22071c85dd31c7d6f77a910897e58aa">Equals</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a> that)</td></tr>
-<tr class="memdesc:ad22071c85dd31c7d6f77a910897e58aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this Vector is roughly equal to another.  <a href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#ad22071c85dd31c7d6f77a910897e58aa">More...</a><br /></td></tr>
-<tr class="separator:ad22071c85dd31c7d6f77a910897e58aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acaacf9a66f60c35a8c2989c6c9b963"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a1acaacf9a66f60c35a8c2989c6c9b963">Equals</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a> that, float acceptableOffset=0.001f)</td></tr>
+<tr class="memdesc:a1acaacf9a66f60c35a8c2989c6c9b963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this Vector is roughly equal to another.  <a href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a1acaacf9a66f60c35a8c2989c6c9b963">More...</a><br /></td></tr>
+<tr class="separator:a1acaacf9a66f60c35a8c2989c6c9b963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b66ee281e3aae17c8f3974d56013c5e"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a9b66ee281e3aae17c8f3974d56013c5e">ToString</a> ()</td></tr>
 <tr class="memdesc:a9b66ee281e3aae17c8f3974d56013c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string representation of this Vector.  <a href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html#a9b66ee281e3aae17c8f3974d56013c5e">More...</a><br /></td></tr>
 <tr class="separator:a9b66ee281e3aae17c8f3974d56013c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,8 +464,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad22071c85dd31c7d6f77a910897e58aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad22071c85dd31c7d6f77a910897e58aa">&#9670;&nbsp;</a></span>Equals()</h2>
+<a id="a1acaacf9a66f60c35a8c2989c6c9b963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acaacf9a66f60c35a8c2989c6c9b963">&#9670;&nbsp;</a></span>Equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,8 +474,18 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">bool SGCore.Kinematics.Vect3D.Equals </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>&#160;</td>
-          <td class="paramname"><em>that</em></td><td>)</td>
+          <td class="paramname"><em>that</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>acceptableOffset</em> = <code>0.001f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -484,6 +494,7 @@ Static Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">that</td><td></td></tr>
+    <tr><td class="paramname">acceptableOffset</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -861,7 +872,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_vect3_d_8cs.html">Vect3D.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_vect3_d_8cs.html">Vect3D.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

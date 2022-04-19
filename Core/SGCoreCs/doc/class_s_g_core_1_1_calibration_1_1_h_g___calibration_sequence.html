@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -139,9 +139,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a004f775ecf3b2c2f8b6eb3ce02445c50"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a004f775ecf3b2c2f8b6eb3ce02445c50">GetHandPose</a> (bool rightHand, out <a class="el" href="class_s_g_core_1_1_hand_pose.html">SGCore.HandPose</a> currentPose)</td></tr>
 <tr class="memdesc:a004f775ecf3b2c2f8b6eb3ce02445c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a>; either the one we should be making, or what it would look like at the moment.  <a href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a004f775ecf3b2c2f8b6eb3ce02445c50">More...</a><br /></td></tr>
 <tr class="separator:a004f775ecf3b2c2f8b6eb3ce02445c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41322c28325eb3426be53be70b42f6a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#af41322c28325eb3426be53be70b42f6a">GetHandPose</a> (<a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html">SGCore.Kinematics.BasicHandModel</a> handDimensions, out <a class="el" href="class_s_g_core_1_1_hand_pose.html">SGCore.HandPose</a> currentPose)</td></tr>
+<tr class="memdesc:af41322c28325eb3426be53be70b42f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a handPose based on set hand dimensions.  <a href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#af41322c28325eb3426be53be70b42f6a">More...</a><br /></td></tr>
+<tr class="separator:af41322c28325eb3426be53be70b42f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d596ed87030f549178ebaecb3494ee4"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a3d596ed87030f549178ebaecb3494ee4">GetCurrentInstuction</a> (string nextStepKey=&quot;&quot;)</td></tr>
 <tr class="memdesc:a3d596ed87030f549178ebaecb3494ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve instructions on what to do during the current step.  <a href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a3d596ed87030f549178ebaecb3494ee4">More...</a><br /></td></tr>
 <tr class="separator:a3d596ed87030f549178ebaecb3494ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9698b6c349efe0fca60742310bbeb5"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#abb9698b6c349efe0fca60742310bbeb5">GetDebugInfo</a> ()</td></tr>
+<tr class="memdesc:abb9698b6c349efe0fca60742310bbeb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve debug information from the sequence  <a href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#abb9698b6c349efe0fca60742310bbeb5">More...</a><br /></td></tr>
+<tr class="separator:abb9698b6c349efe0fca60742310bbeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -503,8 +509,38 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="abb9698b6c349efe0fca60742310bbeb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9698b6c349efe0fca60742310bbeb5">&#9670;&nbsp;</a></span>GetDebugInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual string SGCore.Calibration.HG_CalibrationSequence.GetDebugInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve debug information from the sequence </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ac0fc143653ebe58f87eaa42c5cfd8feb">SGCore.Calibration.HG_QuickCalibration</a>.</p>
+
+</div>
+</div>
 <a id="a004f775ecf3b2c2f8b6eb3ce02445c50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a004f775ecf3b2c2f8b6eb3ce02445c50">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a004f775ecf3b2c2f8b6eb3ce02445c50">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +586,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="a4e49f1929b4f6a3be83f99a67db20469"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e49f1929b4f6a3be83f99a67db20469">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e49f1929b4f6a3be83f99a67db20469">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,6 +604,52 @@ Properties</h2></td></tr>
 <p>Returns the current <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a>; either the one we should be making, or what it would look like at the moment. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">currentPose</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="af41322c28325eb3426be53be70b42f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41322c28325eb3426be53be70b42f6a">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SGCore.Calibration.HG_CalibrationSequence.GetHandPose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html">SGCore.Kinematics.BasicHandModel</a>&#160;</td>
+          <td class="paramname"><em>handDimensions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_hand_pose.html">SGCore.HandPose</a>&#160;</td>
+          <td class="paramname"><em>currentPose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve a handPose based on set hand dimensions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handDimensions</td><td></td></tr>
     <tr><td class="paramname">currentPose</td><td></td></tr>
   </table>
   </dd>
@@ -893,7 +975,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_h_g___calibration_sequence_8cs.html">HG_CalibrationSequence.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_h_g___calibration_sequence_8cs.html">HG_CalibrationSequence.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

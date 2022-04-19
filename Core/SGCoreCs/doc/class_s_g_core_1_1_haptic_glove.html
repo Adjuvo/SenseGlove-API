@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('class_s_g_core_1_1_haptic_glove.html',
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_s_g_core_1_1_haptic_glove-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SGCore.HapticGlove Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -134,9 +135,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a20d3a2da0c289180290b85da4b7f4bd6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a20d3a2da0c289180290b85da4b7f4bd6">GetHandPose</a> (<a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html">BasicHandModel</a> handGeometry, <a class="el" href="class_s_g_core_1_1_hand_profile.html">HandProfile</a> handProfile, out <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a> handPose)</td></tr>
 <tr class="memdesc:a20d3a2da0c289180290b85da4b7f4bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the Hand Pose of this device, provided it has Hand <a class="el" href="class_s_g_core_1_1_tracking.html" title="Utility class containing tracking offset information">Tracking</a> available  <a href="class_s_g_core_1_1_haptic_glove.html#a20d3a2da0c289180290b85da4b7f4bd6">More...</a><br /></td></tr>
 <tr class="separator:a20d3a2da0c289180290b85da4b7f4bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2c9c9c8917f9120f29b98b229a0c8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a1a2c9c9c8917f9120f29b98b229a0c8a">GetHandPose</a> (<a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html">BasicHandModel</a> handGeometry, out <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a> handPose)</td></tr>
+<tr class="memdesc:a1a2c9c9c8917f9120f29b98b229a0c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the latest hand pose for a specific hand ggeometry, using the latest profile on disk.  <a href="class_s_g_core_1_1_haptic_glove.html#a1a2c9c9c8917f9120f29b98b229a0c8a">More...</a><br /></td></tr>
+<tr class="separator:a1a2c9c9c8917f9120f29b98b229a0c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae042301237843f66d3ec19ed07306a27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#ae042301237843f66d3ec19ed07306a27">GetHandPose</a> (out <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a> handPose)</td></tr>
+<tr class="memdesc:ae042301237843f66d3ec19ed07306a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retruns the latest handPose using a default HandGeometry and the latest profile stored on disk.  <a href="class_s_g_core_1_1_haptic_glove.html#ae042301237843f66d3ec19ed07306a27">More...</a><br /></td></tr>
+<tr class="separator:ae042301237843f66d3ec19ed07306a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedb83020d03afdd5d1e31b93fbf51622"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#aedb83020d03afdd5d1e31b93fbf51622">GetHandPose</a> (<a class="el" href="class_s_g_core_1_1_hand_profile.html">HandProfile</a> handProfile, out <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a> handPose)</td></tr>
 <tr class="memdesc:aedb83020d03afdd5d1e31b93fbf51622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the Hand Pose of this device, provided it has Hand <a class="el" href="class_s_g_core_1_1_tracking.html" title="Utility class containing tracking offset information">Tracking</a> available, using a default hand geometry.  <a href="class_s_g_core_1_1_haptic_glove.html#aedb83020d03afdd5d1e31b93fbf51622">More...</a><br /></td></tr>
 <tr class="separator:aedb83020d03afdd5d1e31b93fbf51622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995f1773469d39516f85c83c80899f0e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a995f1773469d39516f85c83c80899f0e">GetLastSentCmds</a> (out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> ffbLvls, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a> buzzLvls, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a> thumperLvls, bool fromIPC=false)</td></tr>
+<tr class="memdesc:a995f1773469d39516f85c83c80899f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the last commands sent to this glove.  <a href="class_s_g_core_1_1_haptic_glove.html#a995f1773469d39516f85c83c80899f0e">More...</a><br /></td></tr>
+<tr class="separator:a995f1773469d39516f85c83c80899f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b93a3745b41de1312c86e39cf763b02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a5b93a3745b41de1312c86e39cf763b02">StopHaptics</a> ()</td></tr>
 <tr class="memdesc:a5b93a3745b41de1312c86e39cf763b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops all Haptic effects if any are currently playing. Useful at the end of simulations or when resetting.  <a href="class_s_g_core_1_1_haptic_glove.html#a5b93a3745b41de1312c86e39cf763b02">More...</a><br /></td></tr>
 <tr class="separator:a5b93a3745b41de1312c86e39cf763b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adf62f756f54708dec45a670c3bb4e073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Haptic Commands to this Glove.  <a href="class_s_g_core_1_1_haptic_glove.html#adf62f756f54708dec45a670c3bb4e073">More...</a><br /></td></tr>
 <tr class="separator:adf62f756f54708dec45a670c3bb4e073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1faa43d64e07b753001437fb9b525a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a5d1faa43d64e07b753001437fb9b525a">SendHaptics</a> (<a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> ffb, <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a> buzz, <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a> thumper)</td></tr>
-<tr class="memdesc:a5d1faa43d64e07b753001437fb9b525a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Haptic Commands to this Glove.  <a href="class_s_g_core_1_1_haptic_glove.html#a5d1faa43d64e07b753001437fb9b525a">More...</a><br /></td></tr>
+<tr class="memdesc:a5d1faa43d64e07b753001437fb9b525a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Haptic Commands to this Glove. Updates Last Commands.  <a href="class_s_g_core_1_1_haptic_glove.html#a5d1faa43d64e07b753001437fb9b525a">More...</a><br /></td></tr>
 <tr class="separator:a5d1faa43d64e07b753001437fb9b525a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2be3a82461c60789844feaaab3a76082"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a2be3a82461c60789844feaaab3a76082">GetCalibrationValues</a> (out <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>[] values)</td></tr>
 <tr class="memdesc:a2be3a82461c60789844feaaab3a76082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve calibration values of this glove, as an array of size 5, containing x (roll), y (flexion), z (abduction) values.  <a href="class_s_g_core_1_1_haptic_glove.html#a2be3a82461c60789844feaaab3a76082">More...</a><br /></td></tr>
@@ -225,9 +235,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a093b26368cbca3923b6da40adc2ea3ca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_g_core_1_1_haptic_glove.html">HapticGlove</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a093b26368cbca3923b6da40adc2ea3ca">GetHapticGloves</a> ()</td></tr>
-<tr class="memdesc:a093b26368cbca3923b6da40adc2ea3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all Haptic Gloves connected to this system. They may or may not be connected  <a href="class_s_g_core_1_1_haptic_glove.html#a093b26368cbca3923b6da40adc2ea3ca">More...</a><br /></td></tr>
-<tr class="separator:a093b26368cbca3923b6da40adc2ea3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c57754d647cb88912508085f34b0dd8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_g_core_1_1_haptic_glove.html">HapticGlove</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a0c57754d647cb88912508085f34b0dd8">GetHapticGloves</a> (bool connectedOnly=true)</td></tr>
+<tr class="memdesc:a0c57754d647cb88912508085f34b0dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all Haptic Gloves connected to this system. They may or may not be connected  <a href="class_s_g_core_1_1_haptic_glove.html#a0c57754d647cb88912508085f34b0dd8">More...</a><br /></td></tr>
+<tr class="separator:a0c57754d647cb88912508085f34b0dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfe622c787bd24c8b55989eef0660454"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#acfe622c787bd24c8b55989eef0660454">GetGlove</a> (out <a class="el" href="class_s_g_core_1_1_haptic_glove.html">HapticGlove</a> glove)</td></tr>
 <tr class="memdesc:acfe622c787bd24c8b55989eef0660454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first Haptic Glove connected to this System  <a href="class_s_g_core_1_1_haptic_glove.html#acfe622c787bd24c8b55989eef0660454">More...</a><br /></td></tr>
 <tr class="separator:acfe622c787bd24c8b55989eef0660454"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,14 +247,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad1af0214220ee0a2689a3670e2cd5481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">Haptics.SG_FFBCmd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#ad1af0214220ee0a2689a3670e2cd5481">lastFFBCmd</a> = <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#afd172422ff36fff93793a133cba912c8">Haptics.SG_FFBCmd.Off</a></td></tr>
-<tr class="memdesc:ad1af0214220ee0a2689a3670e2cd5481"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last Force-Feedback command sent by this Sense Glove.  <a href="class_s_g_core_1_1_haptic_glove.html#ad1af0214220ee0a2689a3670e2cd5481">More...</a><br /></td></tr>
-<tr class="separator:ad1af0214220ee0a2689a3670e2cd5481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e74ece60ded6319a9e2391beaafecdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">Haptics.SG_BuzzCmd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a0e74ece60ded6319a9e2391beaafecdf">lastBuzzCmd</a> = <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a0e19f3b67c1e38c23d7ebc77492b7527">Haptics.SG_BuzzCmd.Off</a></td></tr>
-<tr class="memdesc:a0e74ece60ded6319a9e2391beaafecdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last Force-Feedback command sent by this Sense Glove.  <a href="class_s_g_core_1_1_haptic_glove.html#a0e74ece60ded6319a9e2391beaafecdf">More...</a><br /></td></tr>
-<tr class="separator:a0e74ece60ded6319a9e2391beaafecdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d04146e68efb5a9fafd3ad887650e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">Haptics.ThumperCmd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a6d04146e68efb5a9fafd3ad887650e48">lastThumper</a> = <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html#a56512d011c8322397d2cdc8640e7beaf">Haptics.ThumperCmd.Off</a></td></tr>
-<tr class="separator:a6d04146e68efb5a9fafd3ad887650e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad6c631b51643aa0343538c697216736"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#aad6c631b51643aa0343538c697216736">minValues</a> = null</td></tr>
 <tr class="memdesc:aad6c631b51643aa0343538c697216736"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum calibration values measured by this glove.  <a href="class_s_g_core_1_1_haptic_glove.html#aad6c631b51643aa0343538c697216736">More...</a><br /></td></tr>
 <tr class="separator:aad6c631b51643aa0343538c697216736"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +263,17 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab08286c343753e3f8ed38bd0bc7e7d0e inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_s_g_device.html#ab08286c343753e3f8ed38bd0bc7e7d0e">lastCmdID</a> = 0</td></tr>
 <tr class="memdesc:ab08286c343753e3f8ed38bd0bc7e7d0e inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to generate new cmd ids when sending special commands  <a href="class_s_g_core_1_1_s_g_device.html#ab08286c343753e3f8ed38bd0bc7e7d0e">More...</a><br /></td></tr>
 <tr class="separator:ab08286c343753e3f8ed38bd0bc7e7d0e inherit pro_attribs_class_s_g_core_1_1_s_g_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a84e73caa804bbc4fc5af6e967d5c68a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">Haptics.SG_FFBCmd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a84e73caa804bbc4fc5af6e967d5c68a4">LastFFBCmd</a><code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a84e73caa804bbc4fc5af6e967d5c68a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last Force-Feedback command sent by this Sense Glove.  <a href="class_s_g_core_1_1_haptic_glove.html#a84e73caa804bbc4fc5af6e967d5c68a4">More...</a><br /></td></tr>
+<tr class="separator:a84e73caa804bbc4fc5af6e967d5c68a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668e6f164e579d2c0acd414019fddec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">Haptics.SG_BuzzCmd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#a668e6f164e579d2c0acd414019fddec9">LastBuzzCmd</a><code> [get, protected set]</code></td></tr>
+<tr class="memdesc:a668e6f164e579d2c0acd414019fddec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last Force-Feedback command sent by this Sense Glove.  <a href="class_s_g_core_1_1_haptic_glove.html#a668e6f164e579d2c0acd414019fddec9">More...</a><br /></td></tr>
+<tr class="separator:a668e6f164e579d2c0acd414019fddec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d9b48afd7e311cab153607433deebb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">Haptics.ThumperCmd</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptic_glove.html#af8d9b48afd7e311cab153607433deebb">LastThumperCmd</a><code> [get, protected set]</code></td></tr>
+<tr class="separator:af8d9b48afd7e311cab153607433deebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -639,7 +652,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a20d3a2da0c289180290b85da4b7f4bd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20d3a2da0c289180290b85da4b7f4bd6">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d3a2da0c289180290b85da4b7f4bd6">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -693,8 +706,46 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a1a2c9c9c8917f9120f29b98b229a0c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2c9c9c8917f9120f29b98b229a0c8a">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SGCore.HapticGlove.GetHandPose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html">BasicHandModel</a>&#160;</td>
+          <td class="paramname"><em>handGeometry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a>&#160;</td>
+          <td class="paramname"><em>handPose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the latest hand pose for a specific hand ggeometry, using the latest profile on disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handGeometry</td><td></td></tr>
+    <tr><td class="paramname">handPose</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="aedb83020d03afdd5d1e31b93fbf51622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedb83020d03afdd5d1e31b93fbf51622">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb83020d03afdd5d1e31b93fbf51622">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,8 +790,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a093b26368cbca3923b6da40adc2ea3ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a093b26368cbca3923b6da40adc2ea3ca">&#9670;&nbsp;</a></span>GetHapticGloves()</h2>
+<a id="ae042301237843f66d3ec19ed07306a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae042301237843f66d3ec19ed07306a27">&#9670;&nbsp;</a></span>GetHandPose() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SGCore.HapticGlove.GetHandPose </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a>&#160;</td>
+          <td class="paramname"><em>handPose</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retruns the latest handPose using a default HandGeometry and the latest profile stored on disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handPose</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a0c57754d647cb88912508085f34b0dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c57754d647cb88912508085f34b0dd8">&#9670;&nbsp;</a></span>GetHapticGloves()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,7 +829,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="class_s_g_core_1_1_haptic_glove.html">HapticGlove</a> [] SGCore.HapticGlove.GetHapticGloves </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>connectedOnly</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -763,6 +842,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all Haptic Gloves connected to this system. They may or may not be connected </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectedOnly</td><td>If false, we'll return all haptic gloves ever detected during this session</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
@@ -833,6 +918,68 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a69eed5b5c0cbf0443fcf281d046f06b2">SGCore.SG.SenseGlove</a>, and <a class="el" href="class_s_g_core_1_1_nova_1_1_nova_glove.html#a6dbcaea3cbe13fa9911fa5ef625e5757">SGCore.Nova.NovaGlove</a>.</p>
+
+</div>
+</div>
+<a id="a995f1773469d39516f85c83c80899f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995f1773469d39516f85c83c80899f0e">&#9670;&nbsp;</a></span>GetLastSentCmds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SGCore.HapticGlove.GetLastSentCmds </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a>&#160;</td>
+          <td class="paramname"><em>ffbLvls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a>&#160;</td>
+          <td class="paramname"><em>buzzLvls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a>&#160;</td>
+          <td class="paramname"><em>thumperLvls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fromIPC</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve the last commands sent to this glove. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ffbLvls</td><td></td></tr>
+    <tr><td class="paramname">buzzLvls</td><td></td></tr>
+    <tr><td class="paramname">thumperLvls</td><td></td></tr>
+    <tr><td class="paramname">fromIPC</td><td>If true, we decode from IPC instead of what was sent to this glove.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#af75c76d375762131021578fcddcce09d">SGCore.SG.SenseGlove</a>, and <a class="el" href="class_s_g_core_1_1_nova_1_1_nova_glove.html#a81776c3c20fbb72a4a8c01bff646499c">SGCore.Nova.NovaGlove</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1296,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Send Haptic Commands to this Glove. </p>
+<p>Send Haptic Commands to this Glove. Updates Last Commands. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ffb</td><td></td></tr>
@@ -1341,78 +1488,6 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0e74ece60ded6319a9e2391beaafecdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e74ece60ded6319a9e2391beaafecdf">&#9670;&nbsp;</a></span>lastBuzzCmd</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">Haptics.SG_BuzzCmd</a> SGCore.HapticGlove.lastBuzzCmd = <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html#a0e19f3b67c1e38c23d7ebc77492b7527">Haptics.SG_BuzzCmd.Off</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The last Force-Feedback command sent by this Sense Glove. </p>
-
-</div>
-</div>
-<a id="ad1af0214220ee0a2689a3670e2cd5481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1af0214220ee0a2689a3670e2cd5481">&#9670;&nbsp;</a></span>lastFFBCmd</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">Haptics.SG_FFBCmd</a> SGCore.HapticGlove.lastFFBCmd = <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html#afd172422ff36fff93793a133cba912c8">Haptics.SG_FFBCmd.Off</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The last Force-Feedback command sent by this Sense Glove. </p>
-
-</div>
-</div>
-<a id="a6d04146e68efb5a9fafd3ad887650e48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d04146e68efb5a9fafd3ad887650e48">&#9670;&nbsp;</a></span>lastThumper</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">Haptics.ThumperCmd</a> SGCore.HapticGlove.lastThumper = <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html#a56512d011c8322397d2cdc8640e7beaf">Haptics.ThumperCmd.Off</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p></p>
-
-</div>
-</div>
 <a id="ac77d7fa63ef19e350234c85425325410"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac77d7fa63ef19e350234c85425325410">&#9670;&nbsp;</a></span>maxValues</h2>
 
@@ -1461,8 +1536,81 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a668e6f164e579d2c0acd414019fddec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668e6f164e579d2c0acd414019fddec9">&#9670;&nbsp;</a></span>LastBuzzCmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">Haptics.SG_BuzzCmd</a> SGCore.HapticGlove.LastBuzzCmd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The last Force-Feedback command sent by this Sense Glove. </p>
+
+</div>
+</div>
+<a id="a84e73caa804bbc4fc5af6e967d5c68a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e73caa804bbc4fc5af6e967d5c68a4">&#9670;&nbsp;</a></span>LastFFBCmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">Haptics.SG_FFBCmd</a> SGCore.HapticGlove.LastFFBCmd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The last Force-Feedback command sent by this Sense Glove. </p>
+
+</div>
+</div>
+<a id="af8d9b48afd7e311cab153607433deebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d9b48afd7e311cab153607433deebb">&#9670;&nbsp;</a></span>LastThumperCmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">Haptics.ThumperCmd</a> SGCore.HapticGlove.LastThumperCmd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_haptic_glove_8cs.html">HapticGlove.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_haptic_glove_8cs.html">HapticGlove.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

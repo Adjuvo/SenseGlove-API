@@ -1,6 +1,5 @@
 var _buzz_cmd_8cs =
 [
-    [ "BuzzCmd", "class_s_g_core_1_1_haptics_1_1_buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_buzz_cmd" ],
     [ "HapticLocation", "_buzz_cmd_8cs.html#a72b32860dd7144a9642ab7d904f778ac", [
       [ "Thumb", "_buzz_cmd_8cs.html#a72b32860dd7144a9642ab7d904f778aca8807c97721e343cdc1fa2444cc00415b", null ],
       [ "Index", "_buzz_cmd_8cs.html#a72b32860dd7144a9642ab7d904f778aca88fa71f0a6e0dfedbb46d91cc0b37a50", null ],

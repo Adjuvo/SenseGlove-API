@@ -56,6 +56,10 @@ var dir_7292f66b83ef5aa868f0f17c8a72f9bd =
     [ "HG_CalibrationSequence.h", "_h_g___calibration_sequence_8h.html", [
       [ "HG_CalibrationSequence", "class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html", "class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence" ]
     ] ],
+    [ "HG_HandProfiles.cpp", "_h_g___hand_profiles_8cpp.html", null ],
+    [ "HG_HandProfiles.h", "_h_g___hand_profiles_8h.html", [
+      [ "HG_HandProfiles", "class_s_g_core_1_1_h_g___hand_profiles.html", "class_s_g_core_1_1_h_g___hand_profiles" ]
+    ] ],
     [ "HG_HapticStream.cpp", "_h_g___haptic_stream_8cpp.html", null ],
     [ "HG_HapticStream.h", "_h_g___haptic_stream_8h.html", [
       [ "HG_HapticStream", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream" ]

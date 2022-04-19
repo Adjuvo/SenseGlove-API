@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -110,7 +110,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3d40f66733293e5619403eefa494a21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7178e7d2da106c6c8aaa16a15a38ff8b"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a7178e7d2da106c6c8aaa16a15a38ff8b">GetNormalizedFlexion</a> (bool clamp01=true)</td></tr>
 <tr class="separator:a7178e7d2da106c6c8aaa16a15a38ff8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc4d3aaf3511b2bdf00bb653acd0c5a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a7fc4d3aaf3511b2bdf00bb653acd0c5a">GetJointAngle</a> (<a class="el" href="namespace_s_g_core_1_1_kinematics.html#a7d2ec3c42ff68a631bc58e7286b76e95">Kinematics.FingerMovement</a> movement, <a class="el" href="namespace_s_g_core.html#a95e2adaecf48d22f17af133c5352a897">Finger</a> finger)</td></tr>
+<tr class="memdesc:a7fc4d3aaf3511b2bdf00bb653acd0c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a specific Joint Angle of a finger, in radians.  <a href="class_s_g_core_1_1_hand_pose.html#a7fc4d3aaf3511b2bdf00bb653acd0c5a">More...</a><br /></td></tr>
+<tr class="separator:a7fc4d3aaf3511b2bdf00bb653acd0c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b3bf84fc940f9ddb9e6be70f2f65dd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#af3b3bf84fc940f9ddb9e6be70f2f65dd">GetJointAngle</a> (<a class="el" href="namespace_s_g_core_1_1_kinematics.html#a7d2ec3c42ff68a631bc58e7286b76e95">Kinematics.FingerMovement</a> movement, int finger)</td></tr>
+<tr class="memdesc:af3b3bf84fc940f9ddb9e6be70f2f65dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a specific Joint Angle of a finger, in radians. This version is useful for iteration.  <a href="class_s_g_core_1_1_hand_pose.html#af3b3bf84fc940f9ddb9e6be70f2f65dd">More...</a><br /></td></tr>
+<tr class="separator:af3b3bf84fc940f9ddb9e6be70f2f65dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f8359c780fc9700407242a5fc94241"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#af9f8359c780fc9700407242a5fc94241">GetThumbAngle</a> (<a class="el" href="namespace_s_g_core_1_1_kinematics.html#ab53192db681a4ddf782f0f3d6f0d99b6">Kinematics.ThumbMovement</a> movement)</td></tr>
+<tr class="memdesc:af9f8359c780fc9700407242a5fc94241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a specific Joint Angle of the thumb, in radians  <a href="class_s_g_core_1_1_hand_pose.html#af9f8359c780fc9700407242a5fc94241">More...</a><br /></td></tr>
+<tr class="separator:af9f8359c780fc9700407242a5fc94241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a482368e0c50188a82ea9d85edb194265"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a482368e0c50188a82ea9d85edb194265">Serialize</a> ()</td></tr>
+<tr class="memdesc:a482368e0c50188a82ea9d85edb194265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string representation of this <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a> to store on disk. It can later be deserialized.  <a href="class_s_g_core_1_1_hand_pose.html#a482368e0c50188a82ea9d85edb194265">More...</a><br /></td></tr>
 <tr class="separator:a482368e0c50188a82ea9d85edb194265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b6f1408126a995fe40d51decb691f8"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a90b6f1408126a995fe40d51decb691f8">ToString</a> ()</td></tr>
 <tr class="memdesc:a90b6f1408126a995fe40d51decb691f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of this <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a>.  <a href="class_s_g_core_1_1_hand_pose.html#a90b6f1408126a995fe40d51decb691f8">More...</a><br /></td></tr>
@@ -118,7 +128,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a201119b4a27c24538e6f798312220325"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a201119b4a27c24538e6f798312220325">ToJointIndex</a> (<a class="el" href="namespace_s_g_core_1_1_kinematics.html#a7d2ec3c42ff68a631bc58e7286b76e95">Kinematics.FingerMovement</a> movement)</td></tr>
+<tr class="memdesc:a201119b4a27c24538e6f798312220325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check which joint index a particlar finger movement is linked to.  <a href="class_s_g_core_1_1_hand_pose.html#a201119b4a27c24538e6f798312220325">More...</a><br /></td></tr>
+<tr class="separator:a201119b4a27c24538e6f798312220325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5b29a5aa5dfcf7d560d76ce16019e1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a1e5b29a5aa5dfcf7d560d76ce16019e1">ToJointIndex</a> (<a class="el" href="namespace_s_g_core_1_1_kinematics.html#ab53192db681a4ddf782f0f3d6f0d99b6">Kinematics.ThumbMovement</a> movement)</td></tr>
+<tr class="memdesc:a1e5b29a5aa5dfcf7d560d76ce16019e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check which joint index a particlar thumb movement is linked to.  <a href="class_s_g_core_1_1_hand_pose.html#a1e5b29a5aa5dfcf7d560d76ce16019e1">More...</a><br /></td></tr>
+<tr class="separator:a1e5b29a5aa5dfcf7d560d76ce16019e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d1b9ccafad5c38aff7ec486cdedc234"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a5d1b9ccafad5c38aff7ec486cdedc234">Deserialize</a> (string serializedString)</td></tr>
+<tr class="memdesc:a5d1b9ccafad5c38aff7ec486cdedc234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a> back into its Class representation.  <a href="class_s_g_core_1_1_hand_pose.html#a5d1b9ccafad5c38aff7ec486cdedc234">More...</a><br /></td></tr>
 <tr class="separator:a5d1b9ccafad5c38aff7ec486cdedc234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c7e7f17f3b2e2fd9ea400eb729ee42c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_g_core_1_1_hand_pose.html">HandPose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_hand_pose.html#a9c7e7f17f3b2e2fd9ea400eb729ee42c">FromHandAngles</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>[][] <a class="el" href="class_s_g_core_1_1_hand_pose.html#a24cacdd607834ee1c592fca3e7505abe">handAngles</a>, bool rightHanded, <a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html">BasicHandModel</a> handDimensions=null)</td></tr>
 <tr class="memdesc:a9c7e7f17f3b2e2fd9ea400eb729ee42c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a> based on articulation angles (handAngles).  <a href="class_s_g_core_1_1_hand_pose.html#a9c7e7f17f3b2e2fd9ea400eb729ee42c">More...</a><br /></td></tr>
@@ -280,6 +297,15 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Unpack a <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a> back into its Class representation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedString</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -466,6 +492,75 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7fc4d3aaf3511b2bdf00bb653acd0c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc4d3aaf3511b2bdf00bb653acd0c5a">&#9670;&nbsp;</a></span>GetJointAngle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SGCore.HandPose.GetJointAngle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core_1_1_kinematics.html#a7d2ec3c42ff68a631bc58e7286b76e95">Kinematics.FingerMovement</a>&#160;</td>
+          <td class="paramname"><em>movement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core.html#a95e2adaecf48d22f17af133c5352a897">Finger</a>&#160;</td>
+          <td class="paramname"><em>finger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a specific Joint Angle of a finger, in radians. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">movement</td><td></td></tr>
+    <tr><td class="paramname">finger</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="af3b3bf84fc940f9ddb9e6be70f2f65dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b3bf84fc940f9ddb9e6be70f2f65dd">&#9670;&nbsp;</a></span>GetJointAngle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SGCore.HandPose.GetJointAngle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core_1_1_kinematics.html#a7d2ec3c42ff68a631bc58e7286b76e95">Kinematics.FingerMovement</a>&#160;</td>
+          <td class="paramname"><em>movement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>finger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a specific Joint Angle of a finger, in radians. This version is useful for iteration. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a7178e7d2da106c6c8aaa16a15a38ff8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7178e7d2da106c6c8aaa16a15a38ff8b">&#9670;&nbsp;</a></span>GetNormalizedFlexion() <span class="overload">[1/3]</span></h2>
 
@@ -556,6 +651,27 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af9f8359c780fc9700407242a5fc94241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f8359c780fc9700407242a5fc94241">&#9670;&nbsp;</a></span>GetThumbAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SGCore.HandPose.GetThumbAngle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core_1_1_kinematics.html#ab53192db681a4ddf782f0f3d6f0d99b6">Kinematics.ThumbMovement</a>&#160;</td>
+          <td class="paramname"><em>movement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a specific Joint Angle of the thumb, in radians </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a482368e0c50188a82ea9d85edb194265"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a482368e0c50188a82ea9d85edb194265">&#9670;&nbsp;</a></span>Serialize()</h2>
 
@@ -570,6 +686,9 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Create a string representation of this <a class="el" href="class_s_g_core_1_1_hand_pose.html" title="Contains all variables required to draw or analyze a virtual hand.">HandPose</a> to store on disk. It can later be deserialized. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -612,6 +731,76 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">rightHand</td><td></td></tr>
     <tr><td class="paramname">handDimensions</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a201119b4a27c24538e6f798312220325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201119b4a27c24538e6f798312220325">&#9670;&nbsp;</a></span>ToJointIndex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int SGCore.HandPose.ToJointIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core_1_1_kinematics.html#a7d2ec3c42ff68a631bc58e7286b76e95">Kinematics.FingerMovement</a>&#160;</td>
+          <td class="paramname"><em>movement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check which joint index a particlar finger movement is linked to. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">movement</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a1e5b29a5aa5dfcf7d560d76ce16019e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5b29a5aa5dfcf7d560d76ce16019e1">&#9670;&nbsp;</a></span>ToJointIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int SGCore.HandPose.ToJointIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core_1_1_kinematics.html#ab53192db681a4ddf782f0f3d6f0d99b6">Kinematics.ThumbMovement</a>&#160;</td>
+          <td class="paramname"><em>movement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check which joint index a particlar thumb movement is linked to. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">movement</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -704,7 +893,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_hand_pose_8cs.html">HandPose.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_hand_pose_8cs.html">HandPose.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -6,6 +6,8 @@ var class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration =
     [ "CompileRange", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#aa1c99b0b4b704ba418269d2b8859a673", null ],
     [ "ConfirmCurrentStep", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a4150009b9bdcc30e35bd7fac7190985e", null ],
     [ "GetCurrentInstuction", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ab8b409fd78ba14822c2e79cfbf1c2142", null ],
+    [ "GetDebugInfo", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ac0fc143653ebe58f87eaa42c5cfd8feb", null ],
+    [ "GetHandPose", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a5ec7af627b693489372cb29339584a1c", null ],
     [ "GetHandPose", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a87ceb4dceeb4e7b51a9583d6982d2458", null ],
     [ "Reset", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a6ff85697e8b17aea47e1fe9c5011719d", null ],
     [ "Update", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ab6d3221b0c9f373b19fe2c5df9be964a", null ],

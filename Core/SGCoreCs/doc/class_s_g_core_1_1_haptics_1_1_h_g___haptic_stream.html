@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -108,9 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ea50562bcdf4c4c32679b9e8f2232ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a7ea50562bcdf4c4c32679b9e8f2232ab">ClearVibrations</a> ()</td></tr>
 <tr class="memdesc:a7ea50562bcdf4c4c32679b9e8f2232ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all vibrations in the queue(s)  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a7ea50562bcdf4c4c32679b9e8f2232ab">More...</a><br /></td></tr>
 <tr class="separator:a7ea50562bcdf4c4c32679b9e8f2232ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed281f368778ceacdb91bc73a2d6be4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a8ed281f368778ceacdb91bc73a2d6be4">Clear</a> ()</td></tr>
-<tr class="memdesc:a8ed281f368778ceacdb91bc73a2d6be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all ongaoing effects to this stream.  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a8ed281f368778ceacdb91bc73a2d6be4">More...</a><br /></td></tr>
-<tr class="separator:a8ed281f368778ceacdb91bc73a2d6be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add320816cbdbbab7d0b535fb9c574651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#add320816cbdbbab7d0b535fb9c574651">ClearAll</a> ()</td></tr>
+<tr class="memdesc:add320816cbdbbab7d0b535fb9c574651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all ongaoing effects to this stream.  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#add320816cbdbbab7d0b535fb9c574651">More...</a><br /></td></tr>
+<tr class="separator:add320816cbdbbab7d0b535fb9c574651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141299757d98ee8221bb370de198cb7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a141299757d98ee8221bb370de198cb7e">AddCmd</a> (<a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> ffbCmd)</td></tr>
 <tr class="memdesc:a141299757d98ee8221bb370de198cb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new Force-Feedback command to the queue. Does not actually send it.  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a141299757d98ee8221bb370de198cb7e">More...</a><br /></td></tr>
 <tr class="separator:a141299757d98ee8221bb370de198cb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8267df7e3f58f7eff6d480a8526648a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#ad8267df7e3f58f7eff6d480a8526648a">FlushHaptics</a> (float dT_seconds, <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> lastBrakeLvl, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> ffbCmd, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a> buzzCmd, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a> thumperCmd)</td></tr>
 <tr class="memdesc:ad8267df7e3f58f7eff6d480a8526648a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile all commands in the queue(s) into a single set of commands that can be sent to the glove. Also updates &amp; clears all queues.  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#ad8267df7e3f58f7eff6d480a8526648a">More...</a><br /></td></tr>
 <tr class="separator:ad8267df7e3f58f7eff6d480a8526648a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1ef8258f02752b287b05d5ed6167bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a6c1ef8258f02752b287b05d5ed6167bb">FlushHaptics</a> (<a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> lastBrakeLvl, <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a> lastBuzzCmd, <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a> lastThumper, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> ffbCmd, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a> buzzCmd, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a> thumperCmd)</td></tr>
+<tr class="memdesc:a6c1ef8258f02752b287b05d5ed6167bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the Hapitcs, but only returns true if the new cmds are different from the last ones - meaning we should send new Cmds. Only clears the FFB queue  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a6c1ef8258f02752b287b05d5ed6167bb">More...</a><br /></td></tr>
+<tr class="separator:a6c1ef8258f02752b287b05d5ed6167bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c156587db8c5329db7c634d8e6dae78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a3c156587db8c5329db7c634d8e6dae78">FlushHaptics</a> (float dT_seconds, <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> lastBrakeLvl, <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a> lastBuzzCmd, <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a> lastThumper, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a> ffbCmd, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a> buzzCmd, out <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a> thumperCmd)</td></tr>
+<tr class="memdesc:a3c156587db8c5329db7c634d8e6dae78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the Hapitcs, but only returns true if the new cmds are different from the last ones - meaning we should send new Cmds. Also updates &amp; clears all queues.  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a3c156587db8c5329db7c634d8e6dae78">More...</a><br /></td></tr>
+<tr class="separator:a3c156587db8c5329db7c634d8e6dae78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -267,14 +273,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ed281f368778ceacdb91bc73a2d6be4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ed281f368778ceacdb91bc73a2d6be4">&#9670;&nbsp;</a></span>Clear()</h2>
+<a id="add320816cbdbbab7d0b535fb9c574651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add320816cbdbbab7d0b535fb9c574651">&#9670;&nbsp;</a></span>ClearAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SGCore.Haptics.HG_HapticStream.Clear </td>
+          <td class="memname">void SGCore.Haptics.HG_HapticStream.ClearAll </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -325,7 +331,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="ad8267df7e3f58f7eff6d480a8526648a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8267df7e3f58f7eff6d480a8526648a">&#9670;&nbsp;</a></span>FlushHaptics() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8267df7e3f58f7eff6d480a8526648a">&#9670;&nbsp;</a></span>FlushHaptics() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,8 +388,81 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c156587db8c5329db7c634d8e6dae78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c156587db8c5329db7c634d8e6dae78">&#9670;&nbsp;</a></span>FlushHaptics() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SGCore.Haptics.HG_HapticStream.FlushHaptics </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dT_seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a>&#160;</td>
+          <td class="paramname"><em>lastBrakeLvl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a>&#160;</td>
+          <td class="paramname"><em>lastBuzzCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a>&#160;</td>
+          <td class="paramname"><em>lastThumper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a>&#160;</td>
+          <td class="paramname"><em>ffbCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a>&#160;</td>
+          <td class="paramname"><em>buzzCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a>&#160;</td>
+          <td class="paramname"><em>thumperCmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flushes the Hapitcs, but only returns true if the new cmds are different from the last ones - meaning we should send new Cmds. Also updates &amp; clears all queues. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dT_seconds</td><td></td></tr>
+    <tr><td class="paramname">lastBrakeLvl</td><td></td></tr>
+    <tr><td class="paramname">lastBuzzCmd</td><td></td></tr>
+    <tr><td class="paramname">lastThumper</td><td></td></tr>
+    <tr><td class="paramname">ffbCmd</td><td></td></tr>
+    <tr><td class="paramname">buzzCmd</td><td></td></tr>
+    <tr><td class="paramname">thumperCmd</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a8c565df9bf3c593578111829dd7c094f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c565df9bf3c593578111829dd7c094f">&#9670;&nbsp;</a></span>FlushHaptics() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c565df9bf3c593578111829dd7c094f">&#9670;&nbsp;</a></span>FlushHaptics() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,6 +513,72 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">buzzCmd</td><td></td></tr>
     <tr><td class="paramname">thumperCmd</td><td></td></tr>
     <tr><td class="paramname">clearFFBqueue</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a6c1ef8258f02752b287b05d5ed6167bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1ef8258f02752b287b05d5ed6167bb">&#9670;&nbsp;</a></span>FlushHaptics() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SGCore.Haptics.HG_HapticStream.FlushHaptics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a>&#160;</td>
+          <td class="paramname"><em>lastBrakeLvl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a>&#160;</td>
+          <td class="paramname"><em>lastBuzzCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a>&#160;</td>
+          <td class="paramname"><em>lastThumper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html">SG_FFBCmd</a>&#160;</td>
+          <td class="paramname"><em>ffbCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html">SG_BuzzCmd</a>&#160;</td>
+          <td class="paramname"><em>buzzCmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a>&#160;</td>
+          <td class="paramname"><em>thumperCmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flushes the Hapitcs, but only returns true if the new cmds are different from the last ones - meaning we should send new Cmds. Only clears the FFB queue </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lastBrakeLvl</td><td></td></tr>
+    <tr><td class="paramname">lastBuzzCmd</td><td></td></tr>
+    <tr><td class="paramname">lastThumper</td><td></td></tr>
+    <tr><td class="paramname">ffbCmd</td><td></td></tr>
+    <tr><td class="paramname">buzzCmd</td><td></td></tr>
+    <tr><td class="paramname">thumperCmd</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -698,7 +843,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_h_g___haptic_stream_8cs.html">HG_HapticStream.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_h_g___haptic_stream_8cs.html">HG_HapticStream.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

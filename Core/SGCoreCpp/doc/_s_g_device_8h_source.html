@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SGCoreCpp: C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecpp/src/SGCoreCpp/SGDevice.h Source File</title>
+<title>SGCoreCpp: C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecpp/src/SGCoreCpp/SGDevice.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -187,12 +187,13 @@ $(document).ready(function(){initNavTree('_s_g_device_8h_source.html',''); initR
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> ParseFirmware(std::string rawFW, <span class="keywordtype">int</span>&amp; mainVer, <span class="keywordtype">int</span>&amp; subVer);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    };</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">static</span> std::string ToString(DeviceType device);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    };</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="ttc" id="a_device_types_8h_html"><div class="ttname"><a href="_device_types_8h.html">DeviceTypes.h</a></div></div>
 <div class="ttc" id="a_s_g_core_8h_html"><div class="ttname"><a href="_s_g_core_8h.html">SGCore.h</a></div></div>
 <div class="ttc" id="a_s_g_core_8h_html_ac1e278ec7c826471fd2b0f77b60b0165"><div class="ttname"><a href="_s_g_core_8h.html#ac1e278ec7c826471fd2b0f77b60b0165">SGCORE_API</a></div><div class="ttdeci">#define SGCORE_API</div><div class="ttdef"><b>Definition:</b> SGCore.h:30</div></div>
-<div class="ttc" id="aclass_s_g_core_1_1_s_g_device_html"><div class="ttname"><a href="class_s_g_core_1_1_s_g_device.html">SGCore::SGDevice</a></div><div class="ttdoc">A Sense Glove device that can send / recieve data via the SenseComm program.</div><div class="ttdef"><b>Definition:</b> SGDevice.h:18</div></div>
+<div class="ttc" id="aclass_s_g_core_1_1_s_g_device_html"><div class="ttname"><a href="class_s_g_core_1_1_s_g_device.html">SGCore::SGDevice</a></div><div class="ttdoc">A Sense Glove device that can send / recieve data via the SenseCom program.</div><div class="ttdef"><b>Definition:</b> SGDevice.h:18</div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_s_g_device_html_a06c81f43db343131992567c421d10ad7"><div class="ttname"><a href="class_s_g_core_1_1_s_g_device.html#a06c81f43db343131992567c421d10ad7">SGCore::SGDevice::ipcAddress</a></div><div class="ttdeci">std::string ipcAddress</div><div class="ttdoc">Address of this Device for inter-process communications.</div><div class="ttdef"><b>Definition:</b> SGDevice.h:29</div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_s_g_device_html_a34318d3acff4a03aa3bd79f5a3752637"><div class="ttname"><a href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637">SGCore::SGDevice::ConnectionType</a></div><div class="ttdeci">ConnectionType</div><div class="ttdoc">Connection type of this device, as detected by the SGConnect library.</div><div class="ttdef"><b>Definition:</b> SGDevice.h:38</div></div>
 <div class="ttc" id="aclass_s_g_core_1_1_s_g_device_html_a34318d3acff4a03aa3bd79f5a3752637a10ab24a29b3f33fafbb6f9c0b11c7d0c"><div class="ttname"><a href="class_s_g_core_1_1_s_g_device.html#a34318d3acff4a03aa3bd79f5a3752637a10ab24a29b3f33fafbb6f9c0b11c7d0c">SGCore::SGDevice::BluetoothSerial</a></div><div class="ttdeci">@ BluetoothSerial</div><div class="ttdoc">A bluetooth connection that creates up to two Serial Ports.</div><div class="ttdef"><b>Definition:</b> SGDevice.h:44</div></div>

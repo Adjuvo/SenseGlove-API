@@ -36,6 +36,7 @@ var namespace_s_g_core =
     [ "HandPose", "class_s_g_core_1_1_hand_pose.html", "class_s_g_core_1_1_hand_pose" ],
     [ "HandProfile", "class_s_g_core_1_1_hand_profile.html", "class_s_g_core_1_1_hand_profile" ],
     [ "HapticGlove", "class_s_g_core_1_1_haptic_glove.html", "class_s_g_core_1_1_haptic_glove" ],
+    [ "HG_HandProfiles", "class_s_g_core_1_1_h_g___hand_profiles.html", "class_s_g_core_1_1_h_g___hand_profiles" ],
     [ "Library", "class_s_g_core_1_1_library.html", "class_s_g_core_1_1_library" ],
     [ "SenseCom", "class_s_g_core_1_1_sense_com.html", "class_s_g_core_1_1_sense_com" ],
     [ "SGDevice", "class_s_g_core_1_1_s_g_device.html", "class_s_g_core_1_1_s_g_device" ],

@@ -8,6 +8,7 @@ int main()
 	std::cout << "Testing " << SGConnect::GetLibraryVersion() << std::endl;
 	std::cout << "=========================================" << std::endl;
 
+	SGConnect::SetDebugLevel(0);
 	bool scanActive = SGConnect::ScanningActive();
 	if (!scanActive)
 	{

@@ -24,6 +24,8 @@ namespace SGCore
         Quest2Controller,
         /// <summary> Pico Neo 2 Controller(s) </summary>
         PicoNeo2,
+        /// <summary> Pico Neo 3 Controller(s) </summary>
+        PicoNeo3,
     };
 
 	class SGCORE_API Tracking
@@ -134,5 +136,7 @@ namespace SGCore
         /// <param name="rotOffset"></param>
         static void GetNovaOffset_Tracker_Glove(PosTrackingHardware hardware, bool rightHand, Kinematics::Vect3D& posOffset, Kinematics::Quat& rotOffset);
 
+
+        static std::string ToString(PosTrackingHardware hardware);
 	};
 }

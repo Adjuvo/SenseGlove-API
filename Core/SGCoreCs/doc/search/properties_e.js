@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['parsedvalues_1302',['ParsedValues',['../class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#ab3810ff93df00613f632e6416faa7604',1,'SGCore.Nova.Nova_SensorData.ParsedValues()'],['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#a02691e6253782aad142ed6a8c3b9b40a',1,'SGCore.SG.SG_SensorData.ParsedValues()']]],
-  ['pingtime_5fms_1303',['pingTime_ms',['../class_s_g_core_1_1_util_1_1_u_d_p_receiver.html#a0ef1153c4eaad4ecd283da8690b345d7',1,'SGCore::Util::UDPReceiver']]],
-  ['pinkyforce_1304',['PinkyForce',['../class_s_g_core_1_1_haptics_1_1_finger_forces.html#a0cf52e8a7e09895842408e9c2cadbca3',1,'SGCore::Haptics::FingerForces']]],
-  ['pinkylvl_1305',['PinkyLvl',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a12c9d05647bb4381805c411d785f8b74',1,'SGCore::Haptics::SG_FingerCmd']]],
-  ['port_1306',['Port',['../class_s_g_core_1_1_util_1_1_u_d_p_socket.html#a48f69c47f248d515ee9771815d370458',1,'SGCore::Util::UDPSocket']]],
-  ['profiledirectory_1307',['ProfileDirectory',['../class_s_g_core_1_1_h_g___hand_profiles.html#adb75fca47d904bc597c21119ae2da971',1,'SGCore::HG_HandProfiles']]]
+  ['range_1186',['Range',['../class_s_g_core_1_1_calibration_1_1_sensor_range.html#adc144e4cd42e729f83a46742537f0d0e',1,'SGCore::Calibration::SensorRange']]],
+  ['reachedconclusion_1187',['ReachedConclusion',['../class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a7a4376e21d96c4499e0f3ab2239d27cd',1,'SGCore::Calibration::HG_CalCheck']]],
+  ['righthandprofile_1188',['RightHandProfile',['../class_s_g_core_1_1_h_g___hand_profiles.html#a1d5ffa3162027b5c0646ac07f459fede',1,'SGCore::HG_HandProfiles']]],
+  ['ringlvl_1189',['RingLvl',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a7e1dc62e0df96df342e95876e21f4d80',1,'SGCore::Haptics::SG_FingerCmd']]]
 ];

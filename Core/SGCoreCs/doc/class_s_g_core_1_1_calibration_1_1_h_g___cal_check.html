@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -125,6 +125,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a49ca94af32b2e0b5167a1176b63be835"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a49ca94af32b2e0b5167a1176b63be835">MatchesLast</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>[] <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a09e19c546971dc795f35064adb1365d5">currentRange</a>, <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>[] <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a3ed56a6dc49f066f9c080cadcf94124e">lastRange</a>, <a class="el" href="namespace_s_g_core.html#a2edb79e25cc919b7d63cf0cf33b039e2">SGCore.DeviceType</a> type)</td></tr>
 <tr class="memdesc:a49ca94af32b2e0b5167a1176b63be835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current sensor values have moved roughly as much as last time.  <a href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a49ca94af32b2e0b5167a1176b63be835">More...</a><br /></td></tr>
 <tr class="separator:a49ca94af32b2e0b5167a1176b63be835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71a9ed957e6f7c894e4982e64a7678f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#aa71a9ed957e6f7c894e4982e64a7678f">GetDebugString</a> (<a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>[] <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#a09e19c546971dc795f35064adb1365d5">currentRange</a>, <a class="el" href="namespace_s_g_core.html#a2edb79e25cc919b7d63cf0cf33b039e2">SGCore.DeviceType</a> type)</td></tr>
+<tr class="memdesc:aa71a9ed957e6f7c894e4982e64a7678f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string value informing me which fingers still need to move. Move Thumb, Index, Middle, Ring, Pinky etc.  <a href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#aa71a9ed957e6f7c894e4982e64a7678f">More...</a><br /></td></tr>
+<tr class="separator:aa71a9ed957e6f7c894e4982e64a7678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -257,6 +260,52 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa71a9ed957e6f7c894e4982e64a7678f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71a9ed957e6f7c894e4982e64a7678f">&#9670;&nbsp;</a></span>GetDebugString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string SGCore.Calibration.HG_CalCheck.GetDebugString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s_g_core_1_1_kinematics_1_1_vect3_d.html">Vect3D</a>[]&#160;</td>
+          <td class="paramname"><em>currentRange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_s_g_core.html#a2edb79e25cc919b7d63cf0cf33b039e2">SGCore.DeviceType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a string value informing me which fingers still need to move. Move Thumb, Index, Middle, Ring, Pinky etc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentRange</td><td></td></tr>
+    <tr><td class="paramname">type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -805,7 +854,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_h_g___cal_check_8cs.html">HG_CalCheck.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_h_g___cal_check_8cs.html">HG_CalCheck.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

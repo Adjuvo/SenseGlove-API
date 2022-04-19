@@ -13,7 +13,7 @@
 
 namespace SGCore
 {
-	/// <summary> A Sense Glove device that can send / recieve data via the SenseComm program. </summary>
+	/// <summary> A Sense Glove device that can send / recieve data via the SenseCom program. </summary>
 	class SGCORE_API SGDevice
 	{
 
@@ -22,7 +22,7 @@ namespace SGCore
 		//--------------------------------------------------------------------------------------
 		// Properties
 
-		/// <summary> The index of this device inside the SenseComm program. Used to access shared memory. </summary>
+		/// <summary> The index of this device inside the SenseCom program. Used to access shared memory. </summary>
 		int deviceIndex = -1;
 
 		/// <summary> Address of this Device for inter-process communications. </summary>
@@ -95,10 +95,10 @@ namespace SGCore
 		/// <summary> Retrieve the device's Packets per Second Variable </summary>
 		int PacketsPerSecondSent();
 
-		/// <summary> Retrieve the index of this device within SenseComm. </summary>
+		/// <summary> Retrieve the index of this device within SenseCom. </summary>
 		int GetDeviceIndex();
 
-		/// <summary> Change this device's index within the SenseComm. Warning: Can cause errors. </summary>
+		/// <summary> Change this device's index within the SenseCom. Warning: Can cause errors. </summary>
 		void SetDeviceIndex(int newIndex);
 
 
@@ -130,5 +130,6 @@ namespace SGCore
 		/// <summary> Parse a main and sub firmware version from its raw (v4.12) notation </summary>
 		static void ParseFirmware(std::string rawFW, int& mainVer, int& subVer);
 
+		static std::string ToString(DeviceType device);
 	};
 }

@@ -27,6 +27,7 @@ var class_s_g_core_1_1_s_g_device =
     [ "ParseFirmware", "class_s_g_core_1_1_s_g_device.html#a4e29caa208e695895ad26e920456d2b1", null ],
     [ "SetDeviceIndex", "class_s_g_core_1_1_s_g_device.html#ab0239d98990eafe37fcbd5ae984aed9b", null ],
     [ "ToString", "class_s_g_core_1_1_s_g_device.html#a38fe41fbf9e8f124081e0c28578538f9", null ],
+    [ "ToString", "class_s_g_core_1_1_s_g_device.html#a9ad700483104fdfb481616712c9c2ebe", null ],
     [ "deviceIndex", "class_s_g_core_1_1_s_g_device.html#a0d10613b00492e244a680c99b64ce5b4", null ],
     [ "ipcAddress", "class_s_g_core_1_1_s_g_device.html#a06c81f43db343131992567c421d10ad7", null ]
 ];

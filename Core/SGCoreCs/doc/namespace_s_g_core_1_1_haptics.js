@@ -1,19 +1,13 @@
 var namespace_s_g_core_1_1_haptics =
 [
-    [ "BuzzCmd", "class_s_g_core_1_1_haptics_1_1_buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_buzz_cmd" ],
-    [ "BuzzStream", "class_s_g_core_1_1_haptics_1_1_buzz_stream.html", "class_s_g_core_1_1_haptics_1_1_buzz_stream" ],
-    [ "FFBStream", "class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html", "class_s_g_core_1_1_haptics_1_1_f_f_b_stream" ],
-    [ "FingerForces", "class_s_g_core_1_1_haptics_1_1_finger_forces.html", "class_s_g_core_1_1_haptics_1_1_finger_forces" ],
     [ "HG_HapticStream", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream" ],
-    [ "PatternBuzzCmd", "class_s_g_core_1_1_haptics_1_1_pattern_buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_pattern_buzz_cmd" ],
+    [ "Nova_Thresholds", "class_s_g_core_1_1_haptics_1_1_nova___thresholds.html", null ],
     [ "SG_BuzzCmd", "class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd" ],
     [ "SG_FFBCmd", "class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd" ],
     [ "SG_FingerCmd", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd" ],
     [ "SG_TimedBuzzCmd", "class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd" ],
     [ "ThumperCmd", "class_s_g_core_1_1_haptics_1_1_thumper_cmd.html", "class_s_g_core_1_1_haptics_1_1_thumper_cmd" ],
     [ "TimedThumpCmd", "class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html", "class_s_g_core_1_1_haptics_1_1_timed_thump_cmd" ],
-    [ "Waveform", "class_s_g_core_1_1_haptics_1_1_waveform.html", "class_s_g_core_1_1_haptics_1_1_waveform" ],
-    [ "WaveformStream", "class_s_g_core_1_1_haptics_1_1_waveform_stream.html", null ],
     [ "HapticLocation", "namespace_s_g_core_1_1_haptics.html#a72b32860dd7144a9642ab7d904f778ac", [
       [ "Thumb", "namespace_s_g_core_1_1_haptics.html#a72b32860dd7144a9642ab7d904f778aca8807c97721e343cdc1fa2444cc00415b", null ],
       [ "Index", "namespace_s_g_core_1_1_haptics.html#a72b32860dd7144a9642ab7d904f778aca88fa71f0a6e0dfedbb46d91cc0b37a50", null ],

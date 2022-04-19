@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['sensorangles_1314',['SensorAngles',['../class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html#a1d27747e0a65b0208c5f64885f71efb1',1,'SGCore::SG::SG_SensorData']]],
-  ['sensorvalues_1315',['SensorValues',['../class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#ac311786b1c4ae71aaa609bb8edb09a2c',1,'SGCore::Nova::Nova_SensorData']]],
-  ['shouldsend_1316',['ShouldSend',['../class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html#ac7fcea64299e116703bece62230af7ba',1,'SGCore::Haptics::FFBStream']]],
-  ['startjointpositions_1317',['StartJointPositions',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#aa65133085690120ea3e6aa0ee6349b8e',1,'SGCore::Kinematics::BasicHandModel']]],
-  ['startjointrotations_1318',['StartJointRotations',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a8a7e9614a232bfa891cd5d5f15d18861',1,'SGCore::Kinematics::BasicHandModel']]],
-  ['startpositions_1319',['StartPositions',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a3ae7e9fb81bb9e431945f6e2a2e9ec98',1,'SGCore::SG::SG_GloveInfo']]],
-  ['startrotations_1320',['StartRotations',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html#a55fcd19378bd59ad3caa6e56511f7f9b',1,'SGCore::SG::SG_GloveInfo']]],
-  ['subfirmwarever_1321',['SubFirmwareVer',['../class_s_g_core_1_1_device_model.html#a9c841c51861dbc0a24ae6ba7de903a35',1,'SGCore::DeviceModel']]],
-  ['sustaintime_1322',['SustainTime',['../class_s_g_core_1_1_haptics_1_1_waveform.html#a454f0a4cc7520fffab637198d9ac72f5',1,'SGCore::Haptics::Waveform']]]
+  ['thimblepositions_1197',['ThimblePositions',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#af234725453bfa10f5016b2b598e71b98',1,'SGCore::SG::SG_GlovePose']]],
+  ['thimblerotations_1198',['ThimbleRotations',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#ab55461551a49e40cd3af0fa23455b253',1,'SGCore::SG::SG_GlovePose']]],
+  ['thumblvl_1199',['ThumbLvl',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a613761a2ce54673995c21482bd6d9493',1,'SGCore::Haptics::SG_FingerCmd']]],
+  ['thumbsolver_1200',['ThumbSolver',['../class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html#a3793fb9f39fb7e7138552731a39edbfa',1,'SGCore::SG::SG_HandProfile']]],
+  ['totalgloveangles_1201',['TotalGloveAngles',['../class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a3b724db53bf551a8da227f9525465f04',1,'SGCore::SG::SG_GlovePose']]],
+  ['totallengths_1202',['TotalLengths',['../class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a4038a22a2cc7bb69ce0718853ccde509',1,'SGCore::Kinematics::BasicHandModel']]]
 ];

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -136,6 +136,13 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getData
 : <a class="el" href="class_s_g_core_1_1_util_1_1_u_d_p_receiver.html#adf2b2fbead12db3997749602e7014fc5">SGCore.Util.UDPReceiver</a>
 </li>
+<li>GetDebugInfo()
+: <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#abb9698b6c349efe0fca60742310bbeb5">SGCore.Calibration.HG_CalibrationSequence</a>
+, <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#ac0fc143653ebe58f87eaa42c5cfd8feb">SGCore.Calibration.HG_QuickCalibration</a>
+</li>
+<li>GetDebugString()
+: <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___cal_check.html#aa71a9ed957e6f7c894e4982e64a7678f">SGCore.Calibration.HG_CalCheck</a>
+</li>
 <li>GetDeviceID()
 : <a class="el" href="class_s_g_core_1_1_beta_device.html#ae3f0f8cc9954b99672a4f36427124697">SGCore.BetaDevice</a>
 , <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a38f0ccadf945ca63b5cfbe305c15eebc">SGCore.HapticGlove</a>
@@ -189,14 +196,14 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a3359f85ece6adb08286ee80c7df08ca0">SGCore.SG.SenseGlove</a>
 </li>
 <li>GetHandPose()
-: <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a4e49f1929b4f6a3be83f99a67db20469">SGCore.Calibration.HG_CalibrationSequence</a>
+: <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#af41322c28325eb3426be53be70b42f6a">SGCore.Calibration.HG_CalibrationSequence</a>
 , <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a87ceb4dceeb4e7b51a9583d6982d2458">SGCore.Calibration.HG_QuickCalibration</a>
 , <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a20d3a2da0c289180290b85da4b7f4bd6">SGCore.HapticGlove</a>
 , <a class="el" href="class_s_g_core_1_1_nova_1_1_nova_glove.html#a584b464324998eec7ff1648bf89cf675">SGCore.Nova.NovaGlove</a>
 , <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a65809a97ee76218b03f13ce20f50fa6c">SGCore.SG.SenseGlove</a>
 </li>
 <li>GetHapticGloves()
-: <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a093b26368cbca3923b6da40adc2ea3ca">SGCore.HapticGlove</a>
+: <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a0c57754d647cb88912508085f34b0dd8">SGCore.HapticGlove</a>
 </li>
 <li>GetHardwareVersion()
 : <a class="el" href="class_s_g_core_1_1_beta_device.html#a037feba20e9b3dfab48b4d747da3a739">SGCore.BetaDevice</a>
@@ -213,6 +220,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="class_s_g_core_1_1_nova_1_1_nova_glove.html#a6dbcaea3cbe13fa9911fa5ef625e5757">SGCore.Nova.NovaGlove</a>
 , <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a69eed5b5c0cbf0443fcf281d046f06b2">SGCore.SG.SenseGlove</a>
 </li>
+<li>GetJointAngle()
+: <a class="el" href="class_s_g_core_1_1_hand_pose.html#a7fc4d3aaf3511b2bdf00bb653acd0c5a">SGCore.HandPose</a>
+</li>
 <li>GetJointPosition()
 : <a class="el" href="class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html#a423253d406e2a354d2efc413fb315f44">SGCore.Kinematics.BasicHandModel</a>
 </li>
@@ -221,6 +231,11 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetLastCmd()
 : <a class="el" href="class_s_g_core_1_1_beta_device.html#a5ec8cceb9c447f3f03d056e933557770">SGCore.BetaDevice</a>
+</li>
+<li>GetLastSentCmds()
+: <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a995f1773469d39516f85c83c80899f0e">SGCore.HapticGlove</a>
+, <a class="el" href="class_s_g_core_1_1_nova_1_1_nova_glove.html#a81776c3c20fbb72a4a8c01bff646499c">SGCore.Nova.NovaGlove</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#af75c76d375762131021578fcddcce09d">SGCore.SG.SenseGlove</a>
 </li>
 <li>GetLatestProfile()
 : <a class="el" href="class_s_g_core_1_1_hand_profile.html#addb4b33bdbff1f7576b56b4b5a0365a1">SGCore.HandProfile</a>
@@ -278,6 +293,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="class_s_g_core_1_1_nova_1_1_nova_glove.html#ab93aa1f0c11dbe66337965d42b725d49">SGCore.Nova.NovaGlove</a>
 , <a class="el" href="class_s_g_core_1_1_s_g_1_1_sense_glove.html#a926947b717fdf7eb989caefd08fd3d91">SGCore.SG.SenseGlove</a>
 , <a class="el" href="class_s_g_core_1_1_s_g_device.html#a6d6dacea3063c2d175bee66c4c79df66">SGCore.SGDevice</a>
+</li>
+<li>GetThumbAngle()
+: <a class="el" href="class_s_g_core_1_1_hand_pose.html#af9f8359c780fc9700407242a5fc94241">SGCore.HandPose</a>
 </li>
 <li>GetWristLocation()
 : <a class="el" href="class_s_g_core_1_1_haptic_glove.html#a2335a32797b7ec31a551b60ea44302fe">SGCore.HapticGlove</a>

@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------------
-// Interface for SenseComm, allows the retrieval of Devices and Data, but only as
+// Interface for SenseCom, allows the retrieval of Devices and Data, but only as
 // @author: Max Lammers
 // ----------------------------------------------------------------------------------
 
@@ -15,7 +15,7 @@
 
 namespace SGCore
 {
-	/// <summary> Interface for SenseComm, allows the retrieval of Devices and Data. </summary>
+	/// <summary> Interface for SenseCom, allows the retrieval of Devices and Data. </summary>
 	class DeviceList
 	{
 
@@ -24,7 +24,7 @@ namespace SGCore
 		//--------------------------------------------------------------------------------------
 		// Properties
 
-		///<summary> A list of all devices that have been detected via the SenseComm executable. </summary>
+		///<summary> A list of all devices that have been detected via the SenseCom executable. </summary>
 		static std::vector< std::shared_ptr<SGDevice> > devices; //TODO: Make this a singleton?
 
 
@@ -33,7 +33,7 @@ namespace SGCore
 		//--------------------------------------------------------------------------------------
 		// Internal Methods
 
-		/// <summary> Check the IPC for new data, and add any new devices to our list. Returns -1 if SenseComm is not running. </summary>
+		/// <summary> Check the IPC for new data, and add any new devices to our list. Returns -1 if SenseCom is not running. </summary>
 		/// <remarks> Should be called whenever any GetDevices functions is called. </remarks>
 		static int CheckDevices();
 
@@ -50,11 +50,11 @@ namespace SGCore
 		//--------------------------------------------------------------------------------------
 		// Accessors
 
-		///<summary> Retrieve the number of devices that have been detected by the SenseComm executable. </summary>
+		///<summary> Retrieve the number of devices that have been detected by the SenseCom executable. </summary>
 		static SGCORE_API int ActiveDevices();
 
-		/// <summary> Returns true if the SenseComm program is running. </summary>
-		static SGCORE_API bool SenseCommRunning();
+		/// <summary> Returns true if the SenseCom program is running. </summary>
+		static SGCORE_API bool SenseComRunning();
 
 		/// <summary> Clear the device list, and block any further attempt to add to it untill ReInitialize is called. </summary>
 		/// <remarks> Useful if your IDE has troubles unloading dlls (cough, Unity, Cough). </remarks>

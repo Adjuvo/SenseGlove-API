@@ -102,6 +102,17 @@ namespace SGCore
             return GetHandPose(handGeometry, handProfile, handPose);
         }
 
+        /// <summary> Retrieve a HandPose based on the latest profile, but with a specific hand geometry. </summary>
+        /// <param name="handGeometry"></param>
+        /// <param name="handPose"></param>
+        /// <returns></returns>
+        virtual bool GetHandPose(Kinematics::BasicHandModel& handGeometry, HandPose& handPose);
+
+        /// <summary> Retrieve a HandPose based on the latest profile and default hand Gemoetry. </summary>
+        /// <param name="handGeometry"></param>
+        /// <param name="handPose"></param>
+        /// <returns></returns>
+        virtual bool GetHandPose(HandPose& handPose);
 
         //--------------------------------------------------------------------------------------
         // Haptics Methods.
@@ -110,6 +121,11 @@ namespace SGCore
         virtual void StopHaptics()
         {
             SendHaptics(Haptics::SG_FFBCmd::off, Haptics::SG_BuzzCmd::off, Haptics::ThumperCmd::off);
+        }
+
+        virtual void StopVibrations()
+        {
+            SendHaptics(this->lastFFBCmd, SGCore::Haptics::SG_BuzzCmd::off, SGCore::Haptics::ThumperCmd::off);
         }
 
         //other -generic- force-feedback methods (?)

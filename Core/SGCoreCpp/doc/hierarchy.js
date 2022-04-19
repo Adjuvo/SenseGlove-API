@@ -15,6 +15,7 @@ var hierarchy =
     [ "SGCore::Calibration::HG_CalibrationSequence", "class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html", [
       [ "SGCore::Calibration::HG_QuickCalibration", "class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html", null ]
     ] ],
+    [ "SGCore::HG_HandProfiles", "class_s_g_core_1_1_h_g___hand_profiles.html", null ],
     [ "SGCore::Haptics::HG_HapticStream", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html", null ],
     [ "SGCore::Kinematics::InterpolationSet", "class_s_g_core_1_1_kinematics_1_1_interpolation_set.html", null ],
     [ "SGCore::Kinematics::JointKinematics", "class_s_g_core_1_1_kinematics_1_1_joint_kinematics.html", null ],

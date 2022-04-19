@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="SGRoundScaled.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SGCoreCs
-   &#160;<span id="projectnumber">v1.2.1</span>
+   &#160;<span id="projectnumber">v1.3.1</span>
    </div>
    <div id="projectbrief">SenseGlove C# API</div>
   </td>
@@ -103,10 +103,9 @@ Inheritance diagram for SGCore.Haptics.SG_FingerCmd:</div>
  <div class="center">
   <img src="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.png" usemap="#SGCore.Haptics.SG_5FFingerCmd_map" alt=""/>
   <map id="SGCore.Haptics.SG_5FFingerCmd_map" name="SGCore.Haptics.SG_5FFingerCmd_map">
-<area href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html" title="A vibration command for the Sense Glove, with levels for each finger." alt="SGCore.Haptics.SG_BuzzCmd" shape="rect" coords="113,56,329,80"/>
-<area href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html" title="A Force-Feedback command for the Sense Glove, with levels for each finger." alt="SGCore.Haptics.SG_FFBCmd" shape="rect" coords="339,56,555,80"/>
-<area href="class_s_g_core_1_1_haptics_1_1_pattern_buzz_cmd.html" alt="SGCore.Haptics.PatternBuzzCmd" shape="rect" coords="0,112,216,136"/>
-<area href="class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html" title="Buzz motor commands that is meant to stop after a few miliseconds." alt="SGCore.Haptics.SG_TimedBuzzCmd" shape="rect" coords="226,112,442,136"/>
+<area href="class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html" title="A vibration command for the Sense Glove, with levels for each finger." alt="SGCore.Haptics.SG_BuzzCmd" shape="rect" coords="0,56,216,80"/>
+<area href="class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html" title="A Force-Feedback command for the Sense Glove, with levels for each finger." alt="SGCore.Haptics.SG_FFBCmd" shape="rect" coords="226,56,442,80"/>
+<area href="class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html" title="Buzz motor commands that is meant to stop after a few miliseconds." alt="SGCore.Haptics.SG_TimedBuzzCmd" shape="rect" coords="0,112,216,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -121,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9a19c38d0faa0b072a392bdd92fc917"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#ab9a19c38d0faa0b072a392bdd92fc917">Equals</a> (<a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html">SG_FingerCmd</a> item)</td></tr>
 <tr class="memdesc:ab9a19c38d0faa0b072a392bdd92fc917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this command contains the same values as another.  <a href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#ab9a19c38d0faa0b072a392bdd92fc917">More...</a><br /></td></tr>
 <tr class="separator:ab9a19c38d0faa0b072a392bdd92fc917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9899f7a3185dc854755d3d32fc6cd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#aab9899f7a3185dc854755d3d32fc6cd2">SameLevels</a> (<a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html">SG_FingerCmd</a> item)</td></tr>
+<tr class="memdesc:aab9899f7a3185dc854755d3d32fc6cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-overridebale function that checks specifically for FFB levels.  <a href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#aab9899f7a3185dc854755d3d32fc6cd2">More...</a><br /></td></tr>
+<tr class="separator:aab9899f7a3185dc854755d3d32fc6cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816c17a3b6e9978d48d251f3a6e3d65c"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a816c17a3b6e9978d48d251f3a6e3d65c">ToString</a> ()</td></tr>
 <tr class="memdesc:a816c17a3b6e9978d48d251f3a6e3d65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string representation of this finger command.  <a href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a816c17a3b6e9978d48d251f3a6e3d65c">More...</a><br /></td></tr>
 <tr class="separator:a816c17a3b6e9978d48d251f3a6e3d65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,6 +250,33 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aab9899f7a3185dc854755d3d32fc6cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9899f7a3185dc854755d3d32fc6cd2">&#9670;&nbsp;</a></span>SameLevels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SGCore.Haptics.SG_FingerCmd.SameLevels </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html">SG_FingerCmd</a>&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-overridebale function that checks specifically for FFB levels. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -521,7 +550,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_s_g___finger_cmd_8cs.html">SG_FingerCmd.cs</a></li>
+<li>C:/Gitlab-Runner/builds/yDcLA2Qt/0/senseglove/senseglove-backend/sgcorecs/src/SGCoreCs/<a class="el" href="_s_g___finger_cmd_8cs.html">SG_FingerCmd.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

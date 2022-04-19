@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['lastcmdsent_1283',['LastCmdSent',['../class_s_g_core_1_1_haptics_1_1_f_f_b_stream.html#a386ccdcf9579fe0992d353e9481c6242',1,'SGCore::Haptics::FFBStream']]],
-  ['lastconnectioncode_1284',['LastConnectionCode',['../class_s_g_core_1_1_util_1_1_connection_status.html#ada4b1bd3bdd472aa732841225e6bf6b0',1,'SGCore::Util::ConnectionStatus']]],
-  ['lastdata_1285',['LastData',['../class_s_g_core_1_1_util_1_1_u_d_p_receiver.html#ae2c3e8d3fc2226bd2a44b324c114da88',1,'SGCore::Util::UDPReceiver']]],
-  ['lastexitcode_1286',['LastExitCode',['../class_s_g_core_1_1_util_1_1_connection_status.html#aa485fd83bbe77ebbd98465e5ed566d77',1,'SGCore::Util::ConnectionStatus']]],
-  ['lastteststate_1287',['LastTestState',['../class_s_g_core_1_1_util_1_1_connection_status.html#ad9862e63fba7a1f4b57ab98a6b413dbd',1,'SGCore::Util::ConnectionStatus']]],
-  ['latestdata_1288',['LatestData',['../class_s_g_core_1_1_util_1_1_server_data.html#abf8807012a43d9d885b34d66bf29e93b',1,'SGCore::Util::ServerData']]],
-  ['lefthandprofile_1289',['LeftHandProfile',['../class_s_g_core_1_1_h_g___hand_profiles.html#aef80df56d72ef8f8f1c4d0f936b65b1e',1,'SGCore::HG_HandProfiles']]],
-  ['levels_1290',['Levels',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#a2455f6860cb32f92e4c10459584d05a5',1,'SGCore::Haptics::SG_FingerCmd']]],
-  ['linkedglove_1291',['LinkedGlove',['../class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a5323776aa6e441e56e7c953ddb1785b7',1,'SGCore::Calibration::HG_CalibrationSequence']]],
-  ['location_1292',['Location',['../class_s_g_core_1_1_haptics_1_1_buzz_cmd.html#a80f78e1e759503f646b31d801b04b5f0',1,'SGCore::Haptics::BuzzCmd']]]
+  ['manualcompleted_1173',['ManualCompleted',['../class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a699d72469807fea15aac8d29412c3234',1,'SGCore::Calibration::HG_CalibrationSequence']]],
+  ['max_1174',['max',['../class_s_g_core_1_1_kinematics_1_1_interpolation_set.html#a746bc1a3d1d5963411c774ab6c453ecf',1,'SGCore::Kinematics::InterpolationSet']]],
+  ['maxvalues_1175',['MaxValues',['../class_s_g_core_1_1_calibration_1_1_sensor_range.html#ad8aa59d82008a8f556f365a84fd960a2',1,'SGCore::Calibration::SensorRange']]],
+  ['middlelvl_1176',['MiddleLvl',['../class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html#ac285d9c4faaf0227cdc32c5ef2d9b388',1,'SGCore::Haptics::SG_FingerCmd']]],
+  ['min_1177',['min',['../class_s_g_core_1_1_kinematics_1_1_interpolation_set.html#af4b0325924a2a3218487a5755de1293e',1,'SGCore::Kinematics::InterpolationSet']]],
+  ['minvalues_1178',['MinValues',['../class_s_g_core_1_1_calibration_1_1_sensor_range.html#ac8de72d70db34692aa48edafdf5e30e5',1,'SGCore::Calibration::SensorRange']]]
 ];
