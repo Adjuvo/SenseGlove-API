@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>CalculateAngle()
 : <a class="el" href="class_s_g_core_1_1_kinematics_1_1_hand_interpolator.html#a41df35d5fcdc80ff9f727bc00d4d9412">SGCore.Kinematics.HandInterpolator</a>
 </li>
+<li>CalculateDifferences()
+: <a class="el" href="struct_s_g_core_1_1_kinematics_1_1_quat.html#ac51169642b97e29b85296d36e7546e41">SGCore.Kinematics.Quat</a>
+</li>
 <li>CalculateFingerTips()
 : <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html#a429ee8c92588302771b33709ed005d76">SGCore.SG.SG_GlovePose</a>
 </li>
@@ -130,6 +133,9 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>CanAnimate
 : <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a79fedae1a6e1912e071b5fd8d96ce37f">SGCore.Calibration.HG_QuickCalibration</a>
 </li>
+<li>certaintyFactor
+: <a class="el" href="class_s_g_core_1_1_c_v_1_1_c_v___hand_output.html#a8f36a10f112ae2d02871cce290467ad4">SGCore.CV.CV_HandOutput</a>
+</li>
 <li>CheckForExtremes()
 : <a class="el" href="class_s_g_core_1_1_calibration_1_1_sensor_range.html#affed10264989b55378e424a9597de597">SGCore.Calibration.SensorRange</a>
 </li>
@@ -145,8 +151,24 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>ClearAll()
 : <a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#add320816cbdbbab7d0b535fb9c574651">SGCore.Haptics.HG_HapticStream</a>
 </li>
+<li>ClearAllCommands()
+: <a class="el" href="class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a62811f015601f52bfa8581dd2a72a6dc">SGCore.Nova.Nova_HapticStream</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___haptic_stream.html#a373ee2fbae0a596332c331d2d17dcbf9">SGCore.SG.SG_HapticStream</a>
+</li>
+<li>ClearCVData()
+: <a class="el" href="class_s_g_core_1_1_c_v_1_1_c_v___hand_layer.html#abec99a8cbeb0555027eaf7c88498b982">SGCore.CV.CV_HandLayer</a>
+</li>
 <li>ClearFFB()
 : <a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a30865cc691ab72041ef447ce4555f92a">SGCore.Haptics.HG_HapticStream</a>
+</li>
+<li>ClearFrames()
+: <a class="el" href="class_s_g_core_1_1_c_v_1_1_c_v___hand_data_smoother.html#a0703e7e1b65cc6adf5fe0eb915e72604">SGCore.CV.CV_HandDataSmoother</a>
+</li>
+<li>ClearThreshold()
+: <a class="el" href="class_s_g_core_1_1_haptics_1_1_threshold_cmd.html#aaa7ead464dd4d662bc3c72fb397a5718">SGCore.Haptics.ThresholdCmd</a>
+</li>
+<li>ClearThresholds()
+: <a class="el" href="class_s_g_core_1_1_haptics_1_1_threshold_cmd.html#a182033d25f699b85c66d8ea497ebecac">SGCore.Haptics.ThresholdCmd</a>
 </li>
 <li>ClearVibrations()
 : <a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#a7ea50562bcdf4c4c32679b9e8f2232ab">SGCore.Haptics.HG_HapticStream</a>
@@ -166,6 +188,10 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>CompileRange()
 : <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#a1302883910ec679f8fc72c9fd9a82150">SGCore.Calibration.HG_CalibrationSequence</a>
 , <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#aa1c99b0b4b704ba418269d2b8859a673">SGCore.Calibration.HG_QuickCalibration</a>
+</li>
+<li>CompileTraditionalCommands()
+: <a class="el" href="class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a69f48b45b275937b012c46bbff8be68a">SGCore.Nova.Nova_HapticStream</a>
+, <a class="el" href="class_s_g_core_1_1_s_g_1_1_s_g___haptic_stream.html#a839537621a61169538abc8de27b1cf43">SGCore.SG.SG_HapticStream</a>
 </li>
 <li>Completed
 : <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#ae057074f0d9944cd622a214a869746c2">SGCore.Calibration.HG_CalibrationSequence</a>
@@ -217,6 +243,15 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 </li>
 <li>CurrentStageInt
 : <a class="el" href="class_s_g_core_1_1_calibration_1_1_h_g___calibration_sequence.html#adb67d6d143528a713c3d3e14c1edb30e">SGCore.Calibration.HG_CalibrationSequence</a>
+</li>
+<li>CV_HandDataPoint()
+: <a class="el" href="class_s_g_core_1_1_c_v_1_1_c_v___hand_data_point.html#a8117544fb228d6dea1fc97e29fb219c0">SGCore.CV.CV_HandDataPoint</a>
+</li>
+<li>CV_HandDataSmoother()
+: <a class="el" href="class_s_g_core_1_1_c_v_1_1_c_v___hand_data_smoother.html#a975ab097f23cdb783c4ed94bc19391ec">SGCore.CV.CV_HandDataSmoother</a>
+</li>
+<li>CV_HandOutput()
+: <a class="el" href="class_s_g_core_1_1_c_v_1_1_c_v___hand_output.html#a9de3df70e626020ce373f98994cbaf64">SGCore.CV.CV_HandOutput</a>
 </li>
 </ul>
 </div><!-- contents -->

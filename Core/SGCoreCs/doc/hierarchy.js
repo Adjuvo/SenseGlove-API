@@ -3,6 +3,10 @@ var hierarchy =
     [ "SGCore.Kinematics.BasicHandModel", "class_s_g_core_1_1_kinematics_1_1_basic_hand_model.html", null ],
     [ "SGCore.Calibration.CalDataPoint", "class_s_g_core_1_1_calibration_1_1_cal_data_point.html", null ],
     [ "SGCore.Util.ConnectionStatus", "class_s_g_core_1_1_util_1_1_connection_status.html", null ],
+    [ "SGCore.CV.CV_HandDataPoint", "class_s_g_core_1_1_c_v_1_1_c_v___hand_data_point.html", null ],
+    [ "SGCore.CV.CV_HandDataSmoother", "class_s_g_core_1_1_c_v_1_1_c_v___hand_data_smoother.html", null ],
+    [ "SGCore.CV.CV_HandLayer", "class_s_g_core_1_1_c_v_1_1_c_v___hand_layer.html", null ],
+    [ "SGCore.CV.CV_HandOutput", "class_s_g_core_1_1_c_v_1_1_c_v___hand_output.html", null ],
     [ "SGCore.Diagnostics.Debugger", "class_s_g_core_1_1_diagnostics_1_1_debugger.html", null ],
     [ "SGCore.DeviceModel", "class_s_g_core_1_1_device_model.html", [
       [ "SGCore.Nova.Nova_GloveInfo", "class_s_g_core_1_1_nova_1_1_nova___glove_info.html", null ],
@@ -20,8 +24,22 @@ var hierarchy =
     ] ],
     [ "SGCore.HG_HandProfiles", "class_s_g_core_1_1_h_g___hand_profiles.html", null ],
     [ "SGCore.Haptics.HG_HapticStream", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html", null ],
+    [ "SGCore.Haptics.IFingerFFB_SetLevels", "interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___set_levels.html", [
+      [ "SGCore.HapticGlove", "class_s_g_core_1_1_haptic_glove.html", [
+        [ "SGCore.Nova.NovaGlove", "class_s_g_core_1_1_nova_1_1_nova_glove.html", null ],
+        [ "SGCore.SG.SenseGlove", "class_s_g_core_1_1_s_g_1_1_sense_glove.html", null ]
+      ] ]
+    ] ],
+    [ "SGCore.Haptics.IFingerFFB_Thresholds", "interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___thresholds.html", [
+      [ "SGCore.Nova.NovaGlove", "class_s_g_core_1_1_nova_1_1_nova_glove.html", null ]
+    ] ],
+    [ "SGCore.Haptics.IFingerVibro_SetLevels", "interface_s_g_core_1_1_haptics_1_1_i_finger_vibro___set_levels.html", [
+      [ "SGCore.Nova.NovaGlove", "class_s_g_core_1_1_nova_1_1_nova_glove.html", null ],
+      [ "SGCore.SG.SenseGlove", "class_s_g_core_1_1_s_g_1_1_sense_glove.html", null ]
+    ] ],
     [ "SGCore.Kinematics.InterpolationSet", "class_s_g_core_1_1_kinematics_1_1_interpolation_set.html", null ],
     [ "SGCore.Nova.Nova_Calibration", "class_s_g_core_1_1_nova_1_1_nova___calibration.html", null ],
+    [ "SGCore.Nova.Nova_HapticStream", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html", null ],
     [ "SGCore.Nova.Nova_Profile", "class_s_g_core_1_1_nova_1_1_nova___profile.html", null ],
     [ "SGCore.Nova.Nova_SensorData", "class_s_g_core_1_1_nova_1_1_nova___sensor_data.html", null ],
     [ "SGCore.Haptics.Nova_Thresholds", "class_s_g_core_1_1_haptics_1_1_nova___thresholds.html", null ],
@@ -38,15 +56,14 @@ var hierarchy =
     ] ],
     [ "SGCore.SG.SG_GlovePose", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html", null ],
     [ "SGCore.SG.SG_HandProfile", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html", null ],
+    [ "SGCore.SG.SG_HapticStream", "class_s_g_core_1_1_s_g_1_1_s_g___haptic_stream.html", null ],
     [ "SGCore.SG.SG_SensorData", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html", null ],
     [ "SGCore.Util.SGConnect_Android", "class_s_g_core_1_1_util_1_1_s_g_connect___android.html", null ],
     [ "SGCore.SGDevice", "class_s_g_core_1_1_s_g_device.html", [
       [ "SGCore.BetaDevice", "class_s_g_core_1_1_beta_device.html", null ],
-      [ "SGCore.HapticGlove", "class_s_g_core_1_1_haptic_glove.html", [
-        [ "SGCore.Nova.NovaGlove", "class_s_g_core_1_1_nova_1_1_nova_glove.html", null ],
-        [ "SGCore.SG.SenseGlove", "class_s_g_core_1_1_s_g_1_1_sense_glove.html", null ]
-      ] ]
+      [ "SGCore.HapticGlove", "class_s_g_core_1_1_haptic_glove.html", null ]
     ] ],
+    [ "SGCore.Haptics.ThresholdCmd", "class_s_g_core_1_1_haptics_1_1_threshold_cmd.html", null ],
     [ "SGCore.Haptics.ThumperCmd", "class_s_g_core_1_1_haptics_1_1_thumper_cmd.html", null ],
     [ "SGCore.Haptics.TimedThumpCmd", "class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html", null ],
     [ "SGCore.Tracking", "class_s_g_core_1_1_tracking.html", null ],

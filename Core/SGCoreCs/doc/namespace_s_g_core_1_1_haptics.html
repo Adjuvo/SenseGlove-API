@@ -99,11 +99,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>BuzzStream</b></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class to stream multiple buzz commands <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>FFBStream</b></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional Utility class used to stream Force-Feedback, where the forces are collected each frame and only one is sent at the end. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___set_levels.html">IFingerFFB_SetLevels</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a device of which you can directly set the Force-Feedback level for one or more fingers.  <a href="interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___set_levels.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>FingerForces</b></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains forces to apply to each finger. Doesn't matter if the device can or can't support it. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_g_core_1_1_haptics_1_1_i_finger_vibro___set_levels.html">IFingerVibro_SetLevels</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device of which you can directly control the amplitude of vibration motors on each finger, at a set frequency. Note: You'll still have to turn these off!  <a href="interface_s_g_core_1_1_haptics_1_1_i_finger_vibro___set_levels.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___thresholds.html">IFingerFFB_Thresholds</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a Device that can automatically engage Force-Feedback on the finger(s) when a specific threshold is reached.  <a href="interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___thresholds.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html">HG_HapticStream</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class to pile Force- and vibrotactile feedback into a single point, then flush them to a particular Glove.  <a href="class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html#details">More...</a><br /></td></tr>
@@ -124,6 +127,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html">SG_TimedBuzzCmd</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buzz motor commands that is meant to stop after a few miliseconds.  <a href="class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_threshold_cmd.html">ThresholdCmd</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command to set thresholds for specific fingers. Can be sent to a Device, or used internally.  <a href="class_s_g_core_1_1_haptics_1_1_threshold_cmd.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html">ThumperCmd</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that is sent to the wrist vibrotactile actuator, a.k.a. the "Thumper".  <a href="class_s_g_core_1_1_haptics_1_1_thumper_cmd.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,9 +138,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>Waveform</b></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows for extended vibration commands. Can be applied to any finger, and any actuator, but there is no guarantee the associated actuator will actually do so. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>WaveformStream</b></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Streams waveforms to hapticGloves. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>

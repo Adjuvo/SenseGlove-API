@@ -58,9 +58,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_anatomy_8cs.html",
-"class_s_g_core_1_1_calibration_1_1_h_g___quick_calibration.html#a6ff85697e8b17aea47e1fe9c5011719d",
-"class_s_g_core_1_1_nova_1_1_nova___sensor_data.html#a1e674ba2b7ba5d17e6f972171fe93ccd",
-"functions_q.html"
+"class_s_g_core_1_1_c_v_1_1_c_v___hand_data_smoother.html#a0703e7e1b65cc6adf5fe0eb915e72604",
+"class_s_g_core_1_1_haptics_1_1_threshold_cmd.html#a0d5aa22f37b0694624501510659b945c",
+"class_s_g_core_1_1_s_g_1_1_sense_glove.html#a4e23ad9cdced168fd1f752259287265d",
+"namespace_s_g_core_1_1_diagnostics.html#a6a2af441a9c4b0c28fd42cc29ae47148ae0a1284706116eec7a83a489235a9ef8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

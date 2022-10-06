@@ -4,6 +4,7 @@ var namespace_s_g_core_1_1_s_g =
     [ "SG_GloveInfo", "class_s_g_core_1_1_s_g_1_1_s_g___glove_info.html", "class_s_g_core_1_1_s_g_1_1_s_g___glove_info" ],
     [ "SG_GlovePose", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose.html", "class_s_g_core_1_1_s_g_1_1_s_g___glove_pose" ],
     [ "SG_HandProfile", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile.html", "class_s_g_core_1_1_s_g_1_1_s_g___hand_profile" ],
+    [ "SG_HapticStream", "class_s_g_core_1_1_s_g_1_1_s_g___haptic_stream.html", "class_s_g_core_1_1_s_g_1_1_s_g___haptic_stream" ],
     [ "SG_SensorData", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data.html", "class_s_g_core_1_1_s_g_1_1_s_g___sensor_data" ],
     [ "SG_FingerSolver", "namespace_s_g_core_1_1_s_g.html#a4fc22833482c17d34cb4694234481828", [
       [ "Interpolation", "namespace_s_g_core_1_1_s_g.html#a4fc22833482c17d34cb4694234481828a5afb09395c3c62b5316b22f09ff3b1d1", null ]

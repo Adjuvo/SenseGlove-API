@@ -1,11 +1,15 @@
 var namespace_s_g_core_1_1_haptics =
 [
+    [ "IFingerFFB_SetLevels", "interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___set_levels.html", "interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___set_levels" ],
+    [ "IFingerVibro_SetLevels", "interface_s_g_core_1_1_haptics_1_1_i_finger_vibro___set_levels.html", "interface_s_g_core_1_1_haptics_1_1_i_finger_vibro___set_levels" ],
+    [ "IFingerFFB_Thresholds", "interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___thresholds.html", "interface_s_g_core_1_1_haptics_1_1_i_finger_f_f_b___thresholds" ],
     [ "HG_HapticStream", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream.html", "class_s_g_core_1_1_haptics_1_1_h_g___haptic_stream" ],
     [ "Nova_Thresholds", "class_s_g_core_1_1_haptics_1_1_nova___thresholds.html", null ],
     [ "SG_BuzzCmd", "class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___buzz_cmd" ],
     [ "SG_FFBCmd", "class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___f_f_b_cmd" ],
     [ "SG_FingerCmd", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___finger_cmd" ],
     [ "SG_TimedBuzzCmd", "class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd.html", "class_s_g_core_1_1_haptics_1_1_s_g___timed_buzz_cmd" ],
+    [ "ThresholdCmd", "class_s_g_core_1_1_haptics_1_1_threshold_cmd.html", "class_s_g_core_1_1_haptics_1_1_threshold_cmd" ],
     [ "ThumperCmd", "class_s_g_core_1_1_haptics_1_1_thumper_cmd.html", "class_s_g_core_1_1_haptics_1_1_thumper_cmd" ],
     [ "TimedThumpCmd", "class_s_g_core_1_1_haptics_1_1_timed_thump_cmd.html", "class_s_g_core_1_1_haptics_1_1_timed_thump_cmd" ],
     [ "HapticLocation", "namespace_s_g_core_1_1_haptics.html#a72b32860dd7144a9642ab7d904f778ac", [

@@ -123,6 +123,9 @@ extern "C"
 		/// <returns></returns>
 		SGCONNECT_API std::string GetConnectionStates();
 
+		///<summary> Releases any Idle connections that have hooked around a device that is turned off. </summary>
+		SGCONNECT_API void ReleaseIdleConnections();
+
 		// ---------------------------------------------------------------------------------------------
 		// C# / IPC interface
 

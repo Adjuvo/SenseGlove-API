@@ -1,6 +1,7 @@
 var namespace_s_g_core =
 [
     [ "Calibration", "namespace_s_g_core_1_1_calibration.html", "namespace_s_g_core_1_1_calibration" ],
+    [ "CV", "namespace_s_g_core_1_1_c_v.html", "namespace_s_g_core_1_1_c_v" ],
     [ "Diagnostics", "namespace_s_g_core_1_1_diagnostics.html", "namespace_s_g_core_1_1_diagnostics" ],
     [ "Haptics", "namespace_s_g_core_1_1_haptics.html", "namespace_s_g_core_1_1_haptics" ],
     [ "Kinematics", "namespace_s_g_core_1_1_kinematics.html", "namespace_s_g_core_1_1_kinematics" ],
@@ -58,6 +59,7 @@ var namespace_s_g_core =
       [ "OculusTouch", "namespace_s_g_core.html#a3c66f3772480b3c9629873b94adff671aa6f9d7e261e91931b1344aec444dffd5", null ],
       [ "Quest2Controller", "namespace_s_g_core.html#a3c66f3772480b3c9629873b94adff671a26fab02f5c7e6deffcae2bd6b7fb744f", null ],
       [ "PicoNeo2", "namespace_s_g_core.html#a3c66f3772480b3c9629873b94adff671aa78a4bf04038cf84e3a169444b50cc00", null ],
-      [ "PicoNeo3", "namespace_s_g_core.html#a3c66f3772480b3c9629873b94adff671adc4a963b46bfc42439515c702d99edd5", null ]
+      [ "PicoNeo3", "namespace_s_g_core.html#a3c66f3772480b3c9629873b94adff671adc4a963b46bfc42439515c702d99edd5", null ],
+      [ "ViveFocus3WristTracker", "namespace_s_g_core.html#a3c66f3772480b3c9629873b94adff671a988864fdf4634551f3fb19f478657307", null ]
     ] ]
 ];

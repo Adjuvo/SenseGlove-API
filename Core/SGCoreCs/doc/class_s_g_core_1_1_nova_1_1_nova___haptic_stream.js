@@ -1,0 +1,25 @@
+var class_s_g_core_1_1_nova_1_1_nova___haptic_stream =
+[
+    [ "Nova_HapticStream", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a94f1afadd9a967dd5faeaaef9c89d2ac", null ],
+    [ "AddForceLevel", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a7d80705b852f076dc385dd2b2b157f38", null ],
+    [ "AddVibrationLevel", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a3a7f3a3a33cc59f23791564a3fdb7866", null ],
+    [ "AddWristCommand", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#ae17f19fe26de95aa6b67998afa1ce0b8", null ],
+    [ "ClearAllCommands", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a62811f015601f52bfa8581dd2a72a6dc", null ],
+    [ "CompileTraditionalCommands", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a69f48b45b275937b012c46bbff8be68a", null ],
+    [ "ResetBuffer", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#ab4e164c0fdc601ecf002d95de06d923f", null ],
+    [ "StoreLastFFB", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a68df10a72b03715989afebf4f4ccd3a7", null ],
+    [ "StoreLastVibro", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a1763c3b881569252bc1540434ce012d9", null ],
+    [ "StoreLastWrist", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#ad77fce0650af4038c491487cc938095a", null ],
+    [ "fingerFFBUpdate", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#af3032796ff5e60e2c9129769f13aeb42", null ],
+    [ "fingerVibroUpdate", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a5fbdc36288b6daa065baf4194898ce1d", null ],
+    [ "lastFFBLevels", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a3fbf23cbe9dc8bd5ae76adbc411416a7", null ],
+    [ "lastThresholds", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a1249277b656b034ba1bf4aa9362f2ae3", null ],
+    [ "lastVibroLevels", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#abdc458af2491cce024c588906efd2f2c", null ],
+    [ "lastWristLevel", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a420b054664d401668d801896ede94581", null ],
+    [ "wristVibroUpdate", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#ada288d7f758364c0b38a7e9300684acd", null ],
+    [ "FingerForceLevels", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a1f325c8c2563b39c815e454ad5d45a33", null ],
+    [ "FingerVibroLevels", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#abde42d910185e3ecd55c3ee382ef1f6c", null ],
+    [ "LastThresholdCmd", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a1a831784dd24e9704d2732a26ef79f14", null ],
+    [ "NextThresholdCmd", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#ab8151a2c6cd43f701370f95a129c9304", null ],
+    [ "WristVibroLevel", "class_s_g_core_1_1_nova_1_1_nova___haptic_stream.html#a6ede973d078707a74ebc6c859436cd69", null ]
+];
