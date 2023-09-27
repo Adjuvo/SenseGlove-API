@@ -8,3 +8,10 @@ Core/SGConnect/doc*
 
 #bak files made using programs like Notepad++.
 *.bak
+
+# 3rd Party Generated
+serial.dll
+serial.lib
+libserial.so
+libserial.a
+boost/
