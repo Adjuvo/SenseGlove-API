@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -33,23 +33,23 @@ namespace SGCore
 
     namespace Util
     {
-        ///<summary> Utility class to serialize / deserialize classes. </summary>
+        /// <summary> Utility class to serialize / deserialize classes. </summary>
         class SGCORE_API Serializer;
     }// namespace Util
 }// namespace SGCore
 
-///<summary> Utility class to serialize / deserialize classes. </summary>
+/// <summary> Utility class to serialize / deserialize classes. </summary>
 class SGCORE_API SGCore::Util::Serializer
 {
 public:
-    ///<summary> Filters spaces from a a string. </summary>
+    /// <summary> Filters spaces from a a string. </summary>
     static std::string FilterSpaces(const std::string& input);
 
     /// <summary> Filter opening / closing characters at the beginning and end of a string, if they exist. </summary>
     /// <param name="serialized"></param>
     static void FilterBrackets(std::string& out_serialized);
 
-    ///<summary> Split a serialized string by its top level blocks </summary>
+    /// <summary> Split a serialized string by its top level blocks </summary>
     static std::vector<std::string> SplitBlocks(const std::string& fullSerialized, bool bFilterSpaces = false);
 
     /// <summary> Enclose a string with our opening / closing characters. </summary>

@@ -5,12 +5,15 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
  * Platform-specific hacks and macros.
  */
+
+
+#pragma once
 
 /*******************************************************************************
 * Include directives
@@ -80,6 +83,28 @@
 #else   /* ( ( defined( _MSVC_LANG ) && _MSVC_LANG >= 201703L ) || __cplusplus >= 201703L ) */
 #define SG_CPP17 0
 #endif  /* ( ( defined( _MSVC_LANG ) && _MSVC_LANG >= 201703L ) || __cplusplus >= 201703L ) */
+
+/*******************************************************************************
+* C++ standard library implementaion detection macros
+*******************************************************************************/
+
+#if defined ( __GLIBCXX__ ) || defined ( __GLIBCPP__ )
+#define SG_LIBCPP_GNU 1
+#else  /* defined ( __GLIBCXX__ ) || defined ( __GLIBCPP__ ) */
+#define SG_LIBCPP_GNU 0
+#endif  /* defined ( __GLIBCXX__ ) || defined ( __GLIBCPP__ ) */
+
+#if defined ( _LIBCPP_VERSION )
+#define SG_LIBCPP_LLVM 1
+#else  /* defined ( _LIBCPP_VERSION ) */
+#define SG_LIBCPP_LLVM 0
+#endif  /* defined ( _LIBCPP_VERSION ) */
+
+#if defined ( _YVALS_CORE_H_ )
+#define SG_LIBCPP_MICROSOFT 1
+#else  /* defined ( _YVALS_CORE_H_ ) */
+#define SG_LIBCPP_MICROSOFT 0
+#endif  /* defined ( _YVALS_CORE_H_ ) */
 
 /*******************************************************************************
 * Function type macros

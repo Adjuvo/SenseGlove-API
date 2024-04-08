@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -33,13 +33,14 @@ namespace SGCore
 class SGCORE_API SGCore::DeviceModel
 {
 public:
-    ///<summary> Parse a 32-bit integer value into a set of booleans (010010011) that indicate which (optional) functions this device has. </summary>
+    /// <summary> Parse a 32-bit integer value into a set of booleans (010010011) that indicate which (optional)
+    /// functions this device has. </summary>
     static std::vector<bool> ParseFunctions(int32_t value, int32_t size);
 
     /// <summary>  </summary>
-    /// <param name="rawFW"></param>
-    /// <param name="mainVer"></param>
-    /// <param name="subVer"></param>
+    /// <param name="rawFirmware"></param>
+    /// <param name="out_mainVersion"></param>
+    /// <param name="out_subVersion"></param>
     static void ParseFirmware(const std::string& rawFirmware, int32_t& out_mainVersion, int32_t& out_subVersion);
 
 private:
@@ -91,7 +92,7 @@ protected:
     void SetHardwareVersion(const std::string& version);
 
 public:
-    /// <summary> Firmware version running on the device's MicroController. (as v4.12, this is the 4). </summary>
+    /// <summary> Firmware version running on the device's MicroController. (as of v4.12, this is the 4). </summary>
     SG_NODISCARD int32_t GetFirmwareVersion() const;
 
 protected:
@@ -99,7 +100,7 @@ protected:
     void SetFirmwareVersion(int32_t version);
 
 public:
-    /// <summary> Sub firmware version running on the device's microcontroller (as v4.12, this is the 12). </summary>
+    /// <summary> Sub firmware version running on the device's microcontroller (as of v4.12, this is the 12). </summary>
     /// <returns></returns>
     SG_NODISCARD int32_t GetSubFirmwareVersion() const;
 
@@ -108,19 +109,17 @@ protected:
     void SetSubFirmwareVersion(int32_t version);
 
 public:
-
-    /// <summary> Returns true if this glove's firmware is older than certain version </summary>
-    /// <param name="fwMain"></param>
-    /// <param name="fwSub"></param>
-    /// <param name="inclusive"></param>
+    /// <summary> Returns true if this glove's firmware is newer than certain version. </summary>
+    /// <param name="firmwareMain"></param>
+    /// <param name="firmwareSub"></param>
+    /// <param name="bInclusive"></param>
     /// <returns></returns>
-    SG_NODISCARD bool FirmwareNewerThan(int32_t fwMain, int32_t fwSub, bool inclusive);
+    SG_NODISCARD bool FirmwareNewerThan(int32_t firmwareMain, int32_t firmwareSub, bool bInclusive) const;
 
-    /// <summary> Returns true if this glove's firmware is older than certain version </summary>
-    /// <param name="fwMain"></param>
-    /// <param name="fwSub"></param>
-    /// <param name="inclusive"></param>
+    /// <summary> Returns true if this glove's firmware is older than certain version. </summary>
+    /// <param name="firmwareMain"></param>
+    /// <param name="firmwareSub"></param>
+    /// <param name="bInclusive"></param>
     /// <returns></returns>
-    SG_NODISCARD bool FirmwareOlderThan(int32_t fwMain, int32_t fwSub, bool inclusive);
-    
+    SG_NODISCARD bool FirmwareOlderThan(int32_t firmwareMain, int32_t firmwareSub, bool bInclusive) const;
 };

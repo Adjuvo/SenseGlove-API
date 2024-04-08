@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -62,17 +62,17 @@ public:
     NovaGloveInfo();
 
     /// <summary> Create a new instance of a NovaGloveInfo. </summary>
-    /// <param name="id"></param>
+    /// <param name="deviceId"></param>
     /// <param name="hardwareVersion"></param>
     /// <param name="firmwareVersion"></param>
     /// <param name="subFirmwareVersion"></param>
-    /// <param name="bRightHand"></param>
-    /// <param name="imuCorr"></param>
-    /// <param name="nSensors"></param>
+    /// <param name="bRightHanded"></param>
+    /// <param name="imuCorrection"></param>
+    /// <param name="numberOfSensors"></param>
     /// <returns></returns>
-    NovaGloveInfo(const std::string &deviceId, const std::string& hardwareVersion,
-                  int32_t firmwareVersion, int32_t subFirmwareVersion, bool bRightHanded,
-                  const Kinematics::Quat& imuCorrection, int32_t numberOfSensors);
+    NovaGloveInfo(const std::string& deviceId,
+                  const std::string& hardwareVersion, int32_t firmwareVersion, int32_t subFirmwareVersion,
+                  bool bRightHanded, const Kinematics::Quat& imuCorrection, int32_t numberOfSensors);
 
     /**
      * The copy constructor.
@@ -113,11 +113,26 @@ public:
     /// <summary> Determines if this is a right-handed Nova. </summary>
     SG_NODISCARD bool IsRight() const;
 
-    ///<summary> The IMU correction of this Nova. </summary>
+    /// <summary> The IMU correction of this Nova. </summary>
     SG_NODISCARD const Kinematics::Quat& GetImuCorrection() const;
 
-    ///<summary> The number of sensors in this device. </summary>
+    /// <summary> The number of sensors in this device. </summary>
     SG_NODISCARD int32_t GetNumberOfSensors() const;
+
+public:
+    /// <summary> Returns true if this glove's firmware is newer than certain version. </summary>
+    /// <param name="firmwareMain"></param>
+    /// <param name="firmwareSub"></param>
+    /// <param name="bInclusive"></param>
+    /// <returns></returns>
+    SG_NODISCARD bool FirmwareNewerThan(int32_t firmwareMain, int32_t firmwareSub, bool bInclusive) const;
+
+    /// <summary> Returns true if this glove's firmware is older than certain version. </summary>
+    /// <param name="firmwareMain"></param>
+    /// <param name="firmwareSub"></param>
+    /// <param name="bInclusive"></param>
+    /// <returns></returns>
+    SG_NODISCARD bool FirmwareOlderThan(int32_t firmwareMain, int32_t firmwareSub, bool bInclusive) const;
 
 public:
     /// <summary> Returns true if this GloveInfo contains the same information as another. </summary>
@@ -133,20 +148,4 @@ public:
     /// <summary> Convert this class into a string representation so it can be unpacked later. </summary>
     /// <returns></returns>
     SG_NODISCARD std::string Serialize() const;
-
-    
-public:
-    /// <summary> Returns true if this glove's firmware is older than certain version </summary>
-    /// <param name="fwMain"></param>
-    /// <param name="fwSub"></param>
-    /// <param name="inclusive"></param>
-    /// <returns></returns>
-    SG_NODISCARD bool FirmwareNewerThan(int32_t fwMain, int32_t fwSub, bool inclusive);
-
-    /// <summary> Returns true if this glove's firmware is older than certain version </summary>
-    /// <param name="fwMain"></param>
-    /// <param name="fwSub"></param>
-    /// <param name="inclusive"></param>
-    /// <returns></returns>
-    SG_NODISCARD bool FirmwareOlderThan(int32_t fwMain, int32_t fwSub, bool inclusive);
 };

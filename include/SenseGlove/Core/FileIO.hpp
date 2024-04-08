@@ -6,11 +6,11 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
- * File Input/output handling
+ * File Input/output handling.
  */
 
 
@@ -49,13 +49,15 @@ public:
         return GetDirectorySeparator().c_str()[0];
     }
 
-    /// <summary> Attempt to read all lines from a file and place them in the string[]. Returns true if successful. If unable to open the file, the string[] will be empty.</summary>
+    /// <summary> Attempt to read all lines from a file and place them in the string[]. Returns true if successful.
+    /// If unable to open the file, the string[] will be empty.</summary>
     /// <param name="filePath"></param>
     /// <param name="out_lines"></param>
     /// <returns></returns>
     static bool ReadTextFile(const std::string& filePath, std::vector<std::string>& out_lines);
 
-    /// <summary> Attempt to save a string[] to a filename within a desired directory. Returns true if successful. </summary>
+    /// <summary> Attempt to save a string[] to a filename within a desired directory. Returns true if successful.
+    /// </summary>
     /// <remarks> Directory is added as a separate variable so we can more easily check for its existence. </remarks>
     /// <param name="directory"></param>
     /// <param name="fileName"></param>
@@ -88,15 +90,15 @@ public:
     /// <returns></returns>
     SG_NODISCARD static std::string GetMyDocumentsPath();
 
-/// <summary> Get the Path to XDG_CONFIG_HOME on non-Windows platforms. </summary>
-/// <returns></returns>
+    /// <summary> Get the Path to XDG_CONFIG_HOME on non-Windows platforms. </summary>
+    /// <returns></returns>
     SG_NODISCARD static std::string GetXdgConfigHomePath();
 
-/// <summary> An easy way to get the SenseGlove home directory in a platform-agnostic manner,
-/// without the separator char at the end, unless the user specifies one through the env vars
-/// on non-Windows platforms. This should be fine on Linux, Android as well even if we end up
-/// having multiple consecutive slashes. </summary>
-/// <returns></returns>
+    /// <summary> An easy way to get the SenseGlove home directory in a platform-agnostic manner,
+    /// without the separator char at the end, unless the user specifies one through the env vars
+    /// on non-Windows platforms. This should be fine on Linux, Android as well even if we end up
+    /// having multiple consecutive slashes. </summary>
+    /// <returns></returns>
     SG_NODISCARD static std::string GetSenseGloveHomePath();
 
 public:

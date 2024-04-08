@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -36,7 +36,7 @@ namespace SGCore
 class SGCORE_API SGCore::Util::StringUtils
 {
 public:
-    ///<summary> Split a std::string into a vector of std::strings by a delimiter </summary>
+    /// <summary> Split a std::string into a vector of std::strings by a delimiter </summary>
     static std::vector<std::string> Split(const std::string& str, char delimiter);
 
     static std::string QuickSplit(const std::string& input, char delimiter, int32_t getIndex);
@@ -53,7 +53,8 @@ public:
     /// <summary> Replace all occurrences of a character with another one. </summary>
     static std::string ReplaceChars(const std::string& str, char from, char to);
 
-    /// <summary> Convert a value in radians into a rounded integer, as a string. e.g. 4.999999999999999 -> 5. </summary>
+    /// <summary> Convert a value in radians into a rounded integer, as a string. e.g. 4.999999999999999 -> 5.
+    /// </summary>
     static std::string RoundedDegrees(float valueInRadians);
 
     static bool Contains(const std::string& haystack, const std::string& needle);

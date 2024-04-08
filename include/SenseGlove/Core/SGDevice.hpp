@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -28,18 +28,19 @@
 
 namespace SGCore
 {
-    /// <summary> Repesents a generic SenseGlove Device, with some basic interfaces. </summary>
+    /// <summary> Represents a generic SenseGlove Device, with some basic interfaces. </summary>
     class SGCORE_API SGDevice;
 }// namespace SGCore
 
-/// <summary> Repesents a generic SenseGlove Device, with some basic interfaces. </summary>
+/// <summary> Represents a generic SenseGlove Device, with some basic interfaces. </summary>
 class SGCORE_API SGCore::SGDevice
 {
 public:
     /// <summary> Connection type of this device, as detected by the SGConnect library. </summary>
     enum class EConnectionType : int8_t
     {
-        /// <summary> Could not determine which connection type this SGDevice is using, most likely because it is disconnected. </summary>
+        /// <summary> Could not determine which connection type this SGDevice is using, most likely because it is
+        /// disconnected. </summary>
         Unknown = -1,
 
         /// <summary> USB Serial communication. </summary>
@@ -55,6 +56,28 @@ public:
 public:
     /// <summary> Parse a main and sub firmware version from its raw (v4.12) notation. </summary>
     static void ParseFirmware(const std::string& rawFirmware, int32_t& out_mainVersion, int32_t& out_subVersion);
+
+    /// <summary> If true, my firmware is newer than the reference firmware. </summary>
+    /// <param name="myFirmwareMain"></param>
+    /// <param name="myFirmwareSub"></param>
+    /// <param name="referenceMain"></param>
+    /// <param name="referenceSub"></param>
+    /// <param name="bInclusive"></param>
+    /// <returns></returns>
+    static bool FirmwareNewerThan(int32_t myFirmwareMain, int32_t myFirmwareSub,
+                                  int32_t referenceMain, int32_t referenceSub,
+                                  bool bInclusive);
+
+    /// <summary> If true, my firmware is older than the reference firmware. </summary>
+    /// <param name="myFirmwareMain"></param>
+    /// <param name="myFirmwareSub"></param>
+    /// <param name="referenceMain"></param>
+    /// <param name="referenceSub"></param>
+    /// <param name="bInclusive"></param>
+    /// <returns></returns>
+    static bool FirmwareOlderThan(int32_t myFirmwareMain, int32_t myFirmwareSub,
+                                  int32_t referenceMain, int32_t referenceSub,
+                                  bool bInclusive);
 
     static std::string ToString(EDeviceType deviceType);
 
@@ -94,18 +117,18 @@ public:
     //--------------------------------------------------------------------------------------
     // Device Accessors
 
-    ///<summary> Check which DeviceType this class belongs to. </summary>
+    /// <summary> Check which DeviceType this class belongs to. </summary>
     SG_NODISCARD virtual EDeviceType GetDeviceType() const;
 
     /// <summary> Retrieve this device's unique identifier. </summary>
-    SG_NODISCARD virtual std::string GetDeviceId() const
+    SG_NODISCARD virtual const std::string& GetDeviceId() const
 #if ! SENSEGLOVE_UNREAL_ENGINE_PLUGIN
         = 0
 #endif  /* ! SENSEGLOVE_UNREAL_ENGINE_PLUGIN */
     ;
 
     /// <summary> Retrieve this device's hardware version. </summary>
-    SG_NODISCARD virtual std::string GetHardwareVersion() const
+    SG_NODISCARD virtual const std::string& GetHardwareVersion() const
 #if ! SENSEGLOVE_UNREAL_ENGINE_PLUGIN
         = 0
 #endif  /* ! SENSEGLOVE_UNREAL_ENGINE_PLUGIN */
@@ -121,23 +144,23 @@ public:
     /// <summary> Retrieve this device's sub firmware version. v4.12 returns 12. </summary>
     SG_NODISCARD virtual int32_t GetSubFirmwareVersion() const;
 
-    SG_NODISCARD virtual std::string GetFirmwareString() const;
+    SG_NODISCARD virtual const std::string& GetFirmwareString() const;
 
 public:
 
-    /// <summary> Returns true if this glove's firmware is older than certain version </summary>
-    /// <param name="fwMain"></param>
-    /// <param name="fwSub"></param>
-    /// <param name="inclusive"></param>
+    /// <summary> Returns true if this glove's firmware is newer than certain version. </summary>
+    /// <param name="firmwareMain"></param>
+    /// <param name="firmwareSub"></param>
+    /// <param name="bInclusive"></param>
     /// <returns></returns>
-    bool FirmwareNewerThan(int32_t fwMain, int32_t fwSub, bool inclusive);
+    bool FirmwareNewerThan(int32_t firmwareMain, int32_t firmwareSub, bool bInclusive) const;
 
-    /// <summary> Returns true if this glove's firmware is older than certain version </summary>
-    /// <param name="fwMain"></param>
-    /// <param name="fwSub"></param>
-    /// <param name="inclusive"></param>
+    /// <summary> Returns true if this glove's firmware is older than certain version. </summary>
+    /// <param name="firmwareMain"></param>
+    /// <param name="firmwareSub"></param>
+    /// <param name="bInclusive"></param>
     /// <returns></returns>
-    bool FirmwareOlderThan(int32_t fwMain, int32_t fwSub, bool inclusive);
+    bool FirmwareOlderThan(int32_t firmwareMain, int32_t firmwareSub, bool bInclusive) const;
 
 protected:
     SG_NODISCARD const std::string& GetIpcAddress() const;
@@ -146,7 +169,7 @@ public:
     //--------------------------------------------------------------------------------------
     // I/O Accessors
 
-    ///<summary> Retrieve this Device's Serial/Bluetooth address. </summary>
+    /// <summary> Retrieve this Device's Serial/Bluetooth address. </summary>
     SG_NODISCARD std::string GetAddress() const;
 
     /// <summary> Check if this device is currently connected to the system. </summary>
@@ -180,57 +203,33 @@ public:
     SG_NODISCARD virtual bool IsCharging();
 
     /// <summary> Returns the device's battery level, as a value between 0 (empty) and 1 (full). </summary>
-    /// <param name="battLvl"></param>
+    /// <param name="out_batteryLevel"></param>
     /// <returns></returns>
     virtual bool GetBatteryLevel(float& out_batteryLevel);
 
-    //--------------------------------------------------------------------------------------
-    // Class Methods
-
-    ///<summary> Get a string representation of this SGDevice, used for debugging. </summary>
-    SG_NODISCARD virtual std::string ToString() const;
-
 public:
-    /// <summary> Assign this Device's Haptic Channels. Should not be done outside the API unless you know what you're doing. </summary>
+    /// <summary> Assign this Device's Haptic Channels. Should not be done outside the API unless you know what you're
+    /// doing. </summary>
     /// <param name="channels"></param>
-    virtual void SetHapticChannels(HapticChannelInfo& channels); 
+    virtual void SetHapticChannels(const HapticChannelInfo& channels);
 
     /// <summary> The number of haptic channels this device can support. </summary>
     /// <returns></returns>
-    SG_NODISCARD int32_t GetHapticChannelCount();
+    SG_NODISCARD int32_t GetHapticChannelCount() const;
 
-    /// <summary> How many channels of a specific type this SGDevice posesses. </summary>
+    /// <summary> How many channels of a specific type this SGDevice possesses. </summary>
     /// <param name="channelType"></param>
     /// <returns></returns>
-    SG_NODISCARD int32_t GetHapticChannelCount(EHapticChannelType channelType);
+    SG_NODISCARD int32_t GetHapticChannelCount(EHapticChannelType channelType) const;
 
 protected:
-
-    /// <summary> Returns the address that corresponds to the nth channel of a specific type. It's unguarded, which means I dont check the validity of index - could result in an exception. Optimized piece of code for for loops. Used for Internals </summary>
-    /// <param name="channels"></param>
-    void GetIPCParams_Unguarded(EHapticChannelType type, int32_t typeIndex, int32_t& out_index, std::string& out_addressString);
-
-    //--------------------------------------------------------------------------------------
-    // Util
+    /// <summary> Returns the address that corresponds to the nth channel of a specific type. It's unguarded, which
+    /// means I dont check the validity of index - could result in an exception. Optimized piece of code for for loops.
+    /// Used for Internals. </summary>
+    void GetIpcParams_Unguarded(EHapticChannelType type, int32_t typeIndex,
+                                int32_t& out_index, std::string& out_addressString) const;
 
 public:
-
-    /// <summary> If true, my firmware is newer than the reference firmware. </summary>
-    /// <param name="myFirmwareMain"></param>
-    /// <param name="myFirmwareSub"></param>
-    /// <param name="referenceMain"></param>
-    /// <param name="referenceSub"></param>
-    /// <param name="inclusive"></param>
-    /// <returns></returns>
-    static bool FirmwareNewerThan(int32_t myFirmwareMain, int32_t myFirmwareSub, int32_t referenceMain, int32_t referenceSub, bool inclusive);
-
-    /// <summary> If true, my firmware is newer than the reference firmware. </summary>
-    /// <param name="myFirmwareMain"></param>
-    /// <param name="myFirmwareSub"></param>
-    /// <param name="referenceMain"></param>
-    /// <param name="referenceSub"></param>
-    /// <param name="inclusive"></param>
-    /// <returns></returns>
-    static bool FirmwareOlderThan(int32_t myFirmwareMain, int32_t myFirmwareSub, int32_t referenceMain, int32_t referenceSub, bool inclusive);
-
+    /// <summary> Get a string representation of this SGDevice, used for debugging. </summary>
+    SG_NODISCARD virtual std::string ToString() const;
 };

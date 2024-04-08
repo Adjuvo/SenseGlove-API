@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -57,6 +57,9 @@ namespace SGCore
 
         /// <summary> Oculus Touch Controller that comes with the Meta Quest Pro. </summary>
         QuestProController,
+
+        /// <summary> Oculus Quest 3 Controller. </summary>
+        Quest3Controller,
     };
 
     class SGCORE_API Tracking;
@@ -108,7 +111,8 @@ public:
     static void GetSenseGloveMountOffset(bool bRightHanded, EFinger toFinger,
                                          Kinematics::Vect3D& out_iPosition, Kinematics::Quat& out_iRotation);
 
-    /// <summary> Get the offset to get from the TrackedHardware to a SenseGlove mounting location. Combined with Glove-Mount offset to get the glove location. </summary>
+    /// <summary> Get the offset to get from the TrackedHardware to a SenseGlove mounting location. Combined with
+    /// Glove-Mount offset to get the glove location. </summary>
     /// <param name="hardware"></param>
     /// <param name="bRightHanded"></param>
     /// <param name="out_positionOffset"></param>
@@ -127,14 +131,16 @@ public:
 
     //Quest 1 / Rift S
 
-    /// <summary> Oculus Touch origin to Finger rotational offset </summary>
+    /// <summary> Oculus Touch origin to Finger rotational offset. </summary>
     static const Kinematics::Vect3D& GetSenseGloveOculusTouchToAttachPosition();
 
-    /// <summary> Oculus Touch origin to Finger rotational offset </summary>
+    /// <summary> Oculus Touch origin to Finger rotational offset. </summary>
     static const Kinematics::Quat& GetSenseGloveOculusTouchToAttachRotation();
 
     //---------------------------------------------------------------------------
     // Nova 1.0 Related
+
+    // Hub -> Wrist
 
     /// <summary> Positional offset between Nova Glove Origin and Wrist. </summary>
     static const Kinematics::Vect3D& GetNovaToWristPositionOffset();
@@ -142,12 +148,7 @@ public:
     /// <summary> Rotational offset between Nova Glove Origin and Wrist. </summary>
     static const Kinematics::Quat& GetNovaToWristRotationOffset();
 
-    /// <summary> Returns the Offsets that will bring us from the Nova origin to the wrist position. </summary>
-    /// <param name="bRightHanded"></param>
-    /// <param name="out_positionOffset"></param>
-    /// <param name="out_rotationOffset"></param>
-    static void GetNovaGloveWristOffset(bool bRightHanded,
-                                        Kinematics::Vect3D& out_positionOffset, Kinematics::Quat& out_rotationOffset);
+    // Vive Trackers (Vive Pro, Valve Index)
 
     static const Kinematics::Vect3D& GetRightNovaViveToAttachPosition();
     static const Kinematics::Quat& GetRightNovaViveToAttachRotation();
@@ -155,15 +156,21 @@ public:
     static const Kinematics::Vect3D& GetLeftNovaViveToAttachPosition();
     static const Kinematics::Quat& GetLeftNovaViveToAttachRotation();
 
+    // Quest 2 Controllers a.k.a. Oculus Touch v3
+
     static const Kinematics::Vect3D& GetRightNovaQuest2ToAttachPosition();
     static const Kinematics::Quat& GetRightNovaQuest2ToAttachRotation();
 
     static const Kinematics::Vect3D& GetLeftNovaQuest2ToAttachPosition();
     static const Kinematics::Quat& GetLeftNovaQuest2ToAttachRotation();
 
-    static const Kinematics::Vect3D& GetRightNovaPico2ToAttachPosition(); // left is a mirror, so we only need R pos.
+    // Pico Neo 2 - Obsolete / Deprecated.
+
+    static const Kinematics::Vect3D& GetRightNovaPico2ToAttachPosition();// left is a mirror, so we only need R pos.
     static const Kinematics::Quat& GetRightNovaPico2ToAttachRotation();
     static const Kinematics::Quat& GetLeftNovaPico2ToAttachRotation();
+
+    // Quest Pro Controllers a.k.a. Oculus Touch v4??
 
     static const Kinematics::Vect3D& GetRightNovaQuestProToAttachPosition();
     static const Kinematics::Quat& GetRightNovaQuestProToAttachRotation();
@@ -171,11 +178,30 @@ public:
     static const Kinematics::Vect3D& GetLeftNovaQuestProToAttachPosition();
     static const Kinematics::Quat& GetLeftNovaQuestProToAttachRotation();
 
+    // Vive Focus 3 Tracker (also works with XR Elite)
+
     static const Kinematics::Vect3D& GetRightNovaViveFocus3ToAttachPosition();
     static const Kinematics::Quat& GetRightNovaViveFocus3ToAttachRotation();
 
     static const Kinematics::Vect3D& GetLeftNovaViveFocus3ToAttachPosition();
     static const Kinematics::Quat& GetLeftNovaViveFocus3ToAttachRotation();
+
+    // Quest 3 Controller (a.k.a. Quest Touch Plus)
+
+    static const Kinematics::Vect3D& GetRightNovaQuest3ToAttachPosition();
+    static const Kinematics::Quat& GetRightNovaQuest3ToAttachRotation();
+
+    static const Kinematics::Vect3D& GetLeftNovaQuest3ToAttachPosition();
+    static const Kinematics::Quat& GetLeftNovaQuest3ToAttachRotation();
+
+
+
+    /// <summary> Returns the Offsets that will bring us from the Nova origin to the wrist position. </summary>
+    /// <param name="bRightHanded"></param>
+    /// <param name="out_positionOffset"></param>
+    /// <param name="out_rotationOffset"></param>
+    static void GetNovaGloveWristOffset(bool bRightHanded,
+                                        Kinematics::Vect3D& out_positionOffset, Kinematics::Quat& out_rotationOffset);
 
     /// <summary> Retrieves Offsets for a particular device. </summary>
     /// <param name="hardware"></param>
@@ -186,14 +212,10 @@ public:
                                           Kinematics::Vect3D& out_positionOffset,
                                           Kinematics::Quat& out_rotationOffset);
 
-    static std::string ToString(EPositionalTrackingHardware hardware);
-
-
-
     //---------------------------------------------------------------------------
     // Nova 2.0 Related
 
-    //Nova Hub Origin (Middle of USB port) to Wrist
+    // Nova Hub Origin (Middle of USB port) to Wrist
 
     static const Kinematics::Vect3D& GetRightNova2ToWristPositionOffset();
     static const Kinematics::Quat& GetRightNova2ToWristRotationOffset();
@@ -209,7 +231,7 @@ public:
     static const Kinematics::Vect3D& GetLeftNova2Quest2ToAttachPosition();
     static const Kinematics::Quat& GetLeftNova2Quest2ToAttachRotation();
 
-     // Quest Pro Tracker Offsets
+    // Quest Pro Tracker Offsets - We don't have the actual physical hardware for this, and might never make one.
 
     static const Kinematics::Vect3D& GetRightNova2QuestProToAttachPosition();
     static const Kinematics::Quat& GetRightNova2QuestProToAttachRotation();
@@ -217,7 +239,7 @@ public:
     static const Kinematics::Vect3D& GetLeftNova2QuestProToAttachPosition();
     static const Kinematics::Quat& GetLeftNova2QuestProToAttachRotation();
 
-    // Vive Tracker Offsets
+     // Vive Trackers (Vive Pro, Valve Index)
 
     static const Kinematics::Vect3D& GetRightNova2ViveTrackerToAttachPosition();
     static const Kinematics::Quat& GetRightNova2ViveTrackerToAttachRotation();
@@ -225,7 +247,7 @@ public:
     static const Kinematics::Vect3D& GetLeftNova2ViveTrackerToAttachPosition();
     static const Kinematics::Quat& GetLeftNova2ViveTrackerToAttachRotation();
 
-    // Vive Focus 3 Tracker
+    // Vive Focus 3 Tracker (also works with XR Elite)
 
     static const Kinematics::Vect3D& GetRightNova2ViveWristTrackerToAttachPosition();
     static const Kinematics::Quat& GetRightNova2ViveWristTrackerToAttachRotation();
@@ -233,24 +255,34 @@ public:
     static const Kinematics::Vect3D& GetLeftNova2ViveWristTrackerToAttachPosition();
     static const Kinematics::Quat& GetLeftNova2ViveWristTrackerToAttachRotation();
 
+     // Quest 3 Controller (a.k.a. Quest Touch Plus)
+
+    static const Kinematics::Vect3D& GetRightNova2Quest3ToAttachPosition();
+    static const Kinematics::Quat& GetRightNova2Quest3ToAttachRotation();
+
+    static const Kinematics::Vect3D& GetLeftNova2Quest3ToAttachPosition();
+    static const Kinematics::Quat& GetLeftNova2Quest3ToAttachRotation();
+
     /// <summary> Returns the Offsets that will bring us from the Nova origin to the wrist position. </summary>
     /// <param name="bRightHanded"></param>
     /// <param name="out_positionOffset"></param>
     /// <param name="out_rotationOffset"></param>
     static void GetNova2GloveWristOffset(bool bRightHanded, const std::string& hardwareVersion,
-                                        Kinematics::Vect3D& out_positionOffset, Kinematics::Quat& out_rotationOffset);
-
-
+                                         Kinematics::Vect3D& out_positionOffset, Kinematics::Quat& out_rotationOffset);
 
     /// <summary> Retrieves Offsets for a particular device. </summary>
     /// <param name="hardware"></param>
     /// <param name="bRightHanded"></param>
     /// <param name="out_positionOffset"></param>
     /// <param name="out_rotationOffset"></param>
-    static void GetNova2GloveTrackerOffset(EPositionalTrackingHardware hardware, bool bRightHanded, const std::string& hardwareVersion,
-                                          Kinematics::Vect3D& out_positionOffset,
-                                          Kinematics::Quat& out_rotationOffset);
+    static void GetNova2GloveTrackerOffset(EPositionalTrackingHardware hardware, bool bRightHanded,
+                                           const std::string& hardwareVersion,
+                                           Kinematics::Vect3D& out_positionOffset,
+                                           Kinematics::Quat& out_rotationOffset);
 
+    //---------------------------------------------------------------------------
+
+    static std::string ToString(EPositionalTrackingHardware hardware);
 
 public:
     Tracking() = delete;

@@ -2,14 +2,16 @@
  * @file
  *
  * @author  Max Lammers <max@senseglove.com>
+ * @author  Mamadou Babaei <mamadou@senseglove.com>
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
- * Unprocessed data received from CV Device(s), used as input for processing. Used as a separate class so the format is ensured.
+ * Unprocessed data received from CV Device(s), used as input for processing.
+ * Used as a separate class so the format is ensured.
  */
 
 
@@ -19,8 +21,8 @@
 #include <string>
 #include <vector>
 
-#include "Platform.hpp"
 #include "DeviceTypes.hpp"
+#include "Platform.hpp"
 
 namespace SGCore
 {
@@ -30,77 +32,82 @@ namespace SGCore
         // Tracking Depth Enum
 
         /// <summary> How much of the CV tracking is being used. Used by other APIs. </summary>
-        enum class SGCORE_API ECVTracking_Depth : uint8_t
+        enum class SGCORE_API ECVTrackingDepth : uint8_t
         {
             /// <summary> No computer-vision is enabled. </summary>
             Disabled = 0,
-            /// <summary> Use CV only for the wrist position / rotation </summary>
+
+            /// <summary> Use CV only for the wrist position/rotation. </summary>
             WristOnly,
-            /// <summary> Use CV for both the wirst location and Hand Position  </summary>
-            WristAndHandPose
+
+            /// <summary> Use CV for both the wrist location and Hand Position. </summary>
+            WristAndHandPose,
         };
 
         //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
         // Position Enum
 
-        /// <summary> Used to access specific positions from the CV output, which is an array of Vect3D positions. </summary>
-        /// <remarks> Declared in CVHandOutput.cs because these enums are used to index the jointPositions array in that class. </remarks>
+        /// <summary> Used to access specific positions from the CV output, which is an array of Vect3D positions.
+        /// </summary>
+        /// <remarks> Declared in CVHandOutput.cs because these enums are used to index the jointPositions array in
+        /// that class. </remarks>
         enum class SGCORE_API ECVHandPoints : uint8_t
         {
-            /// <summary> The position of the wrist as determined by the CV Model. </summary>
-            CV_WRIST = 0,
+            /// <summary> The position of the Wrist as determined by the CV Model. </summary>
+            Wrist = 0,
+
             /// <summary> The position of the Thumb CMC Joint as determined by the CV Model. </summary>
-            CV_THUMB_CMC,
+            ThumbCmc,
             /// <summary> The position of the Thumb MCP Joint as determined by the CV Model. </summary>
-            CV_THUMB_MCP,
+            ThumbMcp,
             /// <summary> The position of the Thumb IP Joint as determined by the CV Model. </summary>
-            CV_THUMB_IP,
+            ThumbIp,
             /// <summary> The position of the Thumb tip as determined by the CV Model. </summary>
-            CV_THUMB_TIP,
+            ThumbTip,
 
             /// <summary> The position of the Index MCP Joint as determined by the CV Model. </summary>
-            CV_INDEX_MCP,
+            IndexMcp,
             /// <summary> The position of the Index PIP Joint as determined by the CV Model. </summary>
-            CV_INDEX_PIP,
+            IndexPip,
             /// <summary> The position of the Index DIP Joint as determined by the CV Model. </summary>
-            CV_INDEX_DIP,
+            IndexDip,
             /// <summary> The position of the Index fingertip as determined by the CV Model. </summary>
-            CV_INDEX_TIP,
+            IndexTip,
 
             /// <summary> The position of the Middle MCP Joint as determined by the CV Model. </summary>
-            CV_MIDDLE_MCP,
+            MiddleMcp,
             /// <summary> The position of the Middle PIP Joint as determined by the CV Model. </summary>
-            CV_MIDDLE_PIP,
+            MiddlePip,
             /// <summary> The position of the Middle DIP Joint as determined by the CV Model. </summary>
-            CV_MIDDLE_DIP,
+            MiddleDip,
             /// <summary> The position of the Middle fingertip as determined by the CV Model. </summary>
-            CV_MIDDLE_TIP,
+            MiddleTip,
 
             /// <summary> The position of the Ring MCP Joint as determined by the CV Model. </summary>
-            CV_RING_MCP,
+            RingMcp,
             /// <summary> The position of the Ring PIP Joint as determined by the CV Model. </summary>
-            CV_RING_PIP,
+            RingPip,
             /// <summary> The position of the Ring DIP Joint as determined by the CV Model. </summary>
-            CV_RING_DIP,
+            RingDip,
             /// <summary> The position of the Ring fingertip as determined by the CV Model. </summary>
-            CV_RING_TIP,
+            RingTip,
 
             /// <summary> The position of the Pinky MCP Joint as determined by the CV Model. </summary>
-            CV_PINKY_MCP,
+            PinkyMcp,
             /// <summary> The position of the Pinky PIP Joint as determined by the CV Model. </summary>
-            CV_PINKY_PIP,
+            PinkyPip,
             /// <summary> The position of the Pinky DIP Joint as determined by the CV Model. </summary>
-            CV_PINKY_DIP,
+            PinkyDip,
             /// <summary> The position of the Pinky fingertip as determined by the CV Model. </summary>
-            CV_PINKY_TIP,
+            PinkyTip,
 
             /// <summary> Utility enumerator to check if an array contains enough values. </summary>
-            CV_All
+            All,
         };
 
         /// <summary> Unprocessed data received from CV Device(s), used as input for processing. </summary>
         class SGCORE_API CVHandTrackingData;
-    } // namespace CV
+    }// namespace CV
 
     namespace Kinematics
     {
@@ -117,14 +124,27 @@ namespace SGCore
 /// <summary> Unprocessed data received from CV Device(s), used as input for processing. </summary>
 class SGCORE_API SGCore::CV::CVHandTrackingData
 {
-    //---------------------------------------------------------------------------------
-    // C++ Constructor Voodoo
-
 private:
     struct Impl;
     std::unique_ptr<Impl> Pimpl;
 
 public:
+    /**
+     * The default constructor.
+     */
+    CVHandTrackingData();
+
+    //---------------------------------------------------------------------------------
+    // Actual C++ Constructors
+
+    /// <summary> Creates a new instance of HandTrackingData. Time is takes from the internal system </summary>
+    CVHandTrackingData(const std::vector<Kinematics::Vect3D>& CVHandPoints, float certainty, bool bRightHanded,
+                       SGCore::EDeviceType forDeviceType, const std::string& subHardwareVersion);
+
+    /// <summary> Creates a new instance of HandTrackingData. </summary>
+    CVHandTrackingData(const std::vector<Kinematics::Vect3D>& CVHandPoints, float certainty, bool bRightHanded,
+                       SGCore::EDeviceType forDeviceType, const std::string& subHardwareVersion, float time);
+
     /**
      * The copy constructor.
      */
@@ -133,12 +153,11 @@ public:
     /**
      * The move constructor.
      */
-    CVHandTrackingData(CVHandTrackingData&& rhs)
-    noexcept;
+    CVHandTrackingData(CVHandTrackingData&& rhs) noexcept;
 
     virtual ~CVHandTrackingData();
 
-
+public:
     /**
      * The copy assignment operator.
      */
@@ -150,57 +169,34 @@ public:
     CVHandTrackingData& operator=(CVHandTrackingData&& rhs) noexcept;
 
 public:
-//#if SENSEGLOVE_UNREAL_ENGINE_PLUGIN
-    CVHandTrackingData();
-//#endif /* SENSEGLOVE_UNREAL_ENGINE_PLUGIN */
-
-    //---------------------------------------------------------------------------------
-    // Actual C++ Constructors
-
-    /// <summary> Creates a new instance of HandTrackingData. Time is takes from the internal system </summary>
-    CVHandTrackingData(std::vector<Kinematics::Vect3D>& CVHandPoints, float certainty, bool rightHanded, SGCore::EDeviceType forDeviceType, std::string subHwVersion);
-
-    /// <summary> Creates a new instance of HandTrackingData. </summary>
-    CVHandTrackingData(std::vector<Kinematics::Vect3D>& CVHandPoints, float certainty, bool rightHanded, SGCore::EDeviceType forDeviceType, std::string subHwVersion, float time);
-
-
-    //---------------------------------------------------------------------------------
-    // Accessors
-
-public:
-
     /// <summary> Simulation time When this Data was received. Used for data smoothing. </summary>
     SG_NODISCARD float GetTimeStamp() const;
-    void SetTimeStamp(float value);
+    void SetTimeStamp(float timestamp);
 
     /// <summary> 21 positions, representing the wrist and finger positions in 3D (world)space. </summary>
     SG_NODISCARD std::vector<Kinematics::Vect3D> GetJointPositions() const;
-    void SetJointPositions(std::vector<Kinematics::Vect3D> value);
-    
-	/// <summary> Left/Right handedness. </summary>
-    SG_NODISCARD bool GetIsRight() const;
-    void SetIsRight(bool value);
+    void SetJointPositions(const std::vector<Kinematics::Vect3D>& positions);
 
-	/// <summary> How certain is it that this is an actual hand that we're tracking.  </summary>
+    /// <summary> Left/Right handedness. </summary>
+    SG_NODISCARD bool IsRight() const;
+    void SetRight(bool bRight);
+
+    /// <summary> How certain is it that this is an actual hand that we're tracking.  </summary>
     SG_NODISCARD float GetCertaintyFactor() const;
-    void SetCertaintyFactor(float value);
+    void SetCertaintyFactor(float factor);
 
-	/// <summary> Which Device this data has been generated for </summary>
+    /// <summary> Which Device this data has been generated for </summary>
     SG_NODISCARD SGCore::EDeviceType GetForDevice() const;
-    void SetForDevice(SGCore::EDeviceType value);
+    void SetForDevice(SGCore::EDeviceType type);
 
-	/// <summary> (sub)hardware version that this data has been generated for. </summary>
+    /// <summary> (sub)hardware version that this data has been generated for. </summary>
     SG_NODISCARD std::string GetForHwVersion() const;
-    void SetHwVersion(std::string value);
-
-
+    void SetHwVersion(const std::string& version);
 
     //---------------------------------------------------------------------------------
     // Member Functions
 
-
 public:
-
     /// <summary> Safely retrieve the location of a specific joint. </summary>
     /// <param name="location"></param>
     /// <returns></returns>
@@ -212,25 +208,23 @@ public:
     SG_NODISCARD Kinematics::Vect3D GetPositionByIndex(int32_t location) const;
 
     /// <summary> Returns true if this pose was made for a specific hand, device, and sub-hw version. </summary>
-    /// <param name="isRight"></param>
+    /// <param name="bRight"></param>
     /// <param name="type"></param>
-    /// <param name="hwVer"></param>
+    /// <param name="hardwareVersion"></param>
     /// <returns></returns>
-    SG_NODISCARD bool MatchesDevice(bool isRight, SGCore::EDeviceType type, std::string hwVer);
+    SG_NODISCARD bool MatchesDevice(bool bRight, SGCore::EDeviceType type, const std::string& hardwareVersion);
 
     /// <summary> Returns true if this pose was made for the same device as another pose. </summary>
     /// <param name="otherPose"></param>
     /// <returns></returns>
-    SG_NODISCARD bool MatchesDevice(const CVHandTrackingData otherPose);
+    SG_NODISCARD bool MatchesDevice(const CVHandTrackingData& otherPose);
 
     /// <summary> Get a simple notation of this CV_HandTrackingData. </summary>
     /// <returns></returns>
-    SG_NODISCARD std::string ToString();
+    SG_NODISCARD std::string ToString() const;
 
     /// <summary> Prints all of the joint positions within this CV_HandTrackingData. </summary>
-    /// <param name="delim"></param>
+    /// <param name="delimiter"></param>
     /// <returns></returns>
-    SG_NODISCARD std::string PrintKeyPoints(std::string delim = ", ");
-
-
+    SG_NODISCARD std::string PrintKeyPoints(const std::string& delimiter = ", ");
 };

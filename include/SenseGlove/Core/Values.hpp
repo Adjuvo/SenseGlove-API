@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -72,7 +72,7 @@ public:
     /// <summary> Map a value from one range [from1...from2] to another range [to1 .. to2] </summary>
     static float Map(float value, float from1, float from2, float to1, float to2);
 
-     /// <summary> Map a value from one range [from1...from2] to another range [to1 .. to2] </summary>
+    /// <summary> Map a value from one range [from1...from2] to another range [to1 .. to2] </summary>
     static float Map(float value, float from1, float from2, float to1, float to2, bool clampOutput);
 
     /// <summary> Map a value from one range [from1...from2] to another range [to1 .. to2],
@@ -82,31 +82,33 @@ public:
     /// <summary> Check if two floating points are roughly equal, taking into account the minor differences. </summary>
     static bool FloatEquals(float valueA, float valueB);
 
-    ///<summary> Check if two arrays contain equal values. </summary>
+    /// <summary> Check if two arrays contain equal values. </summary>
     static bool Equal(const std::vector<Vect3D>& arrayA, const std::vector<Vect3D>& arrayB);
 
-    ///<summary> Check if two arrays contain equal values. </summary>
+    /// <summary> Check if two arrays contain equal values. </summary>
     static bool Equal(const std::vector<std::vector<Vect3D>>& arrayA, const std::vector<std::vector<Vect3D>>& arrayB);
 
-    ///<summary> Check if two arrays contain equal values. </summary>
+    /// <summary> Check if two arrays contain equal values. </summary>
     static bool Equal(const std::vector<Quat>& arrayA, const std::vector<Quat>& arrayB);
 
-    ///<summary> Check if two arrays contain equal values. </summary>
+    /// <summary> Check if two arrays contain equal values. </summary>
     static bool Equal(const std::vector<std::vector<Quat>>& arrayA, const std::vector<std::vector<Quat>>& arrayB);
 
-    /// <summary> Returns an array of Vect3D's, all at 0, 0, 0. Used for quick generation and to avoid NullRefs </summary>
+    /// <summary> Returns an array of Vect3D's, all at 0, 0, 0. Used for quick generation and to avoid NullRefs.
+    /// </summary>
     /// <param name="length"></param>
     /// <returns></returns>
     static std::vector<Vect3D> FillZero(int32_t length);
 
-    /// <summary> Returns a 2D of Vect3D's [Length, Width] all at 0, 0, 0. Used for quick generation and to avoid NullRefs </summary>
+    /// <summary> Returns a 2D of Vect3D's [Length, Width] all at 0, 0, 0. Used for quick generation and to avoid
+    /// NullRefs. </summary>
     /// <param name="length"></param>
     /// <param name="width"></param>
     /// <returns></returns>
     static std::vector<std::vector<Vect3D>> FillZero(int32_t length, int32_t width);
 
-
-    /// <summary> Evaluate x on a curve with points [0.0, 0.0], [0.5, 1.0], [1.0, 0.0] with a smooth transition. Is 0 elsewhere. </summary>
+    /// <summary> Evaluate x on a curve with points [0.0, 0.0], [0.5, 1.0], [1.0, 0.0] with a smooth transition. Is 0
+    /// elsewhere. </summary>
     /// <param name="x"></param>
     static float EvalueSmoothHill(float x);
 
@@ -114,27 +116,27 @@ public:
     // Interpolation Functions
 
 public:
-
     /// <summary> Interpolate a single Vector </summary>
-    static Vect3D InterpolateVector(const float t, const float t0, const float t1, const Vect3D& v0, const Vect3D& v1, const bool clamp);
+    static Vect3D InterpolateVector(float t, float t0, float t1, const Vect3D& v0, const Vect3D& v1, bool bClamp);
 
     /// <summary> Interpolate an array of Vectors </summary>
-    static std::vector<Vect3D> InterpolateVectors(const float t, const float t0, const float t1,
-        const std::vector<Vect3D>& v0, const std::vector<Vect3D>& v1, const bool& clamp);
+    static std::vector<Vect3D> InterpolateVectors(
+            float t, float t0, float t1,
+            const std::vector<Vect3D>& v0, const std::vector<Vect3D>& v1, bool bClamp);
 
-        /// <summary> Interpolate a 2D array of Vectors </summary>
-    static std::vector<std::vector<Vect3D>> InterpolateVectors(const float t, const float t0, const float t1,
-        const std::vector<std::vector<Vect3D>>& v0, const std::vector<std::vector<Vect3D>>& v1, const bool clamp);
+    /// <summary> Interpolate a 2D array of Vectors </summary>
+    static std::vector<std::vector<Vect3D>> InterpolateVectors(
+            float t, float t0, float t1,
+            const std::vector<std::vector<Vect3D>>& v0, const std::vector<std::vector<Vect3D>>& v1, bool bClamp);
 
     /// <summary> Interpolate a Quaternion Rotaion </summary>
-    static Quat InterpolateQuaternion(const float t, const float t0, const float t1, const Quat& q0, const Quat& q1, const bool clamp);
+    static Quat InterpolateQuaternion(float t, float t0, float t1, const Quat& q0, const Quat& q1, bool bClamp);
 
     /// <summary> Allows up to pass clamping, but still takes into account the joint angle limits. </summary>
-    static std::vector<std::vector<Vect3D>> InterpolateHandAngles_WithJointAngles(const float t, const float t0, const float t1,
-        const std::vector<std::vector<Vect3D>>& v0, const std::vector<std::vector<Vect3D>>& v1,
-        const bool rightHand, const bool clamp);
-
-
+    static std::vector<std::vector<Vect3D>> InterpolateHandAngles_WithJointAngles(
+            float t, float t0, float t1,
+            const std::vector<std::vector<Vect3D>>& v0, const std::vector<std::vector<Vect3D>>& v1,
+            bool bRightHanded, bool bClamp);
 
 public:
     Values() = delete;

@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -57,7 +57,7 @@ public:
     static float GetThumbJointLimit(bool bRightHanded, int32_t joint, int32_t movement, bool bMax);
 
     /// <summary> Limit a value between specific joint angles. </summary>
-    static float ClampJointAngle(float value, int32_t finger, bool rightHand, int32_t joint, int32_t movement);
+    static float ClampJointAngle(float value, int32_t finger, bool bRightHanded, int32_t joint, int32_t movement);
 
     /// <summary> Convert a total finger flexion in radians into a 0..1 representation. </summary>
     /// <param name="flexionInRadians"></param>

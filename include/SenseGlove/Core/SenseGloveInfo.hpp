@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -34,19 +34,21 @@ namespace SGCore
 
     namespace SG
     {
-        /// <summary> Glove Information taken from a SenseGlove. Contains everything from unique ID, firmware version, etc. </summary>
+        /// <summary> Glove Information taken from a SenseGlove. Contains everything from unique ID, firmware version,
+        /// etc. </summary>
         class SGCORE_API SenseGloveInfo;
     }// namespace SG
 }// namespace SGCore
 
-/// <summary> Glove Information taken from a SenseGlove. Contains everything from unique ID, firmware version, etc. </summary>
+/// <summary> Glove Information taken from a SenseGlove. Contains everything from unique ID, firmware version, etc.
+/// </summary>
 class SGCORE_API SGCore::SG::SenseGloveInfo
 {
 public:
-    ///<summary> Create an instance of the SGModel from its string representation. </summary>
+    /// <summary> Create an instance of the SGModel from its string representation. </summary>
     static bool Parse(const std::string& constantsString, SenseGloveInfo& out_gloveInfo, bool bUpdateOldModels = true);
 
-    ///<summary> Deserialize a HandProfile back into usable values. </summary>
+    /// <summary> Deserialize a HandProfile back into usable values. </summary>
     static SenseGloveInfo Deserialize(const std::string& serializedString);
 
 private:
@@ -104,13 +106,13 @@ public:
     /// <summary> Sub-Firmware version running on the device's MicroController. </summary>
     SG_NODISCARD int32_t GetSubFirmwareVersion() const;
 
-    ///<summary> Check if this Sense Glove belongs to a left or right hand. </summary>
+    /// <summary> Check if this Sense Glove belongs to a left or right hand. </summary>
     SG_NODISCARD bool IsRight() const;
 
     /// <summary> The number of Sensors in this SenseGlove. </summary>
     SG_NODISCARD int32_t GetNumberOfSensors() const;
 
-    ///<summary> The IMU correction of this Sense Glove. </summary>
+    /// <summary> The IMU correction of this Sense Glove. </summary>
     SG_NODISCARD const Kinematics::Quat& GetImuCorrection() const;
 
     /// <summary> The starting positions of each Sense Glove finger, relative to the glove origin. </summary>
@@ -136,7 +138,7 @@ public:
     SG_NODISCARD const std::vector<Kinematics::Vect3D>& GetGloveLengths(SGCore::EFinger finger) const;
 
 public:
-    ///<summary> Place incoming sensor data into the right format, according to this glove's model. </summary>
+    /// <summary> Place incoming sensor data into the right format, according to this glove's model. </summary>
     SG_NODISCARD std::vector<std::vector<Kinematics::Vect3D>> ToGloveAngles(
             const std::vector<std::vector<float>>& sensorAngles) const;
 
@@ -144,7 +146,8 @@ public:
     SG_NODISCARD bool Equals(const SenseGloveInfo& senseGloveGloveInfo, bool bGeometryOnly = false) const;
 
 public:
-    /// <summary> Create a string representation for logging. If shortNotation is false, all values are reported. </summary>
+    /// <summary> Create a string representation for logging. If shortNotation is false, all values are reported.
+    /// </summary>
     SG_NODISCARD std::string ToString(bool bShortNotation) const;
 
     /// <summary> Create a string representation for fast logging. </summary>

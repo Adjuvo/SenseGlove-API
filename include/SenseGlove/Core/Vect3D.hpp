@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -83,7 +83,7 @@ public:
     Vect3D operator-(const Vect3D& vect3D) const;
 
     // Overload - operator to scale a vector3 by a float
-    Vect3D operator*(const float& scaleFactor) const;
+    Vect3D operator*(float scaleFactor) const;
 
 public:
     SG_NODISCARD float GetX() const;
@@ -118,11 +118,11 @@ public:
 
     /// <summary> Calculate the dot product between two vectors. If they're at 90 degree angles, the DP is 0. </summary>
     /// <param name="a"></param>
-    /// <param name="b"></param>  
+    /// <param name="b"></param>
     /// <returns></returns>
     SG_NODISCARD static float DotProduct(const Vect3D& a, const Vect3D& b);
 
-            
+
     /// <summary> Caluculate the Croos product between two vectors. THe result is an orthagonal vector. </summary>
     /// <param name="a"></param>
     /// <param name="b"></param>
@@ -135,7 +135,7 @@ public:
     /// <param name="v2"></param>
     /// <returns></returns>
     SG_NODISCARD static float AngleBetween(const Vect3D& v1, const Vect3D& v2);
-    
+
 
 public:
     /// <summary> Convert a serialized Vect3D back into its class representation. </summary>

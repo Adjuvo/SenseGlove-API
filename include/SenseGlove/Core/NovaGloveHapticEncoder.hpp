@@ -2,16 +2,17 @@
  * @file
  *
  * @author  Max Lammers <max@senseglove.com>
+ * @author  Mamadou Babaei <mamadou@senseglove.com>
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
- * Internal class used to encode / decode Nova Waveforms. Not used outside the API
+ * Internal class used to encode / decode Nova Waveforms. Not used outside the
+ * API.
  */
-
 
 #pragma once
 
@@ -20,7 +21,7 @@
 
 namespace SGCore
 {
-    /// <summary> A single vibration pulse for Nova Gloves </summary>
+    /// <summary> A single vibration pulse for Nova Gloves. </summary>
     class SGCORE_API CustomWaveform;
 
     namespace Nova
@@ -33,19 +34,10 @@ namespace SGCore
 /// <summary> Internal class used to encode / decode Nova Waveforms. </summary>
 class SGCore::Nova::NovaGloveHapticEncoder
 {
-    //---------------------------------------------------------------------------------
-    // C++ Constructor Voodoo
-
-public:
-    NovaGloveHapticEncoder() = delete;
-    virtual ~NovaGloveHapticEncoder() = delete;
-
-
     //-----------------------------------------------------------------------------------------------------------------------------------
     // Custom Waveform Encoding
 
 public:
-
     //-----------------------------------------------------------------------------------------------------------------------------------
     // Vibrotactile Constants
 
@@ -53,7 +45,6 @@ public:
     static float GetMinAttackTime();// = 0.0f;
     /// <summary> The maximum attack time, in seconds. Used for Encoding. </summary>
     static float GetMaxAttackTime();// = 1.0f;
-
 
     /// <summary> The minimum value for sustain time, in seconds. Used for Encoding. </summary>
     static float GetMinSustainTime();// = 0.0f;
@@ -70,7 +61,7 @@ public:
     /// <summary> Maximum Frequency Range </summary>
     static float GetMaxFreqRange();// = 500.0f;
 
-    /// <summary> Maximum amount a singnal is allowed to repeat, limited by encoding. </summary>
+    /// <summary> Maximum amount a signal is allowed to repeat, limited by encoding. </summary>
     static int32_t GetMaxRepeatAmount();// = 100;
 
     /// <summary> The minimum master control 'volume'. </summary>
@@ -83,16 +74,12 @@ public:
     /// <summary> Maximum value of minimum frequency factor</summary>
     static float GetMaxFreqFactor();// = 3.0f;
 
-
-
-
-
-    /// <summary> Encode a 'repeat' byte based on the amount of times someone wants to repeat it, vs whether or not its set to infinite. </summary>
-    /// <param name="repeatAmout"></param>
-    /// <param name="infinite"></param>
+    /// <summary> Encode a 'repeat' byte based on the amount of times someone wants to repeat it, vs whether or not its
+    /// set to bInfinite. </summary>
+    /// <param name="repeatAmount"></param>
+    /// <param name="bInfinite"></param>
     /// <returns></returns>
-    static int32_t RepeatByte(int32_t repeatAmout, bool infinite);
-         
+    static int32_t RepeatByte(int32_t repeatAmount, bool bInfinite);
 
     /*
     * A new special command
@@ -118,14 +105,20 @@ public:
     /// <returns></returns>
     static std::string ToNovaCommand(const CustomWaveform& waveform, int32_t motor);
 
-
     static std::string ToNova2Command(const CustomWaveform& waveform, int32_t motor);
 
-    /// <summary> Decode a command back into a waveform (though it won't be exactly the same due to the resolution of said encoding). </summary>
+    /// <summary> Decode a command back into a waveform (though it won't be exactly the same due to the resolution of
+    /// said encoding). </summary>
     /// <param name="command"></param>
     /// <param name="waveform"></param>
     /// <param name="location"></param>
     /// <returns></returns>
     static bool DecodeWaveform(const std::string& command, CustomWaveform& out_waveform, int32_t& out_motor);
 
+    //---------------------------------------------------------------------------------
+    // C++ Constructor Voodoo
+
+public:
+    NovaGloveHapticEncoder() = delete;
+    virtual ~NovaGloveHapticEncoder() = delete;
 };

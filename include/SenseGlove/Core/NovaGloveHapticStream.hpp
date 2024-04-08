@@ -2,10 +2,11 @@
  * @file
  *
  * @author  Max Lammers <max@senseglove.com>
+ * @author  Mamadou Babaei <mamadou@senseglove.com>
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -48,6 +49,13 @@ private:
     std::unique_ptr<Impl> Pimpl;
 
 public:
+    //---------------------------------------------------------------------------------
+    // Actual C++ Constructors
+    /**
+     * The default constructor.
+     */
+    NovaGloveHapticStream();
+
     /**
      * The copy constructor.
      */
@@ -61,7 +69,7 @@ public:
 
     virtual ~NovaGloveHapticStream();
 
-
+public:
     /**
      * The copy assignment operator.
      */
@@ -73,13 +81,6 @@ public:
     NovaGloveHapticStream& operator=(NovaGloveHapticStream&& rhs) noexcept;
 
 public:
-
-
-    //---------------------------------------------------------------------------------
-    // Actual C++ Constructors
-
-    NovaGloveHapticStream();
-
     //---------------------------------------------------------------------------------------------------
     // "Set Force-Feedback Level" commands
 
@@ -88,10 +89,10 @@ public:
     /// <param name="finger"></param>
     void AddForceLevel(int32_t finger, float level01);
 
-    /// <summary> Copy a set of FFB levels into the 'previous command', which will be used as a fallback value in case no change is made to a specific finger. </summary>
+    /// <summary> Copy a set of FFB levels into the 'previous command', which will be used as a fallback value in case
+    /// no change is made to a specific finger. </summary>
     /// <param name="levels"></param>
-    void StoreLastFFB(const std::vector<float>& levels);
-
+    void StoreLastForceFeedback(const std::vector<float>& levels);
 
     //---------------------------------------------------------------------------------------------------
     // "Set FFB Threshold" Command
@@ -113,8 +114,6 @@ public:
     /// <summary> Clears thresholds on all fingers. </summary>
     void ClearThresholds();
 
-
-
     /// <summary> Returns true if there have been updates to the Thresholds. </summary>
     /// <returns></returns>
     bool ThresholdsUpdated();
@@ -127,7 +126,6 @@ public:
     /// <param name="command"></param>
     void StoreLastThresholdCommand(Haptics::ThresholdCommand command);
 
-
     //---------------------------------------------------------------------------------------------------
     // "Set Vibration Level" commands
 
@@ -136,19 +134,20 @@ public:
     /// <param name="finger"></param>
     void AddVibrationLevel(int32_t finger, float amplitude);
 
-    /// <summary> Copy a set of amplitiudes into the 'previous command', which will be used as a fallback value in case no change is made to a specific finger. </summary>
+    /// <summary> Copy a set of amplitudes into the 'previous command', which will be used as a fallback value in case
+    /// no change is made to a specific finger. </summary>
     /// <param name="levels"></param>
     void StoreLastVibro(const std::vector<float>& levels);
 
-
     //---------------------------------------------------------------------------------------------------
     // "Set Wrist Level" commands
-        
+
     /// <summary> Sets the Latest Wrist Level to a desired level </summary>
     /// <param name="amplitude"></param>
     void AddWristCommand(float amplitude);
 
-    /// <summary> Copy an amplitiude into the 'previous command', which will be used as a fallback value in case no change is made to the wrist. </summary>
+    /// <summary> Copy an amplitude into the 'previous command', which will be used as a fallback value in case no
+    /// change is made to the wrist. </summary>
     /// <param name="wrist"></param>
     void StoreLastWrist(float wrist);
 
@@ -156,13 +155,13 @@ public:
     void ClearWristCommands();
 
 public:
-
     //---------------------------------------------------------------------------------------------------
     // Command Compilation
 
     /// <summary> Compile the commands into a set of traditional Nova Commands. </summary>
     /// <returns></returns>
-    void CompileTraditionalCommands(std::vector<float>& out_ffbLevels, std::vector<float>& out_buzzLevels, float& out_wristLvl);
+    void CompileTraditionalCommands(std::vector<float>& out_forceFeedbackLevels, std::vector<float>& out_buzzLevels,
+                                    float& out_wristLvl);
 
     /// <summary> Clears any active command(s) on the Nova Glove, completely resetting the stream. </summary>
     void ClearAllCommands();

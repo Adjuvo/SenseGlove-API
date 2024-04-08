@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -101,7 +101,8 @@ public:
     BasicHandModel& operator=(BasicHandModel&& rhs) noexcept;
 
 public:
-    /// <summary> Whether or not this BasicHandModel was created for a left- or right hand. Used for validation. </summary>
+    /// <summary> Whether or not this BasicHandModel was created for a left- or right hand. Used for validation.
+    /// </summary>
     SG_NODISCARD bool IsRight() const;
 
 public:
@@ -178,11 +179,13 @@ protected:
     void CalculateVariables();
 
 public:
-    /// <summary> Convert this handModel into a string notation, readable for humans. Does not include starting positions / rotations. </summary>
+    /// <summary> Convert this handModel into a string notation, readable for humans. Does not include starting
+    /// positions / rotations. </summary>
     /// <returns></returns>
     SG_NODISCARD std::string ToString() const;
 
-    /// <summary> Convert this handModel into a string notation, readable for humans. Optionally includes starting positions / rotations. </summary>
+    /// <summary> Convert this handModel into a string notation, readable for humans. Optionally includes starting
+    /// positions / rotations. </summary>
     /// <param name="bLengthsOnly"></param>
     /// <returns></returns>
     SG_NODISCARD std::string ToString(bool bLengthsOnly) const;

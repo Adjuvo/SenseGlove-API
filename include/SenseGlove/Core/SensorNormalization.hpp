@@ -2,14 +2,16 @@
  * @file
  *
  * @author  Max Lammers <max@senseglove.com>
+ * @author  Mamadou Babaei <mamadou@senseglove.com>
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
- * A script to normalize any set of floating point values by looking at their minimum and maximum values. Used for automagical calibration.
+ * A script to normalize any set of floating point values by looking at their
+ * minimum and maximum values. Used for automagical calibration.
  */
 
 
@@ -24,23 +26,37 @@ namespace SGCore
 {
     namespace Util
     {
-        /// <summary> Interface for Nova 2.0 Gloves.  A soft glove with detachable force-feedback and sensor module, and active contact feedback in the front strap. </summary>
+        /// <summary> Interface for Nova 2.0 Gloves.  A soft glove with detachable force-feedback and sensor module,
+        /// and active contact feedback in the front strap. </summary>
         class SGCORE_API SensorNormalization;
     }// namespace Util
 }// namespace SGCore
 
-/// <summary> Interface for Nova 2.0 Gloves.  A soft glove with detachable force-feedback and sensor module, and active contact feedback in the front strap. </summary>
+/// <summary> Interface for Nova 2.0 Gloves.  A soft glove with detachable force-feedback and sensor module, and active
+/// contact feedback in the front strap. </summary>
 class SGCORE_API SGCore::Util::SensorNormalization
 {
-
-    //---------------------------------------------------------------------------------
-    // C++ Constructor Voodoo
-
 private:
     struct Impl;
     std::unique_ptr<Impl> Pimpl;
 
+    //---------------------------------------------------------------------------------
+    // C++ Constructor Voodoo
+
 public:
+    /**
+     * The default constructor.
+     */
+    SensorNormalization();
+
+    //---------------------------------------------------------------------------------
+    // Actual C++ Constructors
+
+    explicit SensorNormalization(const std::vector<float>& movementRanges);
+
+    //---------------------------------------------------------------------------------
+    // Accessors
+
     /**
      * The copy constructor.
      */
@@ -49,12 +65,11 @@ public:
     /**
      * The move constructor.
      */
-    SensorNormalization(SensorNormalization&& rhs)
-    noexcept;
+    SensorNormalization(SensorNormalization&& rhs) noexcept;
 
     virtual ~SensorNormalization();
 
-
+public:
     /**
      * The copy assignment operator.
      */
@@ -65,37 +80,28 @@ public:
      */
     SensorNormalization& operator=(SensorNormalization&& rhs) noexcept;
 
-public:
-
-    SensorNormalization();
-
-    //---------------------------------------------------------------------------------
-    // Actual C++ Constructors
-
-    SensorNormalization(std::vector<float> movementRanges);
-
     //---------------------------------------------------------------------------------
     // Accessors
 
 public:
+    /// <summary> If true, the normalization collection is active. If false, we're no longer collecting min / max
+    /// values. </summary>
+    SG_NODISCARD bool CollectsNormalization() const;
 
-    /// <summary> If true, the normalization collection is active. If false, we're no longer collecting min / max values. </summary>
-    bool GetCollectNormalization();
-    void SetCollectNormalization(bool value);
+    void SetCollectNormalization(bool bCollectNormalization);
 
     //---------------------------------------------------------------------------------
     // Member Functions
 
 public:
-
     /// <summary> The amount of items in this collector Useful for FOR loops. </summary>
-    int32_t GetLength();
+    SG_NODISCARD int32_t GetLength() const;
 
     /// <summary> The amount of values that have moved the appropriate amount. </summary>
-    int32_t GetMoveCount();
+    SG_NODISCARD int32_t GetMoveCount() const;
 
     /// <summary> Returns true if all sensors are allowed to move. </summary>
-    bool AllSensorsMoving();
+    SG_NODISCARD bool AllSensorsMoving() const;
 
     /// <summary> Reset the normalization of values. </summary>
     void ResetNormalization();
@@ -103,28 +109,28 @@ public:
     /// <summary>  </summary>
     /// <param name="index"></param>
     /// <param name="value"></param>
-    void UpdateNormalization(float value, int32_t index) const;
+    void UpdateNormalization(float value, int32_t index);
 
     /// <summary> Normalize a value on a specific index, and update Normalization while you're at it. </summary>
     /// <param name="value"></param>
     /// <param name="index"></param>
     /// <returns></returns>
-    float NormalizeValue(float value, int32_t index) const;
+    float NormalizeValue(float value, int32_t index);
 
     /// <summary> Update and Normalize a set of values, provided this is the same length. </summary>
     /// <param name="values"></param>
     /// <returns></returns>
-    std::vector<float> NormalizeValues(const std::vector<float>& values) const;
+    std::vector<float> NormalizeValues(const std::vector<float>& values);
 
     /// <summary> Returns true if a sensor on this index has moved enough. </summary>
     /// <param name="index"></param>
     /// <returns></returns>
-    bool MovedEnough(int32_t index) const;
+    SG_NODISCARD bool MovedEnough(int32_t index) const;
 
     /// <summary> Turn a value from 0 .. 1 back into [minValue ... maxValue] range for the Nova Glove. </summary>
     /// <param name="value01"></param>
     /// <param name="index"></param>
     /// <param name="fallbackValue"></param>
     /// <returns></returns>
-    float DeNormalize(float value01, int32_t index, float fallbackValue = 1.0f) const;
+    SG_NODISCARD float Denormalize(float value01, int32_t index, float fallbackValue = 1.0f) const;
 };

@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -49,7 +49,7 @@ public:
     /// <summary> Returns an idle pose for the Sense Glove if no data can be found. </summary>
     static SenseGlovePose IdlePose(const SenseGloveInfo& gloveInfo);
 
-    ///<summary> Deserialize a GlovePose back into usable values. </summary>
+    /// <summary> Deserialize a GlovePose back into usable values. </summary>
     static SenseGlovePose Deserialize(const std::string& serializedString);
 
 private:
@@ -91,7 +91,7 @@ public:
     SenseGlovePose& operator=(SenseGlovePose&& rhs) noexcept;
 
 public:
-    ///<summary> Whether this Glove Pose was created for be a right- or left hand, or not. </summary>
+    /// <summary> Whether this Glove Pose was created for be a right- or left hand, or not. </summary>
     SG_NODISCARD bool IsRight() const;
 
     /// <summary> Positions of each glove joint, relative to the Glove's Origin. </summary>
@@ -105,17 +105,17 @@ public:
     SG_NODISCARD const std::vector<std::vector<Kinematics::Vect3D>>& GetGloveAngles() const;
 
 public:
-    ///<summary> The position of the tip of the 'thimbles', the furthest link on each glove link. </summary>
+    /// <summary> The position of the tip of the 'thimbles', the furthest link on each glove link. </summary>
     SG_NODISCARD std::vector<Kinematics::Vect3D> GetThimblePositions() const;
 
-    ///<summary> The (quaternion) rotation of the 'thimbles', the furthest link on each link. </summary>
+    /// <summary> The (quaternion) rotation of the 'thimbles', the furthest link on each link. </summary>
     SG_NODISCARD std::vector<Kinematics::Quat> GetThimbleRotations() const;
 
-    ///<summary> Sum of the Sensor angles in each (xyz) direction. "Total Pronation / Flexion / Abduction". </summary>
+    /// <summary> Sum of the Sensor angles in each (xyz) direction. "Total Pronation / Flexion / Abduction". </summary>
     SG_NODISCARD std::vector<Kinematics::Vect3D> GetTotalGloveAngles() const;
 
     /// <summary> Calculate fingertip positions, knowing the offset between thimble and fingertips. </summary>
-    SG_NODISCARD std::vector<Kinematics::Vect3D> CalculateFingerTips(
+    SG_NODISCARD std::vector<Kinematics::Vect3D> CalculateFingertips(
             const std::vector<Kinematics::Vect3D>& fingerOffsets) const;
 
     /// <summary> Returns true if this glove pose equals another. </summary>
@@ -125,6 +125,6 @@ public:
     /// <summary> Returns a user-friendly string representation of this GlovePose for reporting. </summary>
     SG_NODISCARD std::string ToString(bool bShortFormat = true) const;
 
-    ///<summary> Serialize this GlovePose into a string representation. </summary>
+    /// <summary> Serialize this GlovePose into a string representation. </summary>
     SG_NODISCARD std::string Serialize() const;
 };

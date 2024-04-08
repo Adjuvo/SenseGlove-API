@@ -2,14 +2,16 @@
  * @file
  *
  * @author  Max Lammers <max@senseglove.com>
+ * @author  Mamadou Babaei <mamadou@senseglove.com>
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
- * Internal class that acts as a sort of 'in between' handProfile. This class converts SG Dk1 Angles into 'normalized data' - between 0 .. 1.
+ * Internal class that acts as a sort of 'in between' handProfile. This class
+ * converts SG Dk1 Angles into 'normalized data' - between 0 .. 1.
  */
 
 
@@ -24,23 +26,33 @@ namespace SGCore
 {
     namespace SG
     {
-        /// <summary> Acts as a sort of 'in between' handProfile. This class converts SG Dk1 Angles into 'normalized data' - between 0 .. 1. </summary>
+        /// <summary> Acts as a sort of 'in between' handProfile. This class converts SG Dk1 Angles into
+        /// 'normalized data' - between 0 .. 1. </summary>
         class SGCORE_API SenseGloveSensorNormalizer;
     }// namespace Util
 }// namespace SGCore
 
-/// <summary> Acts as a sort of 'in between' handProfile. This class converts SG Dk1 Angles into 'normalized data' - between 0 .. 1. </summary>
+/// <summary> Acts as a sort of 'in between' handProfile. This class converts SG Dk1 Angles into 'normalized data' -
+/// between 0 .. 1. </summary>
 class SGCORE_API SGCore::SG::SenseGloveSensorNormalizer
 {
-
-    //---------------------------------------------------------------------------------
-    // C++ Constructor Voodoo
-
 private:
     struct Impl;
     std::unique_ptr<Impl> Pimpl;
 
+    //---------------------------------------------------------------------------------
+    // C++ Constructor Voodoo
+
 public:
+    SenseGloveSensorNormalizer();
+
+    //---------------------------------------------------------------------------------
+    // Actual C++ Constructors
+
+    /// <summary> Creates a new SenseGlove Sensor Normalizer based off the device's sensor angles. </summary>
+    /// <param name="bRightHanded"></param>
+    explicit SenseGloveSensorNormalizer(bool bRightHanded);
+
     /**
      * The copy constructor.
      */
@@ -49,12 +61,11 @@ public:
     /**
      * The move constructor.
      */
-    SenseGloveSensorNormalizer(SenseGloveSensorNormalizer&& rhs)
-    noexcept;
+    SenseGloveSensorNormalizer(SenseGloveSensorNormalizer&& rhs) noexcept;
 
     virtual ~SenseGloveSensorNormalizer();
 
-
+public:
     /**
      * The copy assignment operator.
      */
@@ -66,18 +77,6 @@ public:
     SenseGloveSensorNormalizer& operator=(SenseGloveSensorNormalizer&& rhs) noexcept;
 
 public:
-
-    SenseGloveSensorNormalizer();
-
-    //---------------------------------------------------------------------------------
-    // Actual C++ Constructors
-
-    /// <summary> MovementRanges.Length is used to determine the size. </summary>
-    /// <param name=""></param>
-    /// <summary> Creates a new SenseGlove Sensor Normalizer based off the device's sensor angles. </summary>
-    /// <param name="rightHand"></param>
-    SenseGloveSensorNormalizer(bool rightHand);
-
     //---------------------------------------------------------------------------------
     // Accessors
 
@@ -85,19 +84,15 @@ public:
     // Member Functions
 
 public:
-
-    /// <summary> Normalize a finger's flexion, based on the total flexion of the exoskeleton </summary>
+    /// <summary> Normalize a finger's flexion, based on the total flexion of the exoskeleton. </summary>
     /// <param name="finger"></param>
-    /// <param name="sumFlexAngles"></param>
+    /// <param name="sumFlexionAngles"></param>
     /// <returns></returns>
-    float NormalizeFlexion(int32_t finger, float sumFlexAngles) const;
+    SG_NODISCARD float NormalizeFlexion(int32_t finger, float sumFlexionAngles) const;
 
-
-    /// <summary> Normalize a finger's abduction, based on the total abduction of the exoskeleton>  </summary>
+    /// <summary> Normalize a finger's abduction, based on the total abduction of the exoskeleton. </summary>
     /// <param name="finger"></param>
-    /// <param name="sumAbdAngles"></param>
+    /// <param name="sumAbductionAngles"></param>
     /// <returns></returns>
-    float NormalizeAbduction(int32_t finger, float sumAbdAngles) const;
-
-
+    SG_NODISCARD float NormalizeAbduction(int32_t finger, float sumAbductionAngles) const;
 };

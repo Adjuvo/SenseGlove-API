@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -42,10 +42,11 @@ namespace SGCore
             /// <summary> Send messages from device Parsing. </summary>
             DeviceParsing,
 
-            /// <summary> Send messages related to backed communications. Mostly relevant when using Ports / Android Strings. </summary>
+            /// <summary> Send messages related to backed communications. Mostly relevant when using
+            /// Ports / Android Strings. </summary>
             BackendCommunication,
 
-             /// <summary> Which haptics are eventually sent to the glove </summary>
+            /// <summary> Which haptics are eventually sent to the glove </summary>
             Haptics_Sent,
 
             /// <summary> Which haptics are added into our queue. </summary>
@@ -72,7 +73,7 @@ public:
 
     static void SetDebugLevel(EDebugLevel level);
 
-    ///<summary> Print a single message with an end-line to the console. </summary>
+    /// <summary> Print a single message with an end-line to the console. </summary>
     static void Log(const std::string& msg, EDebugLevel level);
 
 private:

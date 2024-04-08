@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -30,6 +30,7 @@ namespace SGCore
         class SGCORE_API JointKinematics;
 
         class Quat;
+
         class Vect3D;
     }// namespace Kinematics
 }// namespace SGCore

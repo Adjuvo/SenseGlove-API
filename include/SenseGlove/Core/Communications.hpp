@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -65,7 +65,7 @@ public:
     /// <summary> Byte indicating the end of a sensor data package. </summary>
     SG_NODISCARD static char GetSenseClose();
 
-    ///<summary> Denotes a block section of a DeviceList section. </summary>
+    /// <summary> Denotes a block section of a DeviceList section. </summary>
     SG_NODISCARD static char GetListDelimiter();
 
     /// <summary> ':' - Used to split a set of different constant values into individual groups. </summary>
@@ -89,7 +89,7 @@ public:
     /// <param name="fallbackValue"> If values01 is not long enough to reach messageLength, pad valued with this </param>
     /// <returns></returns>
     SG_NODISCARD static std::string ToSGBytes(const std::vector<float>& values01, int32_t messageLength, float fallbackValue = 0.0f);
-    
+
     /// <summary> Encode a single value into a character into a range of bytes. Will alsways clamp! </summary>
     /// <param name="value"></param>
     /// <param name="minValue"></param>

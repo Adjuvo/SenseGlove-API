@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -41,7 +41,7 @@ namespace SGCore
 class SGCORE_API SGCore::HandPose
 {
 public:
-    ///<summary> Deserialize a HandPose back into usable values. </summary>
+    /// <summary> Deserialize a HandPose back into usable values. </summary>
     static HandPose Deserialize(const std::string& serializedString);
 
     //---------------------------------------------------------------------------------------------------------------------
@@ -72,35 +72,41 @@ public:
     /// <returns></returns>
     static HandPose DefaultIdle(bool bRightHanded);
 
-    /// <summary> Generates a HandPose representing an 'open hand', used in calibration to determine finger extension. </summary>
+    /// <summary> Generates a HandPose representing an 'open hand', used in calibration to determine finger extension.
+    /// </summary>
     /// <param name="bRightHanded"></param>
     /// <param name="handDimensions"></param>
     /// <returns></returns>
     static HandPose FlatHand(bool bRightHanded, const Kinematics::BasicHandModel& handDimensions);
 
-    /// <summary> Generates a HandPose representing an 'open hand', used in calibration to determine finger extension. </summary>
+    /// <summary> Generates a HandPose representing an 'open hand', used in calibration to determine finger extension.
+    /// </summary>
     /// <param name="bRightHanded"></param>
     /// <returns></returns>
     static HandPose FlatHand(bool bRightHanded);
 
-    /// <summary> Generates a HandPose representing a 'thumbs up', used in calibration to determine finger flexion, thumb extension and adduction. </summary>
+    /// <summary> Generates a HandPose representing a 'thumbs up', used in calibration to determine finger flexion,
+    /// thumb extension and adduction. </summary>
     /// <param name="bRightHanded"></param>
     /// <param name="handDimensions"></param>
     /// <returns></returns>
     static HandPose ThumbsUp(bool bRightHanded, const Kinematics::BasicHandModel& handDimensions);
 
-    /// <summary> Generates a HandPose representing a 'thumbs up', used in calibration to determine finger flexion, thumb extension and adduction. </summary>
+    /// <summary> Generates a HandPose representing a 'thumbs up', used in calibration to determine finger flexion,
+    /// thumb extension and adduction. </summary>
     /// <param name="bRightHanded"></param>
     /// <returns></returns>
     static HandPose ThumbsUp(bool bRightHanded);
 
-    /// <summary> Generates a HandPose representing a 'fist', used in calibration to determine, thumb flexion and abduction. </summary>
+    /// <summary> Generates a HandPose representing a 'fist', used in calibration to determine, thumb flexion and
+    /// abduction. </summary>
     /// <param name="bRightHanded"></param>
     /// <param name="handDimensions"></param>
     /// <returns></returns>
     static HandPose Fist(bool bRightHanded, const Kinematics::BasicHandModel& handDimensions);
 
-    /// <summary> Generates a HandPose representing a 'fist', used in calibration to determine, thumb flexion and abduction. </summary>
+    /// <summary> Generates a HandPose representing a 'fist', used in calibration to determine, thumb flexion and
+    /// abduction. </summary>
     /// <param name="bRightHanded"></param>
     /// <returns></returns>
     static HandPose Fist(bool bRightHanded);
@@ -143,16 +149,17 @@ public:
     HandPose& operator=(HandPose&& rhs) noexcept;
 
 public:
-    ///<summary> Whether this HandPose was created to be a right- or left hand. </summary>
+    /// <summary> Whether this HandPose was created to be a right- or left hand. </summary>
     SG_NODISCARD bool IsRight() const;
 
-    ///<summary> Positions of all hand joints relative to the Sense Glove origin. From thumb to pinky, proximal to distal. </summary>
+    /// <summary> Positions of all hand joints relative to the Sense Glove origin. From thumb to pinky, proximal to
+    /// distal. </summary>
     SG_NODISCARD const std::vector<std::vector<Kinematics::Vect3D>>& GetJointPositions() const;
 
-    ///<summary> Quaternion rotations of all hand joints. From thumb to pinky, proximal to distal. </summary>
+    /// <summary> Quaternion rotations of all hand joints. From thumb to pinky, proximal to distal. </summary>
     SG_NODISCARD const std::vector<std::vector<Kinematics::Quat>>& GetJointRotations() const;
 
-    ///<summary> Euler representations of all possible hand angles. From thumb to pinky, proximal to distal. </summary>
+    /// <summary> Euler representations of all possible hand angles. From thumb to pinky, proximal to distal. </summary>
     SG_NODISCARD const std::vector<std::vector<Kinematics::Vect3D>>& GetHandAngles() const;
 
 public:
@@ -164,22 +171,26 @@ public:
 
     //GetFormat (animator), GetFormat (MoCap), etc?
 
-    ///<summary> Returns the total flexion of a specific finger as a value between 0 (fully extended) and 1 (fully flexed). </summary>
-    ///<remarks> Useful for animation or for detecting gestures. </remarks>
+    /// <summary> Returns the total flexion of a specific finger as a value between 0 (fully extended) and 1
+    /// (fully flexed). </summary>
+    /// <remarks> Useful for animation or for detecting gestures. </remarks>
     SG_NODISCARD float GetNormalizedFlexion(EFinger finger, bool bClamp01 = true) const;
 
-    ///<summary> Returns the total flexion the fingers as a value between 0 (fully extended) and 1 (fully flexed). </summary>
-    ///<remarks> Useful for animation or for detecting gestures. </remarks>
+    /// <summary> Returns the total flexion the fingers as a value between 0 (fully extended) and 1 (fully flexed).
+    /// </summary>
+    /// <remarks> Useful for animation or for detecting gestures. </remarks>
     SG_NODISCARD std::vector<float> GetNormalizedFlexion(bool bClamp01 = true) const;
 
 protected:
-    ///<summary> Returns the total flexion of a specific finger as a value between 0 (fully extended) and 1 (fully flexed). </summary>
-    ///<remarks> Separate function because we use it multiple times, protected because we don't want indexOutOfRange exceptions. </remarks>
+    /// <summary> Returns the total flexion of a specific finger as a value between 0 (fully extended) and
+    /// 1 (fully flexed). </summary>
+    /// <remarks> Separate function because we use it multiple times, protected because we don't want indexOutOfRange
+    /// exceptions. </remarks>
     SG_NODISCARD float GetNormalizedFlexion(int32_t finger, bool bClamp01 = true) const;
 
 public:
     SG_NODISCARD std::string ToString(bool bShortFormat = false) const;
 
-    ///<summary> Serialize this HandPose into a string representation. </summary>
+    /// <summary> Serialize this HandPose into a string representation. </summary>
     SG_NODISCARD std::string Serialize() const;
 };

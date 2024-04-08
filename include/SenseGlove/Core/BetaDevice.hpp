@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -28,15 +28,17 @@
 
 namespace SGCore
 {
-    /// <summary> A Device that adheres to the SenseGlove communications protocol, but which has no implementation in this API. </summary>
+    /// <summary> A Device that adheres to the SenseGlove communications protocol, but which has no implementation in
+    /// this API. </summary>
     class SGCORE_API BetaDevice;
 }// namespace SGCore
 
-/// <summary> A Device that adheres to the SenseGlove communications protocol, but which has no implementation in this API. </summary>
+/// <summary> A Device that adheres to the SenseGlove communications protocol, but which has no implementation in this
+/// API. </summary>
 class SGCORE_API SGCore::BetaDevice : public SGDevice
 {
 public:
-    ///<summary> Deserialize a beta device from its basic constants string. Returns nullptr is unsuccessful. </summary>
+    /// <summary> Deserialize a beta device from its basic constants string. Returns nullptr is unsuccessful. </summary>
     static std::shared_ptr<SGDevice> Parse(const std::string& constantsString);
 
 private:
@@ -76,14 +78,14 @@ public:
     BetaDevice& operator=(BetaDevice&& rhs) noexcept;
 
 public:
-    ///<summary> Get the DeviceType enumerator of this SenseGlove, used in DeviceList enumeration. </summary>
+    /// <summary> Get the DeviceType enumerator of this SenseGlove, used in DeviceList enumeration. </summary>
     SG_NODISCARD virtual EDeviceType GetDeviceType() const override;
 
     /// <summary> Get the unique identifier of this device. </summary>
-    SG_NODISCARD virtual std::string GetDeviceId() const override;
+    SG_NODISCARD virtual const std::string& GetDeviceId() const override;
 
     /// <summary> Retrieve this device's hardware version. </summary>
-    SG_NODISCARD virtual std::string GetHardwareVersion() const override;
+    SG_NODISCARD virtual const std::string& GetHardwareVersion() const override;
 
     /// <summary> Retrieve this device's firmware version. </summary>
     SG_NODISCARD virtual int32_t GetFirmwareVersion() const override;
@@ -106,6 +108,6 @@ public:
     bool SendHaptics(const std::string& command, int32_t channel = 0) const;
 
 public:
-    ///<summary> Create a string representation of this device for reporting purposes. </summary>
+    /// <summary> Create a string representation of this device for reporting purposes. </summary>
     SG_NODISCARD virtual std::string ToString() const override;
 };

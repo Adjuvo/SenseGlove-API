@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -27,7 +27,8 @@ namespace SGCore
 {
     namespace Haptics
     {
-        /// <summary> A command to activate the Sense Glove Thumper Module, which is responsible for wrist feedback. </summary>
+        /// <summary> A command to activate the Sense Glove Thumper Module, which is responsible for wrist feedback.
+        /// </summary>
         enum class SGCORE_API ESenseGloveThumperCommand : uint8_t
         {
             None = 126,

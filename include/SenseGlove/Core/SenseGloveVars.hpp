@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -28,12 +28,13 @@ namespace SGCore
     namespace Kinematics
     {
         class Quat;
+
         class Vect3D;
     }// namespace Kinematics
 
     namespace Parsing
     {
-        ///<summary> Sense Glove C string Variables, enumerated for our convenience. </summary>
+        /// <summary> Sense Glove C string Variables, enumerated for our convenience. </summary>
         enum class ESenseGloveCVar : uint8_t
         {
             ConstOpen = 0,
@@ -51,7 +52,7 @@ namespace SGCore
             AllC,
         };
 
-        ///<summary> Sense Glove sensor string Variables, enumerated for our convenience. </summary>
+        /// <summary> Sense Glove sensor string Variables, enumerated for our convenience. </summary>
         enum class ESenseGloveSVar : uint8_t
         {
             RealtimeError = 0,// real-time error
@@ -78,12 +79,14 @@ namespace SGCore
 class SGCORE_API SGCore::SG::SenseGloveVars
 {
 public:
-    ///<summary> Retrieve a basic ConstantsString for a Sense Glove of a specific Hardware Version. Used for debugging / unit tests. </summary>
-    ///<returns> Returns an empty string when an invalid glove version is requested. </returns>
+    /// <summary> Retrieve a basic ConstantsString for a Sense Glove of a specific Hardware Version. Used for debugging
+    /// / unit tests. </summary>
+    /// <returns> Returns an empty string when an invalid glove version is requested. </returns>
     static std::string GetStandardConstantsString(const std::string& hardwareVersion,
                                                   float firmwareVersion, bool bRightHanded);
 
-    /// <summary> Retrieve an example sensor string of a Sense Glove with a particular hardware- and firmware version. </summary>
+    /// <summary> Retrieve an example sensor string of a Sense Glove with a particular hardware- and firmware version.
+    /// </summary>
     static std::string GetSensorString(const std::string& hardwareVersion, float firmwareVersion);
 
     /// <summary> Retrieve the starting positions of a particular Sense Glove. </summary>
@@ -123,7 +126,7 @@ public:
     /// <param name="bRightHanded"></param>
     /// <returns></returns>
     static SenseGloveInfo GenerateGloveModel(const std::string& hardwareVersion,
-                                          int32_t firmwareVersion, int32_t subFirmwareVersion, bool bRightHanded);
+                                             int32_t firmwareVersion, int32_t subFirmwareVersion, bool bRightHanded);
 
     /// <summary> Generate a custom glove info. </summary>
     /// <param name="hardwareVersion"></param>
@@ -133,8 +136,8 @@ public:
     /// <param name="customId"></param>
     /// <returns></returns>
     static SenseGloveInfo GenerateGloveModel(const std::string& hardwareVersion,
-                                          int32_t firmwareVersion, int32_t subFirmwareVersion,
-                                          bool bRightHanded, const std::string& customId);
+                                             int32_t firmwareVersion, int32_t subFirmwareVersion,
+                                             bool bRightHanded, const std::string& customId);
 
 public:
     SenseGloveVars() = delete;

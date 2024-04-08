@@ -5,7 +5,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -73,7 +73,7 @@ public:
 
     SG_NODISCARD std::string GetSensorString(int32_t deviceAddress) const;
 
-    int32_t WriteHaptics(int32_t deviceAddress, const std::string& haptics) const;
+    int32_t WriteHaptics(int32_t deviceAddress, int32_t channelIndex, const std::string& haptics) const;
 };
 
-#endif  /* SG_PLATFORM_ANDROID */
+#endif /* SG_PLATFORM_ANDROID */

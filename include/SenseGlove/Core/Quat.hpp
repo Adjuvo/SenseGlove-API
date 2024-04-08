@@ -6,7 +6,7 @@
  *
  * @section LICENSE
  *
- * Copyright (c) 2020 - 2023 SenseGlove
+ * Copyright (c) 2020 - 2024 SenseGlove
  *
  * @section DESCRIPTION
  *
@@ -26,7 +26,8 @@ namespace SGCore
 {
     namespace Kinematics
     {
-        /// <summary> A rotation in 3D space that can be applied to a 3D vector or converted into Euler Angles. </summary>
+        /// <summary> A rotation in 3D space that can be applied to a 3D vector or converted into Euler Angles.
+        /// </summary>
         class SGCORE_API Quat;
 
         class Vect3D;
@@ -37,22 +38,22 @@ namespace SGCore
 class SGCORE_API SGCore::Kinematics::Quat
 {
 public:
-    ///<summary> Quaternion representing no rotation (0.0f, 0.0f, 0.0f, 1.0f) </summary>
+    /// <summary> Quaternion representing no rotation (0.0f, 0.0f, 0.0f, 1.0f) </summary>
     static const Quat& Identity();
 
-    ///<summary> Parse a Quaternion from a string. </summary>
+    /// <summary> Parse a Quaternion from a string. </summary>
     static bool Deserialize(const std::string& str, Quat& out_result, char delimiter = ',');
 
-    ///<summary> Create a new Quaternion Rotation from its euler angle representation. </summary>
+    /// <summary> Create a new Quaternion Rotation from its euler angle representation. </summary>
     static Quat FromEuler(float xAngle, float yAngle, float zAngle);
 
-    ///<summary> Create a new Quaternion Rotation from its euler angle representation. </summary>
+    /// <summary> Create a new Quaternion Rotation from its euler angle representation. </summary>
     static Quat FromEuler(const Vect3D& euler);
 
-    ///<summary> Create a new Quaternion Rotation from an angle-axis representation. </summary>
+    /// <summary> Create a new Quaternion Rotation from an angle-axis representation. </summary>
     static Quat FromAngleAxis(float angle, float xAxis, float yAxis, float zAxis);
 
-    ///<summary> Create a new Quaternion Rotation from an angle-axis representation. </summary>
+    /// <summary> Create a new Quaternion Rotation from an angle-axis representation. </summary>
     static Quat FromAngleAxis(float angle, const Vect3D& axis);
 
     /// <summary> Returns the inverse if q (a.k.a. a rotation in the other direction) </summary>
@@ -135,7 +136,7 @@ public:
     /// <summary> Check if two quaternions have equal values. </summary>
     SG_NODISCARD bool Equals(const Quat& quat) const;
 
-    ///<summary> Check if this Quaternion is the identity quaternion (meaning it does not rotate anything.) </summary>
+    /// <summary> Check if this Quaternion is the identity quaternion (meaning it does not rotate anything.) </summary>
     SG_NODISCARD bool IsIdentity() const;
 
     /// <summary> Returns the magnitude of this Quaternion. Used in normalization. </summary>
@@ -145,18 +146,21 @@ public:
     /// <summary> Create a string representation of the Quaternion rotation. </summary>
     SG_NODISCARD std::string ToString() const;
 
-     /// <summary> Normalize a Quaternion to ensure it is Unit Length </summary>
+    /// <summary> Normalize a Quaternion to ensure it is Unit Length </summary>
     SG_NODISCARD Quat Normalized() const;
 
-    /// <summary>  Calculate the Quaternion that, when applied to (1, 0, 0), (0, 1, 0) and (0, 0, 1) will result in teh vectors X, Y, Z. </summary>
+    /// <summary>  Calculate the Quaternion that, when applied to (1, 0, 0), (0, 1, 0) and (0, 0, 1) will result in the
+    /// vectors X, Y, Z. </summary>
     /// <param name="X">In Orignal function - Side, calculated from Cross Up(input)-FWD, Unity (2D) Left/Right</param>
     /// <param name="Y">In Orignal function - UP, re-calculated from Cross SIDE-FWD, Unity (2D) Up/Down</param>
     /// <param name="Z">In Orignal function - Forward, Unity Z (towards screen)</param>
-    /// <remarks> Based on the implementation at https://gist.github.com/aeroson/043001ca12fe29ee911e or https://answers.unity.com/questions/467614/what-is-the-source-code-of-quaternionlookrotation.html, 
-    /// refactored somewhat to make it more readable, and added comments that reflect my own hand solved variables based on the sources from Quat.Rotate. </remarks>
+    /// <remarks> Based on the implementation at https://gist.github.com/aeroson/043001ca12fe29ee911e or
+    /// https://answers.unity.com/questions/467614/what-is-the-source-code-of-quaternionlookrotation.html,
+    /// refactored somewhat to make it more readable, and added comments that reflect my own hand solved variables
+    /// based on the sources from Quat.Rotate. </remarks>
     /// <returns></returns>
-    SG_NODISCARD static Quat LookRotation_XYZ(const Vect3D X, const Vect3D Y, const Vect3D Z); //assumes all are known, of unit length and properly calculated. Makes the matrix (v0, v1, v2). SHOULD BE UNIT LEGTH AND ORTHAGONAL!
-        
+    SG_NODISCARD static Quat LookRotation_XYZ(const Vect3D X, const Vect3D Y,
+                                              const Vect3D Z); //assumes all are known, of unit length and properly calculated. Makes the matrix (v0, v1, v2). SHOULD BE UNIT LEGTH AND ORTHAGONAL!
 
 public:
     SG_NODISCARD std::string Serialize(const char delimiter = ',') const;
