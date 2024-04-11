@@ -36,6 +36,12 @@ namespace SGCore
 /// contact feedback in the front strap. </summary>
 class SGCORE_API SGCore::Util::SensorNormalization
 {
+public:
+    //---------------------------------------------------------------------------------
+    // Serialize / Deserialize
+
+    SG_NODISCARD static bool Deserialize(const std::string& serialized, SensorNormalization& out_normalizer);
+
 private:
     struct Impl;
     std::unique_ptr<Impl> Pimpl;
@@ -133,4 +139,9 @@ public:
     /// <param name="fallbackValue"></param>
     /// <returns></returns>
     SG_NODISCARD float Denormalize(float value01, int32_t index, float fallbackValue = 1.0f) const;
+
+    //---------------------------------------------------------------------------------
+    // Serialize / Deserialize
+
+    SG_NODISCARD std::string Serialize();
 };

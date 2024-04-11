@@ -14,7 +14,8 @@ serial.dll
 serial.lib
 libserial.so
 libserial.a
-boost/
+include/serial/
+include/boost/
 include/SenseGlove/Connect/Connection.hpp
 include/SenseGlove/Connect/ConnectionData.hpp
 include/SenseGlove/Connect/ConnectionFactory.hpp

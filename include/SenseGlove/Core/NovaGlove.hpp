@@ -309,6 +309,9 @@ public:
     /// <summary>  Completes sensor Normalization on the Nova's end. </summary>
     virtual void ResetCalibration() override;
 
+    /// <summary> Attempt to load a HapticGlove Profile from disk, if one exists. </summary>
+    virtual void TryLoadProfile() override;
+
     // Basic haptics
 
     /// <summary> Stop all haptic feedback effects playing on this device. </summary>

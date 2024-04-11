@@ -109,6 +109,12 @@ public:
     /// <param name="bRightHanded"></param>
     static void EndCalibration(bool bRightHanded);
 
+    /// <summary> Windows-only. If calibration is available (via SenseCom, for instance) we can use this to (re)load it. This step happens autmagically at the start of your runtime. </summary>
+    static void LoadCalibrationFromDisk();
+
+    /// <summary> Clears profiles on disk if any exist. </summary>
+    static void ClearProfilesOnDisk();
+
     //--------------------------------------------------------------------------------------
     // Tracking
 

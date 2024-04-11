@@ -221,6 +221,9 @@ public:
     /// <summary> Retrieve the current calibration instruction. </summary>
     SG_NODISCARD virtual std::string GetCalibrationInstruction() const;
 
+    /// <summary> Attempt to load a HapticGlove Profile from disk, if one exists. </summary>
+    virtual void TryLoadProfile();
+
 public:
     //--------------------------------------------------------------------------------------
     // Haptics Methods.
