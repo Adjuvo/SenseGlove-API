@@ -30,14 +30,15 @@ static void TestVibration(bool rightHand, float amplitude, float duration, float
         return;
 
     std::string hand = rightHand ? "right hand" : "left hand";
-    if (HandLayer::SupportsCustomWaveforms(rightHand, location)) {
-        HandLayer::SendCustomWaveform(rightHand, CustomWaveform(amplitude, duration, frequency), location);
+    if (HandLayer::SupportsCustomWaveform(rightHand, location)) {
+        SGCore::CustomWaveform waveform{amplitude, duration, frequency};
+        HandLayer::SendCustomWaveform(rightHand, waveform, location);
     } else {
         std::cout << ("The " + hand + " does not support Custom Waveforms (at " + HapticGlove::ToString(location) + "), so we're sending a vibration to the Index Finger instead") << std::endl;
         //whole hand and / or custom waveforms not supported. So we're pulsing the index finger instead.
-        HandLayer::QueueCmd_SetVibroLevel(rightHand, 1, 1.0f, true);
+        HandLayer::QueueCommand_VibroLevel(rightHand, 1, 1.0f, true);
         std::this_thread::sleep_for(std::chrono::milliseconds( (int32_t)(duration * 1000) )); //s to ms
-        HandLayer::QueueCmd_SetVibroLevel(rightHand, 1, 0.0f, true);//turn it back off
+        HandLayer::QueueCommand_VibroLevel(rightHand, 1, 0.0f, true);//turn it back off
     }
 }
 
@@ -203,24 +204,24 @@ int32_t main()
     // Force-Feedback Command(s)
     {
         //Toggles FFB for the first 3 fingers; thumb, index, and middle finger.
-        std::vector<float> fingerFFB = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };//there's 5 fingers.
+        std::vector<float> fingerFfb = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };//there's 5 fingers.
         for (int32_t f = 0; f < 3; f++) {
             EFinger finger = static_cast<EFinger>(f);
             std::cout << ("Press a key to turn on the Force-Feedback of the " + SGCore::Util::StringUtils::ToString(finger) ) << std::endl;
             system("pause");
 
-            fingerFFB[f] = 1.0f;//sets the finger ffb for the current finger to 100%
-            //Queue these for the left / right hand, and send them immedeately afterwards
-            HandLayer::QueueCmd_FFBLevels(true, fingerFFB, true);
-            HandLayer::QueueCmd_FFBLevels(false, fingerFFB, true);
+            fingerFfb[f] = 1.0f;//sets the finger ffb for the current finger to 100%
+            //Queue these for the left / right hand, and send them immediately afterward
+            HandLayer::QueueCommand_ForceFeedbackLevels(true, fingerFfb, true);
+            HandLayer::QueueCommand_ForceFeedbackLevels(false, fingerFfb, true);
 
             std::cout << ("Press a key to turn it back off") << std::endl;
             system("pause");
 
-            fingerFFB[f] = 0.0f;//sets the finger ffb for the current finger back to 0%.
-            //Queue these for the left / right hand, and send them immedeately afterwards
-            HandLayer::QueueCmd_FFBLevels(true, fingerFFB, true);
-            HandLayer::QueueCmd_FFBLevels(false, fingerFFB, true);
+            fingerFfb[f] = 0.0f;//sets the finger ffb for the current finger back to 0%.
+            //Queue these for the left / right hand, and send them immediately afterward
+            HandLayer::QueueCommand_ForceFeedbackLevels(true, fingerFfb, true);
+            HandLayer::QueueCommand_ForceFeedbackLevels(false, fingerFfb, true);
         }
         std::cout << ("-------------------------------------------------------------------------") << std::endl;
     }
@@ -251,14 +252,14 @@ int32_t main()
             std::cout << ("Press a key to activate active contact feedback (wrist squeeze) on the hand(s)") << std::endl;
             system("pause");
 
-            HandLayer::QueueCmd_WristSqueeze(true, 1.0f, true);
-            HandLayer::QueueCmd_WristSqueeze(false, 1.0f, true);
+            HandLayer::QueueCommand_WristSqueeze(true, 1.0f, true);
+            HandLayer::QueueCommand_WristSqueeze(false, 1.0f, true);
 
             std::cout << ("Press a key to dectivate it") << std::endl;
             system("pause");
 
-            HandLayer::QueueCmd_WristSqueeze(true, 0.0f, true);
-            HandLayer::QueueCmd_WristSqueeze(false, 0.0f, true);
+            HandLayer::QueueCommand_WristSqueeze(true, 0.0f, true);
+            HandLayer::QueueCommand_WristSqueeze(false, 0.0f, true);
 
             std::cout << "-------------------------------------------------------------------------" << std::endl;
         }
