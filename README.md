@@ -1,30 +1,36 @@
 # SenseGlove API
 
-This repository houses the Software APIs for SenseGlove Devices for C++ and C# development for Windows and Linux.
+This repository houses the Software APIs for SenseGlove Devices for C++ for Windows, Linux and Android.
 
-The Sense Glove Core API is the combination of a **Communications Program** named "SenseCom", and a **Core Library**, all running on the same computer. Any (VR) program using the Core Library can exchange data with any **SenseGlove Device** through the Communications Program. Without SenseCom, the Core API will not detect any devices. 
+The SenseGlove API consists of two libraries: **SGConnect** and **SGCore**. SGConnect is responsible for detecting and communicating with various SenseGlove Devices. Once initialized, any (VR) program on the system can communicate to SenseGlove devices using the **SGCore** library. On Desktop, we provide a program called **SenseCom** to both manage the SGConnect runtime and provide information on the status of one's devices. When using SenseCom, one does not need to integrate SGConnect. On Android devices, the SGConnect runtime should be managed within the app iself.
 
-## Package Contents
+# Documentation
+
+The latest documentation for this API can be found on [our documentation website](https://senseglove.gitlab.io/SenseGloveDocs/native/core-api-intro.html).
+
+# Package Contents
 The SenseGlove API is provided to you as a folder that contains everything one requires to begin software development. Before jumping into development, it is recommended to read through this section and the following Getting Started section.
 
-## SenseCom
-Contains executable versions of SenseCom for the Windows and Linux platform. Run this program in the background to interface with your SenseGlove hardware.
-
-## Core
-Contains folders for different programming languages and operating systems to access SenseCom data, as well as guides on how to import the API into your project.
-The Cpp folder contains a dynamic library for C++, as well as a folder containing the Header files to import into your classes.
-The Cs folder contains a dynamic library for C# projects. This API is built on the .NET Framework, and therefore works on Windows only.
-
-## Plugins
-Contains plugins to add Sense Glove into other engines, such as the Unity Engine.
+## Android
+Contains SGConnect.jar, used when compiling C++ for Android.
 
 ## Examples
-Contains example projects that make use of the Core API to show how integration would work. Also contains example executables to show certain Sense Glove features.
+Contains example code that makes use of the Core API to call various Glove functons. Also contains example executables to show certain Sense Glove features.
+
+## Include
+Contains Header (.hpp) files for the SGCore and SGConnect libraries: *include/SenseGlove/SGCore/* and *include/SenseGlove/SGConnect/* respectively.
+
+## Lib
+Contains binaries to both dynamically and statically link SGCore and SGConnect to your projects. 
+
+## SenseCom
+Contains binaries of SenseCom for the Windows, Linux, and Android platforms. Run this program in the background on Windows and Linux to interface with your SenseGlove hardware. On Android, it can be used to check your setup and tets your devices.
+
 
 # Getting Started
-Plug in one or more SenseGloves into your desktop computer as per the guidelines on page 6 of your SenseGlove user manual.
-
-
-Navigate to the SenseCom folder in the SenseGloveAPI package and run the version that matches your platform. For Linux users; the SenseCom program should have its 'allow to run as a program' property enabled. Upon startup, you will be met with a small UI:
-
-While the icon(s) are not filled, the program has not yet detected any Sense Gloves. When the icon is filled, the device has been detected. Use this UI to verify that all Sense Gloves you have plugged in are recognized. Note that it may take up to 10 seconds for your system to detect the Hardware and install the appropriate drivers before SenseCom is able to detect anything.
+With development on Windows and Linux
+- Download the latest SenseGlove binaries from this repository.
+- [Install the SenseCom software](https://senseglove.gitlab.io/SenseGloveDocs/sensecom/install-instructions.html). Optional, but reccomended.
+- [Connect your SenseGlove Device to your PC](https://senseglove.gitlab.io/SenseGloveDocs/connecting-devices.html)
+- Run the SenseCom executable, and wait for your glove to connect.
+- Run the SGCoreClient executable built for your platform, it runs you though a few basic functions
