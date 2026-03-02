@@ -16,6 +16,8 @@ Guides on how to use the SenseCom software can be found [on our documentation pa
 ## SenseCom Git
 
 SenseCom has [its own GitHub page](https://github.com/Adjuvo/SenseCom) now. You can use it to install the latest releases, as well as post any issues you may have.
+As of version v1.9.0, you can now also download the latest version(s) via the software itself.
+
 
 # Advanced 
 
