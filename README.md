@@ -11,9 +11,6 @@ The latest documentation for this API can be found on [our documentation website
 # Package Contents
 The SenseGlove API is provided to you as a folder that contains everything one requires to begin software development. Before jumping into development, it is recommended to read through this section and the following Getting Started section.
 
-## Android
-Contains SGConnect.jar, used when compiling C++ for Android.
-
 ## Examples
 Contains example code that makes use of the Core API to call various Glove functons. Also contains example executables to show certain Sense Glove features.
 
@@ -33,4 +30,4 @@ With development on Windows and Linux
 - [Install the SenseCom software](https://senseglove.gitlab.io/SenseGloveDocs/sensecom/install-instructions.html). Optional, but reccomended.
 - [Connect your SenseGlove Device to your PC](https://senseglove.gitlab.io/SenseGloveDocs/connecting-devices.html)
 - Run the SenseCom executable, and wait for your glove to connect.
-- Run the SGCoreClient executable built for your platform, it runs you though a few basic functions
+- On Desktop: Run the SGCoreClient executable built for your platform, it runs you though a few basic functions

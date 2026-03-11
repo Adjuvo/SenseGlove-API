@@ -28,7 +28,8 @@ SenseCom is technically a UI around the SGConnect library, which handles the det
 - By calling the SGConnect::Init() function of the SGConnect Library, you will start a background process which will begin scanning for devices. It is best to call this function as soon as you start your program, since it will take a few moments before all devices have been recognized. Use the ScanningActive() function described above to ensure proper interfacing.
 - Calling the SGConnect::Dispose() function will stop the background thread and clean up its resources. It is important to call this function when your program ends or when you no longer require SenseGlove resources to ensure all devices are properly disconnected. 
 
-An example implementation of the SGConnect Library can be found in the Core / SGCoreCpp folder.
+As of v2.200 of SGConnect, it's possible to connect to Bluetooth Low Energy Devices using SGConnect. However, since it's not possible to pair these devices to your system, like Bluetooth Serial Devices, SGConenct must be explicitly 'told' which one to connect to via SGConnect::RegisterBLEConnection() - passing the device Serial Number e.g. "Nova 2-XXXXXX-L" into the function.
+We recommend storing these in a config file for your convenience.
 
 
 ### Running without SenseCom altogether
