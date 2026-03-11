@@ -34,12 +34,12 @@ libfmtd.a
 libfmt.a
 liblogurud.a
 libloguru.a
-libsgcommon.a
+#libsgcommon.a
 libsglog.a
 libsgble.a
-libsgconnectshm.a
-libsgfakeshm.a
-libsgcoreshm.a
+#libsgconnectshm.a
+#libsgfakeshm.a
+#libsgcoreshm.a
 libsgserial.a
 
 sgble.lib
@@ -55,12 +55,12 @@ loguru.pdb
 nng.lib
 nng.pdb
 serial.pdb
-sgcommon.lib
-sgcommon.pdb
-sgcoreshm.lib
-sgcoreshm.pdb
-sgconnectshm.lib
-sgconnectshm.pdb
+#sgcommon.lib
+#sgcommon.pdb
+#sgcoreshm.lib
+#sgcoreshm.pdb
+#sgconnectshm.lib
+#sgconnectshm.pdb
 sgfakeshm.lib
 sgfakeshm.pdb
 sglog.lib
