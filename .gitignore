@@ -30,42 +30,7 @@ SGLogExportedFunctions.hpp
 SGLogFfiTypes.hpp
 
 # Unused binaries from the build system
-libfmtd.a
-libfmt.a
-liblogurud.a
-libloguru.a
-#libsgcommon.a
-libsglog.a
 libsgble.a
-#libsgconnectshm.a
-#libsgfakeshm.a
-#libsgcoreshm.a
-libsgserial.a
 
 sgble.lib
 sgble.pdb
-flatbuffers.lib
-flatbuffers.pdb
-fmtd.lib
-fmtd.pdb
-logurud.lib
-logurud.pdb
-loguru.lib
-loguru.pdb
-nng.lib
-nng.pdb
-serial.pdb
-#sgcommon.lib
-#sgcommon.pdb
-#sgcoreshm.lib
-#sgcoreshm.pdb
-#sgconnectshm.lib
-#sgconnectshm.pdb
-sgfakeshm.lib
-sgfakeshm.pdb
-sglog.lib
-sglog.pdb
-fmt.lib
-fmt.pdb
-sgserial.lib
-sgserial.pdb
